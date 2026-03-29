@@ -8,8 +8,8 @@
 <!-- Tech Stack Badges -->
 [![MySQL](https://img.shields.io/badge/MySQL-9.6.0-00758f?style=for-the-badge&logo=mysql&logoColor=white)](https://dev.mysql.com/)
 [![Learning](https://img.shields.io/badge/Mode-Learning%20📖-ff6b6b?style=for-the-badge)](#)
-[![Progress](https://img.shields.io/badge/Days%20Logged-1-00c853?style=for-the-badge&logo=googlecalendar&logoColor=white)](#)
-[![Streak](https://img.shields.io/badge/🔥%20Streak-1%20Day-ff9100?style=for-the-badge)](#)
+[![Progress](https://img.shields.io/badge/Days%20Logged-2-00c853?style=for-the-badge&logo=googlecalendar&logoColor=white)](#)
+[![Streak](https://img.shields.io/badge/🔥%20Streak-2%20Days-ff9100?style=for-the-badge)](#)
 
 <br>
 
@@ -31,8 +31,11 @@
 ├── 📄 README.md                    ← You are here (Global Tracker)
 │
 ├── 📁 27_March_2026/               ← Day 1
-│   ├── 📄 commands.sql             ← Commented SQL commands
-│   └── 📄 README.md                ← Outputs + explanations
+├── 📁 29_March_2026/               ← Day 2 (Latest)
+│   ├── 📄 commands.sql             ← Cleaned SQL commands
+│   └── 📄 README.md                ← Outputs + visual summary
+│
+└── 📄 README.md                    ← Global Tracker
 ```
 
 ---
@@ -44,6 +47,7 @@
 | Day | Date | Folder | Topics Covered | Key Concepts |
 |:---:|:-----|:-------|:---------------|:-------------|
 | 1 | 📅 **27 Mar 2026** | [`27_March_2026/`](./27_March_2026/) | SELECT, WHERE, BETWEEN, IN, LIKE, ORDER BY | Filtering, Sorting, Pattern Matching |
+| 2 | 📅 **29 Mar 2026** | [`29_March_2026/`](./29_March_2026/) | DISTINCT, GROUP BY, Aggregate Functions | Unique Values, Aggregations |
 
 ---
 
@@ -62,10 +66,9 @@
   │  IN / NOT IN │                     │
   │  LIKE        │                     ▼
   └──────────────┘              ┌──────────────┐
-                                │  GROUP BY    │
-                                │  HAVING      │
-                                │  Aggregates  │
-                                │  COUNT/SUM   │
+                                │ ✅ GROUP BY   │
+                                │ ✅ Aggregates │
+                                │ ✅ COUNT/SUM  │
                                 └──────┬───────┘
                                        │
                                        ▼
@@ -85,11 +88,11 @@
 
 | Metric | Value |
 |:-------|:------|
-| 📅 Total Days | **1** |
-| 📝 Total Commands | **20+** |
+| 📅 Total Days | **2** |
+| 📝 Total Commands | **30+** |
 | 🗄️ Databases Used | `org` |
-| 💡 Concepts | **9** |
-| 🔥 Current Streak | **1 day** |
+| 💡 Concepts | **13** |
+| 🔥 Current Streak | **2 days** |
 
 ---
 
@@ -99,10 +102,13 @@
 |:--------|:-----------|:-------------|
 | `SELECT` | Day 1 | [27 Mar 2026](./27_March_2026/) |
 | `WHERE` | Day 1 | [27 Mar 2026](./27_March_2026/) |
+| `ORDER BY` | Day 1 | [27 Mar 2026](./27_March_2026/) |
+| `DISTINCT` | Day 2 | [29 Mar 2026](./29_March_2026/) |
+| `GROUP BY` | Day 2 | [29 Mar 2026](./29_March_2026/) |
+| `COUNT()` | Day 2 | [29 Mar 2026](./29_March_2026/) |
 | `BETWEEN` | Day 1 | [27 Mar 2026](./27_March_2026/) |
 | `IN / NOT IN` | Day 1 | [27 Mar 2026](./27_March_2026/) |
 | `LIKE` | Day 1 | [27 Mar 2026](./27_March_2026/) |
-| `ORDER BY` | Day 1 | [27 Mar 2026](./27_March_2026/) |
 
 ---
 
