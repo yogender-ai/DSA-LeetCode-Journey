@@ -8,7 +8,7 @@
 <!-- Tech Stack Badges -->
 [![MySQL](https://img.shields.io/badge/MySQL-9.6.0-00758f?style=for-the-badge&logo=mysql&logoColor=white)](https://dev.mysql.com/)
 [![Learning](https://img.shields.io/badge/Mode-Learning%20📖-ff6b6b?style=for-the-badge)](#)
-[![Progress](https://img.shields.io/badge/Days%20Logged-7-00c853?style=for-the-badge&logo=googlecalendar&logoColor=white)](#)
+[![Progress](https://img.shields.io/badge/Days%20Logged-8-00c853?style=for-the-badge&logo=googlecalendar&logoColor=white)](#)
 [![Streak](https://img.shields.io/badge/🔥%20Streak-Active-ff9100?style=for-the-badge)](#)
 
 <br>
@@ -37,7 +37,8 @@
 ├── 📁 11_April_2026/               ← Day 5
 ├── 📁 12_April_2026/               ← Day 6
 ├── 📁 leetcode/                    ← LeetCode Sessions
-│   └── 📁 18_April_2026/           ← Day 7 (Latest)
+│   └── 📁 18_April_2026/           ← Day 7
+├── 📁 15_May_2026/                 ← Day 8 (Latest)
 │
 └── 📄 README.md                    ← Global Tracker
 ```
@@ -57,6 +58,7 @@
 | 5 | 📅 **11 Apr 2026** | [`11_April_2026/`](./11_April_2026/) | DML, Foreign Keys, ON DELETE, REPLACE | Data Manipulation, Relationships |
 | 6 | 📅 **12 Apr 2026** | [`12_April_2026/`](./12_April_2026/) | Joins, INNER JOIN, Multi-table queries | Relational Data, Aliases |
 | 7 | 📅 **18 Apr 2026** | [`leetcode/18_April_2026/`](./leetcode/18_April_2026/) | LeetCode: Self JOIN, Modulo, NULL Handling | Problem Solving, Query Optimization |
+| 8 | 📅 **15 May 2026** | [`15_May_2026/`](./15_May_2026/) | Foreign Keys, CREATE TABLE, Relationships | Multiple Tables, Data Insertion |
 
 ---
 
@@ -97,10 +99,10 @@
 
 | Metric | Value |
 |:-------|:------|
-| 📅 Total Days | **7** |
-| 📝 Total Commands | **60+** |
-| 🗄️ Databases Used | `org`, `temp`, `joins` |
-| 💡 Concepts | **25+** |
+| 📅 Total Days | **8** |
+| 📝 Total Commands | **80+** |
+| 🗄️ Databases Used | `org`, `temp`, `joins`, `movie` |
+| 💡 Concepts | **26+** |
 | 🔥 Current Streak | **Active** |
 
 ---
@@ -123,6 +125,7 @@
 | `BETWEEN` | Day 1 | [27 Mar 2026](./27_March_2026/) |
 | `IN / NOT IN` | Day 1 | [27 Mar 2026](./27_March_2026/) |
 | `LIKE` | Day 1 | [27 Mar 2026](./27_March_2026/) |
+| `FOREIGN KEY` | Day 8 | [15 May 2026](./15_May_2026/) |
 
 ---
 
