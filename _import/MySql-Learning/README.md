@@ -37,7 +37,8 @@
 ├── 📁 11_April_2026/               ← Day 5
 ├── 📁 12_April_2026/               ← Day 6
 ├── 📁 leetcode/                    ← LeetCode Sessions
-│   └── 📁 18_April_2026/           ← Day 7
+│   ├── 📁 18_April_2026/           ← Day 7
+│   └── 📁 17_May_2026/             ← Day 10
 ├── 📁 15_May_2026/                 ← Day 8
 ├── 📁 17_May_2026/                 ← Day 9 (Latest)
 │
@@ -61,6 +62,7 @@
 | 7 | 📅 **18 Apr 2026** | [`leetcode/18_April_2026/`](./leetcode/18_April_2026/) | LeetCode: Self JOIN, Modulo, NULL Handling | Problem Solving, Query Optimization |
 | 8 | 📅 **15 May 2026** | [`15_May_2026/`](./15_May_2026/) | Foreign Keys, CREATE TABLE, Relationships | Multiple Tables, Data Insertion |
 | 9 | 📅 **17 May 2026** | [`17_May_2026/`](./17_May_2026/) | ALTER TABLE, DROP/ADD Constraint, CASE WHEN, Multi-Joins | Schema modification, Conditional Updates |
+| 10 | 📅 **17 May 2026** | [`leetcode/17_May_2026/`](./leetcode/17_May_2026/) | LeetCode: Self JOIN, DATE_SUB | Rising Temperature Problem |
 
 ---
 
@@ -101,7 +103,7 @@
 
 | Metric | Value |
 |:-------|:------|
-| 📅 Total Days | **9** |
+| 📅 Total Days | **10** |
 | 📝 Total Commands | **90+** |
 | 🗄️ Databases Used | `org`, `temp`, `joins`, `movie`, `sql_practice_17_05_2026` |
 | 💡 Concepts | **29+** |
@@ -130,6 +132,7 @@
 | `FOREIGN KEY` | Day 8 | [15 May 2026](./15_May_2026/) |
 | `DROP FOREIGN KEY` | Day 9 | [17 May 2026](./17_May_2026/) |
 | `CASE WHEN` | Day 9 | [17 May 2026](./17_May_2026/) |
+| `DATE_SUB()` | Day 10 | [17 May 2026](./leetcode/17_May_2026/) |
 
 ---
 
