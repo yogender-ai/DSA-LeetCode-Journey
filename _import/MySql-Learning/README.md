@@ -38,7 +38,8 @@
 ├── 📁 12_April_2026/               ← Day 6
 ├── 📁 leetcode/                    ← LeetCode Sessions
 │   └── 📁 18_April_2026/           ← Day 7
-├── 📁 15_May_2026/                 ← Day 8 (Latest)
+├── 📁 15_May_2026/                 ← Day 8
+├── 📁 17_May_2026/                 ← Day 9 (Latest)
 │
 └── 📄 README.md                    ← Global Tracker
 ```
@@ -59,6 +60,7 @@
 | 6 | 📅 **12 Apr 2026** | [`12_April_2026/`](./12_April_2026/) | Joins, INNER JOIN, Multi-table queries | Relational Data, Aliases |
 | 7 | 📅 **18 Apr 2026** | [`leetcode/18_April_2026/`](./leetcode/18_April_2026/) | LeetCode: Self JOIN, Modulo, NULL Handling | Problem Solving, Query Optimization |
 | 8 | 📅 **15 May 2026** | [`15_May_2026/`](./15_May_2026/) | Foreign Keys, CREATE TABLE, Relationships | Multiple Tables, Data Insertion |
+| 9 | 📅 **17 May 2026** | [`17_May_2026/`](./17_May_2026/) | ALTER TABLE, DROP/ADD Constraint, CASE WHEN, Multi-Joins | Schema modification, Conditional Updates |
 
 ---
 
@@ -99,10 +101,10 @@
 
 | Metric | Value |
 |:-------|:------|
-| 📅 Total Days | **8** |
-| 📝 Total Commands | **80+** |
-| 🗄️ Databases Used | `org`, `temp`, `joins`, `movie` |
-| 💡 Concepts | **26+** |
+| 📅 Total Days | **9** |
+| 📝 Total Commands | **90+** |
+| 🗄️ Databases Used | `org`, `temp`, `joins`, `movie`, `sql_practice_17_05_2026` |
+| 💡 Concepts | **29+** |
 | 🔥 Current Streak | **Active** |
 
 ---
@@ -126,6 +128,8 @@
 | `IN / NOT IN` | Day 1 | [27 Mar 2026](./27_March_2026/) |
 | `LIKE` | Day 1 | [27 Mar 2026](./27_March_2026/) |
 | `FOREIGN KEY` | Day 8 | [15 May 2026](./15_May_2026/) |
+| `DROP FOREIGN KEY` | Day 9 | [17 May 2026](./17_May_2026/) |
+| `CASE WHEN` | Day 9 | [17 May 2026](./17_May_2026/) |
 
 ---
 
