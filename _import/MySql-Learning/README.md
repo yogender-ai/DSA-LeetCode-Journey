@@ -8,7 +8,7 @@
 <!-- Tech Stack Badges -->
 [![MySQL](https://img.shields.io/badge/MySQL-9.6.0-00758f?style=for-the-badge&logo=mysql&logoColor=white)](https://dev.mysql.com/)
 [![Learning](https://img.shields.io/badge/Mode-Learning%20📖-ff6b6b?style=for-the-badge)](#)
-[![Progress](https://img.shields.io/badge/Days%20Logged-8-00c853?style=for-the-badge&logo=googlecalendar&logoColor=white)](#)
+[![Progress](https://img.shields.io/badge/Days%20Logged-11-00c853?style=for-the-badge&logo=googlecalendar&logoColor=white)](#)
 [![Streak](https://img.shields.io/badge/🔥%20Streak-Active-ff9100?style=for-the-badge)](#)
 
 <br>
@@ -40,7 +40,8 @@
 │   ├── 📁 18_April_2026/           ← Day 7
 │   └── 📁 17_May_2026/             ← Day 10
 ├── 📁 15_May_2026/                 ← Day 8
-├── 📁 17_May_2026/                 ← Day 9 (Latest)
+├── 📁 17_May_2026/                 ← Day 9
+├── 📁 18_May_2026/                 ← Day 11 (Latest)
 │
 └── 📄 README.md                    ← Global Tracker
 ```
@@ -63,6 +64,7 @@
 | 8 | 📅 **15 May 2026** | [`15_May_2026/`](./15_May_2026/) | Foreign Keys, CREATE TABLE, Relationships | Multiple Tables, Data Insertion |
 | 9 | 📅 **17 May 2026** | [`17_May_2026/`](./17_May_2026/) | ALTER TABLE, DROP/ADD Constraint, CASE WHEN, Multi-Joins | Schema modification, Conditional Updates |
 | 10 | 📅 **17 May 2026** | [`leetcode/17_May_2026/`](./leetcode/17_May_2026/) | LeetCode: Self JOIN, DATE_SUB | Rising Temperature Problem |
+| 11 | 📅 **18 May 2026** | [`18_May_2026/`](./18_May_2026/) | CREATE DATABASE, Table Constraints, ALTER TABLE | Schema & Database Management |
 
 ---
 
@@ -103,9 +105,9 @@
 
 | Metric | Value |
 |:-------|:------|
-| 📅 Total Days | **10** |
-| 📝 Total Commands | **90+** |
-| 🗄️ Databases Used | `org`, `temp`, `joins`, `movie`, `sql_practice_17_05_2026` |
+| 📅 Total Days | **11** |
+| 📝 Total Commands | **110+** |
+| 🗄️ Databases Used | `org`, `temp`, `joins`, `movie`, `sql_practice_17_05_2026`, `sql_18_may_2026`, `online_database` |
 | 💡 Concepts | **29+** |
 | 🔥 Current Streak | **Active** |
 
@@ -133,6 +135,9 @@
 | `DROP FOREIGN KEY` | Day 9 | [17 May 2026](./17_May_2026/) |
 | `CASE WHEN` | Day 9 | [17 May 2026](./17_May_2026/) |
 | `DATE_SUB()` | Day 10 | [17 May 2026](./leetcode/17_May_2026/) |
+| `PRIMARY KEY` | Day 11 | [18 May 2026](./18_May_2026/) |
+| `UNIQUE` | Day 11 | [18 May 2026](./18_May_2026/) |
+| `DEFAULT` | Day 11 | [18 May 2026](./18_May_2026/) |
 
 ---
 
