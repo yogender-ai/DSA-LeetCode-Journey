@@ -1,12 +1,12 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0F172A,50:1E293B,100:0F172A&height=180&section=header&text=DSA%20%C2%B7%20Python&fontSize=42&fontColor=E2E8F0&animation=fadeIn&fontAlignY=35&desc=Clear%20thinking%20under%20pressure&descAlignY=55&descSize=16&descColor=94A3B8" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:020617,40:0F172A,100:020617&height=220&section=header&text=DSA%20%C2%B7%20Python&fontSize=48&fontColor=F1F5F9&animation=fadeIn&fontAlignY=32&desc=A%20system%20for%20clear%20algorithmic%20thinking&descAlignY=52&descSize=17&descColor=94A3B8" width="100%"/>
 
 <br/>
 
-<img src="https://img.shields.io/badge/Status-Active-10B981?style=flat&labelColor=0F172A" />
-<img src="https://img.shields.io/badge/Python-3.12-3B82F6?style=flat&labelColor=0F172A&logo=python&logoColor=white" />
-<img src="https://img.shields.io/badge/Focus-Interview%20Prep-8B5CF6?style=flat&labelColor=0F172A" />
+<img src="https://img.shields.io/badge/Status-Active-10B981?style=for-the-badge&labelColor=020617" />
+<img src="https://img.shields.io/badge/Python-3.12-3B82F6?style=for-the-badge&labelColor=020617&logo=python&logoColor=white" />
+<img src="https://img.shields.io/badge/Focus-Interview%20Prep-8B5CF6?style=for-the-badge&labelColor=020617" />
 
 </div>
 
@@ -14,8 +14,7 @@
 
 <div align="center">
 
-**A training system for algorithmic thinking**  
-Not a solution dump. A place to build the skill of inventing solutions under pressure.
+### Not a collection of solutions.<br/>A training system for inventing them under pressure.
 
 </div>
 
@@ -23,38 +22,56 @@ Not a solution dump. A place to build the skill of inventing solutions under pre
 
 ---
 
-### Core Principles
+<br/>
+
+### 01 · Core Principles
 
 <table>
 <tr>
-<td width="50%" valign="top">
+<td width="50%">
 
-**01 · Shape First**  
-Name the pattern family before writing any code.  
-Arrays, hashing, window, tree, graph, DP — decide first.
+<div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(148, 163, 184, 0.15); border-radius: 16px; padding: 24px;">
+
+**Shape First**  
+Identify the pattern family before writing a single line of code.  
+Arrays · Hashing · Window · Tree · Graph · DP
+
+</div>
 
 </td>
-<td width="50%" valign="top">
+<td width="50%">
 
-**02 · Brute as Teacher**  
-Always know the naive version.  
+<div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(148, 163, 184, 0.15); border-radius: 16px; padding: 24px;">
+
+**Brute Force is a Teacher**  
+Always know the naive solution.  
 Only then can you clearly see where the waste lives.
+
+</div>
 
 </td>
 </tr>
 <tr>
-<td width="50%" valign="top">
+<td width="50%">
 
-**03 · Space Has Cost**  
+<div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(148, 163, 184, 0.15); border-radius: 16px; padding: 24px;">
+
+**Space Has Cost**  
 Hash maps buy speed with memory.  
-Constant extra space is often the real signal of understanding.
+Constant extra space is often the real signal of depth.
+
+</div>
 
 </td>
-<td width="50%" valign="top">
+<td width="50%">
 
-**04 · Clarity Over Cleverness**  
+<div style="background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(148, 163, 184, 0.15); border-radius: 16px; padding: 24px;">
+
+**Clarity Over Cleverness**  
 Python is expressive.  
-Don’t let that become an excuse for poor complexity.
+Never let that become an excuse for poor complexity.
+
+</div>
 
 </td>
 </tr>
@@ -64,49 +81,57 @@ Don’t let that become an excuse for poor complexity.
 
 ---
 
-### Progress
+<br/>
 
-| Pattern | Level | Status |
-|:--------|:-----:|:-------|
-| Hashing & Frequency | ████░░░░ | Building |
-| Two Pointers | ████░░░░ | Building |
-| Sliding Window | ░░░░░░░░ | Locked |
-| Binary Search | ░░░░░░░░ | Locked |
-| Linked Lists | ░░░░░░░░ | Locked |
-| Trees (DFS / BFS) | ░░░░░░░░ | Locked |
-| Graphs | ░░░░░░░░ | Locked |
-| Dynamic Programming | ░░░░░░░░ | Locked |
-| Greedy | ░░░░░░░░ | Locked |
-| Backtracking | ░░░░░░░░ | Locked |
+### 02 · Current Mastery
+
+| Pattern | Progress | State |
+|:--------|:--------:|:------|
+| **Hashing & Frequency** | ████░░░░ | Building |
+| **Two Pointers** | ████░░░░ | Building |
+| **Sliding Window** | ░░░░░░░░ | Locked |
+| **Binary Search** | ░░░░░░░░ | Locked |
+| **Linked Lists** | ░░░░░░░░ | Locked |
+| **Trees (DFS / BFS)** | ░░░░░░░░ | Locked |
+| **Graphs** | ░░░░░░░░ | Locked |
+| **Dynamic Programming** | ░░░░░░░░ | Locked |
+| **Greedy** | ░░░░░░░░ | Locked |
+| **Backtracking** | ░░░░░░░░ | Locked |
 
 <br/>
 
 ---
 
-### Daily Log
+<br/>
 
-| Date | Problem | Approach | Notes |
-|:-----|:--------|:---------|:------|
-| 14 Aug 2026 | Two Sum | Sorted + Two Pointers | Correct. Not optimal. Hash map preferred in interviews |
-| 14 Aug 2026 | Contains Duplicate | Frequency Map | Clean. Set-based version also valid |
-| — | Next | — | Standing by |
+### 03 · Transmission Log
+
+| Date | Problem | Approach | Insight |
+|:-----|:--------|:---------|:--------|
+| **14 Aug 2026** | Two Sum | Sorted + Two Pointers | Correct but not optimal. Hash map preferred in interviews |
+| **14 Aug 2026** | Contains Duplicate | Frequency Map | Clean. Set-based version also valid |
+| — | Next Target | — | Standing by |
 
 <br/>
 
 ---
 
-### Solving Protocol
+<br/>
 
-1. Read the problem twice  
-2. Write constraints and examples by hand  
-3. Name the pattern family  
-4. Speak the brute force solution  
-5. Ask: *What am I recomputing?*  
-6. Choose the structure that removes the waste  
-7. Write the clean version  
-8. Dry-run + one edge case  
-9. State time & space complexity before submitting  
-10. After acceptance → write *why* it works  
+### 04 · Execution Protocol
+
+```text
+1.  Read the problem twice
+2.  Write constraints + examples by hand
+3.  Name the pattern family out loud
+4.  Speak the brute force solution
+5.  Ask: “What am I recomputing?”
+6.  Choose the structure that removes the waste
+7.  Write the clean version
+8.  Dry-run + one hard edge case
+9.  State time & space complexity before submitting
+10. After green → write why the approach works
+```
 
 This process is more valuable than any individual solution.
 
@@ -114,42 +139,46 @@ This process is more valuable than any individual solution.
 
 ---
 
-### Roadmap
+<br/>
 
-**Phase 1 — Foundations** (Current)  
+### 05 · Long Range Roadmap
+
+**Phase 01 — Foundations** `Current`  
 Arrays · Hashing · Two Pointers · Sliding Window · Prefix Sum
 
-**Phase 2 — Linear Structures**  
+**Phase 02 — Linear Structures**  
 Linked Lists · Stacks · Queues · Monotonic Stack
 
-**Phase 3 — Trees & Graphs**  
+**Phase 03 — Trees & Graphs**  
 Binary Trees · BST · DFS/BFS · Topological Sort · Union-Find
 
-**Phase 4 — Advanced**  
+**Phase 04 — Advanced**  
 Dynamic Programming · Backtracking · Greedy proofs
 
-**Phase 5 — Pressure Testing**  
-Timed contests · Blind 75 / NeetCode 150
+**Phase 05 — Pressure Testing**  
+Timed contests · Blind 75 · NeetCode 150 under real constraints
 
 <br/>
 
 ---
 
-### Standards
+<br/>
+
+### 06 · Standards
 
 - Type hints on every function  
-- Meaningful variable names  
+- Meaningful variable names (no naked `i`, `j`, `k`)  
 - Complexity stated at the top of every solution  
-- Clear separation when multiple approaches exist  
+- Multiple approaches clearly separated  
 - Edge cases documented when non-obvious  
 
 <br/>
 
 ---
 
-<div align="center">
-
 <br/>
+
+<div align="center">
 
 **Yogender**  
 Final Year · AIML · LPU  
@@ -157,6 +186,6 @@ Building the skill of inventing solutions
 
 <br/>
 
-</div>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:020617,100:020617&height=120&section=footer" width="100%"/>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0F172A,100:0F172A&height=100&section=footer" width="100%"/>
+</div>
