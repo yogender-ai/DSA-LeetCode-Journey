@@ -32,4 +32,18 @@ class Solution:
                 count[num] = 1
         return False
 
-#3. 
+#3.  Valid Anagram
+class Solution:
+    def isAnagram(self, s: str, t: str) -> bool:
+        w = list(t)
+        for q in s:
+            if q in w:
+                ind = w.index(q)
+                w.pop(ind)
+            else:
+                return False
+        if not w:
+            return True
+        else:
+            return False
+
