@@ -20,3 +20,16 @@ class Solution:
                 left += 1
         return a
 
+# 2. Contains Duplicate
+class Solution:
+    def containsDuplicate(self, nums: List[int]) -> bool:
+        count = {}
+        for num in nums:
+            if num in count:
+                count[num] += 1
+                return True
+            else:
+                count[num] = 1
+        return False
+
+#3. 
