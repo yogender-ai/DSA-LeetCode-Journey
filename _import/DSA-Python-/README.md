@@ -1,13 +1,12 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Inter&weight=700&size=36&duration=2800&pause=1200&color=E2E8F0&center=true&vCenter=true&multiline=true&repeat=true&width=680&height=110&lines=DSA+%C2%B7+Python;Clean+Code.+Clear+Thinking." alt="Typing" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0F172A,50:1E293B,100:0F172A&height=180&section=header&text=DSA%20%C2%B7%20Python&fontSize=42&fontColor=E2E8F0&animation=fadeIn&fontAlignY=35&desc=Clear%20thinking%20under%20pressure&descAlignY=55&descSize=16&descColor=94A3B8" width="100%"/>
 
-<br/><br/>
+<br/>
 
-<img src="https://img.shields.io/badge/Status-Active-10B981?style=flat-square&labelColor=0F172A" />
-<img src="https://img.shields.io/badge/Python-3.12-3B82F6?style=flat-square&labelColor=0F172A&logo=python&logoColor=white" />
-<img src="https://img.shields.io/badge/Focus-Interview+Prep-8B5CF6?style=flat-square&labelColor=0F172A" />
-<img src="https://img.shields.io/badge/Style-First+Principles-F59E0B?style=flat-square&labelColor=0F172A" />
+<img src="https://img.shields.io/badge/Status-Active-10B981?style=flat&labelColor=0F172A" />
+<img src="https://img.shields.io/badge/Python-3.12-3B82F6?style=flat&labelColor=0F172A&logo=python&logoColor=white" />
+<img src="https://img.shields.io/badge/Focus-Interview%20Prep-8B5CF6?style=flat&labelColor=0F172A" />
 
 </div>
 
@@ -15,49 +14,47 @@
 
 <div align="center">
 
-### A living system for mastering algorithmic thinking
-
-Not a collection of solutions.  
-A training ground for clear, structured reasoning under pressure.
+**A training system for algorithmic thinking**  
+Not a solution dump. A place to build the skill of inventing solutions under pressure.
 
 </div>
 
----
-
 <br/>
 
-### ✨ Philosophy
+---
+
+### Core Principles
 
 <table>
 <tr>
-<td width="50%">
+<td width="50%" valign="top">
 
-**Shape before code**  
-Identify the pattern family first.  
-Only then write a single line.
+**01 · Shape First**  
+Name the pattern family before writing any code.  
+Arrays, hashing, window, tree, graph, DP — decide first.
 
 </td>
-<td width="50%">
+<td width="50%" valign="top">
 
-**Brute force is a teacher**  
-Know the naive version so you can  
-clearly see where the waste lives.
+**02 · Brute as Teacher**  
+Always know the naive version.  
+Only then can you clearly see where the waste lives.
 
 </td>
 </tr>
 <tr>
-<td width="50%">
+<td width="50%" valign="top">
 
-**Space is not free**  
+**03 · Space Has Cost**  
 Hash maps buy speed with memory.  
-Sometimes constant space is the real flex.
+Constant extra space is often the real signal of understanding.
 
 </td>
-<td width="50%">
+<td width="50%" valign="top">
 
-**Clarity > cleverness**  
+**04 · Clarity Over Cleverness**  
 Python is expressive.  
-Don’t let it become an excuse for poor complexity.
+Don’t let that become an excuse for poor complexity.
 
 </td>
 </tr>
@@ -67,7 +64,7 @@ Don’t let it become an excuse for poor complexity.
 
 ---
 
-### 📊 Current Progress
+### Progress
 
 | Pattern | Level | Status |
 |:--------|:-----:|:-------|
@@ -86,11 +83,11 @@ Don’t let it become an excuse for poor complexity.
 
 ---
 
-### 📅 Daily Log
+### Daily Log
 
 | Date | Problem | Approach | Notes |
 |:-----|:--------|:---------|:------|
-| 14 Aug 2026 | Two Sum | Sorted + Two Pointers | Correct but not optimal. Hash map preferred in interviews |
+| 14 Aug 2026 | Two Sum | Sorted + Two Pointers | Correct. Not optimal. Hash map preferred in interviews |
 | 14 Aug 2026 | Contains Duplicate | Frequency Map | Clean. Set-based version also valid |
 | — | Next | — | Standing by |
 
@@ -98,7 +95,7 @@ Don’t let it become an excuse for poor complexity.
 
 ---
 
-### 🧠 Solving Protocol
+### Solving Protocol
 
 1. Read the problem twice  
 2. Write constraints and examples by hand  
@@ -108,8 +105,8 @@ Don’t let it become an excuse for poor complexity.
 6. Choose the structure that removes the waste  
 7. Write the clean version  
 8. Dry-run + one edge case  
-9. State time & space complexity  
-10. After acceptance → write why it works  
+9. State time & space complexity before submitting  
+10. After acceptance → write *why* it works  
 
 This process is more valuable than any individual solution.
 
@@ -117,7 +114,7 @@ This process is more valuable than any individual solution.
 
 ---
 
-### 🗺 Roadmap
+### Roadmap
 
 **Phase 1 — Foundations** (Current)  
 Arrays · Hashing · Two Pointers · Sliding Window · Prefix Sum
@@ -138,12 +135,12 @@ Timed contests · Blind 75 / NeetCode 150
 
 ---
 
-### 🛠 Standards
+### Standards
 
 - Type hints on every function  
 - Meaningful variable names  
 - Complexity stated at the top of every solution  
-- Clear separation of multiple approaches  
+- Clear separation when multiple approaches exist  
 - Edge cases documented when non-obvious  
 
 <br/>
@@ -156,10 +153,10 @@ Timed contests · Blind 75 / NeetCode 150
 
 **Yogender**  
 Final Year · AIML · LPU  
-Currently building the skill of inventing solutions
+Building the skill of inventing solutions
 
 <br/>
 
-<img src="https://img.shields.io/badge/Star_if_you_believe_in_clear_thinking-0F172A?style=for-the-badge&labelColor=E2E8F0&color=0F172A" />
-
 </div>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0F172A,100:0F172A&height=100&section=footer" width="100%"/>
