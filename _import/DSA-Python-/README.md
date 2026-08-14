@@ -1,193 +1,154 @@
 <div align="center">
 
-# ⚔️ DSA · PYTHON ⚔️
-### *The Algorithmic Battlefield*
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=32&duration=3000&pause=1000&color=00F0FF&center=true&vCenter=true&multiline=true&repeat=true&width=600&height=100&lines=DSA+%C2%B7+PYTHON;Neural+Grind+Protocol;Think.+Pattern.+Dominate." alt="Typing SVG" />
 
-```text
-     ██████╗ ███████╗ █████╗ 
-     ██╔══██╗██╔════╝██╔══██╗
-     ██║  ██║███████╗███████║
-     ██║  ██║╚════██║██╔══██║
-     ██████╔╝███████║██║  ██║
-     ╚═════╝ ╚══════╝╚═╝  ╚═╝
-          ·  P Y T H O N  ·
-```
+<br/>
 
-**Not another problem dump.**  
-This is a living war journal of how one mind learns to *think* in algorithms.
-
-[![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
-[![Status](https://img.shields.io/badge/Status-Active%20Grind-success?style=for-the-badge)](https://github.com/yogender-ai/DSA-Python-)
-[![Mindset](https://img.shields.io/badge/Mindset-First%20Principles-blueviolet?style=for-the-badge)](#-the-philosophy)
+<img src="https://img.shields.io/badge/Status-ONLINE-00ff9d?style=for-the-badge&labelColor=0d1117" />
+<img src="https://img.shields.io/badge/Python-3.12-3776AB?style=for-the-badge&logo=python&logoColor=white&labelColor=0d1117" />
+<img src="https://img.shields.io/badge/Mode-Interview+Ready-ff00aa?style=for-the-badge&labelColor=0d1117" />
+<img src="https://img.shields.io/badge/Mindset-First+Principles-7b2cbf?style=for-the-badge&labelColor=0d1117" />
 
 </div>
 
----
-
-### 🔥 Why this exists
-
-Most DSA repositories are graveyards of copy-pasted solutions.  
-This one is different by design.
-
-Here every problem is treated as a **battle**:
-- What is the *real* constraint?
-- What mental model unlocks it?
-- Why does this approach win on time *and* space?
-- How would I explain it to a 5-year-old and to an interviewer in the same breath?
-
-I am building this while preparing for real interviews (AIML + product companies).  
-Every file, every comment, every complexity analysis is written with that pressure in mind.
-
-> **Goal**: Reach a point where looking at a new problem feels less like panic and more like recognition.
-
----
-
-### 🧠 The Philosophy (Read this before any code)
-
-1. **Understand the shape of the problem first**  
-   Arrays? Graph? DP state? Sliding window?  
-   Name the pattern before writing a single line.
-
-2. **Brute force is allowed — but only as a teacher**  
-   Always write the O(n²) or O(2ⁿ) version in your head.  
-   Only then ask: *Where is the waste?*
-
-3. **Space is not free**  
-   Hash maps are powerful. They are also a confession that you needed memory to buy time.  
-   Sometimes the elegant solution uses O(1) extra space.
-
-4. **Python is a double-edged sword**  
-   Beautiful, expressive, dangerously slow if you abuse it.  
-   Prefer clarity + correct complexity over micro-optimizations — until the interviewer asks.
-
-5. **One problem ≠ one solution**  
-   Every problem here will eventually have:
-   - Brute
-   - Better
-   - Optimal
-   - Edge-case notes
-   - Interview talking points
-
----
-
-### 🗂️ Current Structure
+<br/>
 
 ```text
-DSA-Python-/
-│
-├── README.md                 ← You are here
-├── Aug_14_2026.py            ← Day 1: Two Sum + Contains Duplicate
-│
-└── (future)
-    ├── arrays/
-    ├── hashing/
-    ├── two-pointers/
-    ├── sliding-window/
-    ├── linked-list/
-    ├── trees/
-    ├── graphs/
-    ├── dp/
-    └── patterns/
+╔══════════════════════════════════════════════════════════════╗
+║                                                              ║
+║     ██████╗ ███████╗ █████╗      ·  NEURAL LINK ACTIVE  ·    ║
+║     ██╔══██╗██╔════╝██╔══██╗                                 ║
+║     ██║  ██║███████╗███████║     Thinking in Algorithms      ║
+║     ██║  ██║╚════██║██╔══██║                                 ║
+║     ██████╔╝███████║██║  ██║     Not memorizing solutions    ║
+║     ╚═════╝ ╚══════╝╚═╝  ╚═╝                                 ║
+║                                                              ║
+╚══════════════════════════════════════════════════════════════╝
 ```
 
 ---
 
-### 📅 Daily Battle Log
+### ⚡ SYSTEM BRIEFING
 
-| Date       | Problem                        | Status     | Approach                          | Complexity     | Notes |
-|------------|--------------------------------|------------|-----------------------------------|----------------|-------|
-| 14 Aug 2026 | Two Sum                       | ✅ Solved  | Sorted + Two Pointers (with index recovery) | O(n log n) time | Works but not optimal. Hash map version preferred for interviews |
-| 14 Aug 2026 | Contains Duplicate            | ✅ Solved  | Hash Map frequency                | O(n) time / O(n) space | Clean. Can also be done with set |
-| —          | *Next...*                     | 🔄         | —                                 | —              | —     |
+This is **not** a solution dump.  
+This is a **live training environment** for algorithmic thinking.
 
----
+Most people collect problems.  
+I collect **mental models**.
 
-### 🎯 Pattern Mastery Tracker
+Every file here is treated like a real interview under pressure.  
+If I can’t explain *why* the approach wins on both time and space, it doesn’t stay.
 
-| Pattern              | Mastery | Key Problems |
-|----------------------|---------|--------------|
-| Hashing / Frequency  | 🟡      | Contains Duplicate, Two Sum |
-| Two Pointers         | 🟡      | Two Sum (sorted) |
-| Sliding Window       | ⚪      | — |
-| Binary Search        | ⚪      | — |
-| Linked List          | ⚪      | — |
-| Trees (DFS/BFS)      | ⚪      | — |
-| Graphs               | ⚪      | — |
-| Dynamic Programming  | ⚪      | — |
-| Greedy               | ⚪      | — |
-| Backtracking         | ⚪      | — |
-
-> Legend: ⚪ Not started · 🟡 In progress · 🟢 Comfortable · 🔥 Weaponized
+> Current Objective → Build the kind of mind that invents solutions instead of recalling them.
 
 ---
 
-### 🧬 How I solve (the actual process)
+### 🧬 CORE OPERATING PRINCIPLES
+
+| # | Principle | Meaning |
+|---|-----------|---------|
+| 01 | **Shape First** | Identify the pattern family before writing code |
+| 02 | **Brute is Teacher** | Always know the naive version so you can see the waste |
+| 03 | **Space has cost** | Hash maps buy speed with memory. Sometimes O(1) is the flex |
+| 04 | **Python cuts both ways** | Beautiful and slow if abused. Clarity + correct complexity wins |
+| 05 | **One problem ≠ one answer** | Brute → Better → Optimal + edge cases + interview talk track |
+
+---
+
+### 📡 LIVE STATUS BOARD
 
 ```text
-1. Read the problem twice.
-2. Write constraints + examples by hand.
-3. Identify the pattern family.
-4. Speak the brute force out loud.
-5. Ask: "What information am I recomputing?"
-6. Choose the data structure that removes that recomputation.
-7. Code the clean version.
-8. Dry-run on the example + one edge case.
-9. Write time + space complexity *before* submitting.
-10. After acceptance → write the "Why this works" comment.
+┌─────────────────────────────────────────────────────┐
+│  PATTERN MASTERY                                    │
+├──────────────────────┬──────────┬───────────────────┤
+│  Hashing / Frequency │  ████░░  │  Yellow Zone      │
+│  Two Pointers        │  ████░░  │  Yellow Zone      │
+│  Sliding Window      │  ░░░░░░  │  Not Started      │
+│  Binary Search       │  ░░░░░░  │  Not Started      │
+│  Linked List         │  ░░░░░░  │  Not Started      │
+│  Trees (DFS / BFS)   │  ░░░░░░  │  Not Started      │
+│  Graphs              │  ░░░░░░  │  Not Started      │
+│  Dynamic Programming │  ░░░░░░  │  Not Started      │
+│  Greedy              │  ░░░░░░  │  Not Started      │
+│  Backtracking        │  ░░░░░░  │  Not Started      │
+└──────────────────────┴──────────┴───────────────────┘
 ```
-
-This process is more important than any individual solution.
 
 ---
 
-### 🚀 Roadmap (The Long War)
+### 📅 TRANSMISSION LOG
 
-**Phase 1 — Foundations (Current)**  
+| Date | Signal | Problem | Approach | Notes |
+|------|--------|---------|----------|-------|
+| 14.08.2026 | ✅ | Two Sum | Sorted + Two Pointers | Works. Not optimal. Hash map preferred for interviews |
+| 14.08.2026 | ✅ | Contains Duplicate | Frequency Map | Clean. Set version also valid |
+| — | 🔄 | Next Target | — | Standing by |
+
+---
+
+### 🧠 EXECUTION PROTOCOL
+
+```text
+[1] Read the problem twice. No exceptions.
+[2] Write constraints + examples by hand.
+[3] Name the pattern family out loud.
+[4] Speak the brute force solution.
+[5] Ask: “What am I recomputing?”
+[6] Choose the structure that removes the waste.
+[7] Code the clean version.
+[8] Dry-run + one edge case.
+[9] Write time & space *before* submitting.
+[10] After green → write the “Why this works” note.
+```
+
+This process > any single solution.
+
+---
+
+### 🗺️ LONG RANGE ROADMAP
+
+**Phase 01 — Foundations** (Active)  
 Arrays · Hashing · Two Pointers · Sliding Window · Prefix Sum
 
-**Phase 2 — Linear Structures**  
+**Phase 02 — Linear Structures**  
 Linked Lists · Stacks · Queues · Monotonic Stack
 
-**Phase 3 — Trees & Graphs**  
-Binary Trees · BST · DFS/BFS · Topological Sort · Union-Find
+**Phase 03 — Trees & Graphs**  
+Binary Trees · BST · DFS/BFS · Topo Sort · Union-Find
 
-**Phase 4 — Advanced**  
-Dynamic Programming (1D → 2D → Knapsack → LIS) · Backtracking · Greedy proofs
+**Phase 04 — Advanced Warfare**  
+DP (1D → 2D → Knapsack → LIS) · Backtracking · Greedy proofs
 
-**Phase 5 — Interview Simulation**  
-Timed contests · Blind 75 / NeetCode 150 under pressure · System design light + DSA deep
-
----
-
-### 💡 Code Style Rules in this repo
-
-- Type hints everywhere
-- Meaningful variable names (no `i`, `j`, `k` without context)
-- Complexity comment at the top of every solution
-- One clear approach per class (multiple approaches = multiple classes or clearly separated)
-- Edge cases mentioned in comments when non-obvious
+**Phase 05 — Live Combat**  
+Timed contests · Blind 75 / NeetCode 150 under pressure
 
 ---
 
-### 🤝 How to use this repo
+### 🛠️ CODE STANDARDS
 
-1. Clone it.
-2. Open any `.py` file.
-3. Read the comments first — they contain the thinking.
-4. Try to solve the problem yourself before looking at the code.
-5. Compare your approach with mine.
-6. Improve both.
+- Type hints on everything
+- Meaningful names (no naked `i`, `j`, `k`)
+- Complexity stated at the top of every solution
+- Clear separation when multiple approaches exist
+- Edge cases called out when non-obvious
 
 ---
 
 <div align="center">
 
-### *"The goal is not to remember solutions.  
-The goal is to become the kind of person who can invent them."*
+### 🔥 CURRENT STATE
 
-**Built with discipline by [Yogender](https://github.com/yogender-ai)**  
-*Final year · AIML · LPU · Currently in the arena*
+**System Online**  
+Day 1 of the grind complete.  
+More transmissions incoming.
 
-⭐ Star this repo if you also believe DSA is a skill of the mind, not of the fingers.
+<br/>
+
+**Built by [Yogender](https://github.com/yogender-ai)**  
+*Final Year · AIML · LPU · Currently in the arena*
+
+<br/>
+
+<img src="https://img.shields.io/badge/★_Star_if_you_believe_DSA_is_a_mind_skill-0d1117?style=for-the-badge&labelColor=00F0FF&color=0d1117" />
 
 </div>
