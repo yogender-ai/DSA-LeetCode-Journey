@@ -1,154 +1,165 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=32&duration=3000&pause=1000&color=00F0FF&center=true&vCenter=true&multiline=true&repeat=true&width=600&height=100&lines=DSA+%C2%B7+PYTHON;Neural+Grind+Protocol;Think.+Pattern.+Dominate." alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Inter&weight=700&size=36&duration=2800&pause=1200&color=E2E8F0&center=true&vCenter=true&multiline=true&repeat=true&width=680&height=110&lines=DSA+%C2%B7+Python;Clean+Code.+Clear+Thinking." alt="Typing" />
 
-<br/>
+<br/><br/>
 
-<img src="https://img.shields.io/badge/Status-ONLINE-00ff9d?style=for-the-badge&labelColor=0d1117" />
-<img src="https://img.shields.io/badge/Python-3.12-3776AB?style=for-the-badge&logo=python&logoColor=white&labelColor=0d1117" />
-<img src="https://img.shields.io/badge/Mode-Interview+Ready-ff00aa?style=for-the-badge&labelColor=0d1117" />
-<img src="https://img.shields.io/badge/Mindset-First+Principles-7b2cbf?style=for-the-badge&labelColor=0d1117" />
+<img src="https://img.shields.io/badge/Status-Active-10B981?style=flat-square&labelColor=0F172A" />
+<img src="https://img.shields.io/badge/Python-3.12-3B82F6?style=flat-square&labelColor=0F172A&logo=python&logoColor=white" />
+<img src="https://img.shields.io/badge/Focus-Interview+Prep-8B5CF6?style=flat-square&labelColor=0F172A" />
+<img src="https://img.shields.io/badge/Style-First+Principles-F59E0B?style=flat-square&labelColor=0F172A" />
 
 </div>
 
 <br/>
 
-```text
-╔══════════════════════════════════════════════════════════════╗
-║                                                              ║
-║     ██████╗ ███████╗ █████╗      ·  NEURAL LINK ACTIVE  ·    ║
-║     ██╔══██╗██╔════╝██╔══██╗                                 ║
-║     ██║  ██║███████╗███████║     Thinking in Algorithms      ║
-║     ██║  ██║╚════██║██╔══██║                                 ║
-║     ██████╔╝███████║██║  ██║     Not memorizing solutions    ║
-║     ╚═════╝ ╚══════╝╚═╝  ╚═╝                                 ║
-║                                                              ║
-╚══════════════════════════════════════════════════════════════╝
-```
+<div align="center">
+
+### A living system for mastering algorithmic thinking
+
+Not a collection of solutions.  
+A training ground for clear, structured reasoning under pressure.
+
+</div>
 
 ---
 
-### ⚡ SYSTEM BRIEFING
+<br/>
 
-This is **not** a solution dump.  
-This is a **live training environment** for algorithmic thinking.
+### ✨ Philosophy
 
-Most people collect problems.  
-I collect **mental models**.
+<table>
+<tr>
+<td width="50%">
 
-Every file here is treated like a real interview under pressure.  
-If I can’t explain *why* the approach wins on both time and space, it doesn’t stay.
+**Shape before code**  
+Identify the pattern family first.  
+Only then write a single line.
 
-> Current Objective → Build the kind of mind that invents solutions instead of recalling them.
+</td>
+<td width="50%">
 
----
+**Brute force is a teacher**  
+Know the naive version so you can  
+clearly see where the waste lives.
 
-### 🧬 CORE OPERATING PRINCIPLES
+</td>
+</tr>
+<tr>
+<td width="50%">
 
-| # | Principle | Meaning |
-|---|-----------|---------|
-| 01 | **Shape First** | Identify the pattern family before writing code |
-| 02 | **Brute is Teacher** | Always know the naive version so you can see the waste |
-| 03 | **Space has cost** | Hash maps buy speed with memory. Sometimes O(1) is the flex |
-| 04 | **Python cuts both ways** | Beautiful and slow if abused. Clarity + correct complexity wins |
-| 05 | **One problem ≠ one answer** | Brute → Better → Optimal + edge cases + interview talk track |
+**Space is not free**  
+Hash maps buy speed with memory.  
+Sometimes constant space is the real flex.
 
----
+</td>
+<td width="50%">
 
-### 📡 LIVE STATUS BOARD
+**Clarity > cleverness**  
+Python is expressive.  
+Don’t let it become an excuse for poor complexity.
 
-```text
-┌─────────────────────────────────────────────────────┐
-│  PATTERN MASTERY                                    │
-├──────────────────────┬──────────┬───────────────────┤
-│  Hashing / Frequency │  ████░░  │  Yellow Zone      │
-│  Two Pointers        │  ████░░  │  Yellow Zone      │
-│  Sliding Window      │  ░░░░░░  │  Not Started      │
-│  Binary Search       │  ░░░░░░  │  Not Started      │
-│  Linked List         │  ░░░░░░  │  Not Started      │
-│  Trees (DFS / BFS)   │  ░░░░░░  │  Not Started      │
-│  Graphs              │  ░░░░░░  │  Not Started      │
-│  Dynamic Programming │  ░░░░░░  │  Not Started      │
-│  Greedy              │  ░░░░░░  │  Not Started      │
-│  Backtracking        │  ░░░░░░  │  Not Started      │
-└──────────────────────┴──────────┴───────────────────┘
-```
+</td>
+</tr>
+</table>
+
+<br/>
 
 ---
 
-### 📅 TRANSMISSION LOG
+### 📊 Current Progress
 
-| Date | Signal | Problem | Approach | Notes |
-|------|--------|---------|----------|-------|
-| 14.08.2026 | ✅ | Two Sum | Sorted + Two Pointers | Works. Not optimal. Hash map preferred for interviews |
-| 14.08.2026 | ✅ | Contains Duplicate | Frequency Map | Clean. Set version also valid |
-| — | 🔄 | Next Target | — | Standing by |
+| Pattern | Level | Status |
+|:--------|:-----:|:-------|
+| Hashing & Frequency | ████░░░░ | Building |
+| Two Pointers | ████░░░░ | Building |
+| Sliding Window | ░░░░░░░░ | Locked |
+| Binary Search | ░░░░░░░░ | Locked |
+| Linked Lists | ░░░░░░░░ | Locked |
+| Trees (DFS / BFS) | ░░░░░░░░ | Locked |
+| Graphs | ░░░░░░░░ | Locked |
+| Dynamic Programming | ░░░░░░░░ | Locked |
+| Greedy | ░░░░░░░░ | Locked |
+| Backtracking | ░░░░░░░░ | Locked |
 
----
-
-### 🧠 EXECUTION PROTOCOL
-
-```text
-[1] Read the problem twice. No exceptions.
-[2] Write constraints + examples by hand.
-[3] Name the pattern family out loud.
-[4] Speak the brute force solution.
-[5] Ask: “What am I recomputing?”
-[6] Choose the structure that removes the waste.
-[7] Code the clean version.
-[8] Dry-run + one edge case.
-[9] Write time & space *before* submitting.
-[10] After green → write the “Why this works” note.
-```
-
-This process > any single solution.
+<br/>
 
 ---
 
-### 🗺️ LONG RANGE ROADMAP
+### 📅 Daily Log
 
-**Phase 01 — Foundations** (Active)  
+| Date | Problem | Approach | Notes |
+|:-----|:--------|:---------|:------|
+| 14 Aug 2026 | Two Sum | Sorted + Two Pointers | Correct but not optimal. Hash map preferred in interviews |
+| 14 Aug 2026 | Contains Duplicate | Frequency Map | Clean. Set-based version also valid |
+| — | Next | — | Standing by |
+
+<br/>
+
+---
+
+### 🧠 Solving Protocol
+
+1. Read the problem twice  
+2. Write constraints and examples by hand  
+3. Name the pattern family  
+4. Speak the brute force solution  
+5. Ask: *What am I recomputing?*  
+6. Choose the structure that removes the waste  
+7. Write the clean version  
+8. Dry-run + one edge case  
+9. State time & space complexity  
+10. After acceptance → write why it works  
+
+This process is more valuable than any individual solution.
+
+<br/>
+
+---
+
+### 🗺 Roadmap
+
+**Phase 1 — Foundations** (Current)  
 Arrays · Hashing · Two Pointers · Sliding Window · Prefix Sum
 
-**Phase 02 — Linear Structures**  
+**Phase 2 — Linear Structures**  
 Linked Lists · Stacks · Queues · Monotonic Stack
 
-**Phase 03 — Trees & Graphs**  
-Binary Trees · BST · DFS/BFS · Topo Sort · Union-Find
+**Phase 3 — Trees & Graphs**  
+Binary Trees · BST · DFS/BFS · Topological Sort · Union-Find
 
-**Phase 04 — Advanced Warfare**  
-DP (1D → 2D → Knapsack → LIS) · Backtracking · Greedy proofs
+**Phase 4 — Advanced**  
+Dynamic Programming · Backtracking · Greedy proofs
 
-**Phase 05 — Live Combat**  
-Timed contests · Blind 75 / NeetCode 150 under pressure
+**Phase 5 — Pressure Testing**  
+Timed contests · Blind 75 / NeetCode 150
+
+<br/>
 
 ---
 
-### 🛠️ CODE STANDARDS
+### 🛠 Standards
 
-- Type hints on everything
-- Meaningful names (no naked `i`, `j`, `k`)
-- Complexity stated at the top of every solution
-- Clear separation when multiple approaches exist
-- Edge cases called out when non-obvious
+- Type hints on every function  
+- Meaningful variable names  
+- Complexity stated at the top of every solution  
+- Clear separation of multiple approaches  
+- Edge cases documented when non-obvious  
+
+<br/>
 
 ---
 
 <div align="center">
 
-### 🔥 CURRENT STATE
+<br/>
 
-**System Online**  
-Day 1 of the grind complete.  
-More transmissions incoming.
+**Yogender**  
+Final Year · AIML · LPU  
+Currently building the skill of inventing solutions
 
 <br/>
 
-**Built by [Yogender](https://github.com/yogender-ai)**  
-*Final Year · AIML · LPU · Currently in the arena*
-
-<br/>
-
-<img src="https://img.shields.io/badge/★_Star_if_you_believe_DSA_is_a_mind_skill-0d1117?style=for-the-badge&labelColor=00F0FF&color=0d1117" />
+<img src="https://img.shields.io/badge/Star_if_you_believe_in_clear_thinking-0F172A?style=for-the-badge&labelColor=E2E8F0&color=0F172A" />
 
 </div>
