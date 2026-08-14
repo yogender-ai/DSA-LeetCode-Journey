@@ -47,3 +47,37 @@ class Solution:
         else:
             return False
 
+#4. Group Anagrams with TLE
+class Solution:
+    def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
+        ans = list()
+        for i in range(len(strs)):
+            if strs[i] == None:
+                continue
+            temp = sorted(strs[i])
+
+            l = list()
+            l.append(strs[i])
+            strs[i] = None
+            for ii in range(i + 1, len(strs)):
+                if strs[ii] == None:
+                    continue
+                tem = sorted(strs[ii])
+                if tem == temp:
+                    l.append(strs[ii])
+                    strs[ii] = None
+
+            ans.append(l)
+
+        return ans
+# Without TLE
+class Solution:
+    def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
+        a = {}
+        for s in strs:
+            k = "".join(sorted(s))
+            if k not in a:
+                a[k] = []
+            a[k].append(s)
+        return list(a.values())
+
