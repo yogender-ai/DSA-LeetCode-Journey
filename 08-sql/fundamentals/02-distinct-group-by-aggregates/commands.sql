@@ -1,3 +1,6 @@
+-- SQL Lesson 02 · DISTINCT, GROUP BY, aggregate functions
+-- Date   : 29 Mar 2026
+
 -- ============================================================
 -- 📅 MySQL Learning Session — 29 March 2026
 -- 🖥️  Server: MySQL 9.6.0 Community Server (GPL)

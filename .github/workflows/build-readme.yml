@@ -1,0 +1,35 @@
+# Rebuilds README.md + assets/*.svg from the solution file headers.
+# Runs on every push (so new problems appear in both views) and daily (so "current streak" stays honest).
+
+name: Build README
+
+on:
+  push:
+    branches: [main]
+    paths-ignore: ["README.md", "assets/**"]
+  schedule:
+    - cron: "45 18 * * *"   # 00:15 IST
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python scripts/build.py
+      - name: Commit if changed
+        run: |
+          if [ -n "$(git status --porcelain README.md assets)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+            git add README.md assets
+            git commit -m "chore: rebuild README and streak card"
+            git push
+          fi

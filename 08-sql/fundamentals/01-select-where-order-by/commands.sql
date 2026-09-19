@@ -1,3 +1,6 @@
+-- SQL Lesson 01 · SELECT, WHERE, BETWEEN, IN, LIKE, ORDER BY
+-- Date   : 27 Mar 2026
+
 -- ============================================================
 -- 📅 MySQL Learning Session — 27 March 2026
 -- 🖥️  Server: MySQL 9.6.0 Community Server (GPL)

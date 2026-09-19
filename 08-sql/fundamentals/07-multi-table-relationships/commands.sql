@@ -1,3 +1,6 @@
+-- SQL Lesson 07 · Foreign keys and multi-table modelling
+-- Date   : 15 May 2026
+
 create database movie;
 use movie;
 

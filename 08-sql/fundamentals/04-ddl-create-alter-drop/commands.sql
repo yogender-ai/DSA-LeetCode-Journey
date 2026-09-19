@@ -1,3 +1,6 @@
+-- SQL Lesson 04 · DDL: CREATE, ALTER, DROP, constraints
+-- Date   : 09 Apr 2026
+
 -- ============================================================
 -- 📅 MySQL Learning Session — 09 April 2026
 -- 🖥️  Server: MySQL 9.6.0 Community Server (GPL)

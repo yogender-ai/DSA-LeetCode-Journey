@@ -1,3 +1,6 @@
+-- SQL Lesson 03 · GROUP BY, HAVING, SUM / AVG / COUNT
+-- Date   : 30 Mar 2026
+
 -- 30 March 2026 SQL Practice
 
 -- 1. Show databases

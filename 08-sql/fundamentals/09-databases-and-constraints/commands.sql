@@ -1,3 +1,6 @@
+-- SQL Lesson 09 · CREATE DATABASE, PRIMARY KEY, UNIQUE, DEFAULT
+-- Date   : 18 May 2026
+
 show databases;
 
 use movie;

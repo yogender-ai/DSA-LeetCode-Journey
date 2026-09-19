@@ -1,4 +1,7 @@
-"""Python warm-up: map, strip, slicing, tuples, lists, sets, membership."""
+"""
+Python warm-up · map, strip, slicing, tuples, lists, sets, membership
+Written : 29 Jul 2026
+"""
 x=1
 y=2
 print(x ,y)
