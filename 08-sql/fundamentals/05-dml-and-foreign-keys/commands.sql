@@ -1,3 +1,6 @@
+-- SQL Lesson 05 · DML, FOREIGN KEY, ON DELETE, REPLACE
+-- Date   : 11 Apr 2026
+
 -- 11 April 2026 SQL Practice
 
 SHOW DATABASES;

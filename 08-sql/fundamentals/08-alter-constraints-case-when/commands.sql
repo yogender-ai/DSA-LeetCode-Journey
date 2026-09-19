@@ -1,3 +1,6 @@
+-- SQL Lesson 08 · ALTER TABLE, constraints, CASE WHEN
+-- Date   : 17 May 2026
+
 -- Database creation and selection
 CREATE DATABASE sql_practice_17_05_2026;
 USE sql_practice_17_05_2026;

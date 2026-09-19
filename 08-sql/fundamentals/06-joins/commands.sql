@@ -1,3 +1,6 @@
+-- SQL Lesson 06 · JOINs and multi-table queries
+-- Date   : 12 Apr 2026
+
 create database joins;
 use joins;
 
