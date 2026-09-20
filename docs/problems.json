@@ -1,0 +1,3923 @@
+{
+ "generated": "2026-09-20T23:26:36+05:30",
+ "user": "yashyogender",
+ "repo": "yogender-ai/DSA-LeetCode-Journey",
+ "stats": {
+  "solved": 277,
+  "easy": 159,
+  "medium": 109,
+  "hard": 9,
+  "streak": 74,
+  "longest": 74,
+  "active": 233,
+  "rating": 1585.61,
+  "topPct": 26.49,
+  "level": 17,
+  "rank": "Grandmaster Alchemist 👑",
+  "xp": 6670,
+  "repoEntries": 260
+ },
+ "problems": [
+  {
+   "num": 3498,
+   "title": "Reverse Degree of a String",
+   "difficulty": "Easy",
+   "pattern": "Strings",
+   "lang": "Python",
+   "path": "2026/09-September/20-09-26/3498-reverse-degree-of-a-string.py",
+   "url": "https://leetcode.com/problems/reverse-degree-of-a-string/",
+   "time": "O(n) · Runtime: 11 ms (Beats 20.3%)",
+   "space": "O(1) · Memory: 19.4 MB (Beats 19.1%)",
+   "dates": [
+    "2026-09-20"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 1047,
+   "title": "Remove All Adjacent Duplicates In String",
+   "difficulty": "Easy",
+   "pattern": "Stack",
+   "lang": "Python",
+   "path": "2026/09-September/20-09-26/1047-remove-all-adjacent-duplicates-in-string.py",
+   "url": "https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-09-19",
+    "2026-09-20"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 1047,
+   "title": "Remove All Adjacent Duplicates In String",
+   "difficulty": "Easy",
+   "pattern": "Stack",
+   "lang": "Python",
+   "path": "2026/09-September/19-09-26/1047-remove-all-adjacent-duplicates-in-string.py",
+   "url": "https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-09-19"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 443,
+   "title": "String Compression",
+   "difficulty": "Medium",
+   "pattern": "Two Pointers",
+   "lang": "Python",
+   "path": "2026/09-September/19-09-26/0443-string-compression.py",
+   "url": "https://leetcode.com/problems/string-compression/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-09-19"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 54,
+   "title": "Spiral Matrix",
+   "difficulty": "Medium",
+   "pattern": "Matrix / Simulation",
+   "lang": "Python",
+   "path": "2026/09-September/19-09-26/0054-spiral-matrix.py",
+   "url": "https://leetcode.com/problems/spiral-matrix/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-09-19"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": null,
+   "title": "String Building",
+   "difficulty": "Lesson",
+   "pattern": "Data Structures & Algorithms",
+   "lang": "Python",
+   "path": "2026/09-September/19-09-26/string-building.py",
+   "url": null,
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-09-19"
+   ],
+   "kind": "lesson"
+  },
+  {
+   "num": 73,
+   "title": "Set Matrix Zeroes",
+   "difficulty": "Medium",
+   "pattern": "Arrays & Hashing",
+   "lang": "Python",
+   "path": "2026/09-September/18-09-26/0073-set-matrix-zeroes.py",
+   "url": "https://leetcode.com/problems/set-matrix-zeroes/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-09-18"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 48,
+   "title": "Rotate Image",
+   "difficulty": "Medium",
+   "pattern": "Matrix / Simulation",
+   "lang": "Python",
+   "path": "2026/09-September/18-09-26/0048-rotate-image.py",
+   "url": "https://leetcode.com/problems/rotate-image/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-09-18"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 2149,
+   "title": "Rearrange Array Elements by Sign",
+   "difficulty": "Medium",
+   "pattern": "Two Pointers",
+   "lang": "Python",
+   "path": "2026/09-September/16-09-26/2149-rearrange-array-elements-by-sign.py",
+   "url": "https://leetcode.com/problems/rearrange-array-elements-by-sign/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-09-16"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 1287,
+   "title": "Element Appearing More Than 25% In Sorted Array",
+   "difficulty": "Easy",
+   "pattern": "Arrays & Hashing",
+   "lang": "Python",
+   "path": "2026/09-September/15-09-26/1287-element-appearing-more-than-25-in-sorted-array.py",
+   "url": "https://leetcode.com/problems/element-appearing-more-than-25-in-sorted-array/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-09-15"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 179,
+   "title": "Largest Number",
+   "difficulty": "Medium",
+   "pattern": "Sorting & STL",
+   "lang": "Python",
+   "path": "2026/09-September/15-09-26/0179-largest-number.py",
+   "url": "https://leetcode.com/problems/largest-number/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-09-15"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 56,
+   "title": "Merge Intervals",
+   "difficulty": "Medium",
+   "pattern": "Sorting & STL",
+   "lang": "Python",
+   "path": "2026/09-September/15-09-26/0056-merge-intervals.py",
+   "url": "https://leetcode.com/problems/merge-intervals/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-09-15"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 380,
+   "title": "Insert Delete GetRandom O(1)",
+   "difficulty": "Medium",
+   "pattern": "Arrays & Hashing",
+   "lang": "Python",
+   "path": "2026/09-September/12-09-26/0380-insert-delete-getrandom-o1.py",
+   "url": "https://leetcode.com/problems/insert-delete-getrandom-o1/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-09-12"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 380,
+   "title": "Insert Delete GetRandom O(1)",
+   "difficulty": "Medium",
+   "pattern": "Arrays & Hashing",
+   "lang": "Python",
+   "path": "2026/09-September/14-09-26/0380-insert-delete-getrandom-o1.py",
+   "url": "https://leetcode.com/problems/insert-delete-getrandom-o1/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-09-12"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": null,
+   "title": "Frequency Count",
+   "difficulty": "Lesson",
+   "pattern": "Data Structures & Algorithms",
+   "lang": "Python",
+   "path": "2026/09-September/12-09-26/frequency-count.py",
+   "url": null,
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-09-12"
+   ],
+   "kind": "lesson"
+  },
+  {
+   "num": null,
+   "title": "Hashing",
+   "difficulty": "Lesson",
+   "pattern": "Arrays & Hashing",
+   "lang": "Python",
+   "path": "2026/09-September/12-09-26/hashing.py",
+   "url": null,
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-09-12"
+   ],
+   "kind": "lesson"
+  },
+  {
+   "num": 974,
+   "title": "Subarray Sums Divisible by K",
+   "difficulty": "Medium",
+   "pattern": "Prefix Sum",
+   "lang": "Python",
+   "path": "2026/09-September/05-09-26/0974-subarray-sums-divisible-by-k.py",
+   "url": "https://leetcode.com/problems/subarray-sums-divisible-by-k/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-09-05"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 560,
+   "title": "Subarray Sum Equals K",
+   "difficulty": "Medium",
+   "pattern": "Prefix Sum",
+   "lang": "Python",
+   "path": "2026/09-September/05-09-26/0560-subarray-sum-equals-k.py",
+   "url": "https://leetcode.com/problems/subarray-sum-equals-k/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-09-05"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 303,
+   "title": "Range Sum Query - Immutable",
+   "difficulty": "Easy",
+   "pattern": "Prefix Sum",
+   "lang": "Python",
+   "path": "2026/09-September/04-09-26/0303-range-sum-query-immutable.py",
+   "url": "https://leetcode.com/problems/range-sum-query-immutable/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-09-04"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 15,
+   "title": "3Sum",
+   "difficulty": "Medium",
+   "pattern": "Two Pointers",
+   "lang": "Python",
+   "path": "2026/08-August/20-08-26/0015-3sum.py",
+   "url": "https://leetcode.com/problems/3sum/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-08-20"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 11,
+   "title": "Container With Most Water",
+   "difficulty": "Medium",
+   "pattern": "Two Pointers",
+   "lang": "Python",
+   "path": "2026/08-August/19-08-26/0011-container-with-most-water.py",
+   "url": "https://leetcode.com/problems/container-with-most-water/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-08-19"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 347,
+   "title": "Top K Frequent Elements",
+   "difficulty": "Medium",
+   "pattern": "Arrays & Hashing",
+   "lang": "Python",
+   "path": "2026/08-August/16-08-26/0347-top-k-frequent-elements.py",
+   "url": "https://leetcode.com/problems/top-k-frequent-elements/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-08-16"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 128,
+   "title": "Longest Consecutive Sequence",
+   "difficulty": "Medium",
+   "pattern": "Arrays & Hashing",
+   "lang": "Python",
+   "path": "2026/08-August/16-08-26/0128-longest-consecutive-sequence.py",
+   "url": "https://leetcode.com/problems/longest-consecutive-sequence/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-08-16"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 242,
+   "title": "Valid Anagram",
+   "difficulty": "Easy",
+   "pattern": "Hashing / Counting",
+   "lang": "Python",
+   "path": "2026/08-August/14-08-26/0242-valid-anagram.py",
+   "url": "https://leetcode.com/problems/valid-anagram/",
+   "time": "O(n^2) (list.index + pop)",
+   "space": "O(n)",
+   "dates": [
+    "2026-08-14"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 217,
+   "title": "Contains Duplicate",
+   "difficulty": "Easy",
+   "pattern": "Hash Map (frequency)",
+   "lang": "Python",
+   "path": "2026/08-August/14-08-26/0217-contains-duplicate.py",
+   "url": "https://leetcode.com/problems/contains-duplicate/",
+   "time": "O(n)",
+   "space": "O(n)",
+   "dates": [
+    "2026-08-14"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 49,
+   "title": "Group Anagrams",
+   "difficulty": "Medium",
+   "pattern": "Hash Map with sorted-string key",
+   "lang": "Python",
+   "path": "2026/08-August/14-08-26/0049-group-anagrams.py",
+   "url": "https://leetcode.com/problems/group-anagrams/",
+   "time": "O(n * k log k)  (approach 2)",
+   "space": "O(n * k)",
+   "dates": [
+    "2026-08-14"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 4,
+   "title": "Median of Two Sorted Arrays",
+   "difficulty": "Hard",
+   "pattern": "Binary Search",
+   "lang": "Python",
+   "path": "2026/08-August/14-08-26/0004-median-of-two-sorted-arrays.py",
+   "url": "https://leetcode.com/problems/median-of-two-sorted-arrays/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-08-14"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 3,
+   "title": "Longest Substring Without Repeating Characters",
+   "difficulty": "Medium",
+   "pattern": "Sliding Window",
+   "lang": "Python",
+   "path": "2026/08-August/14-08-26/0003-longest-substring-without-repeating-characters.py",
+   "url": "https://leetcode.com/problems/longest-substring-without-repeating-characters/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-08-14"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 2,
+   "title": "Add Two Numbers",
+   "difficulty": "Medium",
+   "pattern": "Math & Logic",
+   "lang": "Python",
+   "path": "2026/08-August/14-08-26/0002-add-two-numbers.py",
+   "url": "https://leetcode.com/problems/add-two-numbers/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-08-14"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 1,
+   "title": "Two Sum",
+   "difficulty": "Easy",
+   "pattern": "Arrays & Hashing",
+   "lang": "Python",
+   "path": "2026/08-August/14-08-26/0001-two-sum.py",
+   "url": "https://leetcode.com/problems/two-sum/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-08-14"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": null,
+   "title": "Without TLE",
+   "difficulty": "Lesson",
+   "pattern": "Arrays & Hashing",
+   "lang": "Python",
+   "path": "2026/08-August/14-08-26/without-tle.py",
+   "url": null,
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-08-14"
+   ],
+   "kind": "lesson"
+  },
+  {
+   "num": 31,
+   "title": "Next Permutation",
+   "difficulty": "Medium",
+   "pattern": "Arrays & Hashing",
+   "lang": "C++",
+   "path": "2026/07-July/29-07-26/0031-next-permutation.cpp",
+   "url": "https://leetcode.com/problems/next-permutation/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-07-29"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": null,
+   "title": "Basics",
+   "difficulty": "Lesson",
+   "pattern": "Data Structures & Algorithms",
+   "lang": "Python",
+   "path": "2026/07-July/29-07-26/basics.py",
+   "url": null,
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-07-29"
+   ],
+   "kind": "lesson"
+  },
+  {
+   "num": null,
+   "title": "Kmp Pattern Search",
+   "difficulty": "Lesson",
+   "pattern": "Data Structures & Algorithms",
+   "lang": "C++",
+   "path": "2026/07-July/29-07-26/kmp-pattern-search.cpp",
+   "url": null,
+   "time": "O(n + m)",
+   "space": "O(1)",
+   "dates": [
+    "2026-07-29"
+   ],
+   "kind": "lesson"
+  },
+  {
+   "num": null,
+   "title": "Naive Pattern Search",
+   "difficulty": "Lesson",
+   "pattern": "Data Structures & Algorithms",
+   "lang": "C++",
+   "path": "2026/07-July/29-07-26/naive-pattern-search.cpp",
+   "url": null,
+   "time": "O(n * m)",
+   "space": "O(1)",
+   "dates": [
+    "2026-07-29"
+   ],
+   "kind": "lesson"
+  },
+  {
+   "num": null,
+   "title": "Partition Zeros",
+   "difficulty": "Lesson",
+   "pattern": "Data Structures & Algorithms",
+   "lang": "C++",
+   "path": "2026/07-July/29-07-26/partition-zeros.cpp",
+   "url": null,
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-07-29"
+   ],
+   "kind": "lesson"
+  },
+  {
+   "num": null,
+   "title": "Sort Vs Stable Sort",
+   "difficulty": "Lesson",
+   "pattern": "Data Structures & Algorithms",
+   "lang": "C++",
+   "path": "2026/07-July/29-07-26/sort-vs-stable-sort.cpp",
+   "url": null,
+   "time": "O(n log n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-07-29"
+   ],
+   "kind": "lesson"
+  },
+  {
+   "num": null,
+   "title": "String Basics",
+   "difficulty": "Lesson",
+   "pattern": "Data Structures & Algorithms",
+   "lang": "C++",
+   "path": "2026/07-July/29-07-26/string-basics.cpp",
+   "url": null,
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-07-29"
+   ],
+   "kind": "lesson"
+  },
+  {
+   "num": 1,
+   "title": "Two Sum",
+   "difficulty": "Easy",
+   "pattern": "Sorting + Two Pointers",
+   "lang": "Python",
+   "path": "2026/07-July/28-07-26/0001-two-sum.py",
+   "url": "https://leetcode.com/problems/two-sum/",
+   "time": "O(n log n)",
+   "space": "O(n)",
+   "dates": [
+    "2026-07-28"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 1789,
+   "title": "Primary Department for Each Employee",
+   "difficulty": "Easy",
+   "pattern": "SQL",
+   "lang": "SQL",
+   "path": "2026/07-July/17-07-26/1789-primary-department-for-each-employee.sql",
+   "url": "https://leetcode.com/problems/primary-department-for-each-employee/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-07-17"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 610,
+   "title": "Triangle Judgement",
+   "difficulty": "Easy",
+   "pattern": "SQL",
+   "lang": "SQL",
+   "path": "2026/07-July/17-07-26/0610-triangle-judgement.sql",
+   "url": "https://leetcode.com/problems/triangle-judgement/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-07-17"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 180,
+   "title": "Consecutive Numbers",
+   "difficulty": "Medium",
+   "pattern": "SQL",
+   "lang": "SQL",
+   "path": "2026/07-July/17-07-26/0180-consecutive-numbers.sql",
+   "url": "https://leetcode.com/problems/consecutive-numbers/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-07-17"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 619,
+   "title": "Biggest Single Number",
+   "difficulty": "Easy",
+   "pattern": "SQL",
+   "lang": "SQL",
+   "path": "2026/07-July/16-07-26/0619-biggest-single-number.sql",
+   "url": "https://leetcode.com/problems/biggest-single-number/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-07-16"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 1070,
+   "title": "Product Sales Analysis III",
+   "difficulty": "Medium",
+   "pattern": "SQL",
+   "lang": "SQL",
+   "path": "2026/07-July/14-07-26/1070-product-sales-analysis-iii.sql",
+   "url": "https://leetcode.com/problems/product-sales-analysis-iii/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-07-14"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 1141,
+   "title": "User Activity for the Past 30 Days I",
+   "difficulty": "Easy",
+   "pattern": "SQL",
+   "lang": "SQL",
+   "path": "2026/07-July/12-07-26/1141-user-activity-for-the-past-30-days-i.sql",
+   "url": "https://leetcode.com/problems/user-activity-for-the-past-30-days-i/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-07-12"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 550,
+   "title": "Game Play Analysis IV",
+   "difficulty": "Medium",
+   "pattern": "SQL",
+   "lang": "SQL",
+   "path": "2026/07-July/11-07-26/0550-game-play-analysis-iv.sql",
+   "url": "https://leetcode.com/problems/game-play-analysis-iv/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-07-11"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 3314,
+   "title": "Construct the Minimum Bitwise Array I",
+   "difficulty": "Easy",
+   "pattern": "Bit Manipulation",
+   "lang": "C++",
+   "path": "2026/06-June/26-06-26/3314-construct-the-minimum-bitwise-array-i.cpp",
+   "url": "https://leetcode.com/problems/construct-the-minimum-bitwise-array-i/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-06-26"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 2356,
+   "title": "Number of Unique Subjects Taught by Each Teacher",
+   "difficulty": "Easy",
+   "pattern": "Arrays & Hashing",
+   "lang": "C++",
+   "path": "2026/06-June/26-06-26/2356-number-of-unique-subjects-taught-by-each-teacher.cpp",
+   "url": "https://leetcode.com/problems/number-of-unique-subjects-taught-by-each-teacher/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-06-26"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 1929,
+   "title": "Concatenation of Array",
+   "difficulty": "Easy",
+   "pattern": "Arrays & Hashing",
+   "lang": "C++",
+   "path": "2026/06-June/26-06-26/1929-concatenation-of-array.cpp",
+   "url": "https://leetcode.com/problems/concatenation-of-array/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-06-26"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 1752,
+   "title": "Check if Array Is Sorted and Rotated",
+   "difficulty": "Easy",
+   "pattern": "Arrays & Hashing",
+   "lang": "C++",
+   "path": "2026/06-June/26-06-26/1752-check-if-array-is-sorted-and-rotated.cpp",
+   "url": "https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-06-26"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 1539,
+   "title": "Kth Missing Positive Number",
+   "difficulty": "Easy",
+   "pattern": "Arrays & Hashing",
+   "lang": "C++",
+   "path": "2026/06-June/26-06-26/1539-kth-missing-positive-number.cpp",
+   "url": "https://leetcode.com/problems/kth-missing-positive-number/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-06-26"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 1470,
+   "title": "Shuffle the Array",
+   "difficulty": "Easy",
+   "pattern": "Arrays & Hashing",
+   "lang": "C++",
+   "path": "2026/06-June/26-06-26/1470-shuffle-the-array.cpp",
+   "url": "https://leetcode.com/problems/shuffle-the-array/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-06-26"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 1365,
+   "title": "How Many Numbers Are Smaller Than the Current Number",
+   "difficulty": "Easy",
+   "pattern": "Arrays & Hashing",
+   "lang": "C++",
+   "path": "2026/06-June/26-06-26/1365-how-many-numbers-are-smaller-than-the-current-number.cpp",
+   "url": "https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-06-26"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 1193,
+   "title": "Monthly Transactions I",
+   "difficulty": "Medium",
+   "pattern": "Arrays & Hashing",
+   "lang": "C++",
+   "path": "2026/06-June/26-06-26/1193-monthly-transactions-i.cpp",
+   "url": "https://leetcode.com/problems/monthly-transactions-i/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-06-26"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 1174,
+   "title": "Immediate Food Delivery II",
+   "difficulty": "Medium",
+   "pattern": "Arrays & Hashing",
+   "lang": "C++",
+   "path": "2026/06-June/26-06-26/1174-immediate-food-delivery-ii.cpp",
+   "url": "https://leetcode.com/problems/immediate-food-delivery-ii/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-06-26"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 1021,
+   "title": "Remove Outermost Parentheses",
+   "difficulty": "Easy",
+   "pattern": "Arrays & Hashing",
+   "lang": "C++",
+   "path": "2026/06-June/26-06-26/1021-remove-outermost-parentheses.cpp",
+   "url": "https://leetcode.com/problems/remove-outermost-parentheses/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-06-26"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 796,
+   "title": "Rotate String",
+   "difficulty": "Easy",
+   "pattern": "Arrays & Hashing",
+   "lang": "C++",
+   "path": "2026/06-June/26-06-26/0796-rotate-string.cpp",
+   "url": "https://leetcode.com/problems/rotate-string/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-06-26"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 728,
+   "title": "Self Dividing Numbers",
+   "difficulty": "Easy",
+   "pattern": "Arrays & Hashing",
+   "lang": "C++",
+   "path": "2026/06-June/26-06-26/0728-self-dividing-numbers.cpp",
+   "url": "https://leetcode.com/problems/self-dividing-numbers/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-06-26"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 704,
+   "title": "Binary Search",
+   "difficulty": "Easy",
+   "pattern": "Arrays & Hashing",
+   "lang": "C++",
+   "path": "2026/06-June/26-06-26/0704-binary-search.cpp",
+   "url": "https://leetcode.com/problems/binary-search/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-06-26"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 645,
+   "title": "Set Mismatch",
+   "difficulty": "Easy",
+   "pattern": "Arrays & Hashing",
+   "lang": "C++",
+   "path": "2026/06-June/26-06-26/0645-set-mismatch.cpp",
+   "url": "https://leetcode.com/problems/set-mismatch/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-06-26"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 643,
+   "title": "Maximum Average Subarray I",
+   "difficulty": "Easy",
+   "pattern": "Arrays & Hashing",
+   "lang": "C++",
+   "path": "2026/06-June/26-06-26/0643-maximum-average-subarray-i.cpp",
+   "url": "https://leetcode.com/problems/maximum-average-subarray-i/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-06-26"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 485,
+   "title": "Max Consecutive Ones",
+   "difficulty": "Easy",
+   "pattern": "Arrays & Hashing",
+   "lang": "C++",
+   "path": "2026/06-June/26-06-26/0485-max-consecutive-ones.cpp",
+   "url": "https://leetcode.com/problems/max-consecutive-ones/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-06-26"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 448,
+   "title": "Find All Numbers Disappeared in an Array",
+   "difficulty": "Easy",
+   "pattern": "Arrays & Hashing",
+   "lang": "C++",
+   "path": "2026/06-June/26-06-26/0448-find-all-numbers-disappeared-in-an-array.cpp",
+   "url": "https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-06-26"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 414,
+   "title": "Third Maximum Number",
+   "difficulty": "Easy",
+   "pattern": "Sorting & STL",
+   "lang": "C++",
+   "path": "2026/06-June/26-06-26/0414-third-maximum-number.cpp",
+   "url": "https://leetcode.com/problems/third-maximum-number/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-06-26"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 389,
+   "title": "Find the Difference",
+   "difficulty": "Easy",
+   "pattern": "Arrays & Hashing",
+   "lang": "C++",
+   "path": "2026/06-June/26-06-26/0389-find-the-difference.cpp",
+   "url": "https://leetcode.com/problems/find-the-difference/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-06-26"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 387,
+   "title": "First Unique Character in a String",
+   "difficulty": "Easy",
+   "pattern": "Arrays & Hashing",
+   "lang": "C++",
+   "path": "2026/06-June/26-06-26/0387-first-unique-character-in-a-string.cpp",
+   "url": "https://leetcode.com/problems/first-unique-character-in-a-string/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-06-26"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 383,
+   "title": "Ransom Note",
+   "difficulty": "Easy",
+   "pattern": "Arrays & Hashing",
+   "lang": "C++",
+   "path": "2026/06-June/26-06-26/0383-ransom-note.cpp",
+   "url": "https://leetcode.com/problems/ransom-note/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-06-26"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 349,
+   "title": "Intersection of Two Arrays",
+   "difficulty": "Easy",
+   "pattern": "Two Pointers",
+   "lang": "C++",
+   "path": "2026/06-June/26-06-26/0349-intersection-of-two-arrays.cpp",
+   "url": "https://leetcode.com/problems/intersection-of-two-arrays/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-06-26"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 303,
+   "title": "Range Sum Query - Immutable",
+   "difficulty": "Easy",
+   "pattern": "Arrays & Hashing",
+   "lang": "C++",
+   "path": "2026/06-June/26-06-26/0303-range-sum-query-immutable.cpp",
+   "url": "https://leetcode.com/problems/range-sum-query-immutable/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-06-26"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 283,
+   "title": "Move Zeroes",
+   "difficulty": "Easy",
+   "pattern": "Two Pointers",
+   "lang": "C++",
+   "path": "2026/06-June/26-06-26/0283-move-zeroes.cpp",
+   "url": "https://leetcode.com/problems/move-zeroes/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-06-26"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 219,
+   "title": "Contains Duplicate II",
+   "difficulty": "Easy",
+   "pattern": "Arrays & Hashing",
+   "lang": "C++",
+   "path": "2026/06-June/26-06-26/0219-contains-duplicate-ii.cpp",
+   "url": "https://leetcode.com/problems/contains-duplicate-ii/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-06-26"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 217,
+   "title": "Contains Duplicate",
+   "difficulty": "Easy",
+   "pattern": "Arrays & Hashing",
+   "lang": "C++",
+   "path": "2026/06-June/26-06-26/0217-contains-duplicate.cpp",
+   "url": "https://leetcode.com/problems/contains-duplicate/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-06-26"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 205,
+   "title": "Isomorphic Strings",
+   "difficulty": "Easy",
+   "pattern": "Arrays & Hashing",
+   "lang": "C++",
+   "path": "2026/06-June/26-06-26/0205-isomorphic-strings.cpp",
+   "url": "https://leetcode.com/problems/isomorphic-strings/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-06-26"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 145,
+   "title": "Binary Tree Postorder Traversal",
+   "difficulty": "Easy",
+   "pattern": "Stack",
+   "lang": "C++",
+   "path": "2026/06-June/26-06-26/0145-binary-tree-postorder-traversal.cpp",
+   "url": "https://leetcode.com/problems/binary-tree-postorder-traversal/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-06-26"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 144,
+   "title": "Binary Tree Preorder Traversal",
+   "difficulty": "Easy",
+   "pattern": "Stack",
+   "lang": "C++",
+   "path": "2026/06-June/26-06-26/0144-binary-tree-preorder-traversal.cpp",
+   "url": "https://leetcode.com/problems/binary-tree-preorder-traversal/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-06-26"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 121,
+   "title": "Best Time to Buy and Sell Stock",
+   "difficulty": "Easy",
+   "pattern": "Dynamic Programming",
+   "lang": "C++",
+   "path": "2026/06-June/26-06-26/0121-best-time-to-buy-and-sell-stock.cpp",
+   "url": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-06-26"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 104,
+   "title": "Maximum Depth of Binary Tree",
+   "difficulty": "Easy",
+   "pattern": "Trees & BST",
+   "lang": "C++",
+   "path": "2026/06-June/26-06-26/0104-maximum-depth-of-binary-tree.cpp",
+   "url": "https://leetcode.com/problems/maximum-depth-of-binary-tree/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-06-26"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 100,
+   "title": "Same Tree",
+   "difficulty": "Easy",
+   "pattern": "Trees & BST",
+   "lang": "C++",
+   "path": "2026/06-June/26-06-26/0100-same-tree.cpp",
+   "url": "https://leetcode.com/problems/same-tree/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-06-26"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 94,
+   "title": "Binary Tree Inorder Traversal",
+   "difficulty": "Easy",
+   "pattern": "Stack",
+   "lang": "C++",
+   "path": "2026/06-June/26-06-26/0094-binary-tree-inorder-traversal.cpp",
+   "url": "https://leetcode.com/problems/binary-tree-inorder-traversal/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-06-26"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 88,
+   "title": "Merge Sorted Array",
+   "difficulty": "Easy",
+   "pattern": "Two Pointers",
+   "lang": "C++",
+   "path": "2026/06-June/26-06-26/0088-merge-sorted-array.cpp",
+   "url": "https://leetcode.com/problems/merge-sorted-array/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-06-26"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 83,
+   "title": "Remove Duplicates from Sorted List",
+   "difficulty": "Easy",
+   "pattern": "Data Structures & Algorithms",
+   "lang": "C++",
+   "path": "2026/06-June/26-06-26/0083-remove-duplicates-from-sorted-list.cpp",
+   "url": "https://leetcode.com/problems/remove-duplicates-from-sorted-list/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-06-26"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 69,
+   "title": "Sqrt(x)",
+   "difficulty": "Easy",
+   "pattern": "Binary Search",
+   "lang": "C++",
+   "path": "2026/06-June/26-06-26/0069-sqrtx.cpp",
+   "url": "https://leetcode.com/problems/sqrtx/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-06-26"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 53,
+   "title": "Maximum Subarray",
+   "difficulty": "Medium",
+   "pattern": "Arrays & Hashing",
+   "lang": "C++",
+   "path": "2026/06-June/26-06-26/0053-maximum-subarray.cpp",
+   "url": "https://leetcode.com/problems/maximum-subarray/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-06-26"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 26,
+   "title": "Remove Duplicates from Sorted Array",
+   "difficulty": "Easy",
+   "pattern": "Arrays & Hashing",
+   "lang": "C++",
+   "path": "2026/06-June/26-06-26/0026-remove-duplicates-from-sorted-array.cpp",
+   "url": "https://leetcode.com/problems/remove-duplicates-from-sorted-array/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-06-26"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 1,
+   "title": "Two Sum",
+   "difficulty": "Easy",
+   "pattern": "Arrays & Hashing",
+   "lang": "C++",
+   "path": "2026/06-June/26-06-26/0001-two-sum.cpp",
+   "url": "https://leetcode.com/problems/two-sum/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-06-26"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": null,
+   "title": "Arrays",
+   "difficulty": "Lesson",
+   "pattern": "Data Structures & Algorithms",
+   "lang": "C++",
+   "path": "2026/06-June/26-06-26/arrays.cpp",
+   "url": null,
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-06-26"
+   ],
+   "kind": "lesson"
+  },
+  {
+   "num": null,
+   "title": "Basic Recursion",
+   "difficulty": "Lesson",
+   "pattern": "Data Structures & Algorithms",
+   "lang": "C++",
+   "path": "2026/06-June/26-06-26/basic-recursion.cpp",
+   "url": null,
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-06-26"
+   ],
+   "kind": "lesson"
+  },
+  {
+   "num": null,
+   "title": "Basic",
+   "difficulty": "Lesson",
+   "pattern": "Data Structures & Algorithms",
+   "lang": "C++",
+   "path": "2026/06-June/26-06-26/basic.cpp",
+   "url": null,
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-06-26"
+   ],
+   "kind": "lesson"
+  },
+  {
+   "num": null,
+   "title": "Binary Tree",
+   "difficulty": "Lesson",
+   "pattern": "Data Structures & Algorithms",
+   "lang": "C++",
+   "path": "2026/06-June/26-06-26/binary-tree.cpp",
+   "url": null,
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-06-26"
+   ],
+   "kind": "lesson"
+  },
+  {
+   "num": null,
+   "title": "Bst Deletion",
+   "difficulty": "Lesson",
+   "pattern": "Data Structures & Algorithms",
+   "lang": "C++",
+   "path": "2026/06-June/26-06-26/bst-deletion.cpp",
+   "url": null,
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-06-26"
+   ],
+   "kind": "lesson"
+  },
+  {
+   "num": null,
+   "title": "Bst Insertion",
+   "difficulty": "Lesson",
+   "pattern": "Data Structures & Algorithms",
+   "lang": "C++",
+   "path": "2026/06-June/26-06-26/bst-insertion.cpp",
+   "url": null,
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-06-26"
+   ],
+   "kind": "lesson"
+  },
+  {
+   "num": null,
+   "title": "Bst Traversal",
+   "difficulty": "Lesson",
+   "pattern": "Data Structures & Algorithms",
+   "lang": "C++",
+   "path": "2026/06-June/26-06-26/bst-traversal.cpp",
+   "url": null,
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-06-26"
+   ],
+   "kind": "lesson"
+  },
+  {
+   "num": null,
+   "title": "Bubblesort",
+   "difficulty": "Lesson",
+   "pattern": "Data Structures & Algorithms",
+   "lang": "C++",
+   "path": "2026/06-June/26-06-26/bubblesort.cpp",
+   "url": null,
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-06-26"
+   ],
+   "kind": "lesson"
+  },
+  {
+   "num": null,
+   "title": "Creation",
+   "difficulty": "Lesson",
+   "pattern": "Data Structures & Algorithms",
+   "lang": "C++",
+   "path": "2026/06-June/26-06-26/creation.cpp",
+   "url": null,
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-06-26"
+   ],
+   "kind": "lesson"
+  },
+  {
+   "num": null,
+   "title": "H1",
+   "difficulty": "Lesson",
+   "pattern": "Data Structures & Algorithms",
+   "lang": "C++",
+   "path": "2026/06-June/26-06-26/h1.cpp",
+   "url": null,
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-06-26"
+   ],
+   "kind": "lesson"
+  },
+  {
+   "num": null,
+   "title": "Insertion Sorting",
+   "difficulty": "Lesson",
+   "pattern": "Data Structures & Algorithms",
+   "lang": "C++",
+   "path": "2026/06-June/26-06-26/insertion-sorting.cpp",
+   "url": null,
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-06-26"
+   ],
+   "kind": "lesson"
+  },
+  {
+   "num": null,
+   "title": "Main",
+   "difficulty": "Lesson",
+   "pattern": "Data Structures & Algorithms",
+   "lang": "C++",
+   "path": "2026/06-June/26-06-26/main.cpp",
+   "url": null,
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-06-26"
+   ],
+   "kind": "lesson"
+  },
+  {
+   "num": null,
+   "title": "Mapping Sets",
+   "difficulty": "Lesson",
+   "pattern": "Data Structures & Algorithms",
+   "lang": "C++",
+   "path": "2026/06-June/26-06-26/mapping-sets.cpp",
+   "url": null,
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-06-26"
+   ],
+   "kind": "lesson"
+  },
+  {
+   "num": null,
+   "title": "Merge Sort",
+   "difficulty": "Lesson",
+   "pattern": "Data Structures & Algorithms",
+   "lang": "C++",
+   "path": "2026/06-June/26-06-26/merge-sort.cpp",
+   "url": null,
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-06-26"
+   ],
+   "kind": "lesson"
+  },
+  {
+   "num": null,
+   "title": "Numpy Demo",
+   "difficulty": "Lesson",
+   "pattern": "Data Structures & Algorithms",
+   "lang": "Python",
+   "path": "2026/06-June/26-06-26/numpy-demo.py",
+   "url": null,
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-06-26"
+   ],
+   "kind": "lesson"
+  },
+  {
+   "num": null,
+   "title": "Opencv Image To Array",
+   "difficulty": "Lesson",
+   "pattern": "Data Structures & Algorithms",
+   "lang": "Python",
+   "path": "2026/06-June/26-06-26/opencv-image-to-array.py",
+   "url": null,
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-06-26"
+   ],
+   "kind": "lesson"
+  },
+  {
+   "num": null,
+   "title": "Producer",
+   "difficulty": "Lesson",
+   "pattern": "Data Structures & Algorithms",
+   "lang": "Python",
+   "path": "2026/06-June/26-06-26/producer.py",
+   "url": null,
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-06-26"
+   ],
+   "kind": "lesson"
+  },
+  {
+   "num": null,
+   "title": "Python Case2 Is Wrong",
+   "difficulty": "Lesson",
+   "pattern": "Data Structures & Algorithms",
+   "lang": "C++",
+   "path": "2026/06-June/26-06-26/python-case2-is-wrong.cpp",
+   "url": null,
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-06-26"
+   ],
+   "kind": "lesson"
+  },
+  {
+   "num": null,
+   "title": "Q1. Best Reachable Tower©Leetcode(17 01)",
+   "difficulty": "Lesson",
+   "pattern": "Data Structures & Algorithms",
+   "lang": "C++",
+   "path": "2026/06-June/26-06-26/q1-best-reachable-tower-leetcode-17-01.cpp",
+   "url": null,
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-06-26"
+   ],
+   "kind": "lesson"
+  },
+  {
+   "num": null,
+   "title": "Quick Sort",
+   "difficulty": "Lesson",
+   "pattern": "Data Structures & Algorithms",
+   "lang": "C++",
+   "path": "2026/06-June/26-06-26/quick-sort.cpp",
+   "url": null,
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-06-26"
+   ],
+   "kind": "lesson"
+  },
+  {
+   "num": null,
+   "title": "Secondlargest",
+   "difficulty": "Lesson",
+   "pattern": "Data Structures & Algorithms",
+   "lang": "C++",
+   "path": "2026/06-June/26-06-26/secondlargest.cpp",
+   "url": null,
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-06-26"
+   ],
+   "kind": "lesson"
+  },
+  {
+   "num": null,
+   "title": "Selection Sort",
+   "difficulty": "Lesson",
+   "pattern": "Data Structures & Algorithms",
+   "lang": "C++",
+   "path": "2026/06-June/26-06-26/selection-sort.cpp",
+   "url": null,
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-06-26"
+   ],
+   "kind": "lesson"
+  },
+  {
+   "num": null,
+   "title": "Selectionsorting",
+   "difficulty": "Lesson",
+   "pattern": "Data Structures & Algorithms",
+   "lang": "C++",
+   "path": "2026/06-June/26-06-26/selectionsorting.cpp",
+   "url": null,
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-06-26"
+   ],
+   "kind": "lesson"
+  },
+  {
+   "num": null,
+   "title": "Stack",
+   "difficulty": "Lesson",
+   "pattern": "Data Structures & Algorithms",
+   "lang": "C++",
+   "path": "2026/06-June/26-06-26/stack.cpp",
+   "url": null,
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-06-26"
+   ],
+   "kind": "lesson"
+  },
+  {
+   "num": null,
+   "title": "String",
+   "difficulty": "Lesson",
+   "pattern": "Data Structures & Algorithms",
+   "lang": "Python",
+   "path": "2026/06-June/26-06-26/string.py",
+   "url": null,
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-06-26"
+   ],
+   "kind": "lesson"
+  },
+  {
+   "num": null,
+   "title": "Trees",
+   "difficulty": "Lesson",
+   "pattern": "Data Structures & Algorithms",
+   "lang": "C++",
+   "path": "2026/06-June/26-06-26/trees.cpp",
+   "url": null,
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-06-26"
+   ],
+   "kind": "lesson"
+  },
+  {
+   "num": null,
+   "title": "Treesmaster",
+   "difficulty": "Lesson",
+   "pattern": "Data Structures & Algorithms",
+   "lang": "C++",
+   "path": "2026/06-June/26-06-26/treesmaster.cpp",
+   "url": null,
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-06-26"
+   ],
+   "kind": "lesson"
+  },
+  {
+   "num": null,
+   "title": "Array Searching",
+   "difficulty": "Lesson",
+   "pattern": "Data Structures & Algorithms",
+   "lang": "C++",
+   "path": "2026/06-June/23-06-26/array-searching.cpp",
+   "url": null,
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-06-23"
+   ],
+   "kind": "lesson"
+  },
+  {
+   "num": null,
+   "title": "Two Pointer",
+   "difficulty": "Lesson",
+   "pattern": "Data Structures & Algorithms",
+   "lang": "C++",
+   "path": "2026/06-June/18-06-26/two-pointer.cpp",
+   "url": null,
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-06-18"
+   ],
+   "kind": "lesson"
+  },
+  {
+   "num": null,
+   "title": "Prefix",
+   "difficulty": "Lesson",
+   "pattern": "Data Structures & Algorithms",
+   "lang": "C++",
+   "path": "2026/05-May/26-05-26/prefix.cpp",
+   "url": null,
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-05-26"
+   ],
+   "kind": "lesson"
+  },
+  {
+   "num": 1934,
+   "title": "Confirmation Rate",
+   "difficulty": "Medium",
+   "pattern": "SQL",
+   "lang": "SQL",
+   "path": "2026/05-May/22-05-26/1934-confirmation-rate.sql",
+   "url": "https://leetcode.com/problems/confirmation-rate/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-05-22"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 1633,
+   "title": "Percentage of Users Attended a Contest",
+   "difficulty": "Easy",
+   "pattern": "SQL",
+   "lang": "SQL",
+   "path": "2026/05-May/22-05-26/1633-percentage-of-users-attended-a-contest.sql",
+   "url": "https://leetcode.com/problems/percentage-of-users-attended-a-contest/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-05-22"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 1251,
+   "title": "Average Selling Price",
+   "difficulty": "Easy",
+   "pattern": "SQL",
+   "lang": "SQL",
+   "path": "2026/05-May/22-05-26/1251-average-selling-price.sql",
+   "url": "https://leetcode.com/problems/average-selling-price/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-05-22"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 1211,
+   "title": "Queries Quality and Percentage",
+   "difficulty": "Easy",
+   "pattern": "SQL",
+   "lang": "SQL",
+   "path": "2026/05-May/22-05-26/1211-queries-quality-and-percentage.sql",
+   "url": "https://leetcode.com/problems/queries-quality-and-percentage/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-05-22"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 1193,
+   "title": "Monthly Transactions I",
+   "difficulty": "Medium",
+   "pattern": "SQL",
+   "lang": "SQL",
+   "path": "2026/05-May/22-05-26/1193-monthly-transactions-i.sql",
+   "url": "https://leetcode.com/problems/monthly-transactions-i/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-05-22"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 1075,
+   "title": "Project Employees I",
+   "difficulty": "Easy",
+   "pattern": "SQL",
+   "lang": "SQL",
+   "path": "2026/05-May/22-05-26/1075-project-employees-i.sql",
+   "url": "https://leetcode.com/problems/project-employees-i/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-05-22"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 570,
+   "title": "Managers with at Least 5 Direct Reports",
+   "difficulty": "Medium",
+   "pattern": "SQL",
+   "lang": "SQL",
+   "path": "2026/05-May/22-05-26/0570-managers-with-at-least-5-direct-reports.sql",
+   "url": "https://leetcode.com/problems/managers-with-at-least-5-direct-reports/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-05-22"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 1661,
+   "title": "Average Time of Process per Machine",
+   "difficulty": "Easy",
+   "pattern": "SQL",
+   "lang": "SQL",
+   "path": "2026/05-May/21-05-26/1661-average-time-of-process-per-machine.sql",
+   "url": "https://leetcode.com/problems/average-time-of-process-per-machine/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-05-21"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 577,
+   "title": "Employee Bonus",
+   "difficulty": "Easy",
+   "pattern": "SQL",
+   "lang": "SQL",
+   "path": "2026/05-May/21-05-26/0577-employee-bonus.sql",
+   "url": "https://leetcode.com/problems/employee-bonus/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-05-21"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 167,
+   "title": "Two Sum II - Input Array Is Sorted",
+   "difficulty": "Medium",
+   "pattern": "Two Pointers",
+   "lang": "C++",
+   "path": "2026/05-May/20-05-26/0167-two-sum-ii-input-array-is-sorted.cpp",
+   "url": "https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-05-20"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 15,
+   "title": "3Sum",
+   "difficulty": "Medium",
+   "pattern": "Two Pointers",
+   "lang": "C++",
+   "path": "2026/05-May/20-05-26/0015-3sum.cpp",
+   "url": "https://leetcode.com/problems/3sum/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-05-20"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": null,
+   "title": "Two Pointer Revision",
+   "difficulty": "Lesson",
+   "pattern": "Two Pointers",
+   "lang": "C++",
+   "path": "2026/05-May/19-05-26/revision.cpp",
+   "url": null,
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-05-19"
+   ],
+   "kind": "lesson"
+  },
+  {
+   "num": null,
+   "title": "Commands",
+   "difficulty": "Lesson",
+   "pattern": "Data Structures & Algorithms",
+   "lang": "SQL",
+   "path": "2026/05-May/18-05-26/commands.sql",
+   "url": null,
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-05-18"
+   ],
+   "kind": "lesson"
+  },
+  {
+   "num": null,
+   "title": "Dijkstra",
+   "difficulty": "Lesson",
+   "pattern": "Data Structures & Algorithms",
+   "lang": "C++",
+   "path": "2026/05-May/18-05-26/dijkstra.cpp",
+   "url": null,
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-05-18"
+   ],
+   "kind": "lesson"
+  },
+  {
+   "num": 197,
+   "title": "Rising Temperature",
+   "difficulty": "Easy",
+   "pattern": "SQL",
+   "lang": "SQL",
+   "path": "2026/05-May/17-05-26/0197-rising-temperature.sql",
+   "url": "https://leetcode.com/problems/rising-temperature/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-05-17"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": null,
+   "title": "Commands",
+   "difficulty": "Lesson",
+   "pattern": "Data Structures & Algorithms",
+   "lang": "SQL",
+   "path": "2026/05-May/17-05-26/commands.sql",
+   "url": null,
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-05-17"
+   ],
+   "kind": "lesson"
+  },
+  {
+   "num": null,
+   "title": "Commands",
+   "difficulty": "Lesson",
+   "pattern": "Data Structures & Algorithms",
+   "lang": "SQL",
+   "path": "2026/05-May/15-05-26/commands.sql",
+   "url": null,
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-05-15"
+   ],
+   "kind": "lesson"
+  },
+  {
+   "num": null,
+   "title": "Queue",
+   "difficulty": "Lesson",
+   "pattern": "Data Structures & Algorithms",
+   "lang": "C++",
+   "path": "2026/05-May/09-05-26/queue.cpp",
+   "url": null,
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-05-09"
+   ],
+   "kind": "lesson"
+  },
+  {
+   "num": null,
+   "title": "Topo Sorting",
+   "difficulty": "Lesson",
+   "pattern": "Data Structures & Algorithms",
+   "lang": "C++",
+   "path": "2026/05-May/02-05-26/topo-sorting.cpp",
+   "url": null,
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-05-02"
+   ],
+   "kind": "lesson"
+  },
+  {
+   "num": null,
+   "title": "Cycyle Detection Directed",
+   "difficulty": "Lesson",
+   "pattern": "Data Structures & Algorithms",
+   "lang": "C++",
+   "path": "2026/05-May/01-05-26/cycyle-detection-directed.cpp",
+   "url": null,
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-05-01"
+   ],
+   "kind": "lesson"
+  },
+  {
+   "num": null,
+   "title": "Topological Sort",
+   "difficulty": "Lesson",
+   "pattern": "Data Structures & Algorithms",
+   "lang": "C++",
+   "path": "2026/04-April/22-04-26/topological-sort.cpp",
+   "url": null,
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-04-22"
+   ],
+   "kind": "lesson"
+  },
+  {
+   "num": null,
+   "title": "Cycle Detection",
+   "difficulty": "Lesson",
+   "pattern": "Data Structures & Algorithms",
+   "lang": "C++",
+   "path": "2026/04-April/21-04-26/cycle-detection.cpp",
+   "url": null,
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-04-21"
+   ],
+   "kind": "lesson"
+  },
+  {
+   "num": 620,
+   "title": "Not Boring Movies",
+   "difficulty": "Easy",
+   "pattern": "SQL",
+   "lang": "SQL",
+   "path": "2026/04-April/18-04-26/0620-not-boring-movies.sql",
+   "url": "https://leetcode.com/problems/not-boring-movies/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-04-18"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 584,
+   "title": "Find Customer Referee",
+   "difficulty": "Easy",
+   "pattern": "SQL",
+   "lang": "SQL",
+   "path": "2026/04-April/18-04-26/0584-find-customer-referee.sql",
+   "url": "https://leetcode.com/problems/find-customer-referee/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-04-18"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 181,
+   "title": "Employees Earning More Than Their Managers",
+   "difficulty": "Easy",
+   "pattern": "SQL",
+   "lang": "SQL",
+   "path": "2026/04-April/18-04-26/0181-employees-earning-more-than-their-managers.sql",
+   "url": "https://leetcode.com/problems/employees-earning-more-than-their-managers/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-04-18"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": null,
+   "title": "Dfs",
+   "difficulty": "Lesson",
+   "pattern": "Data Structures & Algorithms",
+   "lang": "C++",
+   "path": "2026/04-April/18-04-26/dfs.cpp",
+   "url": null,
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-04-18"
+   ],
+   "kind": "lesson"
+  },
+  {
+   "num": 994,
+   "title": "Rotting Oranges",
+   "difficulty": "Medium",
+   "pattern": "Graphs & Search",
+   "lang": "C++",
+   "path": "2026/04-April/12-04-26/0994-rotting-oranges.cpp",
+   "url": "https://leetcode.com/problems/rotting-oranges/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-04-12"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 175,
+   "title": "Combine Two Tables",
+   "difficulty": "Easy",
+   "pattern": "SQL",
+   "lang": "SQL",
+   "path": "2026/04-April/12-04-26/0175-combine-two-tables.sql",
+   "url": "https://leetcode.com/problems/combine-two-tables/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-04-12"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": null,
+   "title": "Commands",
+   "difficulty": "Lesson",
+   "pattern": "Data Structures & Algorithms",
+   "lang": "SQL",
+   "path": "2026/04-April/12-04-26/commands.sql",
+   "url": null,
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-04-12"
+   ],
+   "kind": "lesson"
+  },
+  {
+   "num": null,
+   "title": "Commands",
+   "difficulty": "Lesson",
+   "pattern": "Data Structures & Algorithms",
+   "lang": "SQL",
+   "path": "2026/04-April/11-04-26/commands.sql",
+   "url": null,
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-04-11"
+   ],
+   "kind": "lesson"
+  },
+  {
+   "num": 200,
+   "title": "Number of Islands",
+   "difficulty": "Medium",
+   "pattern": "Graphs & Search",
+   "lang": "C++",
+   "path": "2026/04-April/10-04-26/0200-number-of-islands.cpp",
+   "url": "https://leetcode.com/problems/number-of-islands/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-04-10"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 200,
+   "title": "Number of Islands",
+   "difficulty": "Medium",
+   "pattern": "Arrays & Hashing",
+   "lang": "C++",
+   "path": "2026/04-April/09-04-26/0200-number-of-islands.cpp",
+   "url": "https://leetcode.com/problems/number-of-islands/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-04-09"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": null,
+   "title": "Commands",
+   "difficulty": "Lesson",
+   "pattern": "Data Structures & Algorithms",
+   "lang": "SQL",
+   "path": "2026/04-April/09-04-26/commands.sql",
+   "url": null,
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-04-09"
+   ],
+   "kind": "lesson"
+  },
+  {
+   "num": null,
+   "title": "Graph Everything",
+   "difficulty": "Lesson",
+   "pattern": "Data Structures & Algorithms",
+   "lang": "C++",
+   "path": "2026/04-April/09-04-26/graph-everything.cpp",
+   "url": null,
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-04-09"
+   ],
+   "kind": "lesson"
+  },
+  {
+   "num": null,
+   "title": "Coversion Matrix To Adjacency",
+   "difficulty": "Lesson",
+   "pattern": "Data Structures & Algorithms",
+   "lang": "C++",
+   "path": "2026/04-April/08-04-26/coversion-matrix-to-adjacency.cpp",
+   "url": null,
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-04-08"
+   ],
+   "kind": "lesson"
+  },
+  {
+   "num": null,
+   "title": "Graph Bfs",
+   "difficulty": "Lesson",
+   "pattern": "Data Structures & Algorithms",
+   "lang": "C++",
+   "path": "2026/04-April/07-04-26/graph-bfs.cpp",
+   "url": null,
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-04-07"
+   ],
+   "kind": "lesson"
+  },
+  {
+   "num": null,
+   "title": "Graph List Weighted",
+   "difficulty": "Lesson",
+   "pattern": "Data Structures & Algorithms",
+   "lang": "C++",
+   "path": "2026/04-April/07-04-26/graph-list-weighted.cpp",
+   "url": null,
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-04-07"
+   ],
+   "kind": "lesson"
+  },
+  {
+   "num": null,
+   "title": "Graph List",
+   "difficulty": "Lesson",
+   "pattern": "Data Structures & Algorithms",
+   "lang": "C++",
+   "path": "2026/04-April/07-04-26/graph-list.cpp",
+   "url": null,
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-04-07"
+   ],
+   "kind": "lesson"
+  },
+  {
+   "num": null,
+   "title": "Graph Matrix",
+   "difficulty": "Lesson",
+   "pattern": "Data Structures & Algorithms",
+   "lang": "C++",
+   "path": "2026/04-April/06-04-26/graph-matrix.cpp",
+   "url": null,
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-04-06"
+   ],
+   "kind": "lesson"
+  },
+  {
+   "num": null,
+   "title": "Commands",
+   "difficulty": "Lesson",
+   "pattern": "Data Structures & Algorithms",
+   "lang": "SQL",
+   "path": "2026/03-March/30-03-26/commands.sql",
+   "url": null,
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-03-30"
+   ],
+   "kind": "lesson"
+  },
+  {
+   "num": null,
+   "title": "Commands",
+   "difficulty": "Lesson",
+   "pattern": "Data Structures & Algorithms",
+   "lang": "SQL",
+   "path": "2026/03-March/29-03-26/commands.sql",
+   "url": null,
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-03-29"
+   ],
+   "kind": "lesson"
+  },
+  {
+   "num": null,
+   "title": "Commands",
+   "difficulty": "Lesson",
+   "pattern": "Data Structures & Algorithms",
+   "lang": "SQL",
+   "path": "2026/03-March/27-03-26/commands.sql",
+   "url": null,
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-03-27"
+   ],
+   "kind": "lesson"
+  },
+  {
+   "num": null,
+   "title": "Cycle Detection",
+   "difficulty": "Lesson",
+   "pattern": "Data Structures & Algorithms",
+   "lang": "C++",
+   "path": "2026/03-March/26-03-26/cycle-detection.cpp",
+   "url": null,
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-03-26"
+   ],
+   "kind": "lesson"
+  },
+  {
+   "num": 1791,
+   "title": "Find Center of Star Graph",
+   "difficulty": "Easy",
+   "pattern": "Data Structures & Algorithms",
+   "lang": "C++",
+   "path": "2026/03-March/24-03-26/1791-find-center-of-star-graph.cpp",
+   "url": "https://leetcode.com/problems/find-center-of-star-graph/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-03-24"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": null,
+   "title": "Dfs",
+   "difficulty": "Lesson",
+   "pattern": "Data Structures & Algorithms",
+   "lang": "C++",
+   "path": "2026/03-March/24-03-26/dfs.cpp",
+   "url": null,
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-03-24"
+   ],
+   "kind": "lesson"
+  },
+  {
+   "num": 1971,
+   "title": "Find if Path Exists in Graph",
+   "difficulty": "Easy",
+   "pattern": "Graphs & Search",
+   "lang": "C++",
+   "path": "2026/03-March/23-03-26/1971-find-if-path-exists-in-graph.cpp",
+   "url": "https://leetcode.com/problems/find-if-path-exists-in-graph/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-03-23"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": null,
+   "title": "Graphbfs",
+   "difficulty": "Lesson",
+   "pattern": "Data Structures & Algorithms",
+   "lang": "C++",
+   "path": "2026/03-March/23-03-26/graphbfs.cpp",
+   "url": null,
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-03-23"
+   ],
+   "kind": "lesson"
+  },
+  {
+   "num": null,
+   "title": "Graph",
+   "difficulty": "Lesson",
+   "pattern": "Data Structures & Algorithms",
+   "lang": "C++",
+   "path": "2026/03-March/22-03-26/graph.cpp",
+   "url": null,
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-03-22"
+   ],
+   "kind": "lesson"
+  },
+  {
+   "num": null,
+   "title": "Graph",
+   "difficulty": "Lesson",
+   "pattern": "Data Structures & Algorithms",
+   "lang": "C++",
+   "path": "2026/03-March/08-03-26/graph.cpp",
+   "url": null,
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-03-08"
+   ],
+   "kind": "lesson"
+  },
+  {
+   "num": null,
+   "title": "List",
+   "difficulty": "Lesson",
+   "pattern": "Data Structures & Algorithms",
+   "lang": "C++",
+   "path": "2026/03-March/06-03-26/list.cpp",
+   "url": null,
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-03-06"
+   ],
+   "kind": "lesson"
+  },
+  {
+   "num": null,
+   "title": "Graph List",
+   "difficulty": "Lesson",
+   "pattern": "Data Structures & Algorithms",
+   "lang": "C++",
+   "path": "2026/03-March/05-03-26/graph-list.cpp",
+   "url": null,
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-03-05"
+   ],
+   "kind": "lesson"
+  },
+  {
+   "num": 867,
+   "title": "Transpose Matrix",
+   "difficulty": "Easy",
+   "pattern": "Arrays & Hashing",
+   "lang": "C++",
+   "path": "2026/03-March/03-03-26/0867-transpose-matrix.cpp",
+   "url": "https://leetcode.com/problems/transpose-matrix/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-03-03"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 867,
+   "title": "Transpose Matrix",
+   "difficulty": "Easy",
+   "pattern": "Arrays & Hashing",
+   "lang": "C++",
+   "path": "2026/09-September/17-09-26/0867-transpose-matrix.cpp",
+   "url": "https://leetcode.com/problems/transpose-matrix/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-03-03"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 566,
+   "title": "Reshape the Matrix",
+   "difficulty": "Easy",
+   "pattern": "Arrays & Hashing",
+   "lang": "C++",
+   "path": "2026/03-March/03-03-26/0566-reshape-the-matrix.cpp",
+   "url": "https://leetcode.com/problems/reshape-the-matrix/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-03-03"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": null,
+   "title": "2D Matrix",
+   "difficulty": "Lesson",
+   "pattern": "Data Structures & Algorithms",
+   "lang": "C++",
+   "path": "2026/03-March/03-03-26/2d-matrix.cpp",
+   "url": null,
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-03-03"
+   ],
+   "kind": "lesson"
+  },
+  {
+   "num": null,
+   "title": "Inorder",
+   "difficulty": "Lesson",
+   "pattern": "Data Structures & Algorithms",
+   "lang": "C++",
+   "path": "2026/02-February/22-02-26/inorder.cpp",
+   "url": null,
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-02-22"
+   ],
+   "kind": "lesson"
+  },
+  {
+   "num": null,
+   "title": "Graph",
+   "difficulty": "Lesson",
+   "pattern": "Data Structures & Algorithms",
+   "lang": "C++",
+   "path": "2026/02-February/21-02-26/graph.cpp",
+   "url": null,
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-02-21"
+   ],
+   "kind": "lesson"
+  },
+  {
+   "num": 236,
+   "title": "Lowest Common Ancestor of a Binary Tree",
+   "difficulty": "Medium",
+   "pattern": "Trees & BST",
+   "lang": "C++",
+   "path": "2026/02-February/18-02-26/0236-lowest-common-ancestor-of-a-binary-tree.cpp",
+   "url": "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-02-18"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 102,
+   "title": "Binary Tree Level Order Traversal",
+   "difficulty": "Medium",
+   "pattern": "Trees & BST",
+   "lang": "C++",
+   "path": "2026/02-February/18-02-26/0102-binary-tree-level-order-traversal.cpp",
+   "url": "https://leetcode.com/problems/binary-tree-level-order-traversal/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-02-18"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": null,
+   "title": "Inorder",
+   "difficulty": "Lesson",
+   "pattern": "Data Structures & Algorithms",
+   "lang": "C++",
+   "path": "2026/02-February/18-02-26/inorder.cpp",
+   "url": null,
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-02-18"
+   ],
+   "kind": "lesson"
+  },
+  {
+   "num": null,
+   "title": "Levelorder",
+   "difficulty": "Lesson",
+   "pattern": "Data Structures & Algorithms",
+   "lang": "C++",
+   "path": "2026/02-February/18-02-26/levelorder.cpp",
+   "url": null,
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-02-18"
+   ],
+   "kind": "lesson"
+  },
+  {
+   "num": null,
+   "title": "Postorder",
+   "difficulty": "Lesson",
+   "pattern": "Data Structures & Algorithms",
+   "lang": "C++",
+   "path": "2026/02-February/18-02-26/postorder.cpp",
+   "url": null,
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-02-18"
+   ],
+   "kind": "lesson"
+  },
+  {
+   "num": null,
+   "title": "Preorder",
+   "difficulty": "Lesson",
+   "pattern": "Data Structures & Algorithms",
+   "lang": "C++",
+   "path": "2026/02-February/18-02-26/preorder.cpp",
+   "url": null,
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-02-18"
+   ],
+   "kind": "lesson"
+  },
+  {
+   "num": 1441,
+   "title": "Build an Array With Stack Operations",
+   "difficulty": "Medium",
+   "pattern": "Stack",
+   "lang": "C++",
+   "path": "2026/02-February/17-02-26/1441-build-an-array-with-stack-operations.cpp",
+   "url": "https://leetcode.com/problems/build-an-array-with-stack-operations/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-02-17"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 67,
+   "title": "Add Binary",
+   "difficulty": "Easy",
+   "pattern": "Bit Manipulation",
+   "lang": "C++",
+   "path": "2026/02-February/17-02-26/0067-add-binary.cpp",
+   "url": "https://leetcode.com/problems/add-binary/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-02-17"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": null,
+   "title": "Bitmanipulation",
+   "difficulty": "Lesson",
+   "pattern": "Data Structures & Algorithms",
+   "lang": "C++",
+   "path": "2026/02-February/17-02-26/bitmanipulation.cpp",
+   "url": null,
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-02-17"
+   ],
+   "kind": "lesson"
+  },
+  {
+   "num": 338,
+   "title": "Counting Bits",
+   "difficulty": "Easy",
+   "pattern": "Dynamic Programming",
+   "lang": "C++",
+   "path": "2026/02-February/16-02-26/0338-counting-bits.cpp",
+   "url": "https://leetcode.com/problems/counting-bits/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-02-16"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 222,
+   "title": "Count Complete Tree Nodes",
+   "difficulty": "Medium",
+   "pattern": "Binary Search",
+   "lang": "C++",
+   "path": "2026/02-February/16-02-26/0222-count-complete-tree-nodes.cpp",
+   "url": "https://leetcode.com/problems/count-complete-tree-nodes/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-02-16"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 191,
+   "title": "Number of 1 Bits",
+   "difficulty": "Easy",
+   "pattern": "Bit Manipulation",
+   "lang": "C++",
+   "path": "2026/02-February/16-02-26/0191-number-of-1-bits.cpp",
+   "url": "https://leetcode.com/problems/number-of-1-bits/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-02-16"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 136,
+   "title": "Single Number",
+   "difficulty": "Easy",
+   "pattern": "Bit Manipulation",
+   "lang": "C++",
+   "path": "2026/02-February/16-02-26/0136-single-number.cpp",
+   "url": "https://leetcode.com/problems/single-number/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-02-16"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": null,
+   "title": "Bitmanipulation",
+   "difficulty": "Lesson",
+   "pattern": "Data Structures & Algorithms",
+   "lang": "C++",
+   "path": "2026/02-February/16-02-26/bitmanipulation.cpp",
+   "url": null,
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-02-16"
+   ],
+   "kind": "lesson"
+  },
+  {
+   "num": 739,
+   "title": "Daily Temperatures",
+   "difficulty": "Medium",
+   "pattern": "Stack",
+   "lang": "C++",
+   "path": "2026/02-February/15-02-26/0739-daily-temperatures.cpp",
+   "url": "https://leetcode.com/problems/daily-temperatures/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-02-15"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 735,
+   "title": "Asteroid Collision",
+   "difficulty": "Medium",
+   "pattern": "Stack",
+   "lang": "C++",
+   "path": "2026/02-February/15-02-26/0735-asteroid-collision.cpp",
+   "url": "https://leetcode.com/problems/asteroid-collision/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-02-15"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": null,
+   "title": "Queue",
+   "difficulty": "Lesson",
+   "pattern": "Data Structures & Algorithms",
+   "lang": "C++",
+   "path": "2026/02-February/15-02-26/queue.cpp",
+   "url": null,
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-02-15"
+   ],
+   "kind": "lesson"
+  },
+  {
+   "num": 3838,
+   "title": "Weighted Word Mapping",
+   "difficulty": "Easy",
+   "pattern": "Strings",
+   "lang": "C++",
+   "path": "2026/02-February/14-02-26/3838-weighted-word-mapping.cpp",
+   "url": "https://leetcode.com/problems/weighted-word-mapping/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-02-14"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 1614,
+   "title": "Maximum Nesting Depth of the Parentheses",
+   "difficulty": "Easy",
+   "pattern": "Stack",
+   "lang": "C++",
+   "path": "2026/02-February/14-02-26/1614-maximum-nesting-depth-of-the-parentheses.cpp",
+   "url": "https://leetcode.com/problems/maximum-nesting-depth-of-the-parentheses/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-02-14"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 1598,
+   "title": "Crawler Log Folder",
+   "difficulty": "Easy",
+   "pattern": "Stack",
+   "lang": "C++",
+   "path": "2026/02-February/14-02-26/1598-crawler-log-folder.cpp",
+   "url": "https://leetcode.com/problems/crawler-log-folder/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-02-14"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 1480,
+   "title": "Running Sum of 1d Array",
+   "difficulty": "Easy",
+   "pattern": "Prefix Sum",
+   "lang": "C++",
+   "path": "2026/02-February/14-02-26/1480-running-sum-of-1d-array.cpp",
+   "url": "https://leetcode.com/problems/running-sum-of-1d-array/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-02-14"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 1480,
+   "title": "Running Sum of 1d Array",
+   "difficulty": "Easy",
+   "pattern": "Prefix Sum",
+   "lang": "C++",
+   "path": "2026/09-September/04-09-26/1480-running-sum-of-1d-array.cpp",
+   "url": "https://leetcode.com/problems/running-sum-of-1d-array/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-02-14"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 1475,
+   "title": "Final Prices With a Special Discount in a Shop",
+   "difficulty": "Easy",
+   "pattern": "Stack",
+   "lang": "C++",
+   "path": "2026/02-February/14-02-26/1475-final-prices-with-a-special-discount-in-a-shop.cpp",
+   "url": "https://leetcode.com/problems/final-prices-with-a-special-discount-in-a-shop/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-02-14"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 844,
+   "title": "Backspace String Compare",
+   "difficulty": "Easy",
+   "pattern": "Two Pointers",
+   "lang": "C++",
+   "path": "2026/02-February/14-02-26/0844-backspace-string-compare.cpp",
+   "url": "https://leetcode.com/problems/backspace-string-compare/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-02-14"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 682,
+   "title": "Baseball Game",
+   "difficulty": "Easy",
+   "pattern": "Stack",
+   "lang": "C++",
+   "path": "2026/02-February/14-02-26/0682-baseball-game.cpp",
+   "url": "https://leetcode.com/problems/baseball-game/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-02-14"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": null,
+   "title": "Stack",
+   "difficulty": "Lesson",
+   "pattern": "Data Structures & Algorithms",
+   "lang": "C++",
+   "path": "2026/02-February/14-02-26/stack.cpp",
+   "url": null,
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-02-14"
+   ],
+   "kind": "lesson"
+  },
+  {
+   "num": 1051,
+   "title": "Height Checker",
+   "difficulty": "Easy",
+   "pattern": "Sorting & STL",
+   "lang": "C++",
+   "path": "2026/02-February/13-02-26/1051-height-checker.cpp",
+   "url": "https://leetcode.com/problems/height-checker/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-02-13"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 912,
+   "title": "Sort an Array",
+   "difficulty": "Medium",
+   "pattern": "Sorting & STL",
+   "lang": "C++",
+   "path": "2026/02-February/13-02-26/0912-sort-an-array.cpp",
+   "url": "https://leetcode.com/problems/sort-an-array/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-02-13"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 215,
+   "title": "Kth Largest Element in an Array",
+   "difficulty": "Medium",
+   "pattern": "Sorting & STL",
+   "lang": "C++",
+   "path": "2026/02-February/13-02-26/0215-kth-largest-element-in-an-array.cpp",
+   "url": "https://leetcode.com/problems/kth-largest-element-in-an-array/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-02-13"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": null,
+   "title": "Quicksort",
+   "difficulty": "Lesson",
+   "pattern": "Data Structures & Algorithms",
+   "lang": "C++",
+   "path": "2026/02-February/13-02-26/quicksort.cpp",
+   "url": null,
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-02-13"
+   ],
+   "kind": "lesson"
+  },
+  {
+   "num": 977,
+   "title": "Squares of a Sorted Array",
+   "difficulty": "Easy",
+   "pattern": "Two Pointers",
+   "lang": "C++",
+   "path": "2026/02-February/12-02-26/0977-squares-of-a-sorted-array.cpp",
+   "url": "https://leetcode.com/problems/squares-of-a-sorted-array/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-02-12"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 965,
+   "title": "Univalued Binary Tree",
+   "difficulty": "Easy",
+   "pattern": "Trees & BST",
+   "lang": "C++",
+   "path": "2026/02-February/12-02-26/0965-univalued-binary-tree.cpp",
+   "url": "https://leetcode.com/problems/univalued-binary-tree/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-02-12"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 965,
+   "title": "Univalued Binary Tree",
+   "difficulty": "Easy",
+   "pattern": "Trees & BST",
+   "lang": "C++",
+   "path": "2026/09-September/10-09-26/0965-univalued-binary-tree.cpp",
+   "url": "https://leetcode.com/problems/univalued-binary-tree/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-02-12"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 905,
+   "title": "Sort Array By Parity",
+   "difficulty": "Easy",
+   "pattern": "Two Pointers",
+   "lang": "C++",
+   "path": "2026/02-February/12-02-26/0905-sort-array-by-parity.cpp",
+   "url": "https://leetcode.com/problems/sort-array-by-parity/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-02-12"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": null,
+   "title": "Bubblesort",
+   "difficulty": "Lesson",
+   "pattern": "Data Structures & Algorithms",
+   "lang": "C++",
+   "path": "2026/02-February/12-02-26/bubblesort.cpp",
+   "url": null,
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-02-12"
+   ],
+   "kind": "lesson"
+  },
+  {
+   "num": null,
+   "title": "Insertionsort",
+   "difficulty": "Lesson",
+   "pattern": "Data Structures & Algorithms",
+   "lang": "C++",
+   "path": "2026/02-February/12-02-26/insertionsort.cpp",
+   "url": null,
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-02-12"
+   ],
+   "kind": "lesson"
+  },
+  {
+   "num": null,
+   "title": "Mergesort",
+   "difficulty": "Lesson",
+   "pattern": "Data Structures & Algorithms",
+   "lang": "C++",
+   "path": "2026/02-February/12-02-26/mergesort.cpp",
+   "url": null,
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-02-12"
+   ],
+   "kind": "lesson"
+  },
+  {
+   "num": null,
+   "title": "Quicksort",
+   "difficulty": "Lesson",
+   "pattern": "Data Structures & Algorithms",
+   "lang": "C++",
+   "path": "2026/02-February/12-02-26/quicksort.cpp",
+   "url": null,
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-02-12"
+   ],
+   "kind": "lesson"
+  },
+  {
+   "num": null,
+   "title": "Selectionsort",
+   "difficulty": "Lesson",
+   "pattern": "Data Structures & Algorithms",
+   "lang": "C++",
+   "path": "2026/02-February/12-02-26/selectionsort.cpp",
+   "url": null,
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-02-12"
+   ],
+   "kind": "lesson"
+  },
+  {
+   "num": 950,
+   "title": "Reveal Cards In Increasing Order",
+   "difficulty": "Medium",
+   "pattern": "Sorting & STL",
+   "lang": "C++",
+   "path": "2026/02-February/11-02-26/0950-reveal-cards-in-increasing-order.cpp",
+   "url": "https://leetcode.com/problems/reveal-cards-in-increasing-order/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-02-11"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 32,
+   "title": "Longest Valid Parentheses",
+   "difficulty": "Hard",
+   "pattern": "Stack",
+   "lang": "C++",
+   "path": "2026/02-February/11-02-26/0032-longest-valid-parentheses.cpp",
+   "url": "https://leetcode.com/problems/longest-valid-parentheses/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-02-11"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 20,
+   "title": "Valid Parentheses",
+   "difficulty": "Easy",
+   "pattern": "Stack",
+   "lang": "C++",
+   "path": "2026/02-February/10-02-26/0020-valid-parentheses.cpp",
+   "url": "https://leetcode.com/problems/valid-parentheses/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-02-10"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 496,
+   "title": "Next Greater Element I",
+   "difficulty": "Easy",
+   "pattern": "Stack",
+   "lang": "C++",
+   "path": "2026/02-February/09-02-26/0496-next-greater-element-i.cpp",
+   "url": "https://leetcode.com/problems/next-greater-element-i/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-02-09"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 90,
+   "title": "Subsets II",
+   "difficulty": "Medium",
+   "pattern": "Bit Manipulation",
+   "lang": "C++",
+   "path": "2026/02-February/09-02-26/0090-subsets-ii.cpp",
+   "url": "https://leetcode.com/problems/subsets-ii/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-02-09"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 42,
+   "title": "Trapping Rain Water",
+   "difficulty": "Hard",
+   "pattern": "Two Pointers",
+   "lang": "C++",
+   "path": "2026/02-February/09-02-26/0042-trapping-rain-water.cpp",
+   "url": "https://leetcode.com/problems/trapping-rain-water/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-02-09"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 3834,
+   "title": "Merge Adjacent Equal Elements",
+   "difficulty": "Medium",
+   "pattern": "Stack",
+   "lang": "C++",
+   "path": "2026/02-February/08-02-26/3834-merge-adjacent-equal-elements.cpp",
+   "url": "https://leetcode.com/problems/merge-adjacent-equal-elements/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-02-08"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 3833,
+   "title": "Count Dominant Indices",
+   "difficulty": "Easy",
+   "pattern": "Arrays & Hashing",
+   "lang": "C++",
+   "path": "2026/02-February/08-02-26/3833-count-dominant-indices.cpp",
+   "url": "https://leetcode.com/problems/count-dominant-indices/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-02-08"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 860,
+   "title": "Lemonade Change",
+   "difficulty": "Easy",
+   "pattern": "Arrays & Hashing",
+   "lang": "C++",
+   "path": "2026/02-February/08-02-26/0860-lemonade-change.cpp",
+   "url": "https://leetcode.com/problems/lemonade-change/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-02-08"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 455,
+   "title": "Assign Cookies",
+   "difficulty": "Easy",
+   "pattern": "Two Pointers",
+   "lang": "C++",
+   "path": "2026/02-February/08-02-26/0455-assign-cookies.cpp",
+   "url": "https://leetcode.com/problems/assign-cookies/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-02-08"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 55,
+   "title": "Jump Game",
+   "difficulty": "Medium",
+   "pattern": "Dynamic Programming",
+   "lang": "C++",
+   "path": "2026/02-February/08-02-26/0055-jump-game.cpp",
+   "url": "https://leetcode.com/problems/jump-game/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-02-08"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": null,
+   "title": "Recursion Revision",
+   "difficulty": "Lesson",
+   "pattern": "Data Structures & Algorithms",
+   "lang": "C++",
+   "path": "2026/02-February/08-02-26/recursion-revision.cpp",
+   "url": null,
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-02-08"
+   ],
+   "kind": "lesson"
+  },
+  {
+   "num": 47,
+   "title": "Permutations II",
+   "difficulty": "Medium",
+   "pattern": "Sorting & STL",
+   "lang": "C++",
+   "path": "2026/02-February/07-02-26/0047-permutations-ii.cpp",
+   "url": "https://leetcode.com/problems/permutations-ii/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-02-07"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 46,
+   "title": "Permutations",
+   "difficulty": "Medium",
+   "pattern": "Arrays & Hashing",
+   "lang": "C++",
+   "path": "2026/02-February/07-02-26/0046-permutations.cpp",
+   "url": "https://leetcode.com/problems/permutations/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-02-07"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 31,
+   "title": "Next Permutation",
+   "difficulty": "Medium",
+   "pattern": "Two Pointers",
+   "lang": "C++",
+   "path": "2026/02-February/07-02-26/0031-next-permutation.cpp",
+   "url": "https://leetcode.com/problems/next-permutation/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-02-07"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 78,
+   "title": "Subsets",
+   "difficulty": "Medium",
+   "pattern": "Bit Manipulation",
+   "lang": "C++",
+   "path": "2026/02-February/06-02-26/0078-subsets.cpp",
+   "url": "https://leetcode.com/problems/subsets/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-02-06"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 17,
+   "title": "Letter Combinations of a Phone Number",
+   "difficulty": "Medium",
+   "pattern": "Arrays & Hashing",
+   "lang": "C++",
+   "path": "2026/02-February/06-02-26/0017-letter-combinations-of-a-phone-number.cpp",
+   "url": "https://leetcode.com/problems/letter-combinations-of-a-phone-number/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-02-06"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 40,
+   "title": "Combination Sum II",
+   "difficulty": "Medium",
+   "pattern": "Arrays & Hashing",
+   "lang": "C++",
+   "path": "2026/02-February/04-02-26/0040-combination-sum-ii.cpp",
+   "url": "https://leetcode.com/problems/combination-sum-ii/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-02-04"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 39,
+   "title": "Combination Sum",
+   "difficulty": "Medium",
+   "pattern": "Arrays & Hashing",
+   "lang": "C++",
+   "path": "2026/02-February/04-02-26/0039-combination-sum.cpp",
+   "url": "https://leetcode.com/problems/combination-sum/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-02-04"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 3637,
+   "title": "Trionic Array I",
+   "difficulty": "Easy",
+   "pattern": "Arrays & Hashing",
+   "lang": "C++",
+   "path": "2026/02-February/03-02-26/3637-trionic-array-i.cpp",
+   "url": "https://leetcode.com/problems/trionic-array-i/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-02-03"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 509,
+   "title": "Fibonacci Number",
+   "difficulty": "Easy",
+   "pattern": "Dynamic Programming",
+   "lang": "C++",
+   "path": "2026/02-February/03-02-26/0509-fibonacci-number.cpp",
+   "url": "https://leetcode.com/problems/fibonacci-number/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-02-03"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 344,
+   "title": "Reverse String",
+   "difficulty": "Easy",
+   "pattern": "Two Pointers",
+   "lang": "C++",
+   "path": "2026/02-February/03-02-26/0344-reverse-string.cpp",
+   "url": "https://leetcode.com/problems/reverse-string/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-02-03"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 342,
+   "title": "Power of Four",
+   "difficulty": "Easy",
+   "pattern": "Bit Manipulation",
+   "lang": "C++",
+   "path": "2026/02-February/03-02-26/0342-power-of-four.cpp",
+   "url": "https://leetcode.com/problems/power-of-four/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-02-03"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 326,
+   "title": "Power of Three",
+   "difficulty": "Easy",
+   "pattern": "Math & Logic",
+   "lang": "C++",
+   "path": "2026/02-February/03-02-26/0326-power-of-three.cpp",
+   "url": "https://leetcode.com/problems/power-of-three/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-02-03"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 50,
+   "title": "Pow(x, n)",
+   "difficulty": "Medium",
+   "pattern": "Math & Logic",
+   "lang": "C++",
+   "path": "2026/02-February/03-02-26/0050-powx-n.cpp",
+   "url": "https://leetcode.com/problems/powx-n/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-02-03"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": null,
+   "title": "Recursion",
+   "difficulty": "Lesson",
+   "pattern": "Data Structures & Algorithms",
+   "lang": "C++",
+   "path": "2026/02-February/03-02-26/recursion.cpp",
+   "url": null,
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-02-03"
+   ],
+   "kind": "lesson"
+  },
+  {
+   "num": 238,
+   "title": "Product of Array Except Self",
+   "difficulty": "Medium",
+   "pattern": "Prefix Sum",
+   "lang": "C++",
+   "path": "2026/02-February/02-02-26/0238-product-of-array-except-self.cpp",
+   "url": "https://leetcode.com/problems/product-of-array-except-self/",
+   "time": "O(n), Space: O(1)",
+   "space": "O(1)",
+   "dates": [
+    "2026-02-02"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 238,
+   "title": "Product of Array Except Self",
+   "difficulty": "Medium",
+   "pattern": "Prefix Sum",
+   "lang": "C++",
+   "path": "2026/09-September/07-09-26/0238-product-of-array-except-self.cpp",
+   "url": "https://leetcode.com/problems/product-of-array-except-self/",
+   "time": "O(n), Space: O(1)",
+   "space": "O(1)",
+   "dates": [
+    "2026-02-02"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 231,
+   "title": "Power of Two",
+   "difficulty": "Easy",
+   "pattern": "Bit Manipulation",
+   "lang": "C++",
+   "path": "2026/02-February/02-02-26/0231-power-of-two.cpp",
+   "url": "https://leetcode.com/problems/power-of-two/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-02-02"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 1011,
+   "title": "Capacity To Ship Packages Within D Days",
+   "difficulty": "Medium",
+   "pattern": "Binary Search",
+   "lang": "C++",
+   "path": "2026/02-February/01-02-26/1011-capacity-to-ship-packages-within-d-days.cpp",
+   "url": "https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/",
+   "time": "O(n * log(sum(weights))), Space: O(1)",
+   "space": "O(1)",
+   "dates": [
+    "2026-02-01"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 704,
+   "title": "Binary Search",
+   "difficulty": "Easy",
+   "pattern": "Binary Search",
+   "lang": "C++",
+   "path": "2026/02-February/01-02-26/0704-binary-search.cpp",
+   "url": "https://leetcode.com/problems/binary-search/",
+   "time": "O(log n), Space: O(1)",
+   "space": "O(1)",
+   "dates": [
+    "2026-02-01"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 415,
+   "title": "Add Strings",
+   "difficulty": "Easy",
+   "pattern": "Strings",
+   "lang": "C++",
+   "path": "2026/02-February/01-02-26/0415-add-strings.cpp",
+   "url": "https://leetcode.com/problems/add-strings/",
+   "time": "O(max(N, M)), Space: O(max(N, M))",
+   "space": "O(max(N, M))",
+   "dates": [
+    "2026-02-01"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 283,
+   "title": "Move Zeroes",
+   "difficulty": "Easy",
+   "pattern": "Two Pointers",
+   "lang": "C++",
+   "path": "2026/02-February/01-02-26/0283-move-zeroes.cpp",
+   "url": "https://leetcode.com/problems/move-zeroes/",
+   "time": "O(n), Space: O(n)",
+   "space": "O(n)",
+   "dates": [
+    "2026-02-01"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 278,
+   "title": "First Bad Version",
+   "difficulty": "Easy",
+   "pattern": "Binary Search",
+   "lang": "C++",
+   "path": "2026/02-February/01-02-26/0278-first-bad-version.cpp",
+   "url": "https://leetcode.com/problems/first-bad-version/",
+   "time": "O(log n), Space: O(1)",
+   "space": "O(1)",
+   "dates": [
+    "2026-02-01"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 162,
+   "title": "Find Peak Element",
+   "difficulty": "Medium",
+   "pattern": "Binary Search",
+   "lang": "C++",
+   "path": "2026/02-February/01-02-26/0162-find-peak-element.cpp",
+   "url": "https://leetcode.com/problems/find-peak-element/",
+   "time": "O(n), Space: O(1)",
+   "space": "O(1)",
+   "dates": [
+    "2026-02-01"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 153,
+   "title": "Find Minimum in Rotated Sorted Array",
+   "difficulty": "Medium",
+   "pattern": "Binary Search",
+   "lang": "C++",
+   "path": "2026/02-February/01-02-26/0153-find-minimum-in-rotated-sorted-array.cpp",
+   "url": "https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/",
+   "time": "O(log n), Space: O(1)",
+   "space": "O(1)",
+   "dates": [
+    "2026-02-01"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 69,
+   "title": "Sqrt(x)",
+   "difficulty": "Easy",
+   "pattern": "Binary Search",
+   "lang": "C++",
+   "path": "2026/02-February/01-02-26/0069-sqrtx.cpp",
+   "url": "https://leetcode.com/problems/sqrtx/",
+   "time": "O(log x), Space: O(1)",
+   "space": "O(1)",
+   "dates": [
+    "2026-02-01"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 3,
+   "title": "Longest Substring Without Repeating Characters",
+   "difficulty": "Medium",
+   "pattern": "Sliding Window",
+   "lang": "C++",
+   "path": "2026/02-February/01-02-26/0003-longest-substring-without-repeating-characters.cpp",
+   "url": "https://leetcode.com/problems/longest-substring-without-repeating-characters/",
+   "time": "O(N) or O(N^2) depending on find/erase implementation, Space: O(N)",
+   "space": "O(N)",
+   "dates": [
+    "2026-02-01"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": null,
+   "title": "Master Strings",
+   "difficulty": "Lesson",
+   "pattern": "Data Structures & Algorithms",
+   "lang": "C++",
+   "path": "2026/01-January/31-01-26/master-strings.cpp",
+   "url": null,
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-01-31"
+   ],
+   "kind": "lesson"
+  },
+  {
+   "num": null,
+   "title": "Strings",
+   "difficulty": "Lesson",
+   "pattern": "Data Structures & Algorithms",
+   "lang": "C++",
+   "path": "2026/01-January/30-01-26/strings.cpp",
+   "url": null,
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-01-30"
+   ],
+   "kind": "lesson"
+  },
+  {
+   "num": 1390,
+   "title": "Four Divisors",
+   "difficulty": "Medium",
+   "pattern": "Arrays & Hashing",
+   "lang": "C++",
+   "path": "2026/01-January/04-01-26/1390-four-divisors.cpp",
+   "url": "https://leetcode.com/problems/four-divisors/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-01-04"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 1411,
+   "title": "Number of Ways to Paint N × 3 Grid",
+   "difficulty": "Hard",
+   "pattern": "Dynamic Programming",
+   "lang": "C++",
+   "path": "2026/01-January/03-01-26/1411-number-of-ways-to-paint-n-3-grid.cpp",
+   "url": "https://leetcode.com/problems/number-of-ways-to-paint-n-3-grid/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-01-03"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 961,
+   "title": "N-Repeated Element in Size 2N Array",
+   "difficulty": "Easy",
+   "pattern": "Arrays & Hashing",
+   "lang": "C++",
+   "path": "2026/01-January/02-01-26/0961-n-repeated-element-in-size-2n-array.cpp",
+   "url": "https://leetcode.com/problems/n-repeated-element-in-size-2n-array/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-01-02"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 66,
+   "title": "Plus One",
+   "difficulty": "Easy",
+   "pattern": "Arrays & Hashing",
+   "lang": "C++",
+   "path": "2026/01-January/01-01-26/0066-plus-one.cpp",
+   "url": "https://leetcode.com/problems/plus-one/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2026-01-01"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 3788,
+   "title": "Maximum Score of a Split",
+   "difficulty": "Medium",
+   "pattern": "Prefix Sum + Suffix Minimum",
+   "lang": "C++",
+   "path": "2025/12-December/28-12-25/3788-maximum-score-of-a-split.cpp",
+   "url": "https://leetcode.com/problems/maximum-score-of-a-split/",
+   "time": "O(n)",
+   "space": "O(n)",
+   "dates": [
+    "2025-12-28"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 219,
+   "title": "Contains Duplicate II",
+   "difficulty": "Easy",
+   "pattern": "Fixed-size Sliding Window + Hash Set",
+   "lang": "C++",
+   "path": "2025/12-December/28-12-25/0219-contains-duplicate-ii.cpp",
+   "url": "https://leetcode.com/problems/contains-duplicate-ii/",
+   "time": "O(n)",
+   "space": "O(k)",
+   "dates": [
+    "2025-12-28"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 217,
+   "title": "Contains Duplicate",
+   "difficulty": "Easy",
+   "pattern": "Hash Set",
+   "lang": "C++",
+   "path": "2025/12-December/24-12-25/0217-contains-duplicate.cpp",
+   "url": "https://leetcode.com/problems/contains-duplicate/",
+   "time": "O(n)",
+   "space": "O(n)",
+   "dates": [
+    "2025-12-24"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 387,
+   "title": "First Unique Character in a String",
+   "difficulty": "Easy",
+   "pattern": "Hash Map (frequency)",
+   "lang": "C++",
+   "path": "2025/12-December/23-12-25/0387-first-unique-character-in-a-string.cpp",
+   "url": "https://leetcode.com/problems/first-unique-character-in-a-string/",
+   "time": "O(n)",
+   "space": "O(1) (bounded alphabet)",
+   "dates": [
+    "2025-12-23"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 125,
+   "title": "Valid Palindrome",
+   "difficulty": "Easy",
+   "pattern": "Clean string + Two Pointers",
+   "lang": "C++",
+   "path": "2025/08-August/04-08-25/0125-valid-palindrome.cpp",
+   "url": "https://leetcode.com/problems/valid-palindrome/",
+   "time": "O(n)",
+   "space": "O(1)",
+   "dates": [
+    "2025-08-04"
+   ],
+   "kind": "leetcode"
+  }
+ ]
+}

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DSA Journey</title>
+<meta name="description" content="Every LeetCode solution in the DSA-LeetCode-Journey repo, searchable by name, number, pattern, difficulty and language.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚔️</text></svg>">
+<style>
+  :root{
+    --bg:#05060f; --panel:#0b0d1a; --edge:#1e1b4b;
+    --violet:#8b5cf6; --cyan:#22d3ee; --pink:#f472b6;
+    --lime:#a3e635; --amber:#fbbf24; --teal:#2dd4bf;
+    --text:#e2e8f0; --muted:#94a3b8; --dim:#475569;
+    --sans:'Segoe UI','SF Pro Display',system-ui,-apple-system,sans-serif;
+    --mono:'JetBrains Mono','Cascadia Code','SF Mono',Consolas,Menlo,monospace;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);font-family:var(--sans);
+       -webkit-font-smoothing:antialiased;line-height:1.5}
+  a{color:inherit}
+  .wrap{max-width:1100px;margin:0 auto;padding:0 16px 64px}
+
+  header{padding:40px 0 24px;border-bottom:1px solid var(--edge);margin-bottom:24px}
+  h1{margin:0 0 4px;font-size:clamp(26px,5vw,38px);letter-spacing:-.5px}
+  h1 .grad{background:linear-gradient(90deg,var(--violet),var(--cyan),var(--pink));
+           -webkit-background-clip:text;background-clip:text;color:transparent}
+  .sub{color:var(--muted);font-size:14px;font-family:var(--mono)}
+  .sub a{color:var(--cyan);text-decoration:none}
+  .sub a:hover{text-decoration:underline}
+
+  .tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;margin:24px 0}
+  .tile{background:var(--panel);border:1px solid var(--edge);border-radius:14px;padding:14px 16px}
+  .tile .k{font:700 11px var(--mono);letter-spacing:1.4px;text-transform:uppercase}
+  .tile .v{font-size:26px;font-weight:800;margin-top:6px}
+  .tile .m{font-size:12px;color:var(--muted);font-family:var(--mono)}
+
+  .controls{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:18px;position:sticky;top:0;
+            background:linear-gradient(var(--bg) 70%,transparent);padding:12px 0;z-index:5}
+  input[type=search],select{background:var(--panel);color:var(--text);border:1px solid var(--edge);
+    border-radius:10px;padding:10px 12px;font-size:14px;font-family:var(--sans);outline:none}
+  input[type=search]{flex:1 1 260px}
+  input[type=search]:focus,select:focus{border-color:var(--violet);
+    box-shadow:0 0 0 3px color-mix(in srgb,var(--violet) 25%,transparent)}
+  .count{color:var(--muted);font:600 13px var(--mono);align-self:center;margin-left:auto}
+
+  ul{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+  li{background:var(--panel);border:1px solid var(--edge);border-radius:14px;padding:14px 16px;
+     display:grid;grid-template-columns:auto 1fr auto;gap:14px;align-items:center;
+     transition:border-color .15s,transform .15s}
+  li:hover{border-color:var(--violet);transform:translateY(-1px)}
+  .num{font:700 13px var(--mono);color:var(--dim);min-width:52px}
+  .title{font-weight:600}
+  .title a{text-decoration:none}
+  .title a:hover{color:var(--cyan)}
+  .meta{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
+  .chip{font:600 11px var(--mono);padding:3px 8px;border-radius:999px;border:1px solid}
+  .Easy{color:var(--lime);border-color:color-mix(in srgb,var(--lime) 40%,transparent)}
+  .Medium{color:var(--amber);border-color:color-mix(in srgb,var(--amber) 40%,transparent)}
+  .Hard{color:var(--pink);border-color:color-mix(in srgb,var(--pink) 40%,transparent)}
+  .Lesson{color:var(--teal);border-color:color-mix(in srgb,var(--teal) 40%,transparent)}
+  .pat{color:var(--violet);border-color:color-mix(in srgb,var(--violet) 35%,transparent)}
+  .lang{color:var(--cyan);border-color:color-mix(in srgb,var(--cyan) 35%,transparent)}
+  .date{font:600 12px var(--mono);color:var(--muted);white-space:nowrap}
+  .empty{text-align:center;color:var(--muted);padding:48px 0;font-family:var(--mono)}
+  footer{margin-top:40px;color:var(--dim);font:500 12px var(--mono);text-align:center}
+
+  @media (max-width:640px){
+    li{grid-template-columns:auto 1fr;}
+    .date{grid-column:2;justify-self:start}
+    .controls{position:static}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1><span class="grad">DSA Journey</span></h1>
+    <div class="sub" id="sub">loading…</div>
+  </header>
+
+  <div class="tiles" id="tiles"></div>
+
+  <div class="controls">
+    <input type="search" id="q" placeholder="Search by name, number or pattern…" autocomplete="off" spellcheck="false">
+    <select id="diff"><option value="">All difficulties</option></select>
+    <select id="pat"><option value="">All patterns</option></select>
+    <select id="lang"><option value="">All languages</option></select>
+    <span class="count" id="count"></span>
+  </div>
+
+  <ul id="list"></ul>
+  <div class="empty" id="empty" hidden>Nothing matches that.</div>
+
+  <footer id="foot"></footer>
+</div>
+
+<script>
+const $ = (id) => document.getElementById(id);
+let DATA = null;
+
+const esc = (s) => String(s ?? "").replace(/[&<>"']/g, c => (
+  {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]
+));
+
+function fillSelect(el, values) {
+  for (const v of values) {
+    const o = document.createElement("option");
+    o.value = v; o.textContent = v;
+    el.appendChild(o);
+  }
+}
+
+function tiles(s) {
+  const t = [
+    ["Solved", s.solved, `${s.easy} easy · ${s.medium} med · ${s.hard} hard`, "var(--violet)"],
+    ["Streak", s.streak + "d", `longest ${s.longest}d`, "var(--lime)"],
+    ["Active days", s.active, "lifetime", "var(--cyan)"],
+    ["Contest", s.rating, `top ${s.topPct}%`, "var(--amber)"],
+    ["In this repo", s.repoEntries, "files tracked", "var(--teal)"],
+  ];
+  $("tiles").innerHTML = t.map(([k, v, m, c]) =>
+    `<div class="tile"><div class="k" style="color:${c}">${esc(k)}</div>
+     <div class="v">${esc(v)}</div><div class="m">${esc(m)}</div></div>`).join("");
+}
+
+function render() {
+  const q = $("q").value.trim().toLowerCase();
+  const d = $("diff").value, p = $("pat").value, l = $("lang").value;
+
+  const rows = DATA.problems.filter(x => {
+    if (d && x.difficulty !== d) return false;
+    if (p && x.pattern !== p) return false;
+    if (l && x.lang !== l) return false;
+    if (!q) return true;
+    return (x.title || "").toLowerCase().includes(q)
+        || String(x.num || "").includes(q)
+        || (x.pattern || "").toLowerCase().includes(q);
+  });
+
+  $("count").textContent = `${rows.length} of ${DATA.problems.length}`;
+  $("empty").hidden = rows.length > 0;
+
+  const base = `https://github.com/${DATA.repo}/blob/main/`;
+  $("list").innerHTML = rows.map(x => {
+    const link = x.url
+      ? `<a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.title)}</a>`
+      : esc(x.title);
+    return `<li>
+      <span class="num">${x.num ? "#" + x.num : "—"}</span>
+      <div>
+        <div class="title">${link}</div>
+        <div class="meta">
+          <span class="chip ${esc(x.difficulty)}">${esc(x.difficulty)}</span>
+          <span class="chip pat">${esc(x.pattern)}</span>
+          <span class="chip lang">${esc(x.lang)}</span>
+          <a class="chip" style="color:var(--muted);border-color:var(--edge);text-decoration:none"
+             href="${esc(base + x.path)}" target="_blank" rel="noopener">code ↗</a>
+        </div>
+      </div>
+      <span class="date">${esc(x.dates[x.dates.length - 1] || "")}</span>
+    </li>`;
+  }).join("");
+}
+
+fetch("problems.json")
+  .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
+  .then(d => {
+    DATA = d;
+    $("sub").innerHTML =
+      `@${esc(d.user)} · Level ${esc(d.stats.level)} ${esc(d.stats.rank)} · ` +
+      `<a href="https://github.com/${esc(d.repo)}" target="_blank" rel="noopener">${esc(d.repo)}</a>`;
+    tiles(d.stats);
+    fillSelect($("diff"), [...new Set(d.problems.map(x => x.difficulty))].sort());
+    fillSelect($("pat"),  [...new Set(d.problems.map(x => x.pattern))].sort());
+    fillSelect($("lang"), [...new Set(d.problems.map(x => x.lang))].sort());
+    $("foot").textContent = `generated ${d.generated} · rebuilt automatically on every push`;
+    render();
+    for (const id of ["q", "diff", "pat", "lang"]) $(id).addEventListener("input", render);
+  })
+  .catch(e => {
+    $("sub").textContent = "Could not load problems.json — has the build run?";
+    console.error(e);
+  });
+</script>
+</body>
+</html>

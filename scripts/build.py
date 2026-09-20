@@ -650,6 +650,62 @@ def build_repo_tree():
 
 
 
+def write_site_data(entries, s):
+    """Emit docs/problems.json for the GitHub Pages browser.
+
+    The README can only ever be a static table. This feeds a page that can
+    actually be searched and filtered across every solution in the repo.
+    """
+    docs = os.path.join(ROOT, "docs")
+    os.makedirs(docs, exist_ok=True)
+
+    items = []
+    for e in entries:
+        items.append({
+            "num": e["num"],
+            "title": e["title"] or os.path.basename(e["path"]),
+            "difficulty": e["diff"] if e["kind"] == "leetcode" else "Lesson",
+            "pattern": e["pattern"],
+            "lang": e["lang"],
+            "path": e["path"],
+            "url": e["url"],
+            "time": e.get("time", ""),
+            "space": e.get("space", ""),
+            "dates": [d.isoformat() for d in e["dates"]],
+            "kind": e["kind"],
+        })
+
+    # Newest first, unnumbered lessons last within a date.
+    items.sort(key=lambda x: (x["dates"][-1] if x["dates"] else "", x["num"] or 0), reverse=True)
+
+    payload = {
+        "generated": dt.datetime.now(TZ).isoformat(timespec="seconds"),
+        "user": LEETCODE_USER,
+        "repo": REPO,
+        "stats": {
+            "solved": s["solved_total"],
+            "easy": s["easy"],
+            "medium": s["medium"],
+            "hard": s["hard"],
+            "streak": s["current"],
+            "longest": s["longest"],
+            "active": s["active"],
+            "rating": s["rating"],
+            "topPct": s["top_pct"],
+            "level": s["level"],
+            "rank": s["rank_title"],
+            "xp": s["xp"],
+            "repoEntries": len(items),
+        },
+        "problems": items,
+    }
+
+    with open(os.path.join(docs, "problems.json"), "w", encoding="utf-8", newline="\n") as f:
+        json.dump(payload, f, indent=1, ensure_ascii=False)
+        f.write("\n")
+    print(f"Wrote docs/problems.json ({len(items)} entries)")
+
+
 def main():
     print("Collecting solutions from dates/...")
     entries = collect_solutions()
@@ -666,6 +722,8 @@ def main():
     with open(os.path.join(ROOT, "assets", "topics.svg"), "w", encoding="utf-8", newline="\n") as f:
         f.write(topics_svg(entries))
     print("Generated all 4 SVGs in assets/")
+
+    write_site_data(entries, s)
 
     def achievement(have, target):
         """Badge cell that reflects the live number instead of a typed-in one."""
