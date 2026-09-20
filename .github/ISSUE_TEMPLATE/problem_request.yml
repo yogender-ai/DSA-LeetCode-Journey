@@ -1,0 +1,33 @@
+name: "Problem Request / Solution Contribution"
+description: "Request a problem solution walkthrough or propose an optimal pattern approach"
+title: "[Problem]: "
+labels: ["enhancement", "algorithm"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for proposing a new problem or solution pattern!
+  - type: input
+    id: problem_number
+    attributes:
+      label: Problem Number & Title
+      placeholder: "e.g., 42. Trapping Rain Water"
+    validations:
+      required: true
+  - type: dropdown
+    id: difficulty
+    attributes:
+      label: Difficulty
+      options:
+        - Easy
+        - Medium
+        - Hard
+    validations:
+      required: true
+  - type: textarea
+    id: approach
+    attributes:
+      label: Recommended Pattern & Approach
+      placeholder: "e.g., Two Pointers / Monotonic Stack, O(N) Time, O(1) Space"
+    validations:
+      required: false
