@@ -28,6 +28,17 @@
 
 <br/><br/>
 
+### ▶️ Algorithm Replay — a different one every day
+
+<img src="assets/algo_replay.svg" width="100%" alt="{{ALGO_NAME}} executing step by step" />
+
+> Not a loop of pictures. The algorithm is really run at build time and every
+> comparison, pointer move and window slide it makes becomes a frame. Today it is
+> **[{{ALGO_TITLE}}]({{ALGO_URL}})** — {{ALGO_PATTERN}}, {{ALGO_COMPLEXITY}}.
+> Tomorrow it will be a different one.
+
+<br/>
+
 ### 🎮 Player Profile & RPG Stats
 
 <img src="assets/rpg_card.svg" width="100%" alt="RPG Player HUD" />

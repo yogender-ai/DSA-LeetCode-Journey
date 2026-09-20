@@ -14,6 +14,10 @@ import urllib.request
 from collections import Counter, OrderedDict, defaultdict
 from xml.sax.saxutils import escape
 
+import algo_replay
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+
 if hasattr(sys.stdout, 'reconfigure'):
     sys.stdout.reconfigure(encoding='utf-8')
 
@@ -723,6 +727,17 @@ def main():
         f.write(topics_svg(entries))
     print("Generated all 4 SVGs in assets/")
 
+    algo = algo_replay.pick_algorithm()
+    replay_svg = algo_replay.algo_replay_svg(entries)
+    with open(os.path.join(ROOT, "assets", "algo_replay.svg"), "w", encoding="utf-8", newline='\n') as f:
+        f.write(replay_svg)
+    print(f"Generated assets/algo_replay.svg - #{algo['num']} {algo['name']}")
+
+    # docs/ is the Pages root, so it cannot reach ../assets - give it a copy.
+    os.makedirs(os.path.join(ROOT, "docs"), exist_ok=True)
+    with open(os.path.join(ROOT, "docs", "algo_replay.svg"), "w", encoding="utf-8", newline='\n') as f:
+        f.write(replay_svg)
+
     write_site_data(entries, s)
 
     def achievement(have, target):
@@ -756,6 +771,11 @@ def main():
         "GLOBAL_RANKING": f"{s.get('global_ranking', 0):,}",
         "TOTAL_PARTICIPANTS": f"{s.get('total_participants', 0):,}",
         "FETCHED_AT": s.get("fetched_at", ""),
+        "ALGO_NAME": algo["name"],
+        "ALGO_TITLE": f"#{algo['num']} {algo['name']}",
+        "ALGO_URL": f"https://leetcode.com/problems/{algo['slug']}/",
+        "ALGO_PATTERN": algo["pattern"],
+        "ALGO_COMPLEXITY": algo["complexity"],
         # Derived, so the milestone copy can never drift out of step again.
         "NEXT_MILESTONE": max(100, math.ceil((s["solved_total"] + 1) / 100) * 100),
         "REMAINING": max(0, math.ceil((s["solved_total"] + 1) / 100) * 100 - s["solved_total"]),
