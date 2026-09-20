@@ -15,6 +15,7 @@ from collections import Counter, OrderedDict, defaultdict
 from xml.sax.saxutils import escape
 
 import algo_replay
+import site_gen
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
@@ -708,6 +709,7 @@ def write_site_data(entries, s):
         json.dump(payload, f, indent=1, ensure_ascii=False)
         f.write("\n")
     print(f"Wrote docs/problems.json ({len(items)} entries)")
+    return items
 
 
 def main():
@@ -738,7 +740,8 @@ def main():
     with open(os.path.join(ROOT, "docs", "algo_replay.svg"), "w", encoding="utf-8", newline='\n') as f:
         f.write(replay_svg)
 
-    write_site_data(entries, s)
+    items = write_site_data(entries, s)
+    site_gen.write_site(ROOT, items, s, algo, LEETCODE_USER, REPO)
 
     def achievement(have, target):
         """Badge cell that reflects the live number instead of a typed-in one."""

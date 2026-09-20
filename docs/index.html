@@ -3,9 +3,83 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>DSA Journey</title>
-<meta name="description" content="Every LeetCode solution in the DSA-LeetCode-Journey repo, searchable by name, number, pattern, difficulty and language.">
+
+<title>Yogender - 277 LeetCode Solutions in C++, Python and SQL | DSA Journey</title>
+<meta name="description" content="277 LeetCode problems solved and filed by date and pattern: 159 easy, 109 medium, 9 hard, with a 74-day streak. Browse every solution by topic, difficulty or language, with the source for each.">
+<link rel="canonical" href="https://yogender-ai.github.io/DSA-LeetCode-Journey/">
+<meta name="author" content="Yogender">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta name="keywords" content="leetcode solutions, dsa, data structures and algorithms, python, c++, sql, two pointers, sliding window, binary search, dynamic programming, coding interview preparation, yogender">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Yogender — DSA Journey">
+<meta property="og:title" content="Yogender - 277 LeetCode Solutions in C++, Python and SQL | DSA Journey">
+<meta property="og:description" content="277 LeetCode problems solved and filed by date and pattern: 159 easy, 109 medium, 9 hard, with a 74-day streak. Browse every solution by topic, difficulty or language, with the source for each.">
+<meta property="og:url" content="https://yogender-ai.github.io/DSA-LeetCode-Journey/">
+<meta property="og:image" content="https://yogender-ai.github.io/DSA-LeetCode-Journey/algo_replay.svg">
+<meta property="og:image:alt" content="An algorithm executing step by step">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Yogender - 277 LeetCode Solutions in C++, Python and SQL | DSA Journey">
+<meta name="twitter:description" content="277 LeetCode problems solved and filed by date and pattern: 159 easy, 109 medium, 9 hard, with a 74-day streak. Browse every solution by topic, difficulty or language, with the source for each.">
+<meta name="twitter:image" content="https://yogender-ai.github.io/DSA-LeetCode-Journey/algo_replay.svg">
+
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚔️</text></svg>">
+
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebSite",
+   "@id": "https://yogender-ai.github.io/DSA-LeetCode-Journey/#website",
+   "url": "https://yogender-ai.github.io/DSA-LeetCode-Journey/",
+   "name": "Yogender - DSA & LeetCode Journey",
+   "description": "277 LeetCode problems solved and filed by date and pattern: 159 easy, 109 medium, 9 hard, with a 74-day streak. Browse every solution by topic, difficulty or language, with the source for each.",
+   "inLanguage": "en",
+   "author": {
+    "@id": "https://yogender-ai.github.io/DSA-LeetCode-Journey/#person"
+   }
+  },
+  {
+   "@type": "Person",
+   "@id": "https://yogender-ai.github.io/DSA-LeetCode-Journey/#person",
+   "name": "Yogender",
+   "alternateName": "yashyogender",
+   "url": "https://github.com/yogender-ai",
+   "sameAs": [
+    "https://github.com/yogender-ai",
+    "https://leetcode.com/u/yashyogender/"
+   ],
+   "knowsAbout": [
+    "Data Structures",
+    "Algorithms",
+    "Python",
+    "C++",
+    "SQL",
+    "Dynamic Programming",
+    "Graph Algorithms",
+    "Coding Interviews"
+   ]
+  },
+  {
+   "@type": "SoftwareSourceCode",
+   "name": "DSA-LeetCode-Journey",
+   "codeRepository": "https://github.com/yogender-ai/DSA-LeetCode-Journey",
+   "programmingLanguage": [
+    "C++",
+    "Python",
+    "SQL"
+   ],
+   "author": {
+    "@id": "https://yogender-ai.github.io/DSA-LeetCode-Journey/#person"
+   },
+   "description": "277 LeetCode problems solved and filed by date and pattern: 159 easy, 109 medium, 9 hard, with a 74-day streak. Browse every solution by topic, difficulty or language, with the source for each."
+  }
+ ]
+}
+</script>
+
 <style>
   :root{
     --bg:#05060f; --panel:#0b0d1a; --edge:#1e1b4b;
@@ -28,6 +102,11 @@
   .sub{color:var(--muted);font-size:14px;font-family:var(--mono)}
   .sub a{color:var(--cyan);text-decoration:none}
   .sub a:hover{text-decoration:underline}
+  .lede{color:var(--muted);font-size:15px;max-width:70ch;margin:14px 0 0}
+
+  .replay{margin:24px 0 0;padding:0}
+  .replay img{width:100%;border-radius:18px;display:block}
+  .replay figcaption{color:var(--muted);font:500 12px var(--mono);margin-top:8px;text-align:center}
 
   .tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;margin:24px 0}
   .tile{background:var(--panel);border:1px solid var(--edge);border-radius:14px;padding:14px 16px}
@@ -35,7 +114,8 @@
   .tile .v{font-size:26px;font-weight:800;margin-top:6px}
   .tile .m{font-size:12px;color:var(--muted);font-family:var(--mono)}
 
-  .controls{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:18px;position:sticky;top:0;
+  h2{font-size:20px;margin:32px 0 4px}
+  .controls{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0 18px;position:sticky;top:0;
             background:linear-gradient(var(--bg) 70%,transparent);padding:12px 0;z-index:5}
   input[type=search],select{background:var(--panel);color:var(--text);border:1px solid var(--edge);
     border-radius:10px;padding:10px 12px;font-size:14px;font-family:var(--sans);outline:none}
@@ -44,11 +124,11 @@
     box-shadow:0 0 0 3px color-mix(in srgb,var(--violet) 25%,transparent)}
   .count{color:var(--muted);font:600 13px var(--mono);align-self:center;margin-left:auto}
 
-  ul{list-style:none;margin:0;padding:0;display:grid;gap:10px}
-  li{background:var(--panel);border:1px solid var(--edge);border-radius:14px;padding:14px 16px;
+  ul.list{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+  ul.list li{background:var(--panel);border:1px solid var(--edge);border-radius:14px;padding:14px 16px;
      display:grid;grid-template-columns:auto 1fr auto;gap:14px;align-items:center;
      transition:border-color .15s,transform .15s}
-  li:hover{border-color:var(--violet);transform:translateY(-1px)}
+  ul.list li:hover{border-color:var(--violet);transform:translateY(-1px)}
   .num{font:700 13px var(--mono);color:var(--dim);min-width:52px}
   .title{font-weight:600}
   .title a{text-decoration:none}
@@ -61,15 +141,14 @@
   .Lesson{color:var(--teal);border-color:color-mix(in srgb,var(--teal) 40%,transparent)}
   .pat{color:var(--violet);border-color:color-mix(in srgb,var(--violet) 35%,transparent)}
   .lang{color:var(--cyan);border-color:color-mix(in srgb,var(--cyan) 35%,transparent)}
+  .src{color:var(--muted);border-color:var(--edge);text-decoration:none}
   .date{font:600 12px var(--mono);color:var(--muted);white-space:nowrap}
   .empty{text-align:center;color:var(--muted);padding:48px 0;font-family:var(--mono)}
-  .replay{margin:24px 0 0;padding:0}
-  .replay img{width:100%;border-radius:18px;display:block}
-  .replay figcaption{color:var(--muted);font:500 12px var(--mono);margin-top:8px;text-align:center}
   footer{margin-top:40px;color:var(--dim);font:500 12px var(--mono);text-align:center}
+  footer a{color:var(--muted)}
 
   @media (max-width:640px){
-    li{grid-template-columns:auto 1fr;}
+    ul.list li{grid-template-columns:auto 1fr;}
     .date{grid-column:2;justify-self:start}
     .controls{position:static}
   }
@@ -77,120 +156,2157 @@
 </head>
 <body>
 <div class="wrap">
+
   <header>
-    <h1><span class="grad">DSA Journey</span></h1>
-    <div class="sub" id="sub">loading…</div>
+    <h1><span class="grad">DSA &amp; LeetCode Journey</span></h1>
+    <div class="sub">
+      by <a href="https://github.com/yogender-ai">Yogender</a> ·
+      <a href="https://leetcode.com/u/yashyogender/">@yashyogender</a> on LeetCode ·
+      <a href="https://github.com/yogender-ai/DSA-LeetCode-Journey">source on GitHub</a>
+    </div>
+    <p class="lede">277 LeetCode problems solved and filed by date and pattern: 159 easy, 109 medium, 9 hard, with a 74-day streak. Browse every solution by topic, difficulty or language, with the source for each.</p>
   </header>
 
   <figure class="replay">
-    <img src="algo_replay.svg" alt="Today's algorithm executing step by step">
+    <img src="algo_replay.svg" alt="Binary Search executing step by step" width="1200" height="330">
     <figcaption>The algorithm is really executed at build time; every comparison and
     pointer move it makes becomes a frame. A different one each day.</figcaption>
   </figure>
 
-  <div class="tiles" id="tiles"></div>
+  <div class="tiles"><div class="tile"><div class="k" style="color:#8b5cf6">Solved</div><div class="v">277</div><div class="m">159 easy - 109 med - 9 hard</div></div><div class="tile"><div class="k" style="color:#a3e635">Streak</div><div class="v">74d</div><div class="m">longest 74d</div></div><div class="tile"><div class="k" style="color:#22d3ee">Active days</div><div class="v">233</div><div class="m">lifetime</div></div><div class="tile"><div class="k" style="color:#fbbf24">Contest</div><div class="v">1585.61</div><div class="m">top 26.49%</div></div><div class="tile"><div class="k" style="color:#2dd4bf">In this repo</div><div class="v">260</div><div class="m">files tracked</div></div></div>
+
+  <h2 id="all-solutions">All 260 solutions</h2>
 
   <div class="controls">
+    <label class="sr-only" for="q" hidden>Search solutions</label>
     <input type="search" id="q" placeholder="Search by name, number or pattern…" autocomplete="off" spellcheck="false">
-    <select id="diff"><option value="">All difficulties</option></select>
-    <select id="pat"><option value="">All patterns</option></select>
-    <select id="lang"><option value="">All languages</option></select>
-    <span class="count" id="count"></span>
+    <select id="diff" aria-label="Filter by difficulty"><option value="">All difficulties</option><option value="Easy">Easy</option><option value="Hard">Hard</option><option value="Lesson">Lesson</option><option value="Medium">Medium</option></select>
+    <select id="pat" aria-label="Filter by pattern"><option value="">All patterns</option><option value="Arrays &amp; Hashing">Arrays &amp; Hashing</option><option value="Binary Search">Binary Search</option><option value="Bit Manipulation">Bit Manipulation</option><option value="Clean string + Two Pointers">Clean string + Two Pointers</option><option value="Data Structures &amp; Algorithms">Data Structures &amp; Algorithms</option><option value="Dynamic Programming">Dynamic Programming</option><option value="Fixed-size Sliding Window + Hash Set">Fixed-size Sliding Window + Hash Set</option><option value="Graphs &amp; Search">Graphs &amp; Search</option><option value="Hash Map (frequency)">Hash Map (frequency)</option><option value="Hash Map with sorted-string key">Hash Map with sorted-string key</option><option value="Hash Set">Hash Set</option><option value="Hashing / Counting">Hashing / Counting</option><option value="Math &amp; Logic">Math &amp; Logic</option><option value="Matrix / Simulation">Matrix / Simulation</option><option value="Prefix Sum">Prefix Sum</option><option value="Prefix Sum + Suffix Minimum">Prefix Sum + Suffix Minimum</option><option value="SQL">SQL</option><option value="Sliding Window">Sliding Window</option><option value="Sorting &amp; STL">Sorting &amp; STL</option><option value="Sorting + Two Pointers">Sorting + Two Pointers</option><option value="Stack">Stack</option><option value="Strings">Strings</option><option value="Trees &amp; BST">Trees &amp; BST</option><option value="Two Pointers">Two Pointers</option></select>
+    <select id="lang" aria-label="Filter by language"><option value="">All languages</option><option value="C++">C++</option><option value="Python">Python</option><option value="SQL">SQL</option></select>
+    <span class="count" id="count">260 of 260</span>
   </div>
 
-  <ul id="list"></ul>
+  <ul class="list" id="list">
+    <li data-diff="Easy" data-pattern="Strings" data-lang="Python" data-search="reverse degree of a string 3498 strings">
+      <span class="num">#3498</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/reverse-degree-of-a-string/" rel="noopener">Reverse Degree of a String</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">Strings</span><span class="chip lang">Python</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/09-September/20-09-26/3498-reverse-degree-of-a-string.py" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-09-20</span>
+    </li>
+    <li data-diff="Easy" data-pattern="Stack" data-lang="Python" data-search="remove all adjacent duplicates in string 1047 stack">
+      <span class="num">#1047</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/" rel="noopener">Remove All Adjacent Duplicates In String</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">Stack</span><span class="chip lang">Python</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/09-September/20-09-26/1047-remove-all-adjacent-duplicates-in-string.py" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-09-20</span>
+    </li>
+    <li data-diff="Easy" data-pattern="Stack" data-lang="Python" data-search="remove all adjacent duplicates in string 1047 stack">
+      <span class="num">#1047</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/" rel="noopener">Remove All Adjacent Duplicates In String</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">Stack</span><span class="chip lang">Python</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/09-September/19-09-26/1047-remove-all-adjacent-duplicates-in-string.py" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-09-19</span>
+    </li>
+    <li data-diff="Medium" data-pattern="Two Pointers" data-lang="Python" data-search="string compression 443 two pointers">
+      <span class="num">#443</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/string-compression/" rel="noopener">String Compression</a></div>
+        <div class="meta"><span class="chip Medium">Medium</span><span class="chip pat">Two Pointers</span><span class="chip lang">Python</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/09-September/19-09-26/0443-string-compression.py" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-09-19</span>
+    </li>
+    <li data-diff="Medium" data-pattern="Matrix / Simulation" data-lang="Python" data-search="spiral matrix 54 matrix / simulation">
+      <span class="num">#54</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/spiral-matrix/" rel="noopener">Spiral Matrix</a></div>
+        <div class="meta"><span class="chip Medium">Medium</span><span class="chip pat">Matrix / Simulation</span><span class="chip lang">Python</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/09-September/19-09-26/0054-spiral-matrix.py" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-09-19</span>
+    </li>
+    <li data-diff="Lesson" data-pattern="Data Structures &amp; Algorithms" data-lang="Python" data-search="string building  data structures &amp; algorithms">
+      <span class="num">&mdash;</span>
+      <div>
+        <div class="title">String Building</div>
+        <div class="meta"><span class="chip Lesson">Lesson</span><span class="chip pat">Data Structures &amp; Algorithms</span><span class="chip lang">Python</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/09-September/19-09-26/string-building.py" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-09-19</span>
+    </li>
+    <li data-diff="Medium" data-pattern="Arrays &amp; Hashing" data-lang="Python" data-search="set matrix zeroes 73 arrays &amp; hashing">
+      <span class="num">#73</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/set-matrix-zeroes/" rel="noopener">Set Matrix Zeroes</a></div>
+        <div class="meta"><span class="chip Medium">Medium</span><span class="chip pat">Arrays &amp; Hashing</span><span class="chip lang">Python</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/09-September/18-09-26/0073-set-matrix-zeroes.py" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-09-18</span>
+    </li>
+    <li data-diff="Medium" data-pattern="Matrix / Simulation" data-lang="Python" data-search="rotate image 48 matrix / simulation">
+      <span class="num">#48</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/rotate-image/" rel="noopener">Rotate Image</a></div>
+        <div class="meta"><span class="chip Medium">Medium</span><span class="chip pat">Matrix / Simulation</span><span class="chip lang">Python</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/09-September/18-09-26/0048-rotate-image.py" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-09-18</span>
+    </li>
+    <li data-diff="Medium" data-pattern="Two Pointers" data-lang="Python" data-search="rearrange array elements by sign 2149 two pointers">
+      <span class="num">#2149</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/rearrange-array-elements-by-sign/" rel="noopener">Rearrange Array Elements by Sign</a></div>
+        <div class="meta"><span class="chip Medium">Medium</span><span class="chip pat">Two Pointers</span><span class="chip lang">Python</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/09-September/16-09-26/2149-rearrange-array-elements-by-sign.py" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-09-16</span>
+    </li>
+    <li data-diff="Easy" data-pattern="Arrays &amp; Hashing" data-lang="Python" data-search="element appearing more than 25% in sorted array 1287 arrays &amp; hashing">
+      <span class="num">#1287</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/element-appearing-more-than-25-in-sorted-array/" rel="noopener">Element Appearing More Than 25% In Sorted Array</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">Arrays &amp; Hashing</span><span class="chip lang">Python</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/09-September/15-09-26/1287-element-appearing-more-than-25-in-sorted-array.py" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-09-15</span>
+    </li>
+    <li data-diff="Medium" data-pattern="Sorting &amp; STL" data-lang="Python" data-search="largest number 179 sorting &amp; stl">
+      <span class="num">#179</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/largest-number/" rel="noopener">Largest Number</a></div>
+        <div class="meta"><span class="chip Medium">Medium</span><span class="chip pat">Sorting &amp; STL</span><span class="chip lang">Python</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/09-September/15-09-26/0179-largest-number.py" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-09-15</span>
+    </li>
+    <li data-diff="Medium" data-pattern="Sorting &amp; STL" data-lang="Python" data-search="merge intervals 56 sorting &amp; stl">
+      <span class="num">#56</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/merge-intervals/" rel="noopener">Merge Intervals</a></div>
+        <div class="meta"><span class="chip Medium">Medium</span><span class="chip pat">Sorting &amp; STL</span><span class="chip lang">Python</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/09-September/15-09-26/0056-merge-intervals.py" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-09-15</span>
+    </li>
+    <li data-diff="Medium" data-pattern="Arrays &amp; Hashing" data-lang="Python" data-search="insert delete getrandom o(1) 380 arrays &amp; hashing">
+      <span class="num">#380</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/insert-delete-getrandom-o1/" rel="noopener">Insert Delete GetRandom O(1)</a></div>
+        <div class="meta"><span class="chip Medium">Medium</span><span class="chip pat">Arrays &amp; Hashing</span><span class="chip lang">Python</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/09-September/12-09-26/0380-insert-delete-getrandom-o1.py" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-09-12</span>
+    </li>
+    <li data-diff="Medium" data-pattern="Arrays &amp; Hashing" data-lang="Python" data-search="insert delete getrandom o(1) 380 arrays &amp; hashing">
+      <span class="num">#380</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/insert-delete-getrandom-o1/" rel="noopener">Insert Delete GetRandom O(1)</a></div>
+        <div class="meta"><span class="chip Medium">Medium</span><span class="chip pat">Arrays &amp; Hashing</span><span class="chip lang">Python</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/09-September/14-09-26/0380-insert-delete-getrandom-o1.py" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-09-12</span>
+    </li>
+    <li data-diff="Lesson" data-pattern="Data Structures &amp; Algorithms" data-lang="Python" data-search="frequency count  data structures &amp; algorithms">
+      <span class="num">&mdash;</span>
+      <div>
+        <div class="title">Frequency Count</div>
+        <div class="meta"><span class="chip Lesson">Lesson</span><span class="chip pat">Data Structures &amp; Algorithms</span><span class="chip lang">Python</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/09-September/12-09-26/frequency-count.py" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-09-12</span>
+    </li>
+    <li data-diff="Lesson" data-pattern="Arrays &amp; Hashing" data-lang="Python" data-search="hashing  arrays &amp; hashing">
+      <span class="num">&mdash;</span>
+      <div>
+        <div class="title">Hashing</div>
+        <div class="meta"><span class="chip Lesson">Lesson</span><span class="chip pat">Arrays &amp; Hashing</span><span class="chip lang">Python</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/09-September/12-09-26/hashing.py" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-09-12</span>
+    </li>
+    <li data-diff="Medium" data-pattern="Prefix Sum" data-lang="Python" data-search="subarray sums divisible by k 974 prefix sum">
+      <span class="num">#974</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/subarray-sums-divisible-by-k/" rel="noopener">Subarray Sums Divisible by K</a></div>
+        <div class="meta"><span class="chip Medium">Medium</span><span class="chip pat">Prefix Sum</span><span class="chip lang">Python</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/09-September/05-09-26/0974-subarray-sums-divisible-by-k.py" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-09-05</span>
+    </li>
+    <li data-diff="Medium" data-pattern="Prefix Sum" data-lang="Python" data-search="subarray sum equals k 560 prefix sum">
+      <span class="num">#560</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/subarray-sum-equals-k/" rel="noopener">Subarray Sum Equals K</a></div>
+        <div class="meta"><span class="chip Medium">Medium</span><span class="chip pat">Prefix Sum</span><span class="chip lang">Python</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/09-September/05-09-26/0560-subarray-sum-equals-k.py" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-09-05</span>
+    </li>
+    <li data-diff="Easy" data-pattern="Prefix Sum" data-lang="Python" data-search="range sum query - immutable 303 prefix sum">
+      <span class="num">#303</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/range-sum-query-immutable/" rel="noopener">Range Sum Query - Immutable</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">Prefix Sum</span><span class="chip lang">Python</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/09-September/04-09-26/0303-range-sum-query-immutable.py" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-09-04</span>
+    </li>
+    <li data-diff="Medium" data-pattern="Two Pointers" data-lang="Python" data-search="3sum 15 two pointers">
+      <span class="num">#15</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/3sum/" rel="noopener">3Sum</a></div>
+        <div class="meta"><span class="chip Medium">Medium</span><span class="chip pat">Two Pointers</span><span class="chip lang">Python</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/08-August/20-08-26/0015-3sum.py" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-08-20</span>
+    </li>
+    <li data-diff="Medium" data-pattern="Two Pointers" data-lang="Python" data-search="container with most water 11 two pointers">
+      <span class="num">#11</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/container-with-most-water/" rel="noopener">Container With Most Water</a></div>
+        <div class="meta"><span class="chip Medium">Medium</span><span class="chip pat">Two Pointers</span><span class="chip lang">Python</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/08-August/19-08-26/0011-container-with-most-water.py" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-08-19</span>
+    </li>
+    <li data-diff="Medium" data-pattern="Arrays &amp; Hashing" data-lang="Python" data-search="top k frequent elements 347 arrays &amp; hashing">
+      <span class="num">#347</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/top-k-frequent-elements/" rel="noopener">Top K Frequent Elements</a></div>
+        <div class="meta"><span class="chip Medium">Medium</span><span class="chip pat">Arrays &amp; Hashing</span><span class="chip lang">Python</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/08-August/16-08-26/0347-top-k-frequent-elements.py" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-08-16</span>
+    </li>
+    <li data-diff="Medium" data-pattern="Arrays &amp; Hashing" data-lang="Python" data-search="longest consecutive sequence 128 arrays &amp; hashing">
+      <span class="num">#128</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/longest-consecutive-sequence/" rel="noopener">Longest Consecutive Sequence</a></div>
+        <div class="meta"><span class="chip Medium">Medium</span><span class="chip pat">Arrays &amp; Hashing</span><span class="chip lang">Python</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/08-August/16-08-26/0128-longest-consecutive-sequence.py" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-08-16</span>
+    </li>
+    <li data-diff="Easy" data-pattern="Hashing / Counting" data-lang="Python" data-search="valid anagram 242 hashing / counting">
+      <span class="num">#242</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/valid-anagram/" rel="noopener">Valid Anagram</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">Hashing / Counting</span><span class="chip lang">Python</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/08-August/14-08-26/0242-valid-anagram.py" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-08-14</span>
+    </li>
+    <li data-diff="Easy" data-pattern="Hash Map (frequency)" data-lang="Python" data-search="contains duplicate 217 hash map (frequency)">
+      <span class="num">#217</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/contains-duplicate/" rel="noopener">Contains Duplicate</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">Hash Map (frequency)</span><span class="chip lang">Python</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/08-August/14-08-26/0217-contains-duplicate.py" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-08-14</span>
+    </li>
+    <li data-diff="Medium" data-pattern="Hash Map with sorted-string key" data-lang="Python" data-search="group anagrams 49 hash map with sorted-string key">
+      <span class="num">#49</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/group-anagrams/" rel="noopener">Group Anagrams</a></div>
+        <div class="meta"><span class="chip Medium">Medium</span><span class="chip pat">Hash Map with sorted-string key</span><span class="chip lang">Python</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/08-August/14-08-26/0049-group-anagrams.py" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-08-14</span>
+    </li>
+    <li data-diff="Hard" data-pattern="Binary Search" data-lang="Python" data-search="median of two sorted arrays 4 binary search">
+      <span class="num">#4</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/median-of-two-sorted-arrays/" rel="noopener">Median of Two Sorted Arrays</a></div>
+        <div class="meta"><span class="chip Hard">Hard</span><span class="chip pat">Binary Search</span><span class="chip lang">Python</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/08-August/14-08-26/0004-median-of-two-sorted-arrays.py" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-08-14</span>
+    </li>
+    <li data-diff="Medium" data-pattern="Sliding Window" data-lang="Python" data-search="longest substring without repeating characters 3 sliding window">
+      <span class="num">#3</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/longest-substring-without-repeating-characters/" rel="noopener">Longest Substring Without Repeating Characters</a></div>
+        <div class="meta"><span class="chip Medium">Medium</span><span class="chip pat">Sliding Window</span><span class="chip lang">Python</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/08-August/14-08-26/0003-longest-substring-without-repeating-characters.py" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-08-14</span>
+    </li>
+    <li data-diff="Medium" data-pattern="Math &amp; Logic" data-lang="Python" data-search="add two numbers 2 math &amp; logic">
+      <span class="num">#2</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/add-two-numbers/" rel="noopener">Add Two Numbers</a></div>
+        <div class="meta"><span class="chip Medium">Medium</span><span class="chip pat">Math &amp; Logic</span><span class="chip lang">Python</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/08-August/14-08-26/0002-add-two-numbers.py" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-08-14</span>
+    </li>
+    <li data-diff="Easy" data-pattern="Arrays &amp; Hashing" data-lang="Python" data-search="two sum 1 arrays &amp; hashing">
+      <span class="num">#1</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/two-sum/" rel="noopener">Two Sum</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">Arrays &amp; Hashing</span><span class="chip lang">Python</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/08-August/14-08-26/0001-two-sum.py" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-08-14</span>
+    </li>
+    <li data-diff="Lesson" data-pattern="Arrays &amp; Hashing" data-lang="Python" data-search="without tle  arrays &amp; hashing">
+      <span class="num">&mdash;</span>
+      <div>
+        <div class="title">Without TLE</div>
+        <div class="meta"><span class="chip Lesson">Lesson</span><span class="chip pat">Arrays &amp; Hashing</span><span class="chip lang">Python</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/08-August/14-08-26/without-tle.py" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-08-14</span>
+    </li>
+    <li data-diff="Medium" data-pattern="Arrays &amp; Hashing" data-lang="C++" data-search="next permutation 31 arrays &amp; hashing">
+      <span class="num">#31</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/next-permutation/" rel="noopener">Next Permutation</a></div>
+        <div class="meta"><span class="chip Medium">Medium</span><span class="chip pat">Arrays &amp; Hashing</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/07-July/29-07-26/0031-next-permutation.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-07-29</span>
+    </li>
+    <li data-diff="Lesson" data-pattern="Data Structures &amp; Algorithms" data-lang="Python" data-search="basics  data structures &amp; algorithms">
+      <span class="num">&mdash;</span>
+      <div>
+        <div class="title">Basics</div>
+        <div class="meta"><span class="chip Lesson">Lesson</span><span class="chip pat">Data Structures &amp; Algorithms</span><span class="chip lang">Python</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/07-July/29-07-26/basics.py" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-07-29</span>
+    </li>
+    <li data-diff="Lesson" data-pattern="Data Structures &amp; Algorithms" data-lang="C++" data-search="kmp pattern search  data structures &amp; algorithms">
+      <span class="num">&mdash;</span>
+      <div>
+        <div class="title">Kmp Pattern Search</div>
+        <div class="meta"><span class="chip Lesson">Lesson</span><span class="chip pat">Data Structures &amp; Algorithms</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/07-July/29-07-26/kmp-pattern-search.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-07-29</span>
+    </li>
+    <li data-diff="Lesson" data-pattern="Data Structures &amp; Algorithms" data-lang="C++" data-search="naive pattern search  data structures &amp; algorithms">
+      <span class="num">&mdash;</span>
+      <div>
+        <div class="title">Naive Pattern Search</div>
+        <div class="meta"><span class="chip Lesson">Lesson</span><span class="chip pat">Data Structures &amp; Algorithms</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/07-July/29-07-26/naive-pattern-search.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-07-29</span>
+    </li>
+    <li data-diff="Lesson" data-pattern="Data Structures &amp; Algorithms" data-lang="C++" data-search="partition zeros  data structures &amp; algorithms">
+      <span class="num">&mdash;</span>
+      <div>
+        <div class="title">Partition Zeros</div>
+        <div class="meta"><span class="chip Lesson">Lesson</span><span class="chip pat">Data Structures &amp; Algorithms</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/07-July/29-07-26/partition-zeros.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-07-29</span>
+    </li>
+    <li data-diff="Lesson" data-pattern="Data Structures &amp; Algorithms" data-lang="C++" data-search="sort vs stable sort  data structures &amp; algorithms">
+      <span class="num">&mdash;</span>
+      <div>
+        <div class="title">Sort Vs Stable Sort</div>
+        <div class="meta"><span class="chip Lesson">Lesson</span><span class="chip pat">Data Structures &amp; Algorithms</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/07-July/29-07-26/sort-vs-stable-sort.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-07-29</span>
+    </li>
+    <li data-diff="Lesson" data-pattern="Data Structures &amp; Algorithms" data-lang="C++" data-search="string basics  data structures &amp; algorithms">
+      <span class="num">&mdash;</span>
+      <div>
+        <div class="title">String Basics</div>
+        <div class="meta"><span class="chip Lesson">Lesson</span><span class="chip pat">Data Structures &amp; Algorithms</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/07-July/29-07-26/string-basics.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-07-29</span>
+    </li>
+    <li data-diff="Easy" data-pattern="Sorting + Two Pointers" data-lang="Python" data-search="two sum 1 sorting + two pointers">
+      <span class="num">#1</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/two-sum/" rel="noopener">Two Sum</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">Sorting + Two Pointers</span><span class="chip lang">Python</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/07-July/28-07-26/0001-two-sum.py" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-07-28</span>
+    </li>
+    <li data-diff="Easy" data-pattern="SQL" data-lang="SQL" data-search="primary department for each employee 1789 sql">
+      <span class="num">#1789</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/primary-department-for-each-employee/" rel="noopener">Primary Department for Each Employee</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">SQL</span><span class="chip lang">SQL</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/07-July/17-07-26/1789-primary-department-for-each-employee.sql" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-07-17</span>
+    </li>
+    <li data-diff="Easy" data-pattern="SQL" data-lang="SQL" data-search="triangle judgement 610 sql">
+      <span class="num">#610</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/triangle-judgement/" rel="noopener">Triangle Judgement</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">SQL</span><span class="chip lang">SQL</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/07-July/17-07-26/0610-triangle-judgement.sql" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-07-17</span>
+    </li>
+    <li data-diff="Medium" data-pattern="SQL" data-lang="SQL" data-search="consecutive numbers 180 sql">
+      <span class="num">#180</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/consecutive-numbers/" rel="noopener">Consecutive Numbers</a></div>
+        <div class="meta"><span class="chip Medium">Medium</span><span class="chip pat">SQL</span><span class="chip lang">SQL</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/07-July/17-07-26/0180-consecutive-numbers.sql" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-07-17</span>
+    </li>
+    <li data-diff="Easy" data-pattern="SQL" data-lang="SQL" data-search="biggest single number 619 sql">
+      <span class="num">#619</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/biggest-single-number/" rel="noopener">Biggest Single Number</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">SQL</span><span class="chip lang">SQL</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/07-July/16-07-26/0619-biggest-single-number.sql" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-07-16</span>
+    </li>
+    <li data-diff="Medium" data-pattern="SQL" data-lang="SQL" data-search="product sales analysis iii 1070 sql">
+      <span class="num">#1070</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/product-sales-analysis-iii/" rel="noopener">Product Sales Analysis III</a></div>
+        <div class="meta"><span class="chip Medium">Medium</span><span class="chip pat">SQL</span><span class="chip lang">SQL</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/07-July/14-07-26/1070-product-sales-analysis-iii.sql" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-07-14</span>
+    </li>
+    <li data-diff="Easy" data-pattern="SQL" data-lang="SQL" data-search="user activity for the past 30 days i 1141 sql">
+      <span class="num">#1141</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/user-activity-for-the-past-30-days-i/" rel="noopener">User Activity for the Past 30 Days I</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">SQL</span><span class="chip lang">SQL</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/07-July/12-07-26/1141-user-activity-for-the-past-30-days-i.sql" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-07-12</span>
+    </li>
+    <li data-diff="Medium" data-pattern="SQL" data-lang="SQL" data-search="game play analysis iv 550 sql">
+      <span class="num">#550</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/game-play-analysis-iv/" rel="noopener">Game Play Analysis IV</a></div>
+        <div class="meta"><span class="chip Medium">Medium</span><span class="chip pat">SQL</span><span class="chip lang">SQL</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/07-July/11-07-26/0550-game-play-analysis-iv.sql" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-07-11</span>
+    </li>
+    <li data-diff="Easy" data-pattern="Bit Manipulation" data-lang="C++" data-search="construct the minimum bitwise array i 3314 bit manipulation">
+      <span class="num">#3314</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/construct-the-minimum-bitwise-array-i/" rel="noopener">Construct the Minimum Bitwise Array I</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">Bit Manipulation</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/06-June/26-06-26/3314-construct-the-minimum-bitwise-array-i.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-06-26</span>
+    </li>
+    <li data-diff="Easy" data-pattern="Arrays &amp; Hashing" data-lang="C++" data-search="number of unique subjects taught by each teacher 2356 arrays &amp; hashing">
+      <span class="num">#2356</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/number-of-unique-subjects-taught-by-each-teacher/" rel="noopener">Number of Unique Subjects Taught by Each Teacher</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">Arrays &amp; Hashing</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/06-June/26-06-26/2356-number-of-unique-subjects-taught-by-each-teacher.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-06-26</span>
+    </li>
+    <li data-diff="Easy" data-pattern="Arrays &amp; Hashing" data-lang="C++" data-search="concatenation of array 1929 arrays &amp; hashing">
+      <span class="num">#1929</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/concatenation-of-array/" rel="noopener">Concatenation of Array</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">Arrays &amp; Hashing</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/06-June/26-06-26/1929-concatenation-of-array.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-06-26</span>
+    </li>
+    <li data-diff="Easy" data-pattern="Arrays &amp; Hashing" data-lang="C++" data-search="check if array is sorted and rotated 1752 arrays &amp; hashing">
+      <span class="num">#1752</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/" rel="noopener">Check if Array Is Sorted and Rotated</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">Arrays &amp; Hashing</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/06-June/26-06-26/1752-check-if-array-is-sorted-and-rotated.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-06-26</span>
+    </li>
+    <li data-diff="Easy" data-pattern="Arrays &amp; Hashing" data-lang="C++" data-search="kth missing positive number 1539 arrays &amp; hashing">
+      <span class="num">#1539</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/kth-missing-positive-number/" rel="noopener">Kth Missing Positive Number</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">Arrays &amp; Hashing</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/06-June/26-06-26/1539-kth-missing-positive-number.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-06-26</span>
+    </li>
+    <li data-diff="Easy" data-pattern="Arrays &amp; Hashing" data-lang="C++" data-search="shuffle the array 1470 arrays &amp; hashing">
+      <span class="num">#1470</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/shuffle-the-array/" rel="noopener">Shuffle the Array</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">Arrays &amp; Hashing</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/06-June/26-06-26/1470-shuffle-the-array.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-06-26</span>
+    </li>
+    <li data-diff="Easy" data-pattern="Arrays &amp; Hashing" data-lang="C++" data-search="how many numbers are smaller than the current number 1365 arrays &amp; hashing">
+      <span class="num">#1365</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/" rel="noopener">How Many Numbers Are Smaller Than the Current Number</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">Arrays &amp; Hashing</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/06-June/26-06-26/1365-how-many-numbers-are-smaller-than-the-current-number.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-06-26</span>
+    </li>
+    <li data-diff="Medium" data-pattern="Arrays &amp; Hashing" data-lang="C++" data-search="monthly transactions i 1193 arrays &amp; hashing">
+      <span class="num">#1193</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/monthly-transactions-i/" rel="noopener">Monthly Transactions I</a></div>
+        <div class="meta"><span class="chip Medium">Medium</span><span class="chip pat">Arrays &amp; Hashing</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/06-June/26-06-26/1193-monthly-transactions-i.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-06-26</span>
+    </li>
+    <li data-diff="Medium" data-pattern="Arrays &amp; Hashing" data-lang="C++" data-search="immediate food delivery ii 1174 arrays &amp; hashing">
+      <span class="num">#1174</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/immediate-food-delivery-ii/" rel="noopener">Immediate Food Delivery II</a></div>
+        <div class="meta"><span class="chip Medium">Medium</span><span class="chip pat">Arrays &amp; Hashing</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/06-June/26-06-26/1174-immediate-food-delivery-ii.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-06-26</span>
+    </li>
+    <li data-diff="Easy" data-pattern="Arrays &amp; Hashing" data-lang="C++" data-search="remove outermost parentheses 1021 arrays &amp; hashing">
+      <span class="num">#1021</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/remove-outermost-parentheses/" rel="noopener">Remove Outermost Parentheses</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">Arrays &amp; Hashing</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/06-June/26-06-26/1021-remove-outermost-parentheses.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-06-26</span>
+    </li>
+    <li data-diff="Easy" data-pattern="Arrays &amp; Hashing" data-lang="C++" data-search="rotate string 796 arrays &amp; hashing">
+      <span class="num">#796</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/rotate-string/" rel="noopener">Rotate String</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">Arrays &amp; Hashing</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/06-June/26-06-26/0796-rotate-string.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-06-26</span>
+    </li>
+    <li data-diff="Easy" data-pattern="Arrays &amp; Hashing" data-lang="C++" data-search="self dividing numbers 728 arrays &amp; hashing">
+      <span class="num">#728</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/self-dividing-numbers/" rel="noopener">Self Dividing Numbers</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">Arrays &amp; Hashing</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/06-June/26-06-26/0728-self-dividing-numbers.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-06-26</span>
+    </li>
+    <li data-diff="Easy" data-pattern="Arrays &amp; Hashing" data-lang="C++" data-search="binary search 704 arrays &amp; hashing">
+      <span class="num">#704</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/binary-search/" rel="noopener">Binary Search</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">Arrays &amp; Hashing</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/06-June/26-06-26/0704-binary-search.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-06-26</span>
+    </li>
+    <li data-diff="Easy" data-pattern="Arrays &amp; Hashing" data-lang="C++" data-search="set mismatch 645 arrays &amp; hashing">
+      <span class="num">#645</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/set-mismatch/" rel="noopener">Set Mismatch</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">Arrays &amp; Hashing</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/06-June/26-06-26/0645-set-mismatch.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-06-26</span>
+    </li>
+    <li data-diff="Easy" data-pattern="Arrays &amp; Hashing" data-lang="C++" data-search="maximum average subarray i 643 arrays &amp; hashing">
+      <span class="num">#643</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/maximum-average-subarray-i/" rel="noopener">Maximum Average Subarray I</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">Arrays &amp; Hashing</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/06-June/26-06-26/0643-maximum-average-subarray-i.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-06-26</span>
+    </li>
+    <li data-diff="Easy" data-pattern="Arrays &amp; Hashing" data-lang="C++" data-search="max consecutive ones 485 arrays &amp; hashing">
+      <span class="num">#485</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/max-consecutive-ones/" rel="noopener">Max Consecutive Ones</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">Arrays &amp; Hashing</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/06-June/26-06-26/0485-max-consecutive-ones.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-06-26</span>
+    </li>
+    <li data-diff="Easy" data-pattern="Arrays &amp; Hashing" data-lang="C++" data-search="find all numbers disappeared in an array 448 arrays &amp; hashing">
+      <span class="num">#448</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/" rel="noopener">Find All Numbers Disappeared in an Array</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">Arrays &amp; Hashing</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/06-June/26-06-26/0448-find-all-numbers-disappeared-in-an-array.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-06-26</span>
+    </li>
+    <li data-diff="Easy" data-pattern="Sorting &amp; STL" data-lang="C++" data-search="third maximum number 414 sorting &amp; stl">
+      <span class="num">#414</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/third-maximum-number/" rel="noopener">Third Maximum Number</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">Sorting &amp; STL</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/06-June/26-06-26/0414-third-maximum-number.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-06-26</span>
+    </li>
+    <li data-diff="Easy" data-pattern="Arrays &amp; Hashing" data-lang="C++" data-search="find the difference 389 arrays &amp; hashing">
+      <span class="num">#389</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/find-the-difference/" rel="noopener">Find the Difference</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">Arrays &amp; Hashing</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/06-June/26-06-26/0389-find-the-difference.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-06-26</span>
+    </li>
+    <li data-diff="Easy" data-pattern="Arrays &amp; Hashing" data-lang="C++" data-search="first unique character in a string 387 arrays &amp; hashing">
+      <span class="num">#387</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/first-unique-character-in-a-string/" rel="noopener">First Unique Character in a String</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">Arrays &amp; Hashing</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/06-June/26-06-26/0387-first-unique-character-in-a-string.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-06-26</span>
+    </li>
+    <li data-diff="Easy" data-pattern="Arrays &amp; Hashing" data-lang="C++" data-search="ransom note 383 arrays &amp; hashing">
+      <span class="num">#383</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/ransom-note/" rel="noopener">Ransom Note</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">Arrays &amp; Hashing</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/06-June/26-06-26/0383-ransom-note.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-06-26</span>
+    </li>
+    <li data-diff="Easy" data-pattern="Two Pointers" data-lang="C++" data-search="intersection of two arrays 349 two pointers">
+      <span class="num">#349</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/intersection-of-two-arrays/" rel="noopener">Intersection of Two Arrays</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">Two Pointers</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/06-June/26-06-26/0349-intersection-of-two-arrays.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-06-26</span>
+    </li>
+    <li data-diff="Easy" data-pattern="Arrays &amp; Hashing" data-lang="C++" data-search="range sum query - immutable 303 arrays &amp; hashing">
+      <span class="num">#303</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/range-sum-query-immutable/" rel="noopener">Range Sum Query - Immutable</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">Arrays &amp; Hashing</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/06-June/26-06-26/0303-range-sum-query-immutable.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-06-26</span>
+    </li>
+    <li data-diff="Easy" data-pattern="Two Pointers" data-lang="C++" data-search="move zeroes 283 two pointers">
+      <span class="num">#283</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/move-zeroes/" rel="noopener">Move Zeroes</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">Two Pointers</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/06-June/26-06-26/0283-move-zeroes.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-06-26</span>
+    </li>
+    <li data-diff="Easy" data-pattern="Arrays &amp; Hashing" data-lang="C++" data-search="contains duplicate ii 219 arrays &amp; hashing">
+      <span class="num">#219</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/contains-duplicate-ii/" rel="noopener">Contains Duplicate II</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">Arrays &amp; Hashing</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/06-June/26-06-26/0219-contains-duplicate-ii.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-06-26</span>
+    </li>
+    <li data-diff="Easy" data-pattern="Arrays &amp; Hashing" data-lang="C++" data-search="contains duplicate 217 arrays &amp; hashing">
+      <span class="num">#217</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/contains-duplicate/" rel="noopener">Contains Duplicate</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">Arrays &amp; Hashing</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/06-June/26-06-26/0217-contains-duplicate.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-06-26</span>
+    </li>
+    <li data-diff="Easy" data-pattern="Arrays &amp; Hashing" data-lang="C++" data-search="isomorphic strings 205 arrays &amp; hashing">
+      <span class="num">#205</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/isomorphic-strings/" rel="noopener">Isomorphic Strings</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">Arrays &amp; Hashing</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/06-June/26-06-26/0205-isomorphic-strings.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-06-26</span>
+    </li>
+    <li data-diff="Easy" data-pattern="Stack" data-lang="C++" data-search="binary tree postorder traversal 145 stack">
+      <span class="num">#145</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/binary-tree-postorder-traversal/" rel="noopener">Binary Tree Postorder Traversal</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">Stack</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/06-June/26-06-26/0145-binary-tree-postorder-traversal.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-06-26</span>
+    </li>
+    <li data-diff="Easy" data-pattern="Stack" data-lang="C++" data-search="binary tree preorder traversal 144 stack">
+      <span class="num">#144</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/binary-tree-preorder-traversal/" rel="noopener">Binary Tree Preorder Traversal</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">Stack</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/06-June/26-06-26/0144-binary-tree-preorder-traversal.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-06-26</span>
+    </li>
+    <li data-diff="Easy" data-pattern="Dynamic Programming" data-lang="C++" data-search="best time to buy and sell stock 121 dynamic programming">
+      <span class="num">#121</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/best-time-to-buy-and-sell-stock/" rel="noopener">Best Time to Buy and Sell Stock</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">Dynamic Programming</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/06-June/26-06-26/0121-best-time-to-buy-and-sell-stock.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-06-26</span>
+    </li>
+    <li data-diff="Easy" data-pattern="Trees &amp; BST" data-lang="C++" data-search="maximum depth of binary tree 104 trees &amp; bst">
+      <span class="num">#104</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/maximum-depth-of-binary-tree/" rel="noopener">Maximum Depth of Binary Tree</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">Trees &amp; BST</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/06-June/26-06-26/0104-maximum-depth-of-binary-tree.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-06-26</span>
+    </li>
+    <li data-diff="Easy" data-pattern="Trees &amp; BST" data-lang="C++" data-search="same tree 100 trees &amp; bst">
+      <span class="num">#100</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/same-tree/" rel="noopener">Same Tree</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">Trees &amp; BST</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/06-June/26-06-26/0100-same-tree.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-06-26</span>
+    </li>
+    <li data-diff="Easy" data-pattern="Stack" data-lang="C++" data-search="binary tree inorder traversal 94 stack">
+      <span class="num">#94</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/binary-tree-inorder-traversal/" rel="noopener">Binary Tree Inorder Traversal</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">Stack</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/06-June/26-06-26/0094-binary-tree-inorder-traversal.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-06-26</span>
+    </li>
+    <li data-diff="Easy" data-pattern="Two Pointers" data-lang="C++" data-search="merge sorted array 88 two pointers">
+      <span class="num">#88</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/merge-sorted-array/" rel="noopener">Merge Sorted Array</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">Two Pointers</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/06-June/26-06-26/0088-merge-sorted-array.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-06-26</span>
+    </li>
+    <li data-diff="Easy" data-pattern="Data Structures &amp; Algorithms" data-lang="C++" data-search="remove duplicates from sorted list 83 data structures &amp; algorithms">
+      <span class="num">#83</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/remove-duplicates-from-sorted-list/" rel="noopener">Remove Duplicates from Sorted List</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">Data Structures &amp; Algorithms</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/06-June/26-06-26/0083-remove-duplicates-from-sorted-list.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-06-26</span>
+    </li>
+    <li data-diff="Easy" data-pattern="Binary Search" data-lang="C++" data-search="sqrt(x) 69 binary search">
+      <span class="num">#69</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/sqrtx/" rel="noopener">Sqrt(x)</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">Binary Search</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/06-June/26-06-26/0069-sqrtx.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-06-26</span>
+    </li>
+    <li data-diff="Medium" data-pattern="Arrays &amp; Hashing" data-lang="C++" data-search="maximum subarray 53 arrays &amp; hashing">
+      <span class="num">#53</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/maximum-subarray/" rel="noopener">Maximum Subarray</a></div>
+        <div class="meta"><span class="chip Medium">Medium</span><span class="chip pat">Arrays &amp; Hashing</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/06-June/26-06-26/0053-maximum-subarray.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-06-26</span>
+    </li>
+    <li data-diff="Easy" data-pattern="Arrays &amp; Hashing" data-lang="C++" data-search="remove duplicates from sorted array 26 arrays &amp; hashing">
+      <span class="num">#26</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/remove-duplicates-from-sorted-array/" rel="noopener">Remove Duplicates from Sorted Array</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">Arrays &amp; Hashing</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/06-June/26-06-26/0026-remove-duplicates-from-sorted-array.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-06-26</span>
+    </li>
+    <li data-diff="Easy" data-pattern="Arrays &amp; Hashing" data-lang="C++" data-search="two sum 1 arrays &amp; hashing">
+      <span class="num">#1</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/two-sum/" rel="noopener">Two Sum</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">Arrays &amp; Hashing</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/06-June/26-06-26/0001-two-sum.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-06-26</span>
+    </li>
+    <li data-diff="Lesson" data-pattern="Data Structures &amp; Algorithms" data-lang="C++" data-search="arrays  data structures &amp; algorithms">
+      <span class="num">&mdash;</span>
+      <div>
+        <div class="title">Arrays</div>
+        <div class="meta"><span class="chip Lesson">Lesson</span><span class="chip pat">Data Structures &amp; Algorithms</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/06-June/26-06-26/arrays.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-06-26</span>
+    </li>
+    <li data-diff="Lesson" data-pattern="Data Structures &amp; Algorithms" data-lang="C++" data-search="basic recursion  data structures &amp; algorithms">
+      <span class="num">&mdash;</span>
+      <div>
+        <div class="title">Basic Recursion</div>
+        <div class="meta"><span class="chip Lesson">Lesson</span><span class="chip pat">Data Structures &amp; Algorithms</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/06-June/26-06-26/basic-recursion.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-06-26</span>
+    </li>
+    <li data-diff="Lesson" data-pattern="Data Structures &amp; Algorithms" data-lang="C++" data-search="basic  data structures &amp; algorithms">
+      <span class="num">&mdash;</span>
+      <div>
+        <div class="title">Basic</div>
+        <div class="meta"><span class="chip Lesson">Lesson</span><span class="chip pat">Data Structures &amp; Algorithms</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/06-June/26-06-26/basic.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-06-26</span>
+    </li>
+    <li data-diff="Lesson" data-pattern="Data Structures &amp; Algorithms" data-lang="C++" data-search="binary tree  data structures &amp; algorithms">
+      <span class="num">&mdash;</span>
+      <div>
+        <div class="title">Binary Tree</div>
+        <div class="meta"><span class="chip Lesson">Lesson</span><span class="chip pat">Data Structures &amp; Algorithms</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/06-June/26-06-26/binary-tree.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-06-26</span>
+    </li>
+    <li data-diff="Lesson" data-pattern="Data Structures &amp; Algorithms" data-lang="C++" data-search="bst deletion  data structures &amp; algorithms">
+      <span class="num">&mdash;</span>
+      <div>
+        <div class="title">Bst Deletion</div>
+        <div class="meta"><span class="chip Lesson">Lesson</span><span class="chip pat">Data Structures &amp; Algorithms</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/06-June/26-06-26/bst-deletion.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-06-26</span>
+    </li>
+    <li data-diff="Lesson" data-pattern="Data Structures &amp; Algorithms" data-lang="C++" data-search="bst insertion  data structures &amp; algorithms">
+      <span class="num">&mdash;</span>
+      <div>
+        <div class="title">Bst Insertion</div>
+        <div class="meta"><span class="chip Lesson">Lesson</span><span class="chip pat">Data Structures &amp; Algorithms</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/06-June/26-06-26/bst-insertion.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-06-26</span>
+    </li>
+    <li data-diff="Lesson" data-pattern="Data Structures &amp; Algorithms" data-lang="C++" data-search="bst traversal  data structures &amp; algorithms">
+      <span class="num">&mdash;</span>
+      <div>
+        <div class="title">Bst Traversal</div>
+        <div class="meta"><span class="chip Lesson">Lesson</span><span class="chip pat">Data Structures &amp; Algorithms</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/06-June/26-06-26/bst-traversal.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-06-26</span>
+    </li>
+    <li data-diff="Lesson" data-pattern="Data Structures &amp; Algorithms" data-lang="C++" data-search="bubblesort  data structures &amp; algorithms">
+      <span class="num">&mdash;</span>
+      <div>
+        <div class="title">Bubblesort</div>
+        <div class="meta"><span class="chip Lesson">Lesson</span><span class="chip pat">Data Structures &amp; Algorithms</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/06-June/26-06-26/bubblesort.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-06-26</span>
+    </li>
+    <li data-diff="Lesson" data-pattern="Data Structures &amp; Algorithms" data-lang="C++" data-search="creation  data structures &amp; algorithms">
+      <span class="num">&mdash;</span>
+      <div>
+        <div class="title">Creation</div>
+        <div class="meta"><span class="chip Lesson">Lesson</span><span class="chip pat">Data Structures &amp; Algorithms</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/06-June/26-06-26/creation.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-06-26</span>
+    </li>
+    <li data-diff="Lesson" data-pattern="Data Structures &amp; Algorithms" data-lang="C++" data-search="h1  data structures &amp; algorithms">
+      <span class="num">&mdash;</span>
+      <div>
+        <div class="title">H1</div>
+        <div class="meta"><span class="chip Lesson">Lesson</span><span class="chip pat">Data Structures &amp; Algorithms</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/06-June/26-06-26/h1.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-06-26</span>
+    </li>
+    <li data-diff="Lesson" data-pattern="Data Structures &amp; Algorithms" data-lang="C++" data-search="insertion sorting  data structures &amp; algorithms">
+      <span class="num">&mdash;</span>
+      <div>
+        <div class="title">Insertion Sorting</div>
+        <div class="meta"><span class="chip Lesson">Lesson</span><span class="chip pat">Data Structures &amp; Algorithms</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/06-June/26-06-26/insertion-sorting.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-06-26</span>
+    </li>
+    <li data-diff="Lesson" data-pattern="Data Structures &amp; Algorithms" data-lang="C++" data-search="main  data structures &amp; algorithms">
+      <span class="num">&mdash;</span>
+      <div>
+        <div class="title">Main</div>
+        <div class="meta"><span class="chip Lesson">Lesson</span><span class="chip pat">Data Structures &amp; Algorithms</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/06-June/26-06-26/main.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-06-26</span>
+    </li>
+    <li data-diff="Lesson" data-pattern="Data Structures &amp; Algorithms" data-lang="C++" data-search="mapping sets  data structures &amp; algorithms">
+      <span class="num">&mdash;</span>
+      <div>
+        <div class="title">Mapping Sets</div>
+        <div class="meta"><span class="chip Lesson">Lesson</span><span class="chip pat">Data Structures &amp; Algorithms</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/06-June/26-06-26/mapping-sets.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-06-26</span>
+    </li>
+    <li data-diff="Lesson" data-pattern="Data Structures &amp; Algorithms" data-lang="C++" data-search="merge sort  data structures &amp; algorithms">
+      <span class="num">&mdash;</span>
+      <div>
+        <div class="title">Merge Sort</div>
+        <div class="meta"><span class="chip Lesson">Lesson</span><span class="chip pat">Data Structures &amp; Algorithms</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/06-June/26-06-26/merge-sort.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-06-26</span>
+    </li>
+    <li data-diff="Lesson" data-pattern="Data Structures &amp; Algorithms" data-lang="Python" data-search="numpy demo  data structures &amp; algorithms">
+      <span class="num">&mdash;</span>
+      <div>
+        <div class="title">Numpy Demo</div>
+        <div class="meta"><span class="chip Lesson">Lesson</span><span class="chip pat">Data Structures &amp; Algorithms</span><span class="chip lang">Python</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/06-June/26-06-26/numpy-demo.py" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-06-26</span>
+    </li>
+    <li data-diff="Lesson" data-pattern="Data Structures &amp; Algorithms" data-lang="Python" data-search="opencv image to array  data structures &amp; algorithms">
+      <span class="num">&mdash;</span>
+      <div>
+        <div class="title">Opencv Image To Array</div>
+        <div class="meta"><span class="chip Lesson">Lesson</span><span class="chip pat">Data Structures &amp; Algorithms</span><span class="chip lang">Python</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/06-June/26-06-26/opencv-image-to-array.py" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-06-26</span>
+    </li>
+    <li data-diff="Lesson" data-pattern="Data Structures &amp; Algorithms" data-lang="Python" data-search="producer  data structures &amp; algorithms">
+      <span class="num">&mdash;</span>
+      <div>
+        <div class="title">Producer</div>
+        <div class="meta"><span class="chip Lesson">Lesson</span><span class="chip pat">Data Structures &amp; Algorithms</span><span class="chip lang">Python</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/06-June/26-06-26/producer.py" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-06-26</span>
+    </li>
+    <li data-diff="Lesson" data-pattern="Data Structures &amp; Algorithms" data-lang="C++" data-search="python case2 is wrong  data structures &amp; algorithms">
+      <span class="num">&mdash;</span>
+      <div>
+        <div class="title">Python Case2 Is Wrong</div>
+        <div class="meta"><span class="chip Lesson">Lesson</span><span class="chip pat">Data Structures &amp; Algorithms</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/06-June/26-06-26/python-case2-is-wrong.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-06-26</span>
+    </li>
+    <li data-diff="Lesson" data-pattern="Data Structures &amp; Algorithms" data-lang="C++" data-search="q1. best reachable tower©leetcode(17 01)  data structures &amp; algorithms">
+      <span class="num">&mdash;</span>
+      <div>
+        <div class="title">Q1. Best Reachable Tower©Leetcode(17 01)</div>
+        <div class="meta"><span class="chip Lesson">Lesson</span><span class="chip pat">Data Structures &amp; Algorithms</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/06-June/26-06-26/q1-best-reachable-tower-leetcode-17-01.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-06-26</span>
+    </li>
+    <li data-diff="Lesson" data-pattern="Data Structures &amp; Algorithms" data-lang="C++" data-search="quick sort  data structures &amp; algorithms">
+      <span class="num">&mdash;</span>
+      <div>
+        <div class="title">Quick Sort</div>
+        <div class="meta"><span class="chip Lesson">Lesson</span><span class="chip pat">Data Structures &amp; Algorithms</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/06-June/26-06-26/quick-sort.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-06-26</span>
+    </li>
+    <li data-diff="Lesson" data-pattern="Data Structures &amp; Algorithms" data-lang="C++" data-search="secondlargest  data structures &amp; algorithms">
+      <span class="num">&mdash;</span>
+      <div>
+        <div class="title">Secondlargest</div>
+        <div class="meta"><span class="chip Lesson">Lesson</span><span class="chip pat">Data Structures &amp; Algorithms</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/06-June/26-06-26/secondlargest.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-06-26</span>
+    </li>
+    <li data-diff="Lesson" data-pattern="Data Structures &amp; Algorithms" data-lang="C++" data-search="selection sort  data structures &amp; algorithms">
+      <span class="num">&mdash;</span>
+      <div>
+        <div class="title">Selection Sort</div>
+        <div class="meta"><span class="chip Lesson">Lesson</span><span class="chip pat">Data Structures &amp; Algorithms</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/06-June/26-06-26/selection-sort.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-06-26</span>
+    </li>
+    <li data-diff="Lesson" data-pattern="Data Structures &amp; Algorithms" data-lang="C++" data-search="selectionsorting  data structures &amp; algorithms">
+      <span class="num">&mdash;</span>
+      <div>
+        <div class="title">Selectionsorting</div>
+        <div class="meta"><span class="chip Lesson">Lesson</span><span class="chip pat">Data Structures &amp; Algorithms</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/06-June/26-06-26/selectionsorting.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-06-26</span>
+    </li>
+    <li data-diff="Lesson" data-pattern="Data Structures &amp; Algorithms" data-lang="C++" data-search="stack  data structures &amp; algorithms">
+      <span class="num">&mdash;</span>
+      <div>
+        <div class="title">Stack</div>
+        <div class="meta"><span class="chip Lesson">Lesson</span><span class="chip pat">Data Structures &amp; Algorithms</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/06-June/26-06-26/stack.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-06-26</span>
+    </li>
+    <li data-diff="Lesson" data-pattern="Data Structures &amp; Algorithms" data-lang="Python" data-search="string  data structures &amp; algorithms">
+      <span class="num">&mdash;</span>
+      <div>
+        <div class="title">String</div>
+        <div class="meta"><span class="chip Lesson">Lesson</span><span class="chip pat">Data Structures &amp; Algorithms</span><span class="chip lang">Python</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/06-June/26-06-26/string.py" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-06-26</span>
+    </li>
+    <li data-diff="Lesson" data-pattern="Data Structures &amp; Algorithms" data-lang="C++" data-search="trees  data structures &amp; algorithms">
+      <span class="num">&mdash;</span>
+      <div>
+        <div class="title">Trees</div>
+        <div class="meta"><span class="chip Lesson">Lesson</span><span class="chip pat">Data Structures &amp; Algorithms</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/06-June/26-06-26/trees.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-06-26</span>
+    </li>
+    <li data-diff="Lesson" data-pattern="Data Structures &amp; Algorithms" data-lang="C++" data-search="treesmaster  data structures &amp; algorithms">
+      <span class="num">&mdash;</span>
+      <div>
+        <div class="title">Treesmaster</div>
+        <div class="meta"><span class="chip Lesson">Lesson</span><span class="chip pat">Data Structures &amp; Algorithms</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/06-June/26-06-26/treesmaster.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-06-26</span>
+    </li>
+    <li data-diff="Lesson" data-pattern="Data Structures &amp; Algorithms" data-lang="C++" data-search="array searching  data structures &amp; algorithms">
+      <span class="num">&mdash;</span>
+      <div>
+        <div class="title">Array Searching</div>
+        <div class="meta"><span class="chip Lesson">Lesson</span><span class="chip pat">Data Structures &amp; Algorithms</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/06-June/23-06-26/array-searching.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-06-23</span>
+    </li>
+    <li data-diff="Lesson" data-pattern="Data Structures &amp; Algorithms" data-lang="C++" data-search="two pointer  data structures &amp; algorithms">
+      <span class="num">&mdash;</span>
+      <div>
+        <div class="title">Two Pointer</div>
+        <div class="meta"><span class="chip Lesson">Lesson</span><span class="chip pat">Data Structures &amp; Algorithms</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/06-June/18-06-26/two-pointer.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-06-18</span>
+    </li>
+    <li data-diff="Lesson" data-pattern="Data Structures &amp; Algorithms" data-lang="C++" data-search="prefix  data structures &amp; algorithms">
+      <span class="num">&mdash;</span>
+      <div>
+        <div class="title">Prefix</div>
+        <div class="meta"><span class="chip Lesson">Lesson</span><span class="chip pat">Data Structures &amp; Algorithms</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/05-May/26-05-26/prefix.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-05-26</span>
+    </li>
+    <li data-diff="Medium" data-pattern="SQL" data-lang="SQL" data-search="confirmation rate 1934 sql">
+      <span class="num">#1934</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/confirmation-rate/" rel="noopener">Confirmation Rate</a></div>
+        <div class="meta"><span class="chip Medium">Medium</span><span class="chip pat">SQL</span><span class="chip lang">SQL</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/05-May/22-05-26/1934-confirmation-rate.sql" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-05-22</span>
+    </li>
+    <li data-diff="Easy" data-pattern="SQL" data-lang="SQL" data-search="percentage of users attended a contest 1633 sql">
+      <span class="num">#1633</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/percentage-of-users-attended-a-contest/" rel="noopener">Percentage of Users Attended a Contest</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">SQL</span><span class="chip lang">SQL</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/05-May/22-05-26/1633-percentage-of-users-attended-a-contest.sql" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-05-22</span>
+    </li>
+    <li data-diff="Easy" data-pattern="SQL" data-lang="SQL" data-search="average selling price 1251 sql">
+      <span class="num">#1251</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/average-selling-price/" rel="noopener">Average Selling Price</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">SQL</span><span class="chip lang">SQL</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/05-May/22-05-26/1251-average-selling-price.sql" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-05-22</span>
+    </li>
+    <li data-diff="Easy" data-pattern="SQL" data-lang="SQL" data-search="queries quality and percentage 1211 sql">
+      <span class="num">#1211</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/queries-quality-and-percentage/" rel="noopener">Queries Quality and Percentage</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">SQL</span><span class="chip lang">SQL</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/05-May/22-05-26/1211-queries-quality-and-percentage.sql" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-05-22</span>
+    </li>
+    <li data-diff="Medium" data-pattern="SQL" data-lang="SQL" data-search="monthly transactions i 1193 sql">
+      <span class="num">#1193</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/monthly-transactions-i/" rel="noopener">Monthly Transactions I</a></div>
+        <div class="meta"><span class="chip Medium">Medium</span><span class="chip pat">SQL</span><span class="chip lang">SQL</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/05-May/22-05-26/1193-monthly-transactions-i.sql" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-05-22</span>
+    </li>
+    <li data-diff="Easy" data-pattern="SQL" data-lang="SQL" data-search="project employees i 1075 sql">
+      <span class="num">#1075</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/project-employees-i/" rel="noopener">Project Employees I</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">SQL</span><span class="chip lang">SQL</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/05-May/22-05-26/1075-project-employees-i.sql" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-05-22</span>
+    </li>
+    <li data-diff="Medium" data-pattern="SQL" data-lang="SQL" data-search="managers with at least 5 direct reports 570 sql">
+      <span class="num">#570</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/managers-with-at-least-5-direct-reports/" rel="noopener">Managers with at Least 5 Direct Reports</a></div>
+        <div class="meta"><span class="chip Medium">Medium</span><span class="chip pat">SQL</span><span class="chip lang">SQL</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/05-May/22-05-26/0570-managers-with-at-least-5-direct-reports.sql" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-05-22</span>
+    </li>
+    <li data-diff="Easy" data-pattern="SQL" data-lang="SQL" data-search="average time of process per machine 1661 sql">
+      <span class="num">#1661</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/average-time-of-process-per-machine/" rel="noopener">Average Time of Process per Machine</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">SQL</span><span class="chip lang">SQL</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/05-May/21-05-26/1661-average-time-of-process-per-machine.sql" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-05-21</span>
+    </li>
+    <li data-diff="Easy" data-pattern="SQL" data-lang="SQL" data-search="employee bonus 577 sql">
+      <span class="num">#577</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/employee-bonus/" rel="noopener">Employee Bonus</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">SQL</span><span class="chip lang">SQL</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/05-May/21-05-26/0577-employee-bonus.sql" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-05-21</span>
+    </li>
+    <li data-diff="Medium" data-pattern="Two Pointers" data-lang="C++" data-search="two sum ii - input array is sorted 167 two pointers">
+      <span class="num">#167</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/" rel="noopener">Two Sum II - Input Array Is Sorted</a></div>
+        <div class="meta"><span class="chip Medium">Medium</span><span class="chip pat">Two Pointers</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/05-May/20-05-26/0167-two-sum-ii-input-array-is-sorted.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-05-20</span>
+    </li>
+    <li data-diff="Medium" data-pattern="Two Pointers" data-lang="C++" data-search="3sum 15 two pointers">
+      <span class="num">#15</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/3sum/" rel="noopener">3Sum</a></div>
+        <div class="meta"><span class="chip Medium">Medium</span><span class="chip pat">Two Pointers</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/05-May/20-05-26/0015-3sum.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-05-20</span>
+    </li>
+    <li data-diff="Lesson" data-pattern="Two Pointers" data-lang="C++" data-search="two pointer revision  two pointers">
+      <span class="num">&mdash;</span>
+      <div>
+        <div class="title">Two Pointer Revision</div>
+        <div class="meta"><span class="chip Lesson">Lesson</span><span class="chip pat">Two Pointers</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/05-May/19-05-26/revision.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-05-19</span>
+    </li>
+    <li data-diff="Lesson" data-pattern="Data Structures &amp; Algorithms" data-lang="SQL" data-search="commands  data structures &amp; algorithms">
+      <span class="num">&mdash;</span>
+      <div>
+        <div class="title">Commands</div>
+        <div class="meta"><span class="chip Lesson">Lesson</span><span class="chip pat">Data Structures &amp; Algorithms</span><span class="chip lang">SQL</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/05-May/18-05-26/commands.sql" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-05-18</span>
+    </li>
+    <li data-diff="Lesson" data-pattern="Data Structures &amp; Algorithms" data-lang="C++" data-search="dijkstra  data structures &amp; algorithms">
+      <span class="num">&mdash;</span>
+      <div>
+        <div class="title">Dijkstra</div>
+        <div class="meta"><span class="chip Lesson">Lesson</span><span class="chip pat">Data Structures &amp; Algorithms</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/05-May/18-05-26/dijkstra.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-05-18</span>
+    </li>
+    <li data-diff="Easy" data-pattern="SQL" data-lang="SQL" data-search="rising temperature 197 sql">
+      <span class="num">#197</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/rising-temperature/" rel="noopener">Rising Temperature</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">SQL</span><span class="chip lang">SQL</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/05-May/17-05-26/0197-rising-temperature.sql" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-05-17</span>
+    </li>
+    <li data-diff="Lesson" data-pattern="Data Structures &amp; Algorithms" data-lang="SQL" data-search="commands  data structures &amp; algorithms">
+      <span class="num">&mdash;</span>
+      <div>
+        <div class="title">Commands</div>
+        <div class="meta"><span class="chip Lesson">Lesson</span><span class="chip pat">Data Structures &amp; Algorithms</span><span class="chip lang">SQL</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/05-May/17-05-26/commands.sql" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-05-17</span>
+    </li>
+    <li data-diff="Lesson" data-pattern="Data Structures &amp; Algorithms" data-lang="SQL" data-search="commands  data structures &amp; algorithms">
+      <span class="num">&mdash;</span>
+      <div>
+        <div class="title">Commands</div>
+        <div class="meta"><span class="chip Lesson">Lesson</span><span class="chip pat">Data Structures &amp; Algorithms</span><span class="chip lang">SQL</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/05-May/15-05-26/commands.sql" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-05-15</span>
+    </li>
+    <li data-diff="Lesson" data-pattern="Data Structures &amp; Algorithms" data-lang="C++" data-search="queue  data structures &amp; algorithms">
+      <span class="num">&mdash;</span>
+      <div>
+        <div class="title">Queue</div>
+        <div class="meta"><span class="chip Lesson">Lesson</span><span class="chip pat">Data Structures &amp; Algorithms</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/05-May/09-05-26/queue.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-05-09</span>
+    </li>
+    <li data-diff="Lesson" data-pattern="Data Structures &amp; Algorithms" data-lang="C++" data-search="topo sorting  data structures &amp; algorithms">
+      <span class="num">&mdash;</span>
+      <div>
+        <div class="title">Topo Sorting</div>
+        <div class="meta"><span class="chip Lesson">Lesson</span><span class="chip pat">Data Structures &amp; Algorithms</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/05-May/02-05-26/topo-sorting.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-05-02</span>
+    </li>
+    <li data-diff="Lesson" data-pattern="Data Structures &amp; Algorithms" data-lang="C++" data-search="cycyle detection directed  data structures &amp; algorithms">
+      <span class="num">&mdash;</span>
+      <div>
+        <div class="title">Cycyle Detection Directed</div>
+        <div class="meta"><span class="chip Lesson">Lesson</span><span class="chip pat">Data Structures &amp; Algorithms</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/05-May/01-05-26/cycyle-detection-directed.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-05-01</span>
+    </li>
+    <li data-diff="Lesson" data-pattern="Data Structures &amp; Algorithms" data-lang="C++" data-search="topological sort  data structures &amp; algorithms">
+      <span class="num">&mdash;</span>
+      <div>
+        <div class="title">Topological Sort</div>
+        <div class="meta"><span class="chip Lesson">Lesson</span><span class="chip pat">Data Structures &amp; Algorithms</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/04-April/22-04-26/topological-sort.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-04-22</span>
+    </li>
+    <li data-diff="Lesson" data-pattern="Data Structures &amp; Algorithms" data-lang="C++" data-search="cycle detection  data structures &amp; algorithms">
+      <span class="num">&mdash;</span>
+      <div>
+        <div class="title">Cycle Detection</div>
+        <div class="meta"><span class="chip Lesson">Lesson</span><span class="chip pat">Data Structures &amp; Algorithms</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/04-April/21-04-26/cycle-detection.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-04-21</span>
+    </li>
+    <li data-diff="Easy" data-pattern="SQL" data-lang="SQL" data-search="not boring movies 620 sql">
+      <span class="num">#620</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/not-boring-movies/" rel="noopener">Not Boring Movies</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">SQL</span><span class="chip lang">SQL</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/04-April/18-04-26/0620-not-boring-movies.sql" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-04-18</span>
+    </li>
+    <li data-diff="Easy" data-pattern="SQL" data-lang="SQL" data-search="find customer referee 584 sql">
+      <span class="num">#584</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/find-customer-referee/" rel="noopener">Find Customer Referee</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">SQL</span><span class="chip lang">SQL</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/04-April/18-04-26/0584-find-customer-referee.sql" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-04-18</span>
+    </li>
+    <li data-diff="Easy" data-pattern="SQL" data-lang="SQL" data-search="employees earning more than their managers 181 sql">
+      <span class="num">#181</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/employees-earning-more-than-their-managers/" rel="noopener">Employees Earning More Than Their Managers</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">SQL</span><span class="chip lang">SQL</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/04-April/18-04-26/0181-employees-earning-more-than-their-managers.sql" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-04-18</span>
+    </li>
+    <li data-diff="Lesson" data-pattern="Data Structures &amp; Algorithms" data-lang="C++" data-search="dfs  data structures &amp; algorithms">
+      <span class="num">&mdash;</span>
+      <div>
+        <div class="title">Dfs</div>
+        <div class="meta"><span class="chip Lesson">Lesson</span><span class="chip pat">Data Structures &amp; Algorithms</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/04-April/18-04-26/dfs.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-04-18</span>
+    </li>
+    <li data-diff="Medium" data-pattern="Graphs &amp; Search" data-lang="C++" data-search="rotting oranges 994 graphs &amp; search">
+      <span class="num">#994</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/rotting-oranges/" rel="noopener">Rotting Oranges</a></div>
+        <div class="meta"><span class="chip Medium">Medium</span><span class="chip pat">Graphs &amp; Search</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/04-April/12-04-26/0994-rotting-oranges.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-04-12</span>
+    </li>
+    <li data-diff="Easy" data-pattern="SQL" data-lang="SQL" data-search="combine two tables 175 sql">
+      <span class="num">#175</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/combine-two-tables/" rel="noopener">Combine Two Tables</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">SQL</span><span class="chip lang">SQL</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/04-April/12-04-26/0175-combine-two-tables.sql" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-04-12</span>
+    </li>
+    <li data-diff="Lesson" data-pattern="Data Structures &amp; Algorithms" data-lang="SQL" data-search="commands  data structures &amp; algorithms">
+      <span class="num">&mdash;</span>
+      <div>
+        <div class="title">Commands</div>
+        <div class="meta"><span class="chip Lesson">Lesson</span><span class="chip pat">Data Structures &amp; Algorithms</span><span class="chip lang">SQL</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/04-April/12-04-26/commands.sql" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-04-12</span>
+    </li>
+    <li data-diff="Lesson" data-pattern="Data Structures &amp; Algorithms" data-lang="SQL" data-search="commands  data structures &amp; algorithms">
+      <span class="num">&mdash;</span>
+      <div>
+        <div class="title">Commands</div>
+        <div class="meta"><span class="chip Lesson">Lesson</span><span class="chip pat">Data Structures &amp; Algorithms</span><span class="chip lang">SQL</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/04-April/11-04-26/commands.sql" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-04-11</span>
+    </li>
+    <li data-diff="Medium" data-pattern="Graphs &amp; Search" data-lang="C++" data-search="number of islands 200 graphs &amp; search">
+      <span class="num">#200</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/number-of-islands/" rel="noopener">Number of Islands</a></div>
+        <div class="meta"><span class="chip Medium">Medium</span><span class="chip pat">Graphs &amp; Search</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/04-April/10-04-26/0200-number-of-islands.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-04-10</span>
+    </li>
+    <li data-diff="Medium" data-pattern="Arrays &amp; Hashing" data-lang="C++" data-search="number of islands 200 arrays &amp; hashing">
+      <span class="num">#200</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/number-of-islands/" rel="noopener">Number of Islands</a></div>
+        <div class="meta"><span class="chip Medium">Medium</span><span class="chip pat">Arrays &amp; Hashing</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/04-April/09-04-26/0200-number-of-islands.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-04-09</span>
+    </li>
+    <li data-diff="Lesson" data-pattern="Data Structures &amp; Algorithms" data-lang="SQL" data-search="commands  data structures &amp; algorithms">
+      <span class="num">&mdash;</span>
+      <div>
+        <div class="title">Commands</div>
+        <div class="meta"><span class="chip Lesson">Lesson</span><span class="chip pat">Data Structures &amp; Algorithms</span><span class="chip lang">SQL</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/04-April/09-04-26/commands.sql" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-04-09</span>
+    </li>
+    <li data-diff="Lesson" data-pattern="Data Structures &amp; Algorithms" data-lang="C++" data-search="graph everything  data structures &amp; algorithms">
+      <span class="num">&mdash;</span>
+      <div>
+        <div class="title">Graph Everything</div>
+        <div class="meta"><span class="chip Lesson">Lesson</span><span class="chip pat">Data Structures &amp; Algorithms</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/04-April/09-04-26/graph-everything.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-04-09</span>
+    </li>
+    <li data-diff="Lesson" data-pattern="Data Structures &amp; Algorithms" data-lang="C++" data-search="coversion matrix to adjacency  data structures &amp; algorithms">
+      <span class="num">&mdash;</span>
+      <div>
+        <div class="title">Coversion Matrix To Adjacency</div>
+        <div class="meta"><span class="chip Lesson">Lesson</span><span class="chip pat">Data Structures &amp; Algorithms</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/04-April/08-04-26/coversion-matrix-to-adjacency.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-04-08</span>
+    </li>
+    <li data-diff="Lesson" data-pattern="Data Structures &amp; Algorithms" data-lang="C++" data-search="graph bfs  data structures &amp; algorithms">
+      <span class="num">&mdash;</span>
+      <div>
+        <div class="title">Graph Bfs</div>
+        <div class="meta"><span class="chip Lesson">Lesson</span><span class="chip pat">Data Structures &amp; Algorithms</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/04-April/07-04-26/graph-bfs.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-04-07</span>
+    </li>
+    <li data-diff="Lesson" data-pattern="Data Structures &amp; Algorithms" data-lang="C++" data-search="graph list weighted  data structures &amp; algorithms">
+      <span class="num">&mdash;</span>
+      <div>
+        <div class="title">Graph List Weighted</div>
+        <div class="meta"><span class="chip Lesson">Lesson</span><span class="chip pat">Data Structures &amp; Algorithms</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/04-April/07-04-26/graph-list-weighted.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-04-07</span>
+    </li>
+    <li data-diff="Lesson" data-pattern="Data Structures &amp; Algorithms" data-lang="C++" data-search="graph list  data structures &amp; algorithms">
+      <span class="num">&mdash;</span>
+      <div>
+        <div class="title">Graph List</div>
+        <div class="meta"><span class="chip Lesson">Lesson</span><span class="chip pat">Data Structures &amp; Algorithms</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/04-April/07-04-26/graph-list.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-04-07</span>
+    </li>
+    <li data-diff="Lesson" data-pattern="Data Structures &amp; Algorithms" data-lang="C++" data-search="graph matrix  data structures &amp; algorithms">
+      <span class="num">&mdash;</span>
+      <div>
+        <div class="title">Graph Matrix</div>
+        <div class="meta"><span class="chip Lesson">Lesson</span><span class="chip pat">Data Structures &amp; Algorithms</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/04-April/06-04-26/graph-matrix.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-04-06</span>
+    </li>
+    <li data-diff="Lesson" data-pattern="Data Structures &amp; Algorithms" data-lang="SQL" data-search="commands  data structures &amp; algorithms">
+      <span class="num">&mdash;</span>
+      <div>
+        <div class="title">Commands</div>
+        <div class="meta"><span class="chip Lesson">Lesson</span><span class="chip pat">Data Structures &amp; Algorithms</span><span class="chip lang">SQL</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/03-March/30-03-26/commands.sql" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-03-30</span>
+    </li>
+    <li data-diff="Lesson" data-pattern="Data Structures &amp; Algorithms" data-lang="SQL" data-search="commands  data structures &amp; algorithms">
+      <span class="num">&mdash;</span>
+      <div>
+        <div class="title">Commands</div>
+        <div class="meta"><span class="chip Lesson">Lesson</span><span class="chip pat">Data Structures &amp; Algorithms</span><span class="chip lang">SQL</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/03-March/29-03-26/commands.sql" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-03-29</span>
+    </li>
+    <li data-diff="Lesson" data-pattern="Data Structures &amp; Algorithms" data-lang="SQL" data-search="commands  data structures &amp; algorithms">
+      <span class="num">&mdash;</span>
+      <div>
+        <div class="title">Commands</div>
+        <div class="meta"><span class="chip Lesson">Lesson</span><span class="chip pat">Data Structures &amp; Algorithms</span><span class="chip lang">SQL</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/03-March/27-03-26/commands.sql" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-03-27</span>
+    </li>
+    <li data-diff="Lesson" data-pattern="Data Structures &amp; Algorithms" data-lang="C++" data-search="cycle detection  data structures &amp; algorithms">
+      <span class="num">&mdash;</span>
+      <div>
+        <div class="title">Cycle Detection</div>
+        <div class="meta"><span class="chip Lesson">Lesson</span><span class="chip pat">Data Structures &amp; Algorithms</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/03-March/26-03-26/cycle-detection.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-03-26</span>
+    </li>
+    <li data-diff="Easy" data-pattern="Data Structures &amp; Algorithms" data-lang="C++" data-search="find center of star graph 1791 data structures &amp; algorithms">
+      <span class="num">#1791</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/find-center-of-star-graph/" rel="noopener">Find Center of Star Graph</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">Data Structures &amp; Algorithms</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/03-March/24-03-26/1791-find-center-of-star-graph.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-03-24</span>
+    </li>
+    <li data-diff="Lesson" data-pattern="Data Structures &amp; Algorithms" data-lang="C++" data-search="dfs  data structures &amp; algorithms">
+      <span class="num">&mdash;</span>
+      <div>
+        <div class="title">Dfs</div>
+        <div class="meta"><span class="chip Lesson">Lesson</span><span class="chip pat">Data Structures &amp; Algorithms</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/03-March/24-03-26/dfs.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-03-24</span>
+    </li>
+    <li data-diff="Easy" data-pattern="Graphs &amp; Search" data-lang="C++" data-search="find if path exists in graph 1971 graphs &amp; search">
+      <span class="num">#1971</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/find-if-path-exists-in-graph/" rel="noopener">Find if Path Exists in Graph</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">Graphs &amp; Search</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/03-March/23-03-26/1971-find-if-path-exists-in-graph.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-03-23</span>
+    </li>
+    <li data-diff="Lesson" data-pattern="Data Structures &amp; Algorithms" data-lang="C++" data-search="graphbfs  data structures &amp; algorithms">
+      <span class="num">&mdash;</span>
+      <div>
+        <div class="title">Graphbfs</div>
+        <div class="meta"><span class="chip Lesson">Lesson</span><span class="chip pat">Data Structures &amp; Algorithms</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/03-March/23-03-26/graphbfs.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-03-23</span>
+    </li>
+    <li data-diff="Lesson" data-pattern="Data Structures &amp; Algorithms" data-lang="C++" data-search="graph  data structures &amp; algorithms">
+      <span class="num">&mdash;</span>
+      <div>
+        <div class="title">Graph</div>
+        <div class="meta"><span class="chip Lesson">Lesson</span><span class="chip pat">Data Structures &amp; Algorithms</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/03-March/22-03-26/graph.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-03-22</span>
+    </li>
+    <li data-diff="Lesson" data-pattern="Data Structures &amp; Algorithms" data-lang="C++" data-search="graph  data structures &amp; algorithms">
+      <span class="num">&mdash;</span>
+      <div>
+        <div class="title">Graph</div>
+        <div class="meta"><span class="chip Lesson">Lesson</span><span class="chip pat">Data Structures &amp; Algorithms</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/03-March/08-03-26/graph.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-03-08</span>
+    </li>
+    <li data-diff="Lesson" data-pattern="Data Structures &amp; Algorithms" data-lang="C++" data-search="list  data structures &amp; algorithms">
+      <span class="num">&mdash;</span>
+      <div>
+        <div class="title">List</div>
+        <div class="meta"><span class="chip Lesson">Lesson</span><span class="chip pat">Data Structures &amp; Algorithms</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/03-March/06-03-26/list.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-03-06</span>
+    </li>
+    <li data-diff="Lesson" data-pattern="Data Structures &amp; Algorithms" data-lang="C++" data-search="graph list  data structures &amp; algorithms">
+      <span class="num">&mdash;</span>
+      <div>
+        <div class="title">Graph List</div>
+        <div class="meta"><span class="chip Lesson">Lesson</span><span class="chip pat">Data Structures &amp; Algorithms</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/03-March/05-03-26/graph-list.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-03-05</span>
+    </li>
+    <li data-diff="Easy" data-pattern="Arrays &amp; Hashing" data-lang="C++" data-search="transpose matrix 867 arrays &amp; hashing">
+      <span class="num">#867</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/transpose-matrix/" rel="noopener">Transpose Matrix</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">Arrays &amp; Hashing</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/03-March/03-03-26/0867-transpose-matrix.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-03-03</span>
+    </li>
+    <li data-diff="Easy" data-pattern="Arrays &amp; Hashing" data-lang="C++" data-search="transpose matrix 867 arrays &amp; hashing">
+      <span class="num">#867</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/transpose-matrix/" rel="noopener">Transpose Matrix</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">Arrays &amp; Hashing</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/09-September/17-09-26/0867-transpose-matrix.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-03-03</span>
+    </li>
+    <li data-diff="Easy" data-pattern="Arrays &amp; Hashing" data-lang="C++" data-search="reshape the matrix 566 arrays &amp; hashing">
+      <span class="num">#566</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/reshape-the-matrix/" rel="noopener">Reshape the Matrix</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">Arrays &amp; Hashing</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/03-March/03-03-26/0566-reshape-the-matrix.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-03-03</span>
+    </li>
+    <li data-diff="Lesson" data-pattern="Data Structures &amp; Algorithms" data-lang="C++" data-search="2d matrix  data structures &amp; algorithms">
+      <span class="num">&mdash;</span>
+      <div>
+        <div class="title">2D Matrix</div>
+        <div class="meta"><span class="chip Lesson">Lesson</span><span class="chip pat">Data Structures &amp; Algorithms</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/03-March/03-03-26/2d-matrix.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-03-03</span>
+    </li>
+    <li data-diff="Lesson" data-pattern="Data Structures &amp; Algorithms" data-lang="C++" data-search="inorder  data structures &amp; algorithms">
+      <span class="num">&mdash;</span>
+      <div>
+        <div class="title">Inorder</div>
+        <div class="meta"><span class="chip Lesson">Lesson</span><span class="chip pat">Data Structures &amp; Algorithms</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/02-February/22-02-26/inorder.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-02-22</span>
+    </li>
+    <li data-diff="Lesson" data-pattern="Data Structures &amp; Algorithms" data-lang="C++" data-search="graph  data structures &amp; algorithms">
+      <span class="num">&mdash;</span>
+      <div>
+        <div class="title">Graph</div>
+        <div class="meta"><span class="chip Lesson">Lesson</span><span class="chip pat">Data Structures &amp; Algorithms</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/02-February/21-02-26/graph.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-02-21</span>
+    </li>
+    <li data-diff="Medium" data-pattern="Trees &amp; BST" data-lang="C++" data-search="lowest common ancestor of a binary tree 236 trees &amp; bst">
+      <span class="num">#236</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/" rel="noopener">Lowest Common Ancestor of a Binary Tree</a></div>
+        <div class="meta"><span class="chip Medium">Medium</span><span class="chip pat">Trees &amp; BST</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/02-February/18-02-26/0236-lowest-common-ancestor-of-a-binary-tree.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-02-18</span>
+    </li>
+    <li data-diff="Medium" data-pattern="Trees &amp; BST" data-lang="C++" data-search="binary tree level order traversal 102 trees &amp; bst">
+      <span class="num">#102</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/binary-tree-level-order-traversal/" rel="noopener">Binary Tree Level Order Traversal</a></div>
+        <div class="meta"><span class="chip Medium">Medium</span><span class="chip pat">Trees &amp; BST</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/02-February/18-02-26/0102-binary-tree-level-order-traversal.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-02-18</span>
+    </li>
+    <li data-diff="Lesson" data-pattern="Data Structures &amp; Algorithms" data-lang="C++" data-search="inorder  data structures &amp; algorithms">
+      <span class="num">&mdash;</span>
+      <div>
+        <div class="title">Inorder</div>
+        <div class="meta"><span class="chip Lesson">Lesson</span><span class="chip pat">Data Structures &amp; Algorithms</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/02-February/18-02-26/inorder.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-02-18</span>
+    </li>
+    <li data-diff="Lesson" data-pattern="Data Structures &amp; Algorithms" data-lang="C++" data-search="levelorder  data structures &amp; algorithms">
+      <span class="num">&mdash;</span>
+      <div>
+        <div class="title">Levelorder</div>
+        <div class="meta"><span class="chip Lesson">Lesson</span><span class="chip pat">Data Structures &amp; Algorithms</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/02-February/18-02-26/levelorder.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-02-18</span>
+    </li>
+    <li data-diff="Lesson" data-pattern="Data Structures &amp; Algorithms" data-lang="C++" data-search="postorder  data structures &amp; algorithms">
+      <span class="num">&mdash;</span>
+      <div>
+        <div class="title">Postorder</div>
+        <div class="meta"><span class="chip Lesson">Lesson</span><span class="chip pat">Data Structures &amp; Algorithms</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/02-February/18-02-26/postorder.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-02-18</span>
+    </li>
+    <li data-diff="Lesson" data-pattern="Data Structures &amp; Algorithms" data-lang="C++" data-search="preorder  data structures &amp; algorithms">
+      <span class="num">&mdash;</span>
+      <div>
+        <div class="title">Preorder</div>
+        <div class="meta"><span class="chip Lesson">Lesson</span><span class="chip pat">Data Structures &amp; Algorithms</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/02-February/18-02-26/preorder.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-02-18</span>
+    </li>
+    <li data-diff="Medium" data-pattern="Stack" data-lang="C++" data-search="build an array with stack operations 1441 stack">
+      <span class="num">#1441</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/build-an-array-with-stack-operations/" rel="noopener">Build an Array With Stack Operations</a></div>
+        <div class="meta"><span class="chip Medium">Medium</span><span class="chip pat">Stack</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/02-February/17-02-26/1441-build-an-array-with-stack-operations.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-02-17</span>
+    </li>
+    <li data-diff="Easy" data-pattern="Bit Manipulation" data-lang="C++" data-search="add binary 67 bit manipulation">
+      <span class="num">#67</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/add-binary/" rel="noopener">Add Binary</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">Bit Manipulation</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/02-February/17-02-26/0067-add-binary.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-02-17</span>
+    </li>
+    <li data-diff="Lesson" data-pattern="Data Structures &amp; Algorithms" data-lang="C++" data-search="bitmanipulation  data structures &amp; algorithms">
+      <span class="num">&mdash;</span>
+      <div>
+        <div class="title">Bitmanipulation</div>
+        <div class="meta"><span class="chip Lesson">Lesson</span><span class="chip pat">Data Structures &amp; Algorithms</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/02-February/17-02-26/bitmanipulation.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-02-17</span>
+    </li>
+    <li data-diff="Easy" data-pattern="Dynamic Programming" data-lang="C++" data-search="counting bits 338 dynamic programming">
+      <span class="num">#338</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/counting-bits/" rel="noopener">Counting Bits</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">Dynamic Programming</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/02-February/16-02-26/0338-counting-bits.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-02-16</span>
+    </li>
+    <li data-diff="Medium" data-pattern="Binary Search" data-lang="C++" data-search="count complete tree nodes 222 binary search">
+      <span class="num">#222</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/count-complete-tree-nodes/" rel="noopener">Count Complete Tree Nodes</a></div>
+        <div class="meta"><span class="chip Medium">Medium</span><span class="chip pat">Binary Search</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/02-February/16-02-26/0222-count-complete-tree-nodes.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-02-16</span>
+    </li>
+    <li data-diff="Easy" data-pattern="Bit Manipulation" data-lang="C++" data-search="number of 1 bits 191 bit manipulation">
+      <span class="num">#191</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/number-of-1-bits/" rel="noopener">Number of 1 Bits</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">Bit Manipulation</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/02-February/16-02-26/0191-number-of-1-bits.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-02-16</span>
+    </li>
+    <li data-diff="Easy" data-pattern="Bit Manipulation" data-lang="C++" data-search="single number 136 bit manipulation">
+      <span class="num">#136</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/single-number/" rel="noopener">Single Number</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">Bit Manipulation</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/02-February/16-02-26/0136-single-number.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-02-16</span>
+    </li>
+    <li data-diff="Lesson" data-pattern="Data Structures &amp; Algorithms" data-lang="C++" data-search="bitmanipulation  data structures &amp; algorithms">
+      <span class="num">&mdash;</span>
+      <div>
+        <div class="title">Bitmanipulation</div>
+        <div class="meta"><span class="chip Lesson">Lesson</span><span class="chip pat">Data Structures &amp; Algorithms</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/02-February/16-02-26/bitmanipulation.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-02-16</span>
+    </li>
+    <li data-diff="Medium" data-pattern="Stack" data-lang="C++" data-search="daily temperatures 739 stack">
+      <span class="num">#739</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/daily-temperatures/" rel="noopener">Daily Temperatures</a></div>
+        <div class="meta"><span class="chip Medium">Medium</span><span class="chip pat">Stack</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/02-February/15-02-26/0739-daily-temperatures.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-02-15</span>
+    </li>
+    <li data-diff="Medium" data-pattern="Stack" data-lang="C++" data-search="asteroid collision 735 stack">
+      <span class="num">#735</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/asteroid-collision/" rel="noopener">Asteroid Collision</a></div>
+        <div class="meta"><span class="chip Medium">Medium</span><span class="chip pat">Stack</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/02-February/15-02-26/0735-asteroid-collision.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-02-15</span>
+    </li>
+    <li data-diff="Lesson" data-pattern="Data Structures &amp; Algorithms" data-lang="C++" data-search="queue  data structures &amp; algorithms">
+      <span class="num">&mdash;</span>
+      <div>
+        <div class="title">Queue</div>
+        <div class="meta"><span class="chip Lesson">Lesson</span><span class="chip pat">Data Structures &amp; Algorithms</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/02-February/15-02-26/queue.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-02-15</span>
+    </li>
+    <li data-diff="Easy" data-pattern="Strings" data-lang="C++" data-search="weighted word mapping 3838 strings">
+      <span class="num">#3838</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/weighted-word-mapping/" rel="noopener">Weighted Word Mapping</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">Strings</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/02-February/14-02-26/3838-weighted-word-mapping.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-02-14</span>
+    </li>
+    <li data-diff="Easy" data-pattern="Stack" data-lang="C++" data-search="maximum nesting depth of the parentheses 1614 stack">
+      <span class="num">#1614</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/maximum-nesting-depth-of-the-parentheses/" rel="noopener">Maximum Nesting Depth of the Parentheses</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">Stack</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/02-February/14-02-26/1614-maximum-nesting-depth-of-the-parentheses.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-02-14</span>
+    </li>
+    <li data-diff="Easy" data-pattern="Stack" data-lang="C++" data-search="crawler log folder 1598 stack">
+      <span class="num">#1598</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/crawler-log-folder/" rel="noopener">Crawler Log Folder</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">Stack</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/02-February/14-02-26/1598-crawler-log-folder.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-02-14</span>
+    </li>
+    <li data-diff="Easy" data-pattern="Prefix Sum" data-lang="C++" data-search="running sum of 1d array 1480 prefix sum">
+      <span class="num">#1480</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/running-sum-of-1d-array/" rel="noopener">Running Sum of 1d Array</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">Prefix Sum</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/02-February/14-02-26/1480-running-sum-of-1d-array.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-02-14</span>
+    </li>
+    <li data-diff="Easy" data-pattern="Prefix Sum" data-lang="C++" data-search="running sum of 1d array 1480 prefix sum">
+      <span class="num">#1480</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/running-sum-of-1d-array/" rel="noopener">Running Sum of 1d Array</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">Prefix Sum</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/09-September/04-09-26/1480-running-sum-of-1d-array.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-02-14</span>
+    </li>
+    <li data-diff="Easy" data-pattern="Stack" data-lang="C++" data-search="final prices with a special discount in a shop 1475 stack">
+      <span class="num">#1475</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/final-prices-with-a-special-discount-in-a-shop/" rel="noopener">Final Prices With a Special Discount in a Shop</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">Stack</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/02-February/14-02-26/1475-final-prices-with-a-special-discount-in-a-shop.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-02-14</span>
+    </li>
+    <li data-diff="Easy" data-pattern="Two Pointers" data-lang="C++" data-search="backspace string compare 844 two pointers">
+      <span class="num">#844</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/backspace-string-compare/" rel="noopener">Backspace String Compare</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">Two Pointers</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/02-February/14-02-26/0844-backspace-string-compare.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-02-14</span>
+    </li>
+    <li data-diff="Easy" data-pattern="Stack" data-lang="C++" data-search="baseball game 682 stack">
+      <span class="num">#682</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/baseball-game/" rel="noopener">Baseball Game</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">Stack</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/02-February/14-02-26/0682-baseball-game.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-02-14</span>
+    </li>
+    <li data-diff="Lesson" data-pattern="Data Structures &amp; Algorithms" data-lang="C++" data-search="stack  data structures &amp; algorithms">
+      <span class="num">&mdash;</span>
+      <div>
+        <div class="title">Stack</div>
+        <div class="meta"><span class="chip Lesson">Lesson</span><span class="chip pat">Data Structures &amp; Algorithms</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/02-February/14-02-26/stack.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-02-14</span>
+    </li>
+    <li data-diff="Easy" data-pattern="Sorting &amp; STL" data-lang="C++" data-search="height checker 1051 sorting &amp; stl">
+      <span class="num">#1051</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/height-checker/" rel="noopener">Height Checker</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">Sorting &amp; STL</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/02-February/13-02-26/1051-height-checker.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-02-13</span>
+    </li>
+    <li data-diff="Medium" data-pattern="Sorting &amp; STL" data-lang="C++" data-search="sort an array 912 sorting &amp; stl">
+      <span class="num">#912</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/sort-an-array/" rel="noopener">Sort an Array</a></div>
+        <div class="meta"><span class="chip Medium">Medium</span><span class="chip pat">Sorting &amp; STL</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/02-February/13-02-26/0912-sort-an-array.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-02-13</span>
+    </li>
+    <li data-diff="Medium" data-pattern="Sorting &amp; STL" data-lang="C++" data-search="kth largest element in an array 215 sorting &amp; stl">
+      <span class="num">#215</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/kth-largest-element-in-an-array/" rel="noopener">Kth Largest Element in an Array</a></div>
+        <div class="meta"><span class="chip Medium">Medium</span><span class="chip pat">Sorting &amp; STL</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/02-February/13-02-26/0215-kth-largest-element-in-an-array.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-02-13</span>
+    </li>
+    <li data-diff="Lesson" data-pattern="Data Structures &amp; Algorithms" data-lang="C++" data-search="quicksort  data structures &amp; algorithms">
+      <span class="num">&mdash;</span>
+      <div>
+        <div class="title">Quicksort</div>
+        <div class="meta"><span class="chip Lesson">Lesson</span><span class="chip pat">Data Structures &amp; Algorithms</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/02-February/13-02-26/quicksort.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-02-13</span>
+    </li>
+    <li data-diff="Easy" data-pattern="Two Pointers" data-lang="C++" data-search="squares of a sorted array 977 two pointers">
+      <span class="num">#977</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/squares-of-a-sorted-array/" rel="noopener">Squares of a Sorted Array</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">Two Pointers</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/02-February/12-02-26/0977-squares-of-a-sorted-array.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-02-12</span>
+    </li>
+    <li data-diff="Easy" data-pattern="Trees &amp; BST" data-lang="C++" data-search="univalued binary tree 965 trees &amp; bst">
+      <span class="num">#965</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/univalued-binary-tree/" rel="noopener">Univalued Binary Tree</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">Trees &amp; BST</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/02-February/12-02-26/0965-univalued-binary-tree.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-02-12</span>
+    </li>
+    <li data-diff="Easy" data-pattern="Trees &amp; BST" data-lang="C++" data-search="univalued binary tree 965 trees &amp; bst">
+      <span class="num">#965</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/univalued-binary-tree/" rel="noopener">Univalued Binary Tree</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">Trees &amp; BST</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/09-September/10-09-26/0965-univalued-binary-tree.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-02-12</span>
+    </li>
+    <li data-diff="Easy" data-pattern="Two Pointers" data-lang="C++" data-search="sort array by parity 905 two pointers">
+      <span class="num">#905</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/sort-array-by-parity/" rel="noopener">Sort Array By Parity</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">Two Pointers</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/02-February/12-02-26/0905-sort-array-by-parity.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-02-12</span>
+    </li>
+    <li data-diff="Lesson" data-pattern="Data Structures &amp; Algorithms" data-lang="C++" data-search="bubblesort  data structures &amp; algorithms">
+      <span class="num">&mdash;</span>
+      <div>
+        <div class="title">Bubblesort</div>
+        <div class="meta"><span class="chip Lesson">Lesson</span><span class="chip pat">Data Structures &amp; Algorithms</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/02-February/12-02-26/bubblesort.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-02-12</span>
+    </li>
+    <li data-diff="Lesson" data-pattern="Data Structures &amp; Algorithms" data-lang="C++" data-search="insertionsort  data structures &amp; algorithms">
+      <span class="num">&mdash;</span>
+      <div>
+        <div class="title">Insertionsort</div>
+        <div class="meta"><span class="chip Lesson">Lesson</span><span class="chip pat">Data Structures &amp; Algorithms</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/02-February/12-02-26/insertionsort.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-02-12</span>
+    </li>
+    <li data-diff="Lesson" data-pattern="Data Structures &amp; Algorithms" data-lang="C++" data-search="mergesort  data structures &amp; algorithms">
+      <span class="num">&mdash;</span>
+      <div>
+        <div class="title">Mergesort</div>
+        <div class="meta"><span class="chip Lesson">Lesson</span><span class="chip pat">Data Structures &amp; Algorithms</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/02-February/12-02-26/mergesort.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-02-12</span>
+    </li>
+    <li data-diff="Lesson" data-pattern="Data Structures &amp; Algorithms" data-lang="C++" data-search="quicksort  data structures &amp; algorithms">
+      <span class="num">&mdash;</span>
+      <div>
+        <div class="title">Quicksort</div>
+        <div class="meta"><span class="chip Lesson">Lesson</span><span class="chip pat">Data Structures &amp; Algorithms</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/02-February/12-02-26/quicksort.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-02-12</span>
+    </li>
+    <li data-diff="Lesson" data-pattern="Data Structures &amp; Algorithms" data-lang="C++" data-search="selectionsort  data structures &amp; algorithms">
+      <span class="num">&mdash;</span>
+      <div>
+        <div class="title">Selectionsort</div>
+        <div class="meta"><span class="chip Lesson">Lesson</span><span class="chip pat">Data Structures &amp; Algorithms</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/02-February/12-02-26/selectionsort.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-02-12</span>
+    </li>
+    <li data-diff="Medium" data-pattern="Sorting &amp; STL" data-lang="C++" data-search="reveal cards in increasing order 950 sorting &amp; stl">
+      <span class="num">#950</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/reveal-cards-in-increasing-order/" rel="noopener">Reveal Cards In Increasing Order</a></div>
+        <div class="meta"><span class="chip Medium">Medium</span><span class="chip pat">Sorting &amp; STL</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/02-February/11-02-26/0950-reveal-cards-in-increasing-order.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-02-11</span>
+    </li>
+    <li data-diff="Hard" data-pattern="Stack" data-lang="C++" data-search="longest valid parentheses 32 stack">
+      <span class="num">#32</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/longest-valid-parentheses/" rel="noopener">Longest Valid Parentheses</a></div>
+        <div class="meta"><span class="chip Hard">Hard</span><span class="chip pat">Stack</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/02-February/11-02-26/0032-longest-valid-parentheses.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-02-11</span>
+    </li>
+    <li data-diff="Easy" data-pattern="Stack" data-lang="C++" data-search="valid parentheses 20 stack">
+      <span class="num">#20</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/valid-parentheses/" rel="noopener">Valid Parentheses</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">Stack</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/02-February/10-02-26/0020-valid-parentheses.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-02-10</span>
+    </li>
+    <li data-diff="Easy" data-pattern="Stack" data-lang="C++" data-search="next greater element i 496 stack">
+      <span class="num">#496</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/next-greater-element-i/" rel="noopener">Next Greater Element I</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">Stack</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/02-February/09-02-26/0496-next-greater-element-i.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-02-09</span>
+    </li>
+    <li data-diff="Medium" data-pattern="Bit Manipulation" data-lang="C++" data-search="subsets ii 90 bit manipulation">
+      <span class="num">#90</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/subsets-ii/" rel="noopener">Subsets II</a></div>
+        <div class="meta"><span class="chip Medium">Medium</span><span class="chip pat">Bit Manipulation</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/02-February/09-02-26/0090-subsets-ii.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-02-09</span>
+    </li>
+    <li data-diff="Hard" data-pattern="Two Pointers" data-lang="C++" data-search="trapping rain water 42 two pointers">
+      <span class="num">#42</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/trapping-rain-water/" rel="noopener">Trapping Rain Water</a></div>
+        <div class="meta"><span class="chip Hard">Hard</span><span class="chip pat">Two Pointers</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/02-February/09-02-26/0042-trapping-rain-water.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-02-09</span>
+    </li>
+    <li data-diff="Medium" data-pattern="Stack" data-lang="C++" data-search="merge adjacent equal elements 3834 stack">
+      <span class="num">#3834</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/merge-adjacent-equal-elements/" rel="noopener">Merge Adjacent Equal Elements</a></div>
+        <div class="meta"><span class="chip Medium">Medium</span><span class="chip pat">Stack</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/02-February/08-02-26/3834-merge-adjacent-equal-elements.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-02-08</span>
+    </li>
+    <li data-diff="Easy" data-pattern="Arrays &amp; Hashing" data-lang="C++" data-search="count dominant indices 3833 arrays &amp; hashing">
+      <span class="num">#3833</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/count-dominant-indices/" rel="noopener">Count Dominant Indices</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">Arrays &amp; Hashing</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/02-February/08-02-26/3833-count-dominant-indices.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-02-08</span>
+    </li>
+    <li data-diff="Easy" data-pattern="Arrays &amp; Hashing" data-lang="C++" data-search="lemonade change 860 arrays &amp; hashing">
+      <span class="num">#860</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/lemonade-change/" rel="noopener">Lemonade Change</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">Arrays &amp; Hashing</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/02-February/08-02-26/0860-lemonade-change.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-02-08</span>
+    </li>
+    <li data-diff="Easy" data-pattern="Two Pointers" data-lang="C++" data-search="assign cookies 455 two pointers">
+      <span class="num">#455</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/assign-cookies/" rel="noopener">Assign Cookies</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">Two Pointers</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/02-February/08-02-26/0455-assign-cookies.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-02-08</span>
+    </li>
+    <li data-diff="Medium" data-pattern="Dynamic Programming" data-lang="C++" data-search="jump game 55 dynamic programming">
+      <span class="num">#55</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/jump-game/" rel="noopener">Jump Game</a></div>
+        <div class="meta"><span class="chip Medium">Medium</span><span class="chip pat">Dynamic Programming</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/02-February/08-02-26/0055-jump-game.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-02-08</span>
+    </li>
+    <li data-diff="Lesson" data-pattern="Data Structures &amp; Algorithms" data-lang="C++" data-search="recursion revision  data structures &amp; algorithms">
+      <span class="num">&mdash;</span>
+      <div>
+        <div class="title">Recursion Revision</div>
+        <div class="meta"><span class="chip Lesson">Lesson</span><span class="chip pat">Data Structures &amp; Algorithms</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/02-February/08-02-26/recursion-revision.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-02-08</span>
+    </li>
+    <li data-diff="Medium" data-pattern="Sorting &amp; STL" data-lang="C++" data-search="permutations ii 47 sorting &amp; stl">
+      <span class="num">#47</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/permutations-ii/" rel="noopener">Permutations II</a></div>
+        <div class="meta"><span class="chip Medium">Medium</span><span class="chip pat">Sorting &amp; STL</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/02-February/07-02-26/0047-permutations-ii.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-02-07</span>
+    </li>
+    <li data-diff="Medium" data-pattern="Arrays &amp; Hashing" data-lang="C++" data-search="permutations 46 arrays &amp; hashing">
+      <span class="num">#46</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/permutations/" rel="noopener">Permutations</a></div>
+        <div class="meta"><span class="chip Medium">Medium</span><span class="chip pat">Arrays &amp; Hashing</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/02-February/07-02-26/0046-permutations.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-02-07</span>
+    </li>
+    <li data-diff="Medium" data-pattern="Two Pointers" data-lang="C++" data-search="next permutation 31 two pointers">
+      <span class="num">#31</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/next-permutation/" rel="noopener">Next Permutation</a></div>
+        <div class="meta"><span class="chip Medium">Medium</span><span class="chip pat">Two Pointers</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/02-February/07-02-26/0031-next-permutation.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-02-07</span>
+    </li>
+    <li data-diff="Medium" data-pattern="Bit Manipulation" data-lang="C++" data-search="subsets 78 bit manipulation">
+      <span class="num">#78</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/subsets/" rel="noopener">Subsets</a></div>
+        <div class="meta"><span class="chip Medium">Medium</span><span class="chip pat">Bit Manipulation</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/02-February/06-02-26/0078-subsets.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-02-06</span>
+    </li>
+    <li data-diff="Medium" data-pattern="Arrays &amp; Hashing" data-lang="C++" data-search="letter combinations of a phone number 17 arrays &amp; hashing">
+      <span class="num">#17</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/letter-combinations-of-a-phone-number/" rel="noopener">Letter Combinations of a Phone Number</a></div>
+        <div class="meta"><span class="chip Medium">Medium</span><span class="chip pat">Arrays &amp; Hashing</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/02-February/06-02-26/0017-letter-combinations-of-a-phone-number.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-02-06</span>
+    </li>
+    <li data-diff="Medium" data-pattern="Arrays &amp; Hashing" data-lang="C++" data-search="combination sum ii 40 arrays &amp; hashing">
+      <span class="num">#40</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/combination-sum-ii/" rel="noopener">Combination Sum II</a></div>
+        <div class="meta"><span class="chip Medium">Medium</span><span class="chip pat">Arrays &amp; Hashing</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/02-February/04-02-26/0040-combination-sum-ii.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-02-04</span>
+    </li>
+    <li data-diff="Medium" data-pattern="Arrays &amp; Hashing" data-lang="C++" data-search="combination sum 39 arrays &amp; hashing">
+      <span class="num">#39</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/combination-sum/" rel="noopener">Combination Sum</a></div>
+        <div class="meta"><span class="chip Medium">Medium</span><span class="chip pat">Arrays &amp; Hashing</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/02-February/04-02-26/0039-combination-sum.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-02-04</span>
+    </li>
+    <li data-diff="Easy" data-pattern="Arrays &amp; Hashing" data-lang="C++" data-search="trionic array i 3637 arrays &amp; hashing">
+      <span class="num">#3637</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/trionic-array-i/" rel="noopener">Trionic Array I</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">Arrays &amp; Hashing</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/02-February/03-02-26/3637-trionic-array-i.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-02-03</span>
+    </li>
+    <li data-diff="Easy" data-pattern="Dynamic Programming" data-lang="C++" data-search="fibonacci number 509 dynamic programming">
+      <span class="num">#509</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/fibonacci-number/" rel="noopener">Fibonacci Number</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">Dynamic Programming</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/02-February/03-02-26/0509-fibonacci-number.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-02-03</span>
+    </li>
+    <li data-diff="Easy" data-pattern="Two Pointers" data-lang="C++" data-search="reverse string 344 two pointers">
+      <span class="num">#344</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/reverse-string/" rel="noopener">Reverse String</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">Two Pointers</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/02-February/03-02-26/0344-reverse-string.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-02-03</span>
+    </li>
+    <li data-diff="Easy" data-pattern="Bit Manipulation" data-lang="C++" data-search="power of four 342 bit manipulation">
+      <span class="num">#342</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/power-of-four/" rel="noopener">Power of Four</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">Bit Manipulation</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/02-February/03-02-26/0342-power-of-four.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-02-03</span>
+    </li>
+    <li data-diff="Easy" data-pattern="Math &amp; Logic" data-lang="C++" data-search="power of three 326 math &amp; logic">
+      <span class="num">#326</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/power-of-three/" rel="noopener">Power of Three</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">Math &amp; Logic</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/02-February/03-02-26/0326-power-of-three.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-02-03</span>
+    </li>
+    <li data-diff="Medium" data-pattern="Math &amp; Logic" data-lang="C++" data-search="pow(x, n) 50 math &amp; logic">
+      <span class="num">#50</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/powx-n/" rel="noopener">Pow(x, n)</a></div>
+        <div class="meta"><span class="chip Medium">Medium</span><span class="chip pat">Math &amp; Logic</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/02-February/03-02-26/0050-powx-n.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-02-03</span>
+    </li>
+    <li data-diff="Lesson" data-pattern="Data Structures &amp; Algorithms" data-lang="C++" data-search="recursion  data structures &amp; algorithms">
+      <span class="num">&mdash;</span>
+      <div>
+        <div class="title">Recursion</div>
+        <div class="meta"><span class="chip Lesson">Lesson</span><span class="chip pat">Data Structures &amp; Algorithms</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/02-February/03-02-26/recursion.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-02-03</span>
+    </li>
+    <li data-diff="Medium" data-pattern="Prefix Sum" data-lang="C++" data-search="product of array except self 238 prefix sum">
+      <span class="num">#238</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/product-of-array-except-self/" rel="noopener">Product of Array Except Self</a></div>
+        <div class="meta"><span class="chip Medium">Medium</span><span class="chip pat">Prefix Sum</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/02-February/02-02-26/0238-product-of-array-except-self.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-02-02</span>
+    </li>
+    <li data-diff="Medium" data-pattern="Prefix Sum" data-lang="C++" data-search="product of array except self 238 prefix sum">
+      <span class="num">#238</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/product-of-array-except-self/" rel="noopener">Product of Array Except Self</a></div>
+        <div class="meta"><span class="chip Medium">Medium</span><span class="chip pat">Prefix Sum</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/09-September/07-09-26/0238-product-of-array-except-self.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-02-02</span>
+    </li>
+    <li data-diff="Easy" data-pattern="Bit Manipulation" data-lang="C++" data-search="power of two 231 bit manipulation">
+      <span class="num">#231</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/power-of-two/" rel="noopener">Power of Two</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">Bit Manipulation</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/02-February/02-02-26/0231-power-of-two.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-02-02</span>
+    </li>
+    <li data-diff="Medium" data-pattern="Binary Search" data-lang="C++" data-search="capacity to ship packages within d days 1011 binary search">
+      <span class="num">#1011</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/" rel="noopener">Capacity To Ship Packages Within D Days</a></div>
+        <div class="meta"><span class="chip Medium">Medium</span><span class="chip pat">Binary Search</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/02-February/01-02-26/1011-capacity-to-ship-packages-within-d-days.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-02-01</span>
+    </li>
+    <li data-diff="Easy" data-pattern="Binary Search" data-lang="C++" data-search="binary search 704 binary search">
+      <span class="num">#704</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/binary-search/" rel="noopener">Binary Search</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">Binary Search</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/02-February/01-02-26/0704-binary-search.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-02-01</span>
+    </li>
+    <li data-diff="Easy" data-pattern="Strings" data-lang="C++" data-search="add strings 415 strings">
+      <span class="num">#415</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/add-strings/" rel="noopener">Add Strings</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">Strings</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/02-February/01-02-26/0415-add-strings.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-02-01</span>
+    </li>
+    <li data-diff="Easy" data-pattern="Two Pointers" data-lang="C++" data-search="move zeroes 283 two pointers">
+      <span class="num">#283</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/move-zeroes/" rel="noopener">Move Zeroes</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">Two Pointers</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/02-February/01-02-26/0283-move-zeroes.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-02-01</span>
+    </li>
+    <li data-diff="Easy" data-pattern="Binary Search" data-lang="C++" data-search="first bad version 278 binary search">
+      <span class="num">#278</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/first-bad-version/" rel="noopener">First Bad Version</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">Binary Search</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/02-February/01-02-26/0278-first-bad-version.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-02-01</span>
+    </li>
+    <li data-diff="Medium" data-pattern="Binary Search" data-lang="C++" data-search="find peak element 162 binary search">
+      <span class="num">#162</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/find-peak-element/" rel="noopener">Find Peak Element</a></div>
+        <div class="meta"><span class="chip Medium">Medium</span><span class="chip pat">Binary Search</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/02-February/01-02-26/0162-find-peak-element.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-02-01</span>
+    </li>
+    <li data-diff="Medium" data-pattern="Binary Search" data-lang="C++" data-search="find minimum in rotated sorted array 153 binary search">
+      <span class="num">#153</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/" rel="noopener">Find Minimum in Rotated Sorted Array</a></div>
+        <div class="meta"><span class="chip Medium">Medium</span><span class="chip pat">Binary Search</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/02-February/01-02-26/0153-find-minimum-in-rotated-sorted-array.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-02-01</span>
+    </li>
+    <li data-diff="Easy" data-pattern="Binary Search" data-lang="C++" data-search="sqrt(x) 69 binary search">
+      <span class="num">#69</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/sqrtx/" rel="noopener">Sqrt(x)</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">Binary Search</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/02-February/01-02-26/0069-sqrtx.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-02-01</span>
+    </li>
+    <li data-diff="Medium" data-pattern="Sliding Window" data-lang="C++" data-search="longest substring without repeating characters 3 sliding window">
+      <span class="num">#3</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/longest-substring-without-repeating-characters/" rel="noopener">Longest Substring Without Repeating Characters</a></div>
+        <div class="meta"><span class="chip Medium">Medium</span><span class="chip pat">Sliding Window</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/02-February/01-02-26/0003-longest-substring-without-repeating-characters.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-02-01</span>
+    </li>
+    <li data-diff="Lesson" data-pattern="Data Structures &amp; Algorithms" data-lang="C++" data-search="master strings  data structures &amp; algorithms">
+      <span class="num">&mdash;</span>
+      <div>
+        <div class="title">Master Strings</div>
+        <div class="meta"><span class="chip Lesson">Lesson</span><span class="chip pat">Data Structures &amp; Algorithms</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/01-January/31-01-26/master-strings.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-01-31</span>
+    </li>
+    <li data-diff="Lesson" data-pattern="Data Structures &amp; Algorithms" data-lang="C++" data-search="strings  data structures &amp; algorithms">
+      <span class="num">&mdash;</span>
+      <div>
+        <div class="title">Strings</div>
+        <div class="meta"><span class="chip Lesson">Lesson</span><span class="chip pat">Data Structures &amp; Algorithms</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/01-January/30-01-26/strings.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-01-30</span>
+    </li>
+    <li data-diff="Medium" data-pattern="Arrays &amp; Hashing" data-lang="C++" data-search="four divisors 1390 arrays &amp; hashing">
+      <span class="num">#1390</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/four-divisors/" rel="noopener">Four Divisors</a></div>
+        <div class="meta"><span class="chip Medium">Medium</span><span class="chip pat">Arrays &amp; Hashing</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/01-January/04-01-26/1390-four-divisors.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-01-04</span>
+    </li>
+    <li data-diff="Hard" data-pattern="Dynamic Programming" data-lang="C++" data-search="number of ways to paint n × 3 grid 1411 dynamic programming">
+      <span class="num">#1411</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/number-of-ways-to-paint-n-3-grid/" rel="noopener">Number of Ways to Paint N × 3 Grid</a></div>
+        <div class="meta"><span class="chip Hard">Hard</span><span class="chip pat">Dynamic Programming</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/01-January/03-01-26/1411-number-of-ways-to-paint-n-3-grid.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-01-03</span>
+    </li>
+    <li data-diff="Easy" data-pattern="Arrays &amp; Hashing" data-lang="C++" data-search="n-repeated element in size 2n array 961 arrays &amp; hashing">
+      <span class="num">#961</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/n-repeated-element-in-size-2n-array/" rel="noopener">N-Repeated Element in Size 2N Array</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">Arrays &amp; Hashing</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/01-January/02-01-26/0961-n-repeated-element-in-size-2n-array.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-01-02</span>
+    </li>
+    <li data-diff="Easy" data-pattern="Arrays &amp; Hashing" data-lang="C++" data-search="plus one 66 arrays &amp; hashing">
+      <span class="num">#66</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/plus-one/" rel="noopener">Plus One</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">Arrays &amp; Hashing</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2026/01-January/01-01-26/0066-plus-one.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2026-01-01</span>
+    </li>
+    <li data-diff="Medium" data-pattern="Prefix Sum + Suffix Minimum" data-lang="C++" data-search="maximum score of a split 3788 prefix sum + suffix minimum">
+      <span class="num">#3788</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/maximum-score-of-a-split/" rel="noopener">Maximum Score of a Split</a></div>
+        <div class="meta"><span class="chip Medium">Medium</span><span class="chip pat">Prefix Sum + Suffix Minimum</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2025/12-December/28-12-25/3788-maximum-score-of-a-split.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2025-12-28</span>
+    </li>
+    <li data-diff="Easy" data-pattern="Fixed-size Sliding Window + Hash Set" data-lang="C++" data-search="contains duplicate ii 219 fixed-size sliding window + hash set">
+      <span class="num">#219</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/contains-duplicate-ii/" rel="noopener">Contains Duplicate II</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">Fixed-size Sliding Window + Hash Set</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2025/12-December/28-12-25/0219-contains-duplicate-ii.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2025-12-28</span>
+    </li>
+    <li data-diff="Easy" data-pattern="Hash Set" data-lang="C++" data-search="contains duplicate 217 hash set">
+      <span class="num">#217</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/contains-duplicate/" rel="noopener">Contains Duplicate</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">Hash Set</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2025/12-December/24-12-25/0217-contains-duplicate.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2025-12-24</span>
+    </li>
+    <li data-diff="Easy" data-pattern="Hash Map (frequency)" data-lang="C++" data-search="first unique character in a string 387 hash map (frequency)">
+      <span class="num">#387</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/first-unique-character-in-a-string/" rel="noopener">First Unique Character in a String</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">Hash Map (frequency)</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2025/12-December/23-12-25/0387-first-unique-character-in-a-string.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2025-12-23</span>
+    </li>
+    <li data-diff="Easy" data-pattern="Clean string + Two Pointers" data-lang="C++" data-search="valid palindrome 125 clean string + two pointers">
+      <span class="num">#125</span>
+      <div>
+        <div class="title"><a href="https://leetcode.com/problems/valid-palindrome/" rel="noopener">Valid Palindrome</a></div>
+        <div class="meta"><span class="chip Easy">Easy</span><span class="chip pat">Clean string + Two Pointers</span><span class="chip lang">C++</span><a class="chip src" href="https://github.com/yogender-ai/DSA-LeetCode-Journey/blob/main/2025/08-August/04-08-25/0125-valid-palindrome.cpp" rel="noopener">code &#8599;</a></div>
+      </div>
+      <span class="date">2025-08-04</span>
+    </li>
+  </ul>
   <div class="empty" id="empty" hidden>Nothing matches that.</div>
 
-  <footer id="foot"></footer>
+  <footer>
+    generated 21 Sep 2026 · rebuilt automatically on every push ·
+    <a href="problems.json">problems.json</a> ·
+    <a href="https://github.com/yogender-ai/DSA-LeetCode-Journey">yogender-ai/DSA-LeetCode-Journey</a>
+  </footer>
 </div>
 
 <script>
-const $ = (id) => document.getElementById(id);
-let DATA = null;
+// The rows are already in the HTML so the page works, and indexes, without
+// JavaScript. This only filters what is on the page.
+(function () {
+  var $ = function (id) { return document.getElementById(id); };
+  var rows = [].slice.call(document.querySelectorAll('#list > li'));
+  var total = rows.length;
 
-const esc = (s) => String(s ?? "").replace(/[&<>"']/g, c => (
-  {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]
-));
+  function render() {
+    var q = $('q').value.trim().toLowerCase();
+    var d = $('diff').value, p = $('pat').value, l = $('lang').value;
+    var shown = 0;
 
-function fillSelect(el, values) {
-  for (const v of values) {
-    const o = document.createElement("option");
-    o.value = v; o.textContent = v;
-    el.appendChild(o);
+    rows.forEach(function (li) {
+      var ok = (!d || li.dataset.diff === d)
+            && (!p || li.dataset.pattern === p)
+            && (!l || li.dataset.lang === l)
+            && (!q || li.dataset.search.indexOf(q) !== -1);
+      li.hidden = !ok;
+      if (ok) shown++;
+    });
+
+    $('count').textContent = shown + ' of ' + total;
+    $('empty').hidden = shown > 0;
   }
-}
 
-function tiles(s) {
-  const t = [
-    ["Solved", s.solved, `${s.easy} easy · ${s.medium} med · ${s.hard} hard`, "var(--violet)"],
-    ["Streak", s.streak + "d", `longest ${s.longest}d`, "var(--lime)"],
-    ["Active days", s.active, "lifetime", "var(--cyan)"],
-    ["Contest", s.rating, `top ${s.topPct}%`, "var(--amber)"],
-    ["In this repo", s.repoEntries, "files tracked", "var(--teal)"],
-  ];
-  $("tiles").innerHTML = t.map(([k, v, m, c]) =>
-    `<div class="tile"><div class="k" style="color:${c}">${esc(k)}</div>
-     <div class="v">${esc(v)}</div><div class="m">${esc(m)}</div></div>`).join("");
-}
-
-function render() {
-  const q = $("q").value.trim().toLowerCase();
-  const d = $("diff").value, p = $("pat").value, l = $("lang").value;
-
-  const rows = DATA.problems.filter(x => {
-    if (d && x.difficulty !== d) return false;
-    if (p && x.pattern !== p) return false;
-    if (l && x.lang !== l) return false;
-    if (!q) return true;
-    return (x.title || "").toLowerCase().includes(q)
-        || String(x.num || "").includes(q)
-        || (x.pattern || "").toLowerCase().includes(q);
+  ['q', 'diff', 'pat', 'lang'].forEach(function (id) {
+    $(id).addEventListener('input', render);
   });
-
-  $("count").textContent = `${rows.length} of ${DATA.problems.length}`;
-  $("empty").hidden = rows.length > 0;
-
-  const base = `https://github.com/${DATA.repo}/blob/main/`;
-  $("list").innerHTML = rows.map(x => {
-    const link = x.url
-      ? `<a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.title)}</a>`
-      : esc(x.title);
-    return `<li>
-      <span class="num">${x.num ? "#" + x.num : "—"}</span>
-      <div>
-        <div class="title">${link}</div>
-        <div class="meta">
-          <span class="chip ${esc(x.difficulty)}">${esc(x.difficulty)}</span>
-          <span class="chip pat">${esc(x.pattern)}</span>
-          <span class="chip lang">${esc(x.lang)}</span>
-          <a class="chip" style="color:var(--muted);border-color:var(--edge);text-decoration:none"
-             href="${esc(base + x.path)}" target="_blank" rel="noopener">code ↗</a>
-        </div>
-      </div>
-      <span class="date">${esc(x.dates[x.dates.length - 1] || "")}</span>
-    </li>`;
-  }).join("");
-}
-
-fetch("problems.json")
-  .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
-  .then(d => {
-    DATA = d;
-    $("sub").innerHTML =
-      `@${esc(d.user)} · Level ${esc(d.stats.level)} ${esc(d.stats.rank)} · ` +
-      `<a href="https://github.com/${esc(d.repo)}" target="_blank" rel="noopener">${esc(d.repo)}</a>`;
-    tiles(d.stats);
-    fillSelect($("diff"), [...new Set(d.problems.map(x => x.difficulty))].sort());
-    fillSelect($("pat"),  [...new Set(d.problems.map(x => x.pattern))].sort());
-    fillSelect($("lang"), [...new Set(d.problems.map(x => x.lang))].sort());
-    $("foot").textContent = `generated ${d.generated} · rebuilt automatically on every push`;
-    render();
-    for (const id of ["q", "diff", "pat", "lang"]) $(id).addEventListener("input", render);
-  })
-  .catch(e => {
-    $("sub").textContent = "Could not load problems.json — has the build run?";
-    console.error(e);
-  });
+})();
 </script>
 </body>
 </html>
