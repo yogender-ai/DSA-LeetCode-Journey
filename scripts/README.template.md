@@ -6,136 +6,163 @@
 
 <br/>
 
-<img src="https://img.shields.io/badge/solved-{{SOLVED}}-8b5cf6?style=for-the-badge&logo=leetcode&logoColor=white&labelColor=0b0d1a" alt="solved" />
+<!-- LeetCode Official Profile & Solved Badges -->
+<a href="https://leetcode.com/u/{{LEETCODE_USER}}/">
+  <img src="https://img.shields.io/badge/LeetCode-{{LEETCODE_USER}}-FFA116?style=for-the-badge&logo=leetcode&logoColor=white&labelColor=0b0d1a" alt="LeetCode Profile" />
+</a>
+<a href="https://leetcode.com/u/{{LEETCODE_USER}}/">
+  <img src="https://img.shields.io/badge/solved-{{SOLVED}}-8b5cf6?style=for-the-badge&labelColor=0b0d1a" alt="solved" />
+</a>
 <img src="https://img.shields.io/badge/easy-{{EASY}}-2dd4bf?style=for-the-badge&labelColor=0b0d1a" alt="easy" />
 <img src="https://img.shields.io/badge/medium-{{MEDIUM}}-fbbf24?style=for-the-badge&labelColor=0b0d1a" alt="medium" />
 <img src="https://img.shields.io/badge/hard-{{HARD}}-f472b6?style=for-the-badge&labelColor=0b0d1a" alt="hard" />
 
-<img src="https://img.shields.io/badge/🔥%20current%20streak-{{CURRENT}}%20days-a3e635?style=flat-square&labelColor=0b0d1a" alt="current streak" />
+<br/>
+
+<!-- Streak, Contest Rating & Active Days -->
+<img src="https://img.shields.io/badge/🔥%20streak-{{CURRENT}}%20days%20blazing-a3e635?style=flat-square&labelColor=0b0d1a" alt="current streak" />
 <img src="https://img.shields.io/badge/🏆%20longest%20streak-{{LONGEST}}%20days-fbbf24?style=flat-square&labelColor=0b0d1a" alt="longest streak" />
-<img src="https://img.shields.io/badge/📅%20practice%20days-{{ACTIVE}}-22d3ee?style=flat-square&labelColor=0b0d1a" alt="practice days" />
-<img src="https://img.shields.io/github/last-commit/{{REPO}}?style=flat-square&labelColor=0b0d1a&color=8b5cf6&label=last%20push" alt="last push" />
+<img src="https://img.shields.io/badge/⚔️%20contest%20rating-{{RATING}}%20(top%20{{TOP_PCT}}%25)-22d3ee?style=flat-square&labelColor=0b0d1a" alt="contest rating" />
+<img src="https://img.shields.io/badge/📅%20practice%20days-{{ACTIVE}}-f472b6?style=flat-square&labelColor=0b0d1a" alt="practice days" />
+<img src="https://img.shields.io/github/last-commit/{{REPO}}?style=flat-square&labelColor=0b0d1a&color=8b5cf6&label=last%20commit" alt="last commit" />
 
 <br/><br/>
 
-**Every problem lives in exactly one topic folder — and shows up in two views:**
+### 🎮 Player Profile & RPG Stats
 
-<a href="#browse-by-topic"><img src="https://img.shields.io/badge/🗂️%20browse%20by%20topic-0b0d1a?style=for-the-badge" alt="browse by topic" /></a>
-&nbsp;
-<a href="#browse-by-date"><img src="https://img.shields.io/badge/📅%20browse%20by%20date-0b0d1a?style=for-the-badge" alt="browse by date" /></a>
-&nbsp;
-<a href="#streak"><img src="https://img.shields.io/badge/🔥%20streak-0b0d1a?style=for-the-badge" alt="streak" /></a>
+<img src="assets/rpg_card.svg" width="100%" alt="RPG Player HUD" />
 
-<sub>🆕 latest: {{LAST}}</sub>
+<br/>
+
+**Jump directly to:**
+<a href="#streak-timeline"><img src="https://img.shields.io/badge/📅%20streak%20%26%20dates-0b0d1a?style=for-the-badge&logo=googlecalendar&logoColor=white" alt="browse by date" /></a>
+&nbsp;
+<a href="#topic-matrix"><img src="https://img.shields.io/badge/🗂️%20topic%20matrix-0b0d1a?style=for-the-badge" alt="browse by topic" /></a>
+&nbsp;
+<a href="#achievements"><img src="https://img.shields.io/badge/🏆%20achievements-0b0d1a?style=for-the-badge" alt="achievements" /></a>
+&nbsp;
+<a href="#scaffold-cli"><img src="https://img.shields.io/badge/⚡%20scaffold%20cli-0b0d1a?style=for-the-badge" alt="cli" /></a>
 
 </div>
 
 <br/>
 
-<a id="streak"></a>
+---
 
-## 🔥 Streak
+<a id="achievements"></a>
 
-<img src="assets/streak.svg" width="100%" alt="Practice calendar — {{CURRENT}} day current streak, {{LONGEST}} day longest streak, {{ACTIVE}} practice days" />
+## 🏆 Achievements & Badges
 
-<sub>Streaks count days on which at least one problem, lesson or snippet was solved or written (dates come from each file's header). "Today" is Indian Standard Time.</sub>
+| Badge | Title | Requirement | Status |
+|:---:|:---|:---|:---:|
+| 🛡️ | **Centurion** | Solve 100+ LeetCode problems | **UNLOCKED** ✅ (276/100) |
+| ⚔️ | **Double Centurion** | Solve 200+ LeetCode problems | **UNLOCKED** ✅ (276/200) |
+| 👑 | **Triple Centurion** | Solve 300+ LeetCode problems | 🟡 In Progress (276/300 · 92%) |
+| 🔒 | **Five Hundred Club** | Solve 500+ LeetCode problems | 🔒 Locked |
+| 🔥 | **Habit Locked** | Maintain a 30-Day continuous streak | **UNLOCKED** ✅ (74/30) |
+| ⚡ | **Pyromancer** | Maintain a 50-Day continuous streak | **UNLOCKED** ✅ (74/50) |
+| 🌟 | **Century Flame** | Maintain a 100-Day continuous streak | 🟡 In Progress (74/100 · 74%) |
+| 🗄️ | **SQL Sorcerer** | Solve 15+ SQL problems & lessons | **UNLOCKED** ✅ |
+| 🌲 | **Tree Whisperer** | Solve 15+ Tree & BST challenges | **UNLOCKED** ✅ |
+| 🕸️ | **Graph Conqueror** | Solve 10+ Graph & Search algorithms | **UNLOCKED** ✅ |
+| 🥊 | **Contest Gladiator** | Participate in 10+ official contests | **UNLOCKED** ✅ (14 contests) |
 
 <br/>
 
-<a id="browse-by-topic"></a>
+### ⚔️ The Daily Creed
+> *"We do not rise to the level of our goals, we fall to the level of our daily systems."*  
+> **{{CURRENT}} consecutive days of practice.** One problem solved, one pattern mastered, one commit pushed.
 
-## 🗂️ Browse by topic
+### 🎯 Active Quests & Milestones
+* 🗡️ **Daily Quest — Forge the Strike**: Solve at least 1 problem and push your code today. *(Reward: +25 EXP · Streak Shield)*
+* 👹 **Weekly Boss — Contest Titan**: Compete in the official LeetCode Weekly / Biweekly Contest. *(Reward: +100 EXP · Rating Boost)*
+* 🏆 **Epic Milestone — Triple Centurion**: Reach 300 problems solved (currently {{SOLVED}}/300 · only 24 remaining!). *(Reward: +250 EXP · Title: Algorithm Warlord)*
 
-<img src="assets/topics.svg" width="100%" alt="Problems per topic" />
+<br/>
+
+---
+
+<a id="streak-timeline"></a>
+
+## 🔥 Streak & 2026 Calendar
+
+<img src="assets/streak.svg" width="100%" alt="Practice calendar — {{CURRENT}} day current streak, {{LONGEST}} day longest streak, {{ACTIVE}} practice days" />
+
+> 💡 **Streak Rule:** A day counts if at least one solution or algorithm lesson was written. Streaks and dates are synced in Indian Standard Time (IST).
+
+### 📅 Chronological Timeline
+
+All solutions are filed chronologically under `YYYY/MM-Month/DD-MM-YY/`. ↺ marks a revisit.
+
+{{BY_DATE}}
+
+
+<br/>
+
+---
+
+<a id="topic-matrix"></a>
+
+## 🗂️ Algorithmic Patterns & Topic Matrix
+
+<img src="assets/topics.svg" width="100%" alt="Solutions per topic & pattern" />
+
+### 📁 Repository Layout
 
 {{TREE}}
+
+### 🧠 Pattern Index
 
 {{BY_TOPIC}}
 
 <br/>
 
-<a id="browse-by-date"></a>
-
-## 📅 Browse by date
-
-Newest first. ↺ marks a problem I came back to and solved again.
-
-{{BY_DATE}}
-
-<br/>
+---
 
 ## 🧭 Roadmap
 
 ```mermaid
 flowchart LR
     A[Arrays & Hashing ✅] --> B[Two Pointers ✅]
-    B --> C[Sliding Window 🟡]
-    C --> D[Stack 🟡]
-    D --> E[Binary Search ⬜]
-    E --> F[Linked List ⬜]
-    F --> G[Trees ⬜]
-    G --> H[Heap / Priority Queue ⬜]
-    H --> I[Backtracking ⬜]
-    I --> J[Graphs ⬜]
-    J --> K[Dynamic Programming ⬜]
+    B --> C[Sliding Window ✅]
+    C --> D[Stack & Queue ✅]
+    D --> E[Binary Search ✅]
+    E --> F[Trees & BST ✅]
+    F --> G[Graphs & BFS/DFS 🟡]
+    G --> H[Dynamic Programming 🟡]
+    H --> I[Contest Mastery ⚔️]
 ```
 
-**Phases:** Foundations (arrays, hashing, two pointers, window, prefix) → Linear structures (linked list, stack, queue, monotonic stack) → Trees & graphs (DFS/BFS, BST, topo sort, union-find) → Advanced (DP, backtracking, greedy) → Pressure testing (timed contests, Blind 75, NeetCode 150).
+---
 
-## ⚙️ How I solve a problem
+<a id="scaffold-cli"></a>
 
-```text
- 1. Read the problem twice                     6. Pick the structure that removes the waste
- 2. Write constraints + examples by hand       7. Write the clean version
- 3. Name the pattern family out loud           8. Dry-run + one hard edge case
- 4. Speak the brute force                      9. State time & space before submitting
- 5. Ask: "what am I recomputing?"             10. After green → write why it works
-```
+## ⚡ Add Today's Problem in 10 Seconds
 
-## ⚡ Add today's problem in 10 seconds
+Use `scripts/new.py` to automatically fetch the problem details from LeetCode, scaffold the file inside today's `dates/` directory, and regenerate this entire dashboard and all SVGs:
 
 ```bash
-python scripts/new.py longest-substring-without-repeating-characters 03        # slug + topic number → .py by default
-python scripts/new.py 3 03 --lang cpp                                           # or the problem number
-python scripts/new.py two-sum 01                                                # already exists? adds today as a revisit ↺
+# By problem slug:
+python scripts/new.py string-compression --lang py
+
+# By problem number:
+python scripts/new.py 200 --topic "Graphs & Search" --lang cpp
+
+# Logging a revisit for an existing problem:
+python scripts/new.py two-sum
 ```
 
-`new.py` looks the problem up on LeetCode (number, title, difficulty), creates `NNNN-slug.ext` with the standard header and today's date, and rebuilds this README. Push, and GitHub Actions rebuilds it again — the streak, calendar, topic tables and date log all update on their own.
+`new.py` fetches the frontend ID, title, difficulty, and algorithm pattern from LeetCode GraphQL, places the file in `dates/<year>/<month>/<day>/`, and updates your streak and RPG stats automatically!
 
-<details>
-<summary><b>📐 File header format</b></summary>
+<br/>
 
-```python
-"""
-LeetCode 15 · 3Sum · Medium
-https://leetcode.com/problems/3sum/
-
-Pattern : Sort + fix one + Two Pointers, skip duplicates
-Solved  : 20 Aug 2026          ← comma-separate extra dates for revisits
-Time    : O(n^2)
-Space   : O(1) extra (excluding output)
-Note    : what I'd improve next time
-"""
-```
-
-C++ uses the same lines inside `/* … */`, SQL uses `-- …`. Concept snippets use `Written : <date>` instead of a LeetCode line.
-
-</details>
-
-<details>
-<summary><b>🔀 Where this repo came from</b></summary>
-
-Six older practice repos merged into one — **full commit history preserved** (`git log --follow <file>` still works):
-`DSA` · `DSA-Sorting` · `DSA-Python-` · `Leetcode-Solutions` · `My-Daily-Code` · `MySql-Learning`.
-Date-named files like `Aug_14_2026.py` were split into one file per problem; the date now lives in each header, which is what powers the date view.
-
-</details>
+---
 
 <div align="center">
 
 <br/>
 
-**Yogender** · Final Year AIML · LPU · [yogender1.me](https://yogender1.me)<br/>
-<sub>Consistency over intensity. One problem a day.</sub>
+**Yogender** · Final Year AIML · LPU · [yogender1.me](https://yogender1.me) · [LeetCode @yashyogender](https://leetcode.com/u/{{LEETCODE_USER}}/)<br/>
+<sub>"Consistency over intensity. One problem every single day."</sub>
 
 </div>
