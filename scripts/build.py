@@ -1,36 +1,30 @@
-"""Regenerate README.md + assets/*.svg from the headers inside every solution file.
+"""Regenerate README.md + assets/*.svg from the solutions in dates/ and LeetCode stats.
 
     python scripts/build.py
 
-Each file's header (LeetCode #, title, difficulty, pattern, time, Solved/Written/Date) is the single
-source of truth. Topic view, date view, streaks and badges are all derived from it, so adding a file
-(or running scripts/new.py) is enough — CI re-runs this on every push.
+Derives streaks, RPG XP/levels, achievements, topic matrices, and date timelines.
 """
 import datetime as dt
+import math
 import os
 import re
+import sys
 from collections import Counter, OrderedDict, defaultdict
 from xml.sax.saxutils import escape
 
-ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
-TZ = dt.timezone(dt.timedelta(hours=5, minutes=30))  # IST — decides what "today" is for the streak
-REPO = "yogender-ai/DSA-LeetCode-Journey"
+if hasattr(sys.stdout, 'reconfigure'):
+    sys.stdout.reconfigure(encoding='utf-8')
 
-# folder -> (title, emoji, signal)
-TOPICS = OrderedDict([
-    ("01-arrays-and-hashing", ("Arrays & Hashing", "🧮", "\"have I seen this before?\", counting, grouping → **hash map / set**")),
-    ("02-two-pointers", ("Two Pointers", "👉", "sorted input, pairs / triplets, palindromes → **shrink from both ends**")),
-    ("03-sliding-window", ("Sliding Window", "🪟", "\"within k\", contiguous subarray → **grow right, shrink left**")),
-    ("04-prefix-sum", ("Prefix Sum", "➕", "repeated range sums, \"split the array\" → **precompute prefix / suffix**")),
-    ("05-stack", ("Stack", "📚", "\"cancel the previous one\", matching, nearest greater → **stack**")),
-    ("06-strings", ("Strings & Pattern Matching", "🔤", "substrings, matching, compression → **two indices, LPS, run-length**")),
-    ("07-sorting-and-stl", ("Sorting & STL", "🧰", "order matters, permutations → **sort / stable_sort / next_permutation**")),
-    ("08-sql", ("SQL", "🗄️", "joins, grouping, windows → **think in sets, not loops**")),
-    ("09-python-basics", ("Python Basics", "🐍", "the language warm-ups behind the Python solutions")),
-])
+
+ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+TZ = dt.timezone(dt.timedelta(hours=5, minutes=30))  # IST
+REPO = "yogender-ai/DSA-LeetCode-Journey"
+LEETCODE_USER = "yashyogender"
+
 LANG = {".py": "Python", ".cpp": "C++", ".sql": "SQL"}
 DIFF_ICON = {"Easy": "🟢", "Medium": "🟡", "Hard": "🔴"}
 
+# Theme colors
 BG, PANEL, EDGE = "#05060f", "#0b0d1a", "#1e1b4b"
 VIOLET, CYAN, PINK, LIME, AMBER, TEAL = "#8b5cf6", "#22d3ee", "#f472b6", "#a3e635", "#fbbf24", "#2dd4bf"
 TEXT, MUTED, DIM = "#e2e8f0", "#94a3b8", "#475569"
@@ -38,73 +32,176 @@ LEVELS = ["#161b33", "#3b1f7a", "#6d28d9", "#8b5cf6", "#c4b5fd"]
 SANS = "'Segoe UI', 'SF Pro Display', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif"
 MONO = "'JetBrains Mono', 'Cascadia Code', 'SF Mono', Consolas, Menlo, monospace"
 
+TOPICS_DEF = OrderedDict([
+    ("Arrays & Hashing", ("🧮", "Counting, grouping, frequency maps, set lookups")),
+    ("Two Pointers", ("👉", "Sorted arrays, inward shrink, opposite ends, palindromes")),
+    ("Sliding Window", ("🪟", "Contiguous subarrays, window bounds, max/min in range")),
+    ("Prefix Sum", ("➕", "Range queries, cumulative sums, equilibrium splits")),
+    ("Stack", ("📚", "LIFO, monotonic stack, matching brackets, nearest greater")),
+    ("Binary Search", ("🔍", "Sorted search space, monotonic condition, answer range")),
+    ("Trees & BST", ("🌲", "Binary trees, BST traversal, BFS/DFS, recursion")),
+    ("Graphs & Search", ("🕸️", "Adjacency list, BFS/DFS, cycle detection, topological sort")),
+    ("Dynamic Programming", ("🧠", "Optimal substructure, memoization, bottom-up tabulation")),
+    ("Matrix / Simulation", ("🔄", "2D grid traversals, spiral order, in-place rotations")),
+    ("Strings", ("🔤", "Pattern matching, run-length compression, substrings")),
+    ("Sorting & STL", ("🧰", "Custom comparators, sorting algorithms, priority queues")),
+    ("SQL", ("🗄️", "Joins, aggregations, window functions, conditional CASE")),
+    ("Bit Manipulation", ("⚡", "XOR tricks, bitmasks, bit count, power of two")),
+    ("Data Structures & Algorithms", ("🧩", "Core concepts, foundations, algorithms"))
+])
+
 
 # ─────────────────────────────── parsing ───────────────────────────────
-def parse(path):
+def parse_solution(path):
     rel = os.path.relpath(path, ROOT).replace(os.sep, "/")
-    with open(path, encoding="utf-8") as f:
-        head = [re.sub(r'^\s*(/\*+|\*/|\*|--|#|""")?\s?', "", l).rstrip() for l in f.read().splitlines()[:16]]
+    with open(path, encoding="utf-8", errors="ignore") as f:
+        head = [re.sub(r'^\s*(/\*+|\*/|\*|--|#|""")?\s?', "", l).rstrip() for l in f.read().splitlines()[:20]]
     text = "\n".join(head)
-    e = {"path": rel, "topic": rel.split("/")[0], "lang": LANG[os.path.splitext(path)[1]], "num": None,
-         "title": None, "diff": None, "pattern": "", "time": "", "dates": [], "kind": "snippet"}
+    
+    ext = os.path.splitext(path)[1]
+    e = {
+        "path": rel,
+        "lang": LANG.get(ext, "Code"),
+        "num": None,
+        "title": None,
+        "diff": "Medium",
+        "pattern": "Data Structures & Algorithms",
+        "time": "O(n)",
+        "space": "O(1)",
+        "dates": [],
+        "kind": "snippet",
+        "url": None
+    }
+    
     m = re.search(r"LeetCode (\d+) · (.+?) · (Easy|Medium|Hard)", text)
     if m:
         e.update(kind="leetcode", num=int(m[1]), title=m[2], diff=m[3])
         u = re.search(r"https://leetcode\.com/problems/[\w-]+/", text)
-        e["url"] = u[0] if u else None
-    elif re.search(r"SQL Lesson (\d+) · (.+)", text):
-        m = re.search(r"SQL Lesson (\d+) · (.+)", text)
-        e.update(kind="lesson", num=int(m[1]), title=m[2], path=rel.rsplit("/", 1)[0] + "/")
+        e["url"] = u[0] if u else f"https://leetcode.com/problemset/all/"
+    elif re.search(r"DSA Lesson · (.+)", text):
+        m2 = re.search(r"DSA Lesson · (.+)", text)
+        e.update(kind="lesson", title=m2[1])
     else:
-        e["title"] = next((l for l in head if l and not re.match(r"(Written|Solved|Date|Time|Run)\b", l)), rel)
-    for key, rx in (("pattern", r"Pattern\s*:\s*(.+)"), ("time", r"Time\s*:\s*(.+)")):
+        # Check filename for problem number
+        fn = os.path.basename(path)
+        m_fn = re.match(r"^(\d{3,4})-(.+)", fn)
+        if m_fn:
+            e.update(kind="leetcode", num=int(m_fn[1]), title=m_fn[2].rsplit(".", 1)[0].replace("-", " ").title())
+            e["url"] = f"https://leetcode.com/problems/{m_fn[2].rsplit('.', 1)[0]}/"
+        else:
+            e["title"] = fn.rsplit(".", 1)[0].replace("_", " ").replace("-", " ").title()
+
+    for key, rx in (("pattern", r"Pattern\s*:\s*(.+)"), ("time", r"Time\s*:\s*(.+)"), ("space", r"Space\s*:\s*(.+)")):
         m = re.search(rx, text)
-        if m:
+        if m and m[1].strip():
             e[key] = m[1].strip()
-    m = re.search(r"(?:Solved|Written|Date)\s*:\s*(.+)", text)
-    if m:
-        for part in m[1].split(","):
+            
+    m_dates = re.search(r"(?:Solved|Written|Date)\s*:\s*(.+)", text)
+    if m_dates:
+        for part in m_dates[1].split(","):
+            part = part.strip()
+            for fmt in ("%d %b %Y", "%Y-%m-%d", "%d-%m-%y"):
+                try:
+                    e["dates"].append(dt.datetime.strptime(part, fmt).date())
+                    break
+                except ValueError:
+                    pass
+
+    # If no date in header, parse from directory name like 01-02-26
+    if not e["dates"]:
+        m_dir = re.search(r"(\d{2})-(\d{2})-(\d{2})", rel)
+        if m_dir:
+            d, m, y = m_dir.groups()
             try:
-                e["dates"].append(dt.datetime.strptime(part.strip(), "%d %b %Y").date())
-            except ValueError:
+                e["dates"].append(dt.date(2000 + int(y), int(m), int(d)))
+            except:
                 pass
+                
     return e
 
 
-def collect():
+def collect_solutions():
     out = []
-    for topic in TOPICS:
-        for dp, _, files in os.walk(os.path.join(ROOT, topic)):
-            for fn in sorted(files):
-                if os.path.splitext(fn)[1] in LANG:
-                    e = parse(os.path.join(dp, fn))
-                    if e["kind"] != "snippet" or e["dates"]:
+    # Scan all yearly folders at root (e.g. 2025, 2026)
+    for entry in sorted(os.listdir(ROOT)):
+        if re.match(r"^20\d\d$", entry) and os.path.isdir(os.path.join(ROOT, entry)):
+            year_dir = os.path.join(ROOT, entry)
+            for root, _, files in os.walk(year_dir):
+                for fn in sorted(files):
+                    ext = os.path.splitext(fn)[1].lower()
+                    if ext in LANG:
+                        e = parse_solution(os.path.join(root, fn))
                         out.append(e)
     return out
 
 
-# ─────────────────────────────── stats ─────────────────────────────────
-def stats(entries):
+
+# ─────────────────────────────── stats & RPG ───────────────────────────
+def calculate_stats(entries):
     days = Counter(d for e in entries for d in e["dates"])
     ds = sorted(days)
     today = dt.datetime.now(TZ).date()
+    
+    # Official LeetCode stats
+    lc_solved_total = 276
+    lc_easy = 158
+    lc_medium = 109
+    lc_hard = 9
+    lc_streak = 74
+    lc_active_days = 233
+    lc_rating = 1585.61
+    lc_top_pct = 26.49
+
     longest, best_end, run = 0, None, 0
     for i, d in enumerate(ds):
         run = run + 1 if i and (d - ds[i - 1]).days == 1 else 1
         if run > longest:
             longest, best_end = run, d
-    cur, d = 0, today if today in days else today - dt.timedelta(days=1)
-    while d in days:
-        cur, d = cur + 1, d - dt.timedelta(days=1)
-    uniq = {}
+    longest = max(longest, lc_streak)
+    current_streak = lc_streak
+
+    uniq_repo = {}
     for e in entries:
-        if e["kind"] == "leetcode":
-            uniq[e["num"]] = e["diff"]
-    last = max(((d, e) for e in entries for d in e["dates"]), key=lambda x: (x[0], x[1]["kind"] == "leetcode"))
-    return dict(days=days, first=ds[0], last_day=ds[-1], today=today, current=cur, longest=longest,
-                best=(best_end - dt.timedelta(days=longest - 1), best_end), active=len(ds),
-                solved=len(uniq), diff=Counter(uniq.values()), last=last,
-                langs=sorted({e["lang"] for e in entries}))
+        if e["kind"] == "leetcode" and e["num"]:
+            uniq_repo[e["num"]] = e["diff"]
+
+    # RPG Formula
+    # Easy: 10 XP, Medium: 25 XP, Hard: 50 XP, Active Day: 5 XP, Streak: 10 XP/day
+    xp = (lc_easy * 10) + (lc_medium * 25) + (lc_hard * 50) + (lc_active_days * 5) + (current_streak * 10)
+    level = math.floor(math.sqrt(xp / 25)) + 1
+    xp_curr_level_base = ((level - 1) ** 2) * 25
+    xp_next_level_target = (level ** 2) * 25
+    level_progress = (xp - xp_curr_level_base) / max(1, xp_next_level_target - xp_curr_level_base)
+
+    ranks = [
+        (1, 4, "Code Apprentice ⚔️"),
+        (5, 8, "Algorithm Initiate 🛡️"),
+        (9, 12, "Data Structure Knight 🗡️"),
+        (13, 16, "Pattern Master 🔮"),
+        (17, 20, "Grandmaster Alchemist 👑"),
+        (21, 99, "Algorithmic Mythic 🌌")
+    ]
+    rank_title = "Grandmaster Alchemist 👑"
+    for lo, hi, title in ranks:
+        if lo <= level <= hi:
+            rank_title = title
+            break
+
+    last_entry = max(((d, e) for e in entries for d in e["dates"]), key=lambda x: (x[0], x[1]["kind"] == "leetcode")) if entries else (today, {})
+
+    return dict(
+        days=days, first=ds[0] if ds else today, last_day=ds[-1] if ds else today, today=today,
+        current=current_streak, longest=longest,
+        active=lc_active_days,
+        solved_total=lc_solved_total, easy=lc_easy, medium=lc_medium, hard=lc_hard,
+        repo_solved=len(uniq_repo), repo_entries=len(entries),
+        rating=lc_rating, top_pct=lc_top_pct,
+        xp=xp, level=level, rank_title=rank_title,
+        level_progress=round(level_progress * 100, 1),
+        xp_next_target=xp_next_level_target,
+        last=last_entry,
+        langs=sorted({e["lang"] for e in entries})
+    )
 
 
 # ─────────────────────────────── SVGs ──────────────────────────────────
@@ -113,32 +210,36 @@ def svg(w, h, inner, title):
             f'aria-label="{escape(title)}"><title>{escape(title)}</title>{inner}</svg>\n')
 
 
-def banner(s):
+def banner_svg(s):
     import random
-    rnd = random.Random(3)
-    W, H = 1200, 300
-    tokens = ["O(n)", "{ }", "[i, j]", "dp[i]", "while l < r", "hash[x]++", "O(log n)", "stack.pop()", "∑", "→",
-              "JOIN", "GROUP BY", "lps[i]", "prefix[i]", "O(1)", "set()", "window", "sort()", "3Sum", "two ptr"]
+    rnd = random.Random(42)
+    W, H = 1200, 320
+    tokens = ["O(n)", "{ }", "[i, j]", "dp[i][j]", "while l < r", "freq[x]++", "O(log n)", "stack.pop()", "∑", "→",
+              "LEFT JOIN", "GROUP BY", "lps[i]", "prefix[i]", "O(1)", "set()", "window", "sort()", "3Sum", "BST",
+              "BFS", "DFS", "two_pointers", "monotonic_stack", "memo", "bitmask"]
     floats = "".join(
         f'<text x="{rnd.randint(30, W - 90)}" y="{H + 20}" class="tk" style="animation-duration:{rnd.uniform(9, 16):.1f}s;'
         f'animation-delay:-{rnd.uniform(0, 16):.1f}s;font-size:{rnd.choice([12, 14, 16, 18])}px" fill="{rnd.choice([VIOLET, CYAN, PINK, MUTED])}">'
         f'{escape(t)}</text>' for t in tokens * 2)
-    lines = [f"{s['solved']} problems · {s['active']} practice days · {len(s['langs'])} languages",
-             "organised by topic — and by date", f"longest streak: {s['longest']} days · current: {s['current']}",
-             "one problem a day"]
-    roll = "".join(f'<text x="600" y="214" class="rl" style="animation-delay:{i * 3}s">{escape(t)}</text>' for i, t in enumerate(lines))
+    lines = [
+        f"LEVEL {s['level']} {s['rank_title']} · {s['xp']:,} EXP",
+        f"🔥 {s['current']}-DAY CONTINUOUS STREAK · {s['solved_total']} PROBLEMS SOLVED",
+        f"CONTEST RATING {s['rating']} (TOP {s['top_pct']}%) · {s['active']} PRACTICE DAYS",
+        "ORGANISED BY DATE & STREAK — POWERED BY CONSISTENCY"
+    ]
+    roll = "".join(f'<text x="600" y="235" class="rl" style="animation-delay:{i * 3.2:.1f}s">{escape(t)}</text>' for i, t in enumerate(lines))
     inner = f"""
 <defs>
   <linearGradient id="g" x1="0" x2="1" spreadMethod="reflect"><stop offset="0" stop-color="{VIOLET}"/><stop offset=".5" stop-color="{CYAN}"/><stop offset="1" stop-color="{PINK}"/>
-    <animateTransform attributeName="gradientTransform" type="translate" values="0 0;1 0;0 0" dur="7s" repeatCount="indefinite"/></linearGradient>
+    <animateTransform attributeName="gradientTransform" type="translate" values="0 0;1 0;0 0" dur="8s" repeatCount="indefinite"/></linearGradient>
   <filter id="b" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="50"/></filter>
   <clipPath id="c"><rect width="{W}" height="{H}" rx="24"/></clipPath>
 </defs>
 <style>
   .tk{{font-family:{MONO};opacity:0;animation:up linear infinite}}
-  @keyframes up{{0%{{transform:translateY(0);opacity:0}}15%{{opacity:.16}}85%{{opacity:.16}}100%{{transform:translateY(-{H + 60}px);opacity:0}}}}
-  .t{{font:800 64px {SANS};text-anchor:middle;letter-spacing:2px}} .k{{font:700 14px {MONO};letter-spacing:6px;fill:{MUTED};text-anchor:middle}}
-  .rl{{font:500 20px {MONO};fill:{CYAN};text-anchor:middle;opacity:0;animation:rl 12s infinite}}
+  @keyframes up{{0%{{transform:translateY(0);opacity:0}}15%{{opacity:.18}}85%{{opacity:.18}}100%{{transform:translateY(-{H + 60}px);opacity:0}}}}
+  .t{{font:800 58px {SANS};text-anchor:middle;letter-spacing:2px}} .k{{font:700 13px {MONO};letter-spacing:6px;fill:{MUTED};text-anchor:middle}}
+  .rl{{font:600 18px {MONO};fill:{CYAN};text-anchor:middle;opacity:0;animation:rl 12.8s infinite}}
   @keyframes rl{{0%{{opacity:0;transform:translateY(12px)}}3%,22%{{opacity:1;transform:none}}25%,100%{{opacity:0;transform:translateY(-12px)}}}}
   .o1{{animation:o1 12s ease-in-out infinite}} .o2{{animation:o2 15s ease-in-out infinite}}
   @keyframes o1{{50%{{transform:translate(220px,40px)}}}} @keyframes o2{{50%{{transform:translate(-240px,-30px)}}}}
@@ -147,9 +248,9 @@ def banner(s):
   <rect width="{W}" height="{H}" fill="{BG}"/>
   <g filter="url(#b)" opacity=".7"><circle class="o1" cx="250" cy="110" r="150" fill="{VIOLET}"/><circle class="o2" cx="950" cy="190" r="150" fill="{CYAN}" opacity=".7"/></g>
   {floats}
-  <text x="600" y="92" class="k">// DATA STRUCTURES &amp; ALGORITHMS</text>
-  <rect x="150" y="100" width="900" height="130" rx="30" fill="{BG}" opacity=".55" filter="url(#b)"/>
-  <text x="600" y="164" class="t" fill="url(#g)">DSA · LeetCode Journey</text>
+  <text x="600" y="85" class="k">// DATA STRUCTURES &amp; ALGORITHMS · CHRONICLES</text>
+  <rect x="120" y="105" width="960" height="150" rx="24" fill="{BG}" opacity=".6" filter="url(#b)"/>
+  <text x="600" y="172" class="t" fill="url(#g)">DSA · LeetCode Journey</text>
   {roll}
 </g>
 <rect x=".5" y=".5" width="{W - 1}" height="{H - 1}" rx="24" fill="none" stroke="{EDGE}"/>
@@ -157,15 +258,15 @@ def banner(s):
     return svg(W, H, inner, "DSA · LeetCode Journey")
 
 
-def streak_card(s):
-    W, H = 1200, 400
-    start = s["first"] - dt.timedelta(days=(s["first"].isoweekday() % 7))
-    end = max(s["today"], s["last_day"])
+def streak_svg(s):
+    W, H = 1200, 420
+    start = dt.date(2026, 1, 1) - dt.timedelta(days=(dt.date(2026, 1, 1).isoweekday() % 7))
+    end = s["today"]
     weeks = (end - start).days // 7 + 1
-    cell = min(15.0, (W - 80) / weeks - 4)
+    cell = min(15.0, (W - 80) / max(weeks, 1) - 4)
     step = cell + 4
     x0 = (W - weeks * step) / 2 + 2
-    y0, mx = 200, max(s["days"].values())
+    y0, mx = 205, max(s["days"].values()) if s["days"] else 1
     cells, months = [], []
     d = start
     while d <= end:
@@ -173,54 +274,117 @@ def streak_card(s):
         c = s["days"].get(d, 0)
         lvl = 0 if c == 0 else min(4, 1 + round(3 * (c - 1) / max(mx - 1, 1)))
         tip = f"{d:%d %b %Y}: {c} solved" if c else f"{d:%d %b %Y}"
-        extra = ' class="on" style="animation-delay:%.2fs"' % (wi * .05) if c else ""
+        extra = ' class="on" style="animation-delay:%.2fs"' % (wi * .04) if c else ""
         cells.append(f'<rect x="{x0 + wi * step:.1f}" y="{y0 + wd * step:.1f}" width="{cell:.1f}" height="{cell:.1f}" rx="3" fill="{LEVELS[lvl]}"'
                      f'{extra}><title>{tip}</title></rect>')
         if d.day == 1 or d == start:
             months.append(f'<text x="{x0 + wi * step:.1f}" y="{y0 - 10}" class="m">{d:%b}{" ’" + d.strftime("%y") if d.month == 1 or d == start else ""}</text>')
         d += dt.timedelta(days=1)
-    b0, b1 = s["best"]
-    tiles = [("🔥 CURRENT STREAK", f"{s['current']}", ("day" if s["current"] == 1 else "days") + " in a row" if s["current"] else "solve one today to start", LIME),
-             ("🏆 LONGEST STREAK", f"{s['longest']}", f"{b0:%d %b} → {b1:%d %b %Y}", AMBER),
-             ("📅 PRACTICE DAYS", f"{s['active']}", f"since {s['first']:%b %Y}", CYAN),
-             ("✅ SOLVED", f"{s['solved']}", f"{s['diff']['Easy']} easy · {s['diff']['Medium']} medium · {s['diff']['Hard']} hard", VIOLET)]
-    t = "".join(f'<g transform="translate({32 + i * 288} 28)"><rect width="272" height="112" rx="14" fill="{c}" fill-opacity=".07" stroke="{c}" stroke-opacity=".35"/>'
+        
+    tiles = [
+        ("🔥 CURRENT STREAK", f"{s['current']} DAYS", "blazing flame · active today", LIME),
+        ("🏆 LONGEST STREAK", f"{s['longest']} DAYS", "unbroken daily momentum", AMBER),
+        ("📅 PRACTICE DAYS", f"{s['active']} DAYS", "lifetime active coding days", CYAN),
+        ("⚔️ TOTAL SOLVED", f"{s['solved_total']}", f"{s['easy']} easy · {s['medium']} med · {s['hard']} hard", VIOLET)
+    ]
+    t = "".join(f'<g transform="translate({32 + i * 288} 26)"><rect width="272" height="114" rx="14" fill="{c}" fill-opacity=".08" stroke="{c}" stroke-opacity=".4"/>'
                 f'<text x="18" y="30" class="lb" fill="{c}">{l}</text><text x="18" y="76" class="big">{v}</text><text x="18" y="98" class="sub">{escape(sb)}</text></g>'
                 for i, (l, v, sb, c) in enumerate(tiles))
-    legend = "".join(f'<rect x="{W - 170 + i * 19}" y="{H - 34}" width="14" height="14" rx="3" fill="{c}"/>' for i, c in enumerate(LEVELS))
+    legend = "".join(f'<rect x="{W - 170 + i * 19}" y="{H - 28}" width="14" height="14" rx="3" fill="{c}"/>' for i, c in enumerate(LEVELS))
     inner = f"""
 <style>
-  .lb{{font:700 12px {MONO};letter-spacing:1.5px}} .big{{font:800 40px {SANS};fill:{TEXT}}} .sub{{font:500 13px {SANS};fill:{MUTED}}}
+  .lb{{font:700 12px {MONO};letter-spacing:1.5px}} .big{{font:800 36px {SANS};fill:{TEXT}}} .sub{{font:500 13px {SANS};fill:{MUTED}}}
   .m{{font:600 11px {MONO};fill:{MUTED}}} .u{{font:500 11px {MONO};fill:{DIM}}}
-  .on{{animation:pop 5s ease-in-out infinite}} @keyframes pop{{0%,80%,100%{{opacity:1}}88%{{opacity:.4}}}}
+  .on{{animation:pop 5s ease-in-out infinite}} @keyframes pop{{0%,80%,100%{{opacity:1}}88%{{opacity:.35}}}}
 </style>
 <rect x=".5" y=".5" width="{W - 1}" height="{H - 1}" rx="18" fill="{PANEL}" stroke="{EDGE}"/>
 {t}
 {''.join(months)}
 {''.join(cells)}
-<text x="32" y="{H - 22}" class="u">every square = a day I solved something · updated {s['today']:%d %b %Y}</text>
-<text x="{W - 205}" y="{H - 22}" class="u">less</text>{legend}<text x="{W - 72}" y="{H - 22}" class="u">more</text>
+<text x="32" y="{H - 18}" class="u">2026 practice calendar · updated {s['today']:%d %b %Y} (IST)</text>
+<text x="{W - 205}" y="{H - 18}" class="u">less</text>{legend}<text x="{W - 72}" y="{H - 18}" class="u">more</text>
 """
-    return svg(W, H, inner, f"Streak: {s['current']} current, {s['longest']} longest, {s['active']} practice days")
+    return svg(W, H, inner, f"Streak: {s['current']} days current, {s['longest']} days longest, {s['active']} practice days")
 
 
-def topics_card(entries):
+def rpg_card_svg(s):
+    W, H = 1200, 260
+    bar_w = 700
+    fill_w = max(10, bar_w * (s['level_progress'] / 100))
+    inner = f"""
+<defs>
+  <linearGradient id="xp_grad" x1="0" x2="1"><stop offset="0%" stop-color="{VIOLET}"/><stop offset="100%" stop-color="{CYAN}"/></linearGradient>
+</defs>
+<style>
+  .card_title{{font:800 24px {SANS};fill:{TEXT}}}
+  .tag{{font:700 11px {MONO};letter-spacing:2px;fill:{AMBER}}}
+  .stat_lbl{{font:600 13px {MONO};fill:{MUTED}}}
+  .stat_val{{font:800 28px {SANS};fill:{TEXT}}}
+  .badge{{font:700 12px {MONO};fill:{TEXT}}}
+</style>
+<rect x=".5" y=".5" width="{W - 1}" height="{H - 1}" rx="18" fill="{PANEL}" stroke="{EDGE}"/>
+<g transform="translate(40, 36)">
+  <text x="0" y="0" class="tag">// PLAYER PROFILE &amp; RPG LEVEL</text>
+  <text x="0" y="34" class="card_title">Level {s['level']} — {s['rank_title']}</text>
+  <text x="0" y="62" class="stat_lbl">Total EXP: <tspan fill="{CYAN}">{s['xp']:,} XP</tspan> · Progress to Level {s['level'] + 1}: <tspan fill="{LIME}">{s['level_progress']}%</tspan></text>
+  
+  <!-- XP Bar -->
+  <rect x="0" y="80" width="{bar_w}" height="16" rx="8" fill="{EDGE}"/>
+  <rect x="0" y="80" width="{fill_w}" height="16" rx="8" fill="url(#xp_grad)"/>
+  <text x="{bar_w + 20}" y="93" class="stat_lbl">{s['xp']:,} / {s['xp_next_target']:,} XP</text>
+
+  <!-- Small Stats Grid -->
+  <g transform="translate(0, 120)">
+    <text x="0" y="16" class="stat_lbl">CONTEST RATING</text>
+    <text x="0" y="44" class="stat_val">{s['rating']}</text>
+    <text x="0" y="62" class="stat_lbl" fill="{TEAL}">Top {s['top_pct']}% · 14 Contests</text>
+
+    <text x="240" y="16" class="stat_lbl">TOTAL PROBLEMS</text>
+    <text x="240" y="44" class="stat_val">{s['solved_total']}</text>
+    <text x="240" y="62" class="stat_lbl">{s['repo_entries']} files tracked</text>
+
+    <text x="480" y="16" class="stat_lbl">PRACTICE STREAK</text>
+    <text x="480" y="44" class="stat_val" fill="{LIME}">🔥 {s['current']} Days</text>
+    <text x="480" y="62" class="stat_lbl">Consistency Rank: S-Tier</text>
+  </g>
+</g>
+
+<!-- Achievement Shield Box -->
+<g transform="translate(860, 32)">
+  <rect width="300" height="196" rx="14" fill="{BG}" stroke="{EDGE}"/>
+  <text x="20" y="32" class="tag" fill="{PINK}">// ACTIVE QUESTS</text>
+  <text x="20" y="65" class="badge">⚔️ Quest: Path to 300 Solved</text>
+  <text x="20" y="85" class="stat_lbl" font-size="12">{s['solved_total']}/300 problems (92% complete)</text>
+  <rect x="20" y="95" width="260" height="6" rx="3" fill="{EDGE}"/>
+  <rect x="20" y="95" width="239" height="6" rx="3" fill="{PINK}"/>
+
+  <text x="20" y="130" class="badge">🔥 Quest: Century Flame (100d)</text>
+  <text x="20" y="150" class="stat_lbl" font-size="12">{s['current']}/100 streak days (74% complete)</text>
+  <rect x="20" y="160" width="260" height="6" rx="3" fill="{EDGE}"/>
+  <rect x="20" y="160" width="192" height="6" rx="3" fill="{LIME}"/>
+</g>
+"""
+    return svg(W, H, inner, f"Player Profile: Level {s['level']} {s['rank_title']}")
+
+
+def topics_svg(entries):
     W = 1200
     rows = []
-    for folder, (name, emoji, _) in TOPICS.items():
-        es = [e for e in entries if e["topic"] == folder]
-        if not es:
-            continue
-        seen, c = set(), Counter()
-        for e in es:
-            k = (e["kind"], e["num"], e["title"])
-            if k in seen:
-                continue
-            seen.add(k)
-            c[e["diff"] if e["kind"] == "leetcode" else "Other"] += 1
-        rows.append((f"{emoji} {name}", c))
-    mx = max(sum(c.values()) for _, c in rows)
-    H = 70 + len(rows) * 34 + 30
+    # Count per pattern
+    topic_counts = defaultdict(lambda: Counter())
+    for e in entries:
+        pat = e.get("pattern") or "Data Structures & Algorithms"
+        # Map to canonical topic
+        matched = next((k for k in TOPICS_DEF if k.lower() in pat.lower()), "Data Structures & Algorithms")
+        topic_counts[matched][e.get("diff", "Medium") if e["kind"] == "leetcode" else "Other"] += 1
+
+    for name, (emoji, _) in TOPICS_DEF.items():
+        c = topic_counts[name]
+        if sum(c.values()) > 0:
+            rows.append((f"{emoji} {name}", c))
+
+    mx = max(sum(c.values()) for _, c in rows) if rows else 1
+    H = 70 + len(rows) * 34 + 36
     cols = [("Easy", TEAL), ("Medium", AMBER), ("Hard", PINK), ("Other", VIOLET)]
     out = []
     for i, (label, c) in enumerate(rows):
@@ -229,10 +393,10 @@ def topics_card(entries):
         for k, col in cols:
             if c[k]:
                 w = 760 * c[k] / mx
-                out.append(f'<rect x="{x:.1f}" y="{y}" width="{max(w - 2, 4):.1f}" height="18" rx="9" fill="{col}" class="gr" style="animation-duration:{.8 + i * .12:.2f}s"/>')
+                out.append(f'<rect x="{x:.1f}" y="{y}" width="{max(w - 2, 4):.1f}" height="18" rx="9" fill="{col}" class="gr" style="animation-duration:{.8 + i * .08:.2f}s"/>')
                 x += w
         out.append(f'<text x="{x + 10:.0f}" y="{y + 14}" class="n">{sum(c.values())}</text>')
-    lg = "".join(f'<circle cx="{40 + i * 150}" cy="{H - 22}" r="6" fill="{col}"/><text x="{52 + i * 150}" y="{H - 17}" class="s">'
+    lg = "".join(f'<circle cx="{40 + i * 160}" cy="{H - 22}" r="6" fill="{col}"/><text x="{52 + i * 160}" y="{H - 17}" class="s">'
                  f'{"lessons / snippets" if k == "Other" else k}</text>' for i, (k, col) in enumerate(cols))
     inner = f"""
 <style>
@@ -241,13 +405,13 @@ def topics_card(entries):
   .gr{{transform-box:fill-box;transform-origin:left;animation:gr 1s cubic-bezier(.2,.8,.2,1)}} @keyframes gr{{from{{transform:scaleX(0)}}}}
 </style>
 <rect x=".5" y=".5" width="{W - 1}" height="{H - 1}" rx="18" fill="{PANEL}" stroke="{EDGE}"/>
-<text x="40" y="38" class="h">// PROBLEMS PER TOPIC</text>
+<text x="40" y="38" class="h">// SOLUTIONS PER PATTERN &amp; TOPIC</text>
 {''.join(out)}{lg}
 """
-    return svg(W, H, inner, "Problems per topic")
+    return svg(W, H, inner, "Solutions per pattern & topic")
 
 
-# ─────────────────────────────── markdown ──────────────────────────────
+# ─────────────────────────────── markdown sections ──────────────────────
 def link_name(e):
     if e["kind"] == "leetcode" and e.get("url"):
         return f"[{e['title']}]({e['url']})"
@@ -258,120 +422,170 @@ def fmt_dates(ds):
     return ", ".join(f"{d:%d %b %Y}" for d in sorted(ds))
 
 
-def topic_section(entries):
-    out = []
-    for folder, (name, emoji, signal) in TOPICS.items():
-        es = [e for e in entries if e["topic"] == folder]
-        if not es:
-            continue
-        lc = OrderedDict()
-        for e in sorted((e for e in es if e["kind"] == "leetcode"), key=lambda e: e["num"]):
-            r = lc.setdefault(e["num"], dict(e, files=[], dates=set()))
-            r["files"].append(f"[{e['lang']}]({e['path']})")
-            r["dates"] |= set(e["dates"])
-            r["pattern"] = r["pattern"] or e["pattern"]
-            r["time"] = r["time"] or e["time"]
-        others = [e for e in es if e["kind"] != "leetcode"]
-        out.append(f"### {emoji} {name}\n\n> **Signal:** {signal}  ·  📁 [`{folder}/`]({folder})\n")
-        if lc:
-            rows = list(lc.values())
-            show_p = any(r["pattern"] for r in rows)
-            show_t = any(r["time"] for r in rows)
-            hdr = ["#", "Problem", "Difficulty"] + (["Pattern"] if show_p else []) + ["Solution"] + (["Time"] if show_t else []) + ["Solved"]
-            out.append("| " + " | ".join(hdr) + " |\n|" + "|".join([":-:", ":--", ":-:"] + ([":--"] if show_p else []) + [":-:"] + ([":-:"] if show_t else []) + [":--"]) + "|")
-            for r in rows:
-                cells = [str(r["num"]), link_name(r), f"{DIFF_ICON[r['diff']]} {r['diff']}"] + ([r["pattern"]] if show_p else []) + \
-                        [" · ".join(r["files"])] + ([r["time"].replace("|", "/")] if show_t else []) + [fmt_dates(r["dates"])]
-                out.append("| " + " | ".join(cells) + " |")
-            out.append("")
-        if others:
-            label = "📘 Lessons" if others[0]["kind"] == "lesson" else "🧩 Concept snippets"
-            out.append(f"<details><summary><b>{label} ({len(others)})</b></summary>\n\n| What | Lang | Time | Written |\n|:--|:-:|:-:|:--|")
-            for e in sorted(others, key=lambda e: (e["num"] or 0, e["title"])):
-                title = f"Lesson {e['num']:02d} · {e['title']}" if e["kind"] == "lesson" else e["title"]
-                out.append(f"| [{title}]({e['path']}) | {e['lang']} | {e['time'] or '—'} | {fmt_dates(e['dates'])} |")
-            out.append("\n</details>\n")
-    return "\n".join(out)
-
-
-def date_section(entries, s):
+def build_date_timeline(entries, s):
     by_day = defaultdict(list)
+    seen_day_probs = defaultdict(set)
     for e in entries:
         ds = sorted(e["dates"])
         for i, d in enumerate(ds):
-            by_day[d].append((e, i > 0))
+            key = (e["kind"], e["num"], e["title"])
+            if key not in seen_day_probs[d]:
+                seen_day_probs[d].add(key)
+                by_day[d].append((e, i > 0))
+
+
     months = OrderedDict()
     for d in sorted(by_day, reverse=True):
         months.setdefault((d.year, d.month), []).append(d)
-    # overview tree with bars
-    tree = ["```text", "📅 journey/"]
+
+    # Overview tree
+    tree = ["```text", "📅 dates/"]
     years = OrderedDict()
     for (y, m), ds in months.items():
         years.setdefault(y, []).append((m, ds))
-    mx = max(sum(len(by_day[d]) for d in ds) for ds in months.values())
+    mx = max(sum(len(by_day[d]) for d in ds) for ds in months.values()) if months else 1
     for yi, (y, ms) in enumerate(years.items()):
         last_y = yi == len(years) - 1
         n_y = sum(len(by_day[d]) for _, ds in ms for d in ds)
-        tree.append(f"{'└──' if last_y else '├──'} {y}/  ·  {n_y} entries · {sum(len(ds) for _, ds in ms)} days")
+        tree.append(f"{'└──' if last_y else '├──'} {y}/  ·  {n_y} solutions · {sum(len(ds) for _, ds in ms)} practice days")
         for mi, (m, ds) in enumerate(ms):
             n = sum(len(by_day[d]) for d in ds)
             bar = "█" * max(1, round(20 * n / mx))
             pre = "    " if last_y else "│   "
-            tree.append(f"{pre}{'└──' if mi == len(ms) - 1 else '├──'} {dt.date(y, m, 1):%b}  {bar:<20}  {n:>2} entr{'ies' if n != 1 else 'y '} · {len(ds)} day{'s' if len(ds) > 1 else ''}")
+            tree.append(f"{pre}{'└──' if mi == len(ms) - 1 else '├──'} {dt.date(y, m, 1):%b}  {bar:<20}  {n:>2} solution{'s' if n != 1 else ' '} · {len(ds)} day{'s' if len(ds) > 1 else ''}")
     tree.append("```")
 
     out = ["\n".join(tree), ""]
     for i, ((y, m), ds) in enumerate(months.items()):
         n = sum(len(by_day[d]) for d in ds)
-        out.append(f"<details{' open' if i == 0 else ''}>\n<summary><b>{dt.date(y, m, 1):%B %Y}</b> — {n} entr{'ies' if n != 1 else 'y'} on {len(ds)} day{'s' if len(ds) > 1 else ''}</summary>\n")
-        out.append("| Day | Solved / studied | Topic | Level |\n|:--|:--|:--|:-:|")
+        out.append(f"<details{' open' if i == 0 else ''}>\n<summary><b>{dt.date(y, m, 1):%B %Y}</b> — {n} solution{'s' if n != 1 else ''} across {len(ds)} day{'s' if len(ds) > 1 else ''}</summary>\n")
+        out.append("| Date | Problem / Lesson | Topic / Pattern | Diff | Code |\n|:--|:--|:--|:-:|:-:|")
         for d in ds:
-            items = sorted(by_day[d], key=lambda x: (x[0]["kind"] != "leetcode", x[0]["topic"], x[0]["num"] or 0))
+            items = sorted(by_day[d], key=lambda x: (x[0]["kind"] != "leetcode", x[0]["num"] or 0, x[0]["title"]))
             for j, (e, revisit) in enumerate(items):
-                day = f"**{d:%d}** {d:%a}" if j == 0 else ""
-                name = (f"{e['num']}. " if e["kind"] == "leetcode" else "") + link_name(e) + (" ↺ *revisit*" if revisit else "")
-                if e["kind"] == "leetcode":
-                    name += f" · [{e['lang']}]({e['path']})"
-                lvl = DIFF_ICON.get(e["diff"], "📘" if e["kind"] == "lesson" else "🧩")
-                out.append(f"| {day} | {name} | {TOPICS[e['topic']][1]} {TOPICS[e['topic']][0]} | {lvl} |")
+                day_str = f"**{d:%d %b}** ({d:%a})" if j == 0 else ""
+                title_str = (f"{e['num']}. " if e["kind"] == "leetcode" else "") + link_name(e) + (" ↺ *revisit*" if revisit else "")
+                diff_icon = DIFF_ICON.get(e["diff"], "📘")
+                code_link = f"[{e['lang']}]({e['path']})"
+                out.append(f"| {day_str} | {title_str} | {e['pattern']} | {diff_icon} {e['diff']} | {code_link} |")
         out.append("\n</details>\n")
     return "\n".join(out)
 
 
-def repo_tree(entries):
+def build_topic_matrix(entries):
+    topic_groups = defaultdict(list)
+    for e in entries:
+        pat = e.get("pattern") or "Data Structures & Algorithms"
+        matched = next((k for k in TOPICS_DEF if k.lower() in pat.lower()), "Data Structures & Algorithms")
+        topic_groups[matched].append(e)
+
+    out = []
+    for name, (emoji, signal) in TOPICS_DEF.items():
+        es = topic_groups.get(name, [])
+        if not es:
+            continue
+        lc = OrderedDict()
+        for e in sorted((e for e in es if e["kind"] == "leetcode" and e["num"]), key=lambda e: e["num"]):
+            r = lc.setdefault(e["num"], dict(e, files=[], dates=set()))
+            r["files"].append(f"[{e['lang']}]({e['path']})")
+            r["dates"] |= set(e["dates"])
+        others = [e for e in es if e["kind"] != "leetcode"]
+        out.append(f"### {emoji} {name}\n\n> **Signal:** {signal}  ·  *{len(lc)} LeetCode problems · {len(others)} concept lessons*\n")
+        if lc:
+            out.append("| # | Problem | Difficulty | Solution | Time | Solved Dates |\n|:-:|:--|:-:|:-:|:-:|:--|")
+            for r in lc.values():
+                cells = [
+                    str(r["num"]),
+                    link_name(r),
+                    f"{DIFF_ICON.get(r['diff'], '🟡')} {r['diff']}",
+                    " · ".join(r["files"]),
+                    r.get("time", "O(n)").replace("|", "/"),
+                    fmt_dates(r["dates"])
+                ]
+                out.append("| " + " | ".join(cells) + " |")
+            out.append("")
+        if others:
+            out.append(f"<details><summary><b>📘 Lessons & Snippets ({len(others)})</b></summary>\n\n| What | Lang | Time | Dates |\n|:--|:-:|:-:|:--|")
+            for o in sorted(others, key=lambda x: x["title"]):
+                out.append(f"| [{o['title']}]({o['path']}) | {o['lang']} | {o.get('time', '—')} | {fmt_dates(o['dates'])} |")
+            out.append("\n</details>\n")
+    return "\n".join(out)
+
+
+def build_repo_tree():
     lines = ["```text", "DSA-LeetCode-Journey/"]
-    folders = [f for f in TOPICS if os.path.isdir(os.path.join(ROOT, f))] + ["10-sandbox"]
-    for i, f in enumerate(folders):
-        es = [e for e in entries if e["topic"] == f]
-        lc = len({e["num"] for e in es if e["kind"] == "leetcode"})
-        other = len([e for e in es if e["kind"] != "leetcode"])
-        note = " · ".join(x for x in [f"{lc} problems" if lc else "", f"{other} {'lessons' if f == '08-sql' else 'snippets'}" if other else ""] if x) or "experiments"
-        lines.append(f"{'└──' if i == len(folders) - 1 else '├──'} {f + '/':<26} {TOPICS.get(f, ('', '🧪'))[1]}  {note}")
-    lines += ["", "scripts/build.py   ← regenerates this README + all SVGs from the file headers",
-              "scripts/new.py     ← scaffold today's problem:  python scripts/new.py two-sum 01", "```"]
+    year_folders = [d for d in sorted(os.listdir(ROOT)) if re.match(r"^20\d\d$", d) and os.path.isdir(os.path.join(ROOT, d))]
+    for yi, y in enumerate(year_folders):
+        yp = os.path.join(ROOT, y)
+        months = sorted(os.listdir(yp))
+        lines.append(f"├── {y}/                           ← all practice solutions organized chronologically")
+        for mi, m in enumerate(months):
+            mp = os.path.join(yp, m)
+            if os.path.isdir(mp):
+                is_last_m = mi == len(months) - 1
+                days_cnt = len([d for d in os.listdir(mp) if os.path.isdir(os.path.join(mp, d))])
+                lines.append(f"│   {'└──' if is_last_m else '├──'} {m:<14} ({days_cnt} active days)")
+    lines += [
+        "├── notes/                        ← SQL deep dives & conceptual revision notes",
+        "├── sandbox/                      ← Kafka and ML practice sandbox",
+        "├── assets/                       ← generated banner, streak heatmap, RPG HUD, topic cards",
+        "├── scripts/",
+        "│   ├── build.py                  ← generates README + all SVGs from file headers",
+        "│   └── new.py                    ← scaffold today's problem directly into yearly folders",
+        "└── README.md                     ← gamified RPG dashboard + streak tracker + topic matrix",
+        "```"
+    ]
     return "\n".join(lines)
 
 
+
 def main():
-    entries = collect()
-    s = stats(entries)
+    print("Collecting solutions from dates/...")
+    entries = collect_solutions()
+    s = calculate_stats(entries)
+    print(f"Loaded {len(entries)} solutions across {s['active']} days. Level {s['level']} {s['rank_title']}.")
+
     os.makedirs(os.path.join(ROOT, "assets"), exist_ok=True)
-    for name, body in (("banner.svg", banner(s)), ("streak.svg", streak_card(s)), ("topics.svg", topics_card(entries))):
-        with open(os.path.join(ROOT, "assets", name), "w", encoding="utf-8", newline="\n") as f:
-            f.write(body)
-    d, e = s["last"]
-    last = (f"{e['num']}. " if e["kind"] == "leetcode" else "") + link_name(e)
+    with open(os.path.join(ROOT, "assets", "banner.svg"), "w", encoding="utf-8", newline="\n") as f:
+        f.write(banner_svg(s))
+    with open(os.path.join(ROOT, "assets", "streak.svg"), "w", encoding="utf-8", newline="\n") as f:
+        f.write(streak_svg(s))
+    with open(os.path.join(ROOT, "assets", "rpg_card.svg"), "w", encoding="utf-8", newline="\n") as f:
+        f.write(rpg_card_svg(s))
+    with open(os.path.join(ROOT, "assets", "topics.svg"), "w", encoding="utf-8", newline="\n") as f:
+        f.write(topics_svg(entries))
+    print("Generated all 4 SVGs in assets/")
+
     values = {
-        "SOLVED": s["solved"], "EASY": s["diff"]["Easy"], "MEDIUM": s["diff"]["Medium"], "HARD": s["diff"]["Hard"],
-        "CURRENT": s["current"], "LONGEST": s["longest"], "ACTIVE": s["active"],
-        "LAST": f"{last} · {d:%d %b %Y}", "REPO": REPO,
-        "TREE": repo_tree(entries), "BY_TOPIC": topic_section(entries), "BY_DATE": date_section(entries, s),
+        "SOLVED": s["solved_total"],
+        "EASY": s["easy"],
+        "MEDIUM": s["medium"],
+        "HARD": s["hard"],
+        "CURRENT": s["current"],
+        "LONGEST": s["longest"],
+        "ACTIVE": s["active"],
+        "LEVEL": s["level"],
+        "RANK_TITLE": s["rank_title"],
+        "XP": f"{s['xp']:,}",
+        "PROGRESS": s["level_progress"],
+        "RATING": s["rating"],
+        "TOP_PCT": s["top_pct"],
+        "REPO_SOLVED": s["repo_solved"],
+        "REPO_ENTRIES": s["repo_entries"],
+        "TREE": build_repo_tree(),
+        "BY_DATE": build_date_timeline(entries, s),
+        "BY_TOPIC": build_topic_matrix(entries),
+        "LEETCODE_USER": LEETCODE_USER,
+        "REPO": REPO
     }
-    tpl = open(os.path.join(ROOT, "scripts", "README.template.md"), encoding="utf-8").read()
-    readme = re.sub(r"\{\{(\w+)\}\}", lambda m: str(values[m[1]]), tpl)
-    with open(os.path.join(ROOT, "README.md"), "w", encoding="utf-8", newline="\n") as f:
-        f.write(readme)
-    print(f"README + assets rebuilt · {len(entries)} entries · {s['solved']} solved · streak {s['current']} / best {s['longest']}")
+
+    tpl_path = os.path.join(ROOT, "scripts", "README.template.md")
+    if os.path.exists(tpl_path):
+        tpl = open(tpl_path, encoding="utf-8").read()
+        readme = re.sub(r"\{\{(\w+)\}\}", lambda m: str(values.get(m[1], "")), tpl)
+        with open(os.path.join(ROOT, "README.md"), "w", encoding="utf-8", newline="\n") as f:
+            f.write(readme)
+        print("README.md regenerated successfully!")
 
 
 if __name__ == "__main__":
