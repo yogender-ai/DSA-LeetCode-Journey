@@ -4,8 +4,8 @@ https://leetcode.com/problems/reverse-degree-of-a-string/
 
 Pattern : Strings
 Solved  : 20 Sep 2026
-Time    : O(n) · Runtime: 8 ms (Beats 35.0%)
-Space   : O(1) · Memory: 19.2 MB (Beats 55.6%)
+Time    : O(n) · Runtime: 11 ms (Beats 20.3%)
+Space   : O(1) · Memory: 19.4 MB (Beats 19.1%)
 """
 
 class Solution:
