@@ -8,7 +8,10 @@ on:
     branches: [main]
     paths-ignore: ["README.md", "assets/**"]
   schedule:
+    # Stats come live from LeetCode's API, so rebuild through the day to pick
+    # up solves made outside this repo (contests, mobile, the website itself).
     - cron: "45 18 * * *"   # 00:15 IST
+    - cron: "0 */6 * * *"   # and every 6 hours
   workflow_dispatch:
 
 permissions:

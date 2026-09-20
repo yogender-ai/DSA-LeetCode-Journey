@@ -5,10 +5,12 @@
 Derives streaks, RPG XP/levels, achievements, topic matrices, and date timelines.
 """
 import datetime as dt
+import json
 import math
 import os
 import re
 import sys
+import urllib.request
 from collections import Counter, OrderedDict, defaultdict
 from xml.sax.saxutils import escape
 
@@ -22,6 +24,100 @@ REPO = "yogender-ai/DSA-LeetCode-Journey"
 LEETCODE_USER = "yashyogender"
 
 LANG = {".py": "Python", ".cpp": "C++", ".sql": "SQL"}
+
+# Last successful API response, so a network blip degrades to slightly stale
+# numbers instead of zeroing the dashboard. Committed alongside the README.
+LC_CACHE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "leetcode_stats.json")
+
+LC_QUERY = """
+query dashboardStats($u: String!) {
+  matchedUser(username: $u) {
+    username
+    submitStatsGlobal { acSubmissionNum { difficulty count } }
+    userCalendar { streak totalActiveDays submissionCalendar }
+  }
+  userContestRanking(username: $u) {
+    rating
+    globalRanking
+    totalParticipants
+    topPercentage
+    attendedContestsCount
+  }
+}
+"""
+
+
+def _shape_leetcode(data):
+    """Flatten LeetCode's GraphQL response into the fields the dashboard uses."""
+    user = data["matchedUser"]
+    counts = {b["difficulty"]: b["count"] for b in user["submitStatsGlobal"]["acSubmissionNum"]}
+    cal = user.get("userCalendar") or {}
+    rank = data.get("userContestRanking") or {}
+
+    # submissionCalendar maps a UTC day timestamp to that day's submission count.
+    heat = defaultdict(int)
+    if cal.get("submissionCalendar"):
+        for ts, n in json.loads(cal["submissionCalendar"]).items():
+            day = dt.datetime.fromtimestamp(int(ts), dt.timezone.utc).date()
+            heat[day.isoformat()] += int(n)
+
+    return {
+        "fetched_at": dt.datetime.now(TZ).isoformat(timespec="seconds"),
+        "username": user.get("username") or LEETCODE_USER,
+        "solved_total": counts.get("All", 0),
+        "easy": counts.get("Easy", 0),
+        "medium": counts.get("Medium", 0),
+        "hard": counts.get("Hard", 0),
+        "streak": cal.get("streak") or 0,
+        "active_days": cal.get("totalActiveDays") or 0,
+        "rating": round(rank.get("rating") or 0, 2),
+        "global_ranking": rank.get("globalRanking") or 0,
+        "total_participants": rank.get("totalParticipants") or 0,
+        "top_pct": rank.get("topPercentage") or 0,
+        "contests": rank.get("attendedContestsCount") or 0,
+        "heat": dict(sorted(heat.items())),
+    }
+
+
+def fetch_leetcode_stats(user=LEETCODE_USER, timeout=25):
+    """Live profile numbers straight from LeetCode's public GraphQL API.
+
+    These used to be hardcoded constants, which meant the README froze at
+    whatever was true the day someone typed them in.
+    """
+    req = urllib.request.Request(
+        "https://leetcode.com/graphql/",
+        data=json.dumps({"query": LC_QUERY, "variables": {"u": user}}).encode("utf-8"),
+        headers={
+            "Content-Type": "application/json",
+            "Referer": f"https://leetcode.com/u/{user}/",
+            "User-Agent": "Mozilla/5.0 (compatible; DSA-Journey-Build/1.0)",
+        },
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=timeout) as resp:
+            payload = json.load(resp)
+        data = (payload or {}).get("data") or {}
+        if not data.get("matchedUser"):
+            raise ValueError(f"LeetCode returned no profile for '{user}'")
+        stats = _shape_leetcode(data)
+        with open(LC_CACHE, "w", encoding="utf-8") as fh:
+            json.dump(stats, fh, indent=2, sort_keys=True)
+            fh.write("\n")
+        print(f"[build] live LeetCode stats for {user}: {stats['solved_total']} solved "
+              f"({stats['easy']}E / {stats['medium']}M / {stats['hard']}H), "
+              f"streak {stats['streak']}, {stats['active_days']} active days")
+        return stats
+    except Exception as exc:
+        print(f"[build] WARNING: live LeetCode fetch failed: {exc}")
+        if os.path.exists(LC_CACHE):
+            with open(LC_CACHE, encoding="utf-8") as fh:
+                cached = json.load(fh)
+            print(f"[build] falling back to cached stats from {cached.get('fetched_at')}")
+            return cached
+        raise SystemExit("[build] no live stats and no cache - refusing to build a wrong README")
+
+
 DIFF_ICON = {"Easy": "🟢", "Medium": "🟡", "Hard": "🔴"}
 
 # Theme colors
@@ -142,15 +238,22 @@ def calculate_stats(entries):
     ds = sorted(days)
     today = dt.datetime.now(TZ).date()
     
-    # Official LeetCode stats
-    lc_solved_total = 276
-    lc_easy = 158
-    lc_medium = 109
-    lc_hard = 9
-    lc_streak = 74
-    lc_active_days = 233
-    lc_rating = 1585.61
-    lc_top_pct = 26.49
+    # Official LeetCode stats, fetched live at build time.
+    lc = fetch_leetcode_stats()
+    lc_solved_total = lc["solved_total"]
+    lc_easy = lc["easy"]
+    lc_medium = lc["medium"]
+    lc_hard = lc["hard"]
+    lc_streak = lc["streak"]
+    lc_active_days = lc["active_days"]
+    lc_rating = lc["rating"]
+    lc_top_pct = lc["top_pct"]
+
+    # Heatmap from LeetCode's own submission calendar, so it reflects every
+    # day you were active rather than only days a file landed in this repo.
+    heat = {dt.date.fromisoformat(k): v for k, v in (lc.get("heat") or {}).items()}
+    if not heat:
+        heat = dict(days)
 
     longest, best_end, run = 0, None, 0
     for i, d in enumerate(ds):
@@ -190,12 +293,15 @@ def calculate_stats(entries):
     last_entry = max(((d, e) for e in entries for d in e["dates"]), key=lambda x: (x[0], x[1]["kind"] == "leetcode")) if entries else (today, {})
 
     return dict(
-        days=days, first=ds[0] if ds else today, last_day=ds[-1] if ds else today, today=today,
+        days=days, heat=heat, first=ds[0] if ds else today, last_day=ds[-1] if ds else today, today=today,
         current=current_streak, longest=longest,
         active=lc_active_days,
         solved_total=lc_solved_total, easy=lc_easy, medium=lc_medium, hard=lc_hard,
         repo_solved=len(uniq_repo), repo_entries=len(entries),
         rating=lc_rating, top_pct=lc_top_pct,
+        contests=lc.get("contests", 0), global_ranking=lc.get("global_ranking", 0),
+        total_participants=lc.get("total_participants", 0),
+        fetched_at=lc.get("fetched_at", ""),
         xp=xp, level=level, rank_title=rank_title,
         level_progress=round(level_progress * 100, 1),
         xp_next_target=xp_next_level_target,
@@ -266,14 +372,15 @@ def streak_svg(s):
     cell = min(15.0, (W - 80) / max(weeks, 1) - 4)
     step = cell + 4
     x0 = (W - weeks * step) / 2 + 2
-    y0, mx = 205, max(s["days"].values()) if s["days"] else 1
+    heat = s.get("heat") or s["days"]
+    y0, mx = 205, max(heat.values()) if heat else 1
     cells, months = [], []
     d = start
     while d <= end:
         wi, wd = (d - start).days // 7, d.isoweekday() % 7
-        c = s["days"].get(d, 0)
+        c = heat.get(d, 0)
         lvl = 0 if c == 0 else min(4, 1 + round(3 * (c - 1) / max(mx - 1, 1)))
-        tip = f"{d:%d %b %Y}: {c} solved" if c else f"{d:%d %b %Y}"
+        tip = f"{d:%d %b %Y}: {c} submission{'s' if c != 1 else ''}" if c else f"{d:%d %b %Y}"
         extra = ' class="on" style="animation-delay:%.2fs"' % (wi * .04) if c else ""
         cells.append(f'<rect x="{x0 + wi * step:.1f}" y="{y0 + wd * step:.1f}" width="{cell:.1f}" height="{cell:.1f}" rx="3" fill="{LEVELS[lvl]}"'
                      f'{extra}><title>{tip}</title></rect>')
@@ -311,6 +418,10 @@ def rpg_card_svg(s):
     W, H = 1200, 260
     bar_w = 700
     fill_w = max(10, bar_w * (s['level_progress'] / 100))
+    # Quest targets move with you instead of sitting at a fixed 300.
+    solved_goal = max(100, math.ceil((s['solved_total'] + 1) / 100) * 100)
+    solved_pct = min(100, round(s['solved_total'] / solved_goal * 100))
+    streak_pct = min(100, round(s['current'] / 100 * 100))
     inner = f"""
 <defs>
   <linearGradient id="xp_grad" x1="0" x2="1"><stop offset="0%" stop-color="{VIOLET}"/><stop offset="100%" stop-color="{CYAN}"/></linearGradient>
@@ -353,15 +464,15 @@ def rpg_card_svg(s):
 <g transform="translate(860, 32)">
   <rect width="300" height="196" rx="14" fill="{BG}" stroke="{EDGE}"/>
   <text x="20" y="32" class="tag" fill="{PINK}">// ACTIVE QUESTS</text>
-  <text x="20" y="65" class="badge">⚔️ Quest: Path to 300 Solved</text>
-  <text x="20" y="85" class="stat_lbl" font-size="12">{s['solved_total']}/300 problems (92% complete)</text>
+  <text x="20" y="65" class="badge">⚔️ Quest: Path to {solved_goal} Solved</text>
+  <text x="20" y="85" class="stat_lbl" font-size="12">{s['solved_total']}/{solved_goal} problems ({solved_pct}% complete)</text>
   <rect x="20" y="95" width="260" height="6" rx="3" fill="{EDGE}"/>
-  <rect x="20" y="95" width="239" height="6" rx="3" fill="{PINK}"/>
+  <rect x="20" y="95" width="{260 * solved_pct / 100:.0f}" height="6" rx="3" fill="{PINK}"/>
 
   <text x="20" y="130" class="badge">🔥 Quest: Century Flame (100d)</text>
-  <text x="20" y="150" class="stat_lbl" font-size="12">{s['current']}/100 streak days (74% complete)</text>
+  <text x="20" y="150" class="stat_lbl" font-size="12">{s['current']}/100 streak days ({streak_pct}% complete)</text>
   <rect x="20" y="160" width="260" height="6" rx="3" fill="{EDGE}"/>
-  <rect x="20" y="160" width="192" height="6" rx="3" fill="{LIME}"/>
+  <rect x="20" y="160" width="{260 * streak_pct / 100:.0f}" height="6" rx="3" fill="{LIME}"/>
 </g>
 """
     return svg(W, H, inner, f"Player Profile: Level {s['level']} {s['rank_title']}")
@@ -556,7 +667,20 @@ def main():
         f.write(topics_svg(entries))
     print("Generated all 4 SVGs in assets/")
 
+    def achievement(have, target):
+        """Badge cell that reflects the live number instead of a typed-in one."""
+        if have >= target:
+            return f"**UNLOCKED** ✅ ({have}/{target})"
+        return f"🟡 In Progress ({have}/{target} · {round(have / target * 100)}%)"
+
     values = {
+        "ACH_100": achievement(s["solved_total"], 100),
+        "ACH_200": achievement(s["solved_total"], 200),
+        "ACH_300": achievement(s["solved_total"], 300),
+        "ACH_500": achievement(s["solved_total"], 500),
+        "ACH_S30": achievement(s["current"], 30),
+        "ACH_S50": achievement(s["current"], 50),
+        "ACH_S100": achievement(s["current"], 100),
         "SOLVED": s["solved_total"],
         "EASY": s["easy"],
         "MEDIUM": s["medium"],
@@ -570,6 +694,13 @@ def main():
         "PROGRESS": s["level_progress"],
         "RATING": s["rating"],
         "TOP_PCT": s["top_pct"],
+        "CONTESTS": s.get("contests", 0),
+        "GLOBAL_RANKING": f"{s.get('global_ranking', 0):,}",
+        "TOTAL_PARTICIPANTS": f"{s.get('total_participants', 0):,}",
+        "FETCHED_AT": s.get("fetched_at", ""),
+        # Derived, so the milestone copy can never drift out of step again.
+        "NEXT_MILESTONE": max(100, math.ceil((s["solved_total"] + 1) / 100) * 100),
+        "REMAINING": max(0, math.ceil((s["solved_total"] + 1) / 100) * 100 - s["solved_total"]),
         "REPO_SOLVED": s["repo_solved"],
         "REPO_ENTRIES": s["repo_entries"],
         "TREE": build_repo_tree(),

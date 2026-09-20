@@ -55,13 +55,13 @@
 
 | Badge | Title | Requirement | Status |
 |:---:|:---|:---|:---:|
-| 🛡️ | **Centurion** | Solve 100+ LeetCode problems | **UNLOCKED** ✅ (276/100) |
-| ⚔️ | **Double Centurion** | Solve 200+ LeetCode problems | **UNLOCKED** ✅ (276/200) |
-| 👑 | **Triple Centurion** | Solve 300+ LeetCode problems | 🟡 In Progress (276/300 · 92%) |
-| 🔒 | **Five Hundred Club** | Solve 500+ LeetCode problems | 🔒 Locked |
-| 🔥 | **Habit Locked** | Maintain a 30-Day continuous streak | **UNLOCKED** ✅ (74/30) |
-| ⚡ | **Pyromancer** | Maintain a 50-Day continuous streak | **UNLOCKED** ✅ (74/50) |
-| 🌟 | **Century Flame** | Maintain a 100-Day continuous streak | 🟡 In Progress (74/100 · 74%) |
+| 🛡️ | **Centurion** | Solve 100+ LeetCode problems | {{ACH_100}} |
+| ⚔️ | **Double Centurion** | Solve 200+ LeetCode problems | {{ACH_200}} |
+| 👑 | **Triple Centurion** | Solve 300+ LeetCode problems | {{ACH_300}} |
+| 🔒 | **Five Hundred Club** | Solve 500+ LeetCode problems | {{ACH_500}} |
+| 🔥 | **Habit Locked** | Maintain a 30-Day continuous streak | {{ACH_S30}} |
+| ⚡ | **Pyromancer** | Maintain a 50-Day continuous streak | {{ACH_S50}} |
+| 🌟 | **Century Flame** | Maintain a 100-Day continuous streak | {{ACH_S100}} |
 | 🗄️ | **SQL Sorcerer** | Solve 15+ SQL problems & lessons | **UNLOCKED** ✅ |
 | 🌲 | **Tree Whisperer** | Solve 15+ Tree & BST challenges | **UNLOCKED** ✅ |
 | 🕸️ | **Graph Conqueror** | Solve 10+ Graph & Search algorithms | **UNLOCKED** ✅ |
@@ -76,7 +76,7 @@
 ### 🎯 Active Quests & Milestones
 * 🗡️ **Daily Quest — Forge the Strike**: Solve at least 1 problem and push your code today. *(Reward: +25 EXP · Streak Shield)*
 * 👹 **Weekly Boss — Contest Titan**: Compete in the official LeetCode Weekly / Biweekly Contest. *(Reward: +100 EXP · Rating Boost)*
-* 🏆 **Epic Milestone — Triple Centurion**: Reach 300 problems solved (currently {{SOLVED}}/300 · only 24 remaining!). *(Reward: +250 EXP · Title: Algorithm Warlord)*
+* 🏆 **Epic Milestone — Triple Centurion**: Reach {{NEXT_MILESTONE}} problems solved (currently {{SOLVED}}/{{NEXT_MILESTONE}} · only {{REMAINING}} remaining!). *(Reward: +250 EXP · Title: Algorithm Warlord)*
 
 <br/>
 
