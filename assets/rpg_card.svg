@@ -28,7 +28,7 @@
 
     <text x="240" y="16" class="stat_lbl">TOTAL PROBLEMS</text>
     <text x="240" y="44" class="stat_val">276</text>
-    <text x="240" y="62" class="stat_lbl">259 files tracked</text>
+    <text x="240" y="62" class="stat_lbl">260 files tracked</text>
 
     <text x="480" y="16" class="stat_lbl">PRACTICE STREAK</text>
     <text x="480" y="44" class="stat_val" fill="#a3e635">🔥 74 Days</text>

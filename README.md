@@ -96,8 +96,8 @@ All solutions are filed chronologically under `YYYY/MM-Month/DD-MM-YY/`. ↺ mar
 
 ```text
 📅 dates/
-├── 2026/  ·  249 solutions · 79 practice days
-│   ├── Sep  ████                  17 solutions · 8 days
+├── 2026/  ·  250 solutions · 79 practice days
+│   ├── Sep  █████                 18 solutions · 8 days
 │   ├── Aug  ███                   12 solutions · 4 days
 │   ├── Jul  ████                  15 solutions · 7 days
 │   ├── Jun  ██████████████████    68 solutions · 3 days
@@ -112,11 +112,12 @@ All solutions are filed chronologically under `YYYY/MM-Month/DD-MM-YY/`. ↺ mar
 ```
 
 <details open>
-<summary><b>September 2026</b> — 17 solutions across 8 days</summary>
+<summary><b>September 2026</b> — 18 solutions across 8 days</summary>
 
 | Date | Problem / Lesson | Topic / Pattern | Diff | Code |
 |:--|:--|:--|:-:|:-:|
 | **20 Sep** (Sun) | 1047. [Remove All Adjacent Duplicates In String](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/) ↺ *revisit* | Stack | 🟢 Easy | [Python](2026/09-September/20-09-26/1047-remove-all-adjacent-duplicates-in-string.py) |
+|  | 3498. [Reverse Degree of a String](https://leetcode.com/problems/reverse-degree-of-a-string/) | Strings | 🟢 Easy | [Python](2026/09-September/20-09-26/3498-reverse-degree-of-a-string.py) |
 | **19 Sep** (Sat) | 54. [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/) | Matrix / Simulation | 🟡 Medium | [Python](2026/09-September/19-09-26/0054-spiral-matrix.py) |
 |  | 443. [String Compression](https://leetcode.com/problems/string-compression/) | Two Pointers | 🟡 Medium | [Python](2026/09-September/19-09-26/0443-string-compression.py) |
 |  | 1047. [Remove All Adjacent Duplicates In String](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/) | Stack | 🟢 Easy | [Python](2026/09-September/20-09-26/1047-remove-all-adjacent-duplicates-in-string.py) |
@@ -690,11 +691,12 @@ DSA-LeetCode-Journey/
 
 ### 🔤 Strings
 
-> **Signal:** Pattern matching, run-length compression, substrings  ·  *2 LeetCode problems · 0 concept lessons*
+> **Signal:** Pattern matching, run-length compression, substrings  ·  *3 LeetCode problems · 0 concept lessons*
 
 | # | Problem | Difficulty | Solution | Time | Solved Dates |
 |:-:|:--|:-:|:-:|:-:|:--|
 | 415 | [Add Strings](https://leetcode.com/problems/add-strings/) | 🟢 Easy | [C++](2026/02-February/01-02-26/0415-add-strings.cpp) | O(max(N, M)), Space: O(max(N, M)) | 01 Feb 2026 |
+| 3498 | [Reverse Degree of a String](https://leetcode.com/problems/reverse-degree-of-a-string/) | 🟢 Easy | [Python](2026/09-September/20-09-26/3498-reverse-degree-of-a-string.py) | O(n) · Runtime: 0 ms | 20 Sep 2026 |
 | 3838 | [Weighted Word Mapping](https://leetcode.com/problems/weighted-word-mapping/) | 🟢 Easy | [C++](2026/02-February/14-02-26/3838-weighted-word-mapping.cpp) | O(n) | 14 Feb 2026 |
 
 ### 🧰 Sorting & STL
