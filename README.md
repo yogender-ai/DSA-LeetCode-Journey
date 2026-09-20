@@ -696,7 +696,7 @@ DSA-LeetCode-Journey/
 | # | Problem | Difficulty | Solution | Time | Solved Dates |
 |:-:|:--|:-:|:-:|:-:|:--|
 | 415 | [Add Strings](https://leetcode.com/problems/add-strings/) | 🟢 Easy | [C++](2026/02-February/01-02-26/0415-add-strings.cpp) | O(max(N, M)), Space: O(max(N, M)) | 01 Feb 2026 |
-| 3498 | [Reverse Degree of a String](https://leetcode.com/problems/reverse-degree-of-a-string/) | 🟢 Easy | [Python](2026/09-September/20-09-26/3498-reverse-degree-of-a-string.py) | O(n) · Runtime: 8 ms (Beats 35.0%) | 20 Sep 2026 |
+| 3498 | [Reverse Degree of a String](https://leetcode.com/problems/reverse-degree-of-a-string/) | 🟢 Easy | [Python](2026/09-September/20-09-26/3498-reverse-degree-of-a-string.py) | O(n) · Runtime: 11 ms (Beats 20.3%) | 20 Sep 2026 |
 | 3838 | [Weighted Word Mapping](https://leetcode.com/problems/weighted-word-mapping/) | 🟢 Easy | [C++](2026/02-February/14-02-26/3838-weighted-word-mapping.cpp) | O(n) | 14 Feb 2026 |
 
 ### 🧰 Sorting & STL
