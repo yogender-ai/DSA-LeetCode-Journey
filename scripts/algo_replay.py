@@ -214,6 +214,13 @@ ALGORITHMS = [
         "caption": "Each slide costs two operations, not k.",
     },
     {
+        "num": 1091, "name": "Shortest Path in Binary Matrix", "slug": "shortest-path-in-binary-matrix",
+        "pattern": "Graphs & Search", "complexity": "O(rows · cols)",
+        "kind": "grid", "values": None,
+        "build": lambda v: trace_bfs_grid(),
+        "caption": "Expands in rings, so first contact is already shortest.",
+    },
+    {
         "num": 53, "name": "Maximum Subarray", "slug": "maximum-subarray",
         "pattern": "Dynamic Programming", "complexity": "O(n)",
         "values": [-2, 1, -3, 4, -1, 2, 1, -5, 4],
@@ -255,19 +262,34 @@ def _cells(step, values, x0, y, cw, gap):
 
 
 def render(algo, values, solved_note=""):
+    """Lay out one algorithm's trace as a looping flipbook."""
     steps = algo["build"](values)
-    n = len(values)
-    W, H = 1200, 330
-    cw, gap = min(62, (W - 160) // n - 8), 8
-    row = n * cw + (n - 1) * gap
-    x0 = (W - row) / 2
-    y = 132
+    grid = algo.get("kind") == "grid"
+    W = 1200
 
-    per = 1.7  # seconds a frame stays on screen
+    if grid:
+        rows, cols = len(steps[0].state), len(steps[0].state[0])
+        cell, gap = 26, 3
+        span = cols * (cell + gap) - gap
+        x0, y = (W - span) / 2, 128
+        body_h = rows * (cell + gap) - gap
+        note_y = y + body_h + 40
+        H = note_y + 80
+        left = x0
+    else:
+        n = len(values)
+        cell, gap = min(62, (W - 160) // n - 8), 8
+        span = n * cell + (n - 1) * gap
+        x0, y = (W - span) / 2, 132
+        note_y = y + cell + 44
+        H = 330
+        left = x0
+
+    per = 1.4 if grid else 1.7
     total = per * len(steps)
 
     frames, css = [], []
-    for idx, s in enumerate(steps):
+    for idx, st in enumerate(steps):
         a = idx / len(steps) * 100
         b = (idx + 1) / len(steps) * 100
         if idx == 0:
@@ -278,14 +300,15 @@ def render(algo, values, solved_note=""):
                 f"{b + 0.001:.3f}%,100%{{opacity:0}}}}"
             )
         dots = "".join(
-            f'<circle cx="{x0 + j * 16}" cy="{H - 34}" r="4" fill="{VIOLET if j == idx else EDGE}"/>'
+            f'<circle cx="{left + j * 16}" cy="{H - 34}" r="4" fill="{VIOLET if j == idx else EDGE}"/>'
             for j in range(len(steps))
         )
+        body = _grid(st, x0, y, cell, gap) if grid else _cells(st, values, x0, y, cell, gap)
         frames.append(
             f'<g style="opacity:0;animation:f{idx} {total:.1f}s steps(1,end) infinite">'
-            f'{_cells(s, values, x0, y, cw, gap)}'
-            f'<text x="{x0}" y="{y + cw + 44}" style="font:500 16px {SANS};fill:{TEXT}">{escape(s.note)}</text>'
-            f'<text x="{x0}" y="{y + cw + 70}" style="font:600 13px {MONO};fill:{MUTED}">{escape(s.stat)}</text>'
+            f'{body}'
+            f'<text x="{left}" y="{note_y}" style="font:500 16px {SANS};fill:{TEXT}">{escape(st.note)}</text>'
+            f'<text x="{left}" y="{note_y + 26}" style="font:600 13px {MONO};fill:{MUTED}">{escape(st.stat)}</text>'
             f'<text x="{W - 56}" y="{H - 30}" text-anchor="end" style="font:700 12px {MONO};fill:{DIM}">'
             f'step {idx + 1}/{len(steps)}</text>'
             f'{dots}</g>'
@@ -298,7 +321,7 @@ def render(algo, values, solved_note=""):
   .ttl{{font:800 26px {SANS};fill:{TEXT}}}
   .sub{{font:600 13px {MONO};fill:{MUTED}}}
   .chip{{font:700 11px {MONO};letter-spacing:1px}}
-  {chr(10).join("  " + c for c in css)}
+{chr(10).join("  " + c for c in css)}
 </style>
 <rect x=".5" y=".5" width="{W - 1}" height="{H - 1}" rx="20" fill="{BG}" stroke="{EDGE}"/>
 <rect x="28" y="24" width="{W - 56}" height="{H - 48}" rx="16" fill="{PANEL}" fill-opacity=".55" stroke="{EDGE}"/>
@@ -306,8 +329,8 @@ def render(algo, values, solved_note=""):
 <text x="56" y="90" class="ttl">{escape(title)}</text>
 <text x="56" y="112" class="sub">{escape(algo['pattern'])} · {escape(algo['complexity'])} · {escape(algo['caption'])}</text>
 <g transform="translate({W - 56} 84)">
-  <rect x="-150" y="-22" width="150" height="30" rx="15" fill="{VIOLET}" fill-opacity=".12" stroke="{VIOLET}" stroke-opacity=".5"/>
-  <text x="-75" y="-2" text-anchor="middle" class="chip" fill="{VIOLET}">{escape(solved_note or 'LIVE TRACE')}</text>
+  <rect x="-170" y="-22" width="170" height="30" rx="15" fill="{VIOLET}" fill-opacity=".12" stroke="{VIOLET}" stroke-opacity=".5"/>
+  <text x="-85" y="-2" text-anchor="middle" class="chip" fill="{VIOLET}">{escape(solved_note or 'LIVE TRACE')}</text>
 </g>
 {"".join(frames)}
 """
@@ -344,3 +367,112 @@ if __name__ == "__main__":
         f.write(algo_replay_svg())
     picked = pick_algorithm()
     print(f"wrote assets/algo_replay.svg — #{picked['num']} {picked['name']}")
+
+
+# ───────────────────────── grid search (BFS) ─────────────────────────
+GRID_PALETTE = {
+    "wall":  ("#272160", "#3b3486"),
+    "open":  ("#070912", "#191634"),
+    "seen":  ("#8b5cf61f", "#8b5cf650"),
+    "front": ("#22d3ee33", CYAN),
+    "path":  ("#a3e63530", LIME),
+    "S":     ("#fbbf2433", AMBER),
+    "E":     ("#f472b633", PINK),
+}
+
+MAZE = [
+    "S..#.........#.",
+    ".#.#.#######.#.",
+    ".#...#.....#.#.",
+    ".#####.###.#.#.",
+    ".....#.#...#.#.",
+    "####.#.#.###.#.",
+    ".....#...#....E",
+]
+
+
+def trace_bfs_grid(maze=None, stride=2):
+    """Breadth-first search flooding a maze, one wave per frame.
+
+    BFS is worth animating because the reason it finds the shortest path is
+    visible: it expands in rings of equal distance, so the first time it
+    touches the exit, no shorter route can exist.
+    """
+    maze = maze or MAZE
+    rows, cols = len(maze), len(maze[0])
+    start = end = None
+    for r in range(rows):
+        for c in range(cols):
+            if maze[r][c] == "S":
+                start = (r, c)
+            elif maze[r][c] == "E":
+                end = (r, c)
+
+    def base():
+        return [["wall" if maze[r][c] == "#" else "open" for c in range(cols)] for r in range(rows)]
+
+    steps, parent = [], {start: None}
+    frontier, seen, dist = [start], {start}, 0
+    found = False
+
+    # A 15-wide maze needs 20+ waves to cross, which would make a 40s loop.
+    # Recording every `stride` waves keeps the flood readable and the loop short.
+    while frontier and not found:
+        if dist % stride and not found:
+            pass
+        state = base()
+        for (r, c) in seen:
+            state[r][c] = "seen"
+        for (r, c) in frontier:
+            state[r][c] = "front"
+        state[start[0]][start[1]] = "S"
+        state[end[0]][end[1]] = "E" if end not in seen else "front"
+        if dist % stride == 0:
+            steps.append(Step(state, f"Wave {dist}: every cell here is exactly {dist} step{'' if dist == 1 else 's'} from the start.",
+                              f"frontier = {len(frontier)} cells  ·  visited = {len(seen)}"))
+
+        nxt = []
+        for (r, c) in frontier:
+            for dr, dc in ((1, 0), (-1, 0), (0, 1), (0, -1)):
+                nr, nc = r + dr, c + dc
+                if 0 <= nr < rows and 0 <= nc < cols and maze[nr][nc] != "#" and (nr, nc) not in seen:
+                    seen.add((nr, nc))
+                    parent[(nr, nc)] = (r, c)
+                    nxt.append((nr, nc))
+                    if (nr, nc) == end:
+                        found = True
+        frontier = nxt
+        dist += 1
+
+    # Walk the parent chain back to draw the shortest route.
+    path, node = [], end
+    while node is not None:
+        path.append(node)
+        node = parent.get(node)
+    path.reverse()
+
+    state = base()
+    for (r, c) in seen:
+        state[r][c] = "seen"
+    for (r, c) in path:
+        state[r][c] = "path"
+    state[start[0]][start[1]] = "S"
+    state[end[0]][end[1]] = "E"
+    steps.append(Step(state, "First touch of the exit is already the shortest route - that is why BFS works.",
+                      f"path length = {len(path) - 1} steps  ·  {len(seen)} of {rows * cols} cells explored"))
+    return steps
+
+
+def _grid(step, x0, y, cell, gap=3):
+    out = []
+    for r, row in enumerate(step.state):
+        for c, st in enumerate(row):
+            fill, stroke = GRID_PALETTE[st]
+            x = x0 + c * (cell + gap)
+            yy = y + r * (cell + gap)
+            out.append(f'<rect x="{x:.1f}" y="{yy:.1f}" width="{cell}" height="{cell}" rx="5" '
+                       f'fill="{fill}" stroke="{stroke}" stroke-width="1.2"/>')
+            if st in ("S", "E"):
+                out.append(f'<text x="{x + cell / 2:.1f}" y="{yy + cell / 2 + 5:.1f}" text-anchor="middle" '
+                           f'style="font:800 13px {MONO};fill:{AMBER if st == "S" else PINK}">{st}</text>')
+    return "".join(out)
