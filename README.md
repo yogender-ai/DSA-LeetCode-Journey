@@ -904,7 +904,8 @@ python scripts/new.py 200 --topic "Graphs & Search" --lang cpp
 python scripts/new.py two-sum
 ```
 
-`new.py` fetches the frontend ID, title, difficulty, and algorithm pattern from LeetCode GraphQL, places the file in `dates/<year>/<month>/<day>/`, and updates your streak and RPG stats automatically!
+`new.py` fetches the frontend ID, title, difficulty, and algorithm pattern from LeetCode GraphQL, places the file in `<year>/<month>/<day>/`, and updates your streak and RPG stats automatically!
+
 
 <br/>
 
