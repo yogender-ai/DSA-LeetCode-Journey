@@ -11,10 +11,10 @@
   <img src="https://img.shields.io/badge/LeetCode-yashyogender-FFA116?style=for-the-badge&logo=leetcode&logoColor=white&labelColor=0b0d1a" alt="LeetCode Profile" />
 </a>
 <a href="https://leetcode.com/u/yashyogender/">
-  <img src="https://img.shields.io/badge/solved-277-8b5cf6?style=for-the-badge&labelColor=0b0d1a" alt="solved" />
+  <img src="https://img.shields.io/badge/solved-278-8b5cf6?style=for-the-badge&labelColor=0b0d1a" alt="solved" />
 </a>
 <img src="https://img.shields.io/badge/easy-159-2dd4bf?style=for-the-badge&labelColor=0b0d1a" alt="easy" />
-<img src="https://img.shields.io/badge/medium-109-fbbf24?style=for-the-badge&labelColor=0b0d1a" alt="medium" />
+<img src="https://img.shields.io/badge/medium-110-fbbf24?style=for-the-badge&labelColor=0b0d1a" alt="medium" />
 <img src="https://img.shields.io/badge/hard-9-f472b6?style=for-the-badge&labelColor=0b0d1a" alt="hard" />
 
 <br/>
@@ -23,7 +23,7 @@
 <img src="https://img.shields.io/badge/🔥%20streak-74%20days%20blazing-a3e635?style=flat-square&labelColor=0b0d1a" alt="current streak" />
 <img src="https://img.shields.io/badge/🏆%20longest%20streak-74%20days-fbbf24?style=flat-square&labelColor=0b0d1a" alt="longest streak" />
 <img src="https://img.shields.io/badge/⚔️%20contest%20rating-1585.61%20(top%2026.49%25)-22d3ee?style=flat-square&labelColor=0b0d1a" alt="contest rating" />
-<img src="https://img.shields.io/badge/📅%20practice%20days-233-f472b6?style=flat-square&labelColor=0b0d1a" alt="practice days" />
+<img src="https://img.shields.io/badge/📅%20practice%20days-234-f472b6?style=flat-square&labelColor=0b0d1a" alt="practice days" />
 <img src="https://img.shields.io/github/last-commit/yogender-ai/DSA-LeetCode-Journey?style=flat-square&labelColor=0b0d1a&color=8b5cf6&label=last%20commit" alt="last commit" />
 
 <br/><br/>
@@ -66,10 +66,10 @@
 
 | Badge | Title | Requirement | Status |
 |:---:|:---|:---|:---:|
-| 🛡️ | **Centurion** | Solve 100+ LeetCode problems | **UNLOCKED** ✅ (277/100) |
-| ⚔️ | **Double Centurion** | Solve 200+ LeetCode problems | **UNLOCKED** ✅ (277/200) |
-| 👑 | **Triple Centurion** | Solve 300+ LeetCode problems | 🟡 In Progress (277/300 · 92%) |
-| 🔒 | **Five Hundred Club** | Solve 500+ LeetCode problems | 🟡 In Progress (277/500 · 55%) |
+| 🛡️ | **Centurion** | Solve 100+ LeetCode problems | **UNLOCKED** ✅ (278/100) |
+| ⚔️ | **Double Centurion** | Solve 200+ LeetCode problems | **UNLOCKED** ✅ (278/200) |
+| 👑 | **Triple Centurion** | Solve 300+ LeetCode problems | 🟡 In Progress (278/300 · 93%) |
+| 🔒 | **Five Hundred Club** | Solve 500+ LeetCode problems | 🟡 In Progress (278/500 · 56%) |
 | 🔥 | **Habit Locked** | Maintain a 30-Day continuous streak | **UNLOCKED** ✅ (74/30) |
 | ⚡ | **Pyromancer** | Maintain a 50-Day continuous streak | **UNLOCKED** ✅ (74/50) |
 | 🌟 | **Century Flame** | Maintain a 100-Day continuous streak | 🟡 In Progress (74/100 · 74%) |
@@ -87,7 +87,7 @@
 ### 🎯 Active Quests & Milestones
 * 🗡️ **Daily Quest — Forge the Strike**: Solve at least 1 problem and push your code today. *(Reward: +25 EXP · Streak Shield)*
 * 👹 **Weekly Boss — Contest Titan**: Compete in the official LeetCode Weekly / Biweekly Contest. *(Reward: +100 EXP · Rating Boost)*
-* 🏆 **Epic Milestone — Triple Centurion**: Reach 300 problems solved (currently 277/300 · only 23 remaining!). *(Reward: +250 EXP · Title: Algorithm Warlord)*
+* 🏆 **Epic Milestone — Triple Centurion**: Reach 300 problems solved (currently 278/300 · only 22 remaining!). *(Reward: +250 EXP · Title: Algorithm Warlord)*
 
 <br/>
 
@@ -97,7 +97,7 @@
 
 ## 🔥 Streak & 2026 Calendar
 
-<img src="assets/streak.svg" width="100%" alt="Practice calendar — 74 day current streak, 74 day longest streak, 233 practice days" />
+<img src="assets/streak.svg" width="100%" alt="Practice calendar — 74 day current streak, 74 day longest streak, 234 practice days" />
 
 > 💡 **Streak Rule:** A day counts if at least one solution or algorithm lesson was written. Streaks and dates are synced in Indian Standard Time (IST).
 
@@ -107,8 +107,8 @@ All solutions are filed chronologically under `YYYY/MM-Month/DD-MM-YY/`. ↺ mar
 
 ```text
 📅 dates/
-├── 2026/  ·  250 solutions · 79 practice days
-│   ├── Sep  █████                 18 solutions · 8 days
+├── 2026/  ·  251 solutions · 80 practice days
+│   ├── Sep  █████                 19 solutions · 9 days
 │   ├── Aug  ███                   12 solutions · 4 days
 │   ├── Jul  ████                  15 solutions · 7 days
 │   ├── Jun  ██████████████████    68 solutions · 3 days
@@ -123,10 +123,11 @@ All solutions are filed chronologically under `YYYY/MM-Month/DD-MM-YY/`. ↺ mar
 ```
 
 <details open>
-<summary><b>September 2026</b> — 18 solutions across 8 days</summary>
+<summary><b>September 2026</b> — 19 solutions across 9 days</summary>
 
 | Date | Problem / Lesson | Topic / Pattern | Diff | Code |
 |:--|:--|:--|:-:|:-:|
+| **21 Sep** (Mon) | 875. [Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/) | Binary Search | 🟡 Medium | [Python](2026/09-September/21-09-26/0875-koko-eating-bananas.py) |
 | **20 Sep** (Sun) | 1047. [Remove All Adjacent Duplicates In String](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/) ↺ *revisit* | Stack | 🟢 Easy | [Python](2026/09-September/20-09-26/1047-remove-all-adjacent-duplicates-in-string.py) |
 |  | 3498. [Reverse Degree of a String](https://leetcode.com/problems/reverse-degree-of-a-string/) | Strings | 🟢 Easy | [Python](2026/09-September/20-09-26/3498-reverse-degree-of-a-string.py) |
 | **19 Sep** (Sat) | 54. [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/) | Matrix / Simulation | 🟡 Medium | [Python](2026/09-September/19-09-26/0054-spiral-matrix.py) |
@@ -493,7 +494,7 @@ DSA-LeetCode-Journey/
 │   ├── 06-June        (3 active days)
 │   ├── 07-July        (7 active days)
 │   ├── 08-August      (4 active days)
-│   └── 09-September   (12 active days)
+│   └── 09-September   (13 active days)
 ├── notes/                        ← SQL deep dives & conceptual revision notes
 ├── sandbox/                      ← Kafka and ML practice sandbox
 ├── assets/                       ← generated banner, streak heatmap, RPG HUD, topic cards
@@ -644,7 +645,7 @@ DSA-LeetCode-Journey/
 
 ### 🔍 Binary Search
 
-> **Signal:** Sorted search space, monotonic condition, answer range  ·  *8 LeetCode problems · 0 concept lessons*
+> **Signal:** Sorted search space, monotonic condition, answer range  ·  *9 LeetCode problems · 0 concept lessons*
 
 | # | Problem | Difficulty | Solution | Time | Solved Dates |
 |:-:|:--|:-:|:-:|:-:|:--|
@@ -655,6 +656,7 @@ DSA-LeetCode-Journey/
 | 222 | [Count Complete Tree Nodes](https://leetcode.com/problems/count-complete-tree-nodes/) | 🟡 Medium | [C++](2026/02-February/16-02-26/0222-count-complete-tree-nodes.cpp) | O(n) | 16 Feb 2026 |
 | 278 | [First Bad Version](https://leetcode.com/problems/first-bad-version/) | 🟢 Easy | [C++](2026/02-February/01-02-26/0278-first-bad-version.cpp) | O(log n), Space: O(1) | 01 Feb 2026 |
 | 704 | [Binary Search](https://leetcode.com/problems/binary-search/) | 🟢 Easy | [C++](2026/02-February/01-02-26/0704-binary-search.cpp) | O(log n), Space: O(1) | 01 Feb 2026 |
+| 875 | [Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/) | 🟡 Medium | [Python](2026/09-September/21-09-26/0875-koko-eating-bananas.py) | O(n) · Runtime: 173 ms (Beats 42.9%) | 21 Sep 2026 |
 | 1011 | [Capacity To Ship Packages Within D Days](https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/) | 🟡 Medium | [C++](2026/02-February/01-02-26/1011-capacity-to-ship-packages-within-d-days.cpp) | O(n * log(sum(weights))), Space: O(1) | 01 Feb 2026 |
 
 ### 🌲 Trees & BST

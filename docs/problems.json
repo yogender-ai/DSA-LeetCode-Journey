@@ -1,23 +1,38 @@
 {
- "generated": "2026-09-21T09:32:45+05:30",
+ "generated": "2026-09-21T13:27:11+05:30",
  "user": "yashyogender",
  "repo": "yogender-ai/DSA-LeetCode-Journey",
  "stats": {
-  "solved": 277,
+  "solved": 278,
   "easy": 159,
-  "medium": 109,
+  "medium": 110,
   "hard": 9,
   "streak": 74,
   "longest": 74,
-  "active": 233,
+  "active": 234,
   "rating": 1585.61,
   "topPct": 26.49,
   "level": 17,
   "rank": "Grandmaster Alchemist 👑",
-  "xp": 6670,
-  "repoEntries": 260
+  "xp": 6700,
+  "repoEntries": 261
  },
  "problems": [
+  {
+   "num": 875,
+   "title": "Koko Eating Bananas",
+   "difficulty": "Medium",
+   "pattern": "Binary Search",
+   "lang": "Python",
+   "path": "2026/09-September/21-09-26/0875-koko-eating-bananas.py",
+   "url": "https://leetcode.com/problems/koko-eating-bananas/",
+   "time": "O(n) · Runtime: 173 ms (Beats 42.9%)",
+   "space": "O(1) · Memory: 20.6 MB (Beats 44.9%)",
+   "dates": [
+    "2026-09-21"
+   ],
+   "kind": "leetcode"
+  },
   {
    "num": 3498,
    "title": "Reverse Degree of a String",
