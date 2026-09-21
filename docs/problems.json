@@ -1,10 +1,10 @@
 {
- "generated": "2026-09-21T13:27:11+05:30",
+ "generated": "2026-09-21T16:45:01+05:30",
  "user": "yashyogender",
  "repo": "yogender-ai/DSA-LeetCode-Journey",
  "stats": {
-  "solved": 278,
-  "easy": 159,
+  "solved": 279,
+  "easy": 160,
   "medium": 110,
   "hard": 9,
   "streak": 74,
@@ -14,10 +14,25 @@
   "topPct": 26.49,
   "level": 17,
   "rank": "Grandmaster Alchemist 👑",
-  "xp": 6700,
-  "repoEntries": 261
+  "xp": 6710,
+  "repoEntries": 262
  },
  "problems": [
+  {
+   "num": 2553,
+   "title": "Separate the Digits in an Array",
+   "difficulty": "Easy",
+   "pattern": "Data Structures & Algorithms",
+   "lang": "Python",
+   "path": "2026/09-September/21-09-26/2553-separate-the-digits-in-an-array.py",
+   "url": "https://leetcode.com/problems/separate-the-digits-in-an-array/",
+   "time": "O(n) · Runtime: 3 ms (Beats 73.1%)",
+   "space": "O(1) · Memory: 19.3 MB (Beats 97.6%)",
+   "dates": [
+    "2026-09-21"
+   ],
+   "kind": "leetcode"
+  },
   {
    "num": 875,
    "title": "Koko Eating Bananas",

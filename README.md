@@ -11,9 +11,9 @@
   <img src="https://img.shields.io/badge/LeetCode-yashyogender-FFA116?style=for-the-badge&logo=leetcode&logoColor=white&labelColor=0b0d1a" alt="LeetCode Profile" />
 </a>
 <a href="https://leetcode.com/u/yashyogender/">
-  <img src="https://img.shields.io/badge/solved-278-8b5cf6?style=for-the-badge&labelColor=0b0d1a" alt="solved" />
+  <img src="https://img.shields.io/badge/solved-279-8b5cf6?style=for-the-badge&labelColor=0b0d1a" alt="solved" />
 </a>
-<img src="https://img.shields.io/badge/easy-159-2dd4bf?style=for-the-badge&labelColor=0b0d1a" alt="easy" />
+<img src="https://img.shields.io/badge/easy-160-2dd4bf?style=for-the-badge&labelColor=0b0d1a" alt="easy" />
 <img src="https://img.shields.io/badge/medium-110-fbbf24?style=for-the-badge&labelColor=0b0d1a" alt="medium" />
 <img src="https://img.shields.io/badge/hard-9-f472b6?style=for-the-badge&labelColor=0b0d1a" alt="hard" />
 
@@ -66,10 +66,10 @@
 
 | Badge | Title | Requirement | Status |
 |:---:|:---|:---|:---:|
-| 🛡️ | **Centurion** | Solve 100+ LeetCode problems | **UNLOCKED** ✅ (278/100) |
-| ⚔️ | **Double Centurion** | Solve 200+ LeetCode problems | **UNLOCKED** ✅ (278/200) |
-| 👑 | **Triple Centurion** | Solve 300+ LeetCode problems | 🟡 In Progress (278/300 · 93%) |
-| 🔒 | **Five Hundred Club** | Solve 500+ LeetCode problems | 🟡 In Progress (278/500 · 56%) |
+| 🛡️ | **Centurion** | Solve 100+ LeetCode problems | **UNLOCKED** ✅ (279/100) |
+| ⚔️ | **Double Centurion** | Solve 200+ LeetCode problems | **UNLOCKED** ✅ (279/200) |
+| 👑 | **Triple Centurion** | Solve 300+ LeetCode problems | 🟡 In Progress (279/300 · 93%) |
+| 🔒 | **Five Hundred Club** | Solve 500+ LeetCode problems | 🟡 In Progress (279/500 · 56%) |
 | 🔥 | **Habit Locked** | Maintain a 30-Day continuous streak | **UNLOCKED** ✅ (74/30) |
 | ⚡ | **Pyromancer** | Maintain a 50-Day continuous streak | **UNLOCKED** ✅ (74/50) |
 | 🌟 | **Century Flame** | Maintain a 100-Day continuous streak | 🟡 In Progress (74/100 · 74%) |
@@ -87,7 +87,7 @@
 ### 🎯 Active Quests & Milestones
 * 🗡️ **Daily Quest — Forge the Strike**: Solve at least 1 problem and push your code today. *(Reward: +25 EXP · Streak Shield)*
 * 👹 **Weekly Boss — Contest Titan**: Compete in the official LeetCode Weekly / Biweekly Contest. *(Reward: +100 EXP · Rating Boost)*
-* 🏆 **Epic Milestone — Triple Centurion**: Reach 300 problems solved (currently 278/300 · only 22 remaining!). *(Reward: +250 EXP · Title: Algorithm Warlord)*
+* 🏆 **Epic Milestone — Triple Centurion**: Reach 300 problems solved (currently 279/300 · only 21 remaining!). *(Reward: +250 EXP · Title: Algorithm Warlord)*
 
 <br/>
 
@@ -107,8 +107,8 @@ All solutions are filed chronologically under `YYYY/MM-Month/DD-MM-YY/`. ↺ mar
 
 ```text
 📅 dates/
-├── 2026/  ·  251 solutions · 80 practice days
-│   ├── Sep  █████                 19 solutions · 9 days
+├── 2026/  ·  252 solutions · 80 practice days
+│   ├── Sep  █████                 20 solutions · 9 days
 │   ├── Aug  ███                   12 solutions · 4 days
 │   ├── Jul  ████                  15 solutions · 7 days
 │   ├── Jun  ██████████████████    68 solutions · 3 days
@@ -123,11 +123,12 @@ All solutions are filed chronologically under `YYYY/MM-Month/DD-MM-YY/`. ↺ mar
 ```
 
 <details open>
-<summary><b>September 2026</b> — 19 solutions across 9 days</summary>
+<summary><b>September 2026</b> — 20 solutions across 9 days</summary>
 
 | Date | Problem / Lesson | Topic / Pattern | Diff | Code |
 |:--|:--|:--|:-:|:-:|
 | **21 Sep** (Mon) | 875. [Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/) | Binary Search | 🟡 Medium | [Python](2026/09-September/21-09-26/0875-koko-eating-bananas.py) |
+|  | 2553. [Separate the Digits in an Array](https://leetcode.com/problems/separate-the-digits-in-an-array/) | Data Structures & Algorithms | 🟢 Easy | [Python](2026/09-September/21-09-26/2553-separate-the-digits-in-an-array.py) |
 | **20 Sep** (Sun) | 1047. [Remove All Adjacent Duplicates In String](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/) ↺ *revisit* | Stack | 🟢 Easy | [Python](2026/09-September/20-09-26/1047-remove-all-adjacent-duplicates-in-string.py) |
 |  | 3498. [Reverse Degree of a String](https://leetcode.com/problems/reverse-degree-of-a-string/) | Strings | 🟢 Easy | [Python](2026/09-September/20-09-26/3498-reverse-degree-of-a-string.py) |
 | **19 Sep** (Sat) | 54. [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/) | Matrix / Simulation | 🟡 Medium | [Python](2026/09-September/19-09-26/0054-spiral-matrix.py) |
@@ -772,7 +773,7 @@ DSA-LeetCode-Journey/
 
 ### 🧩 Data Structures & Algorithms
 
-> **Signal:** Core concepts, foundations, algorithms  ·  *9 LeetCode problems · 88 concept lessons*
+> **Signal:** Core concepts, foundations, algorithms  ·  *10 LeetCode problems · 88 concept lessons*
 
 | # | Problem | Difficulty | Solution | Time | Solved Dates |
 |:-:|:--|:-:|:-:|:-:|:--|
@@ -785,6 +786,7 @@ DSA-LeetCode-Journey/
 | 326 | [Power of Three](https://leetcode.com/problems/power-of-three/) | 🟢 Easy | [C++](2026/02-February/03-02-26/0326-power-of-three.cpp) | O(n) | 03 Feb 2026 |
 | 387 | [First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/) | 🟢 Easy | [C++](2025/12-December/23-12-25/0387-first-unique-character-in-a-string.cpp) | O(n) | 23 Dec 2025 |
 | 1791 | [Find Center of Star Graph](https://leetcode.com/problems/find-center-of-star-graph/) | 🟢 Easy | [C++](2026/03-March/24-03-26/1791-find-center-of-star-graph.cpp) | O(n) | 24 Mar 2026 |
+| 2553 | [Separate the Digits in an Array](https://leetcode.com/problems/separate-the-digits-in-an-array/) | 🟢 Easy | [Python](2026/09-September/21-09-26/2553-separate-the-digits-in-an-array.py) | O(n) · Runtime: 3 ms (Beats 73.1%) | 21 Sep 2026 |
 
 <details><summary><b>📘 Lessons & Snippets (88)</b></summary>
 
