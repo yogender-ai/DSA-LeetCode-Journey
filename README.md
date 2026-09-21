@@ -30,11 +30,11 @@
 
 ### ▶️ Algorithm Replay — a different one every day
 
-<img src="assets/algo_replay.svg" width="100%" alt="Binary Search executing step by step" />
+<img src="assets/algo_replay.svg" width="100%" alt="Two Sum II - Input Array Is Sorted executing step by step" />
 
 > Not a loop of pictures. The algorithm is really run at build time and every
 > comparison, pointer move and window slide it makes becomes a frame. Today it is
-> **[#704 Binary Search](https://leetcode.com/problems/binary-search/)** — Binary Search, O(log n).
+> **[#167 Two Sum II - Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)** — Two Pointers, O(n).
 > Tomorrow it will be a different one.
 
 <br/>
