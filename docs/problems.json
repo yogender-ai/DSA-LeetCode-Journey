@@ -1,21 +1,21 @@
 {
- "generated": "2026-09-21T17:50:39+05:30",
+ "generated": "2026-09-21T23:51:37+05:30",
  "user": "yashyogender",
  "repo": "yogender-ai/DSA-LeetCode-Journey",
  "stats": {
-  "solved": 279,
+  "solved": 280,
   "easy": 160,
-  "medium": 110,
+  "medium": 111,
   "hard": 9,
   "streak": 74,
   "longest": 74,
-  "active": 234,
+  "active": 233,
   "rating": 1585.61,
   "topPct": 26.49,
   "level": 17,
   "rank": "Grandmaster Alchemist 👑",
-  "xp": 6710,
-  "repoEntries": 262
+  "xp": 6730,
+  "repoEntries": 263
  },
  "problems": [
   {
@@ -28,6 +28,21 @@
    "url": "https://leetcode.com/problems/separate-the-digits-in-an-array/",
    "time": "O(n) · Runtime: 3 ms (Beats 73.1%)",
    "space": "O(1) · Memory: 19.3 MB (Beats 97.6%)",
+   "dates": [
+    "2026-09-21"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 1482,
+   "title": "Minimum Number of Days to Make m Bouquets",
+   "difficulty": "Medium",
+   "pattern": "Binary Search",
+   "lang": "Python",
+   "path": "2026/09-September/21-09-26/1482-minimum-number-of-days-to-make-m-bouquets.py",
+   "url": "https://leetcode.com/problems/minimum-number-of-days-to-make-m-bouquets/",
+   "time": "O(n) · Runtime: 290 ms (Beats 82.8%)",
+   "space": "O(1) · Memory: 32.3 MB (Beats 43.8%)",
    "dates": [
     "2026-09-21"
    ],
