@@ -13,12 +13,12 @@
 <g transform="translate(40, 36)">
   <text x="0" y="0" class="tag">// PLAYER PROFILE &amp; RPG LEVEL</text>
   <text x="0" y="34" class="card_title">Level 17 — Grandmaster Alchemist 👑</text>
-  <text x="0" y="62" class="stat_lbl">Total EXP: <tspan fill="#22d3ee">6,760 XP</tspan> · Progress to Level 18: <tspan fill="#a3e635">43.6%</tspan></text>
+  <text x="0" y="62" class="stat_lbl">Total EXP: <tspan fill="#22d3ee">6,755 XP</tspan> · Progress to Level 18: <tspan fill="#a3e635">43.0%</tspan></text>
   
   <!-- XP Bar -->
   <rect x="0" y="80" width="700" height="16" rx="8" fill="#1e1b4b"/>
-  <rect x="0" y="80" width="305.2" height="16" rx="8" fill="url(#xp_grad)"/>
-  <text x="720" y="93" class="stat_lbl">6,760 / 7,225 XP</text>
+  <rect x="0" y="80" width="301.0" height="16" rx="8" fill="url(#xp_grad)"/>
+  <text x="720" y="93" class="stat_lbl">6,755 / 7,225 XP</text>
 
   <!-- Small Stats Grid -->
   <g transform="translate(0, 120)">
