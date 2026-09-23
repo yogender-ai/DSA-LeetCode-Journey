@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-23T09:27:14+05:30",
+ "generated": "2026-09-23T10:21:20+05:30",
  "user": "yashyogender",
  "repo": "yogender-ai/DSA-LeetCode-Journey",
  "stats": {
@@ -9,15 +9,30 @@
   "hard": 9,
   "streak": 74,
   "longest": 74,
-  "active": 233,
+  "active": 234,
   "rating": 1585.61,
   "topPct": 26.49,
   "level": 17,
   "rank": "Grandmaster Alchemist 👑",
-  "xp": 6755,
-  "repoEntries": 264
+  "xp": 6760,
+  "repoEntries": 265
  },
  "problems": [
+  {
+   "num": 509,
+   "title": "Fibonacci Number",
+   "difficulty": "Easy",
+   "pattern": "Dynamic Programming",
+   "lang": "Python",
+   "path": "2026/09-September/23-09-26/0509-fibonacci-number.py",
+   "url": "https://leetcode.com/problems/fibonacci-number/",
+   "time": "O(n) · Runtime: 683 ms (Beats 7.4%)",
+   "space": "O(1) · Memory: 12.5 MB (Beats 18.3%)",
+   "dates": [
+    "2026-09-23"
+   ],
+   "kind": "leetcode"
+  },
   {
    "num": 1283,
    "title": "Find the Smallest Divisor Given a Threshold",
@@ -265,7 +280,7 @@
    "difficulty": "Medium",
    "pattern": "Arrays & Hashing",
    "lang": "Python",
-   "path": "2026/09-September/12-09-26/0380-insert-delete-getrandom-o1.py",
+   "path": "2026/09-September/14-09-26/0380-insert-delete-getrandom-o1.py",
    "url": "https://leetcode.com/problems/insert-delete-getrandom-o1/",
    "time": "O(n)",
    "space": "O(1)",
@@ -280,7 +295,7 @@
    "difficulty": "Medium",
    "pattern": "Arrays & Hashing",
    "lang": "Python",
-   "path": "2026/09-September/14-09-26/0380-insert-delete-getrandom-o1.py",
+   "path": "2026/09-September/12-09-26/0380-insert-delete-getrandom-o1.py",
    "url": "https://leetcode.com/problems/insert-delete-getrandom-o1/",
    "time": "O(n)",
    "space": "O(1)",
@@ -2575,7 +2590,7 @@
    "difficulty": "Easy",
    "pattern": "Arrays & Hashing",
    "lang": "C++",
-   "path": "2026/03-March/03-03-26/0867-transpose-matrix.cpp",
+   "path": "2026/09-September/17-09-26/0867-transpose-matrix.cpp",
    "url": "https://leetcode.com/problems/transpose-matrix/",
    "time": "O(n)",
    "space": "O(1)",
@@ -2590,7 +2605,7 @@
    "difficulty": "Easy",
    "pattern": "Arrays & Hashing",
    "lang": "C++",
-   "path": "2026/09-September/17-09-26/0867-transpose-matrix.cpp",
+   "path": "2026/03-March/03-03-26/0867-transpose-matrix.cpp",
    "url": "https://leetcode.com/problems/transpose-matrix/",
    "time": "O(n)",
    "space": "O(1)",
