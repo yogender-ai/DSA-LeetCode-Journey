@@ -11,10 +11,10 @@
   <img src="https://img.shields.io/badge/LeetCode-yashyogender-FFA116?style=for-the-badge&logo=leetcode&logoColor=white&labelColor=0b0d1a" alt="LeetCode Profile" />
 </a>
 <a href="https://leetcode.com/u/yashyogender/">
-  <img src="https://img.shields.io/badge/solved-281-8b5cf6?style=for-the-badge&labelColor=0b0d1a" alt="solved" />
+  <img src="https://img.shields.io/badge/solved-282-8b5cf6?style=for-the-badge&labelColor=0b0d1a" alt="solved" />
 </a>
 <img src="https://img.shields.io/badge/easy-160-2dd4bf?style=for-the-badge&labelColor=0b0d1a" alt="easy" />
-<img src="https://img.shields.io/badge/medium-112-fbbf24?style=for-the-badge&labelColor=0b0d1a" alt="medium" />
+<img src="https://img.shields.io/badge/medium-113-fbbf24?style=for-the-badge&labelColor=0b0d1a" alt="medium" />
 <img src="https://img.shields.io/badge/hard-9-f472b6?style=for-the-badge&labelColor=0b0d1a" alt="hard" />
 
 <br/>
@@ -23,18 +23,18 @@
 <img src="https://img.shields.io/badge/🔥%20streak-74%20days%20blazing-a3e635?style=flat-square&labelColor=0b0d1a" alt="current streak" />
 <img src="https://img.shields.io/badge/🏆%20longest%20streak-74%20days-fbbf24?style=flat-square&labelColor=0b0d1a" alt="longest streak" />
 <img src="https://img.shields.io/badge/⚔️%20contest%20rating-1585.61%20(top%2026.49%25)-22d3ee?style=flat-square&labelColor=0b0d1a" alt="contest rating" />
-<img src="https://img.shields.io/badge/📅%20practice%20days-234-f472b6?style=flat-square&labelColor=0b0d1a" alt="practice days" />
+<img src="https://img.shields.io/badge/📅%20practice%20days-233-f472b6?style=flat-square&labelColor=0b0d1a" alt="practice days" />
 <img src="https://img.shields.io/github/last-commit/yogender-ai/DSA-LeetCode-Journey?style=flat-square&labelColor=0b0d1a&color=8b5cf6&label=last%20commit" alt="last commit" />
 
 <br/><br/>
 
 ### ▶️ Algorithm Replay — a different one every day
 
-<img src="assets/algo_replay.svg" width="100%" alt="Maximum Average Subarray I executing step by step" />
+<img src="assets/algo_replay.svg" width="100%" alt="Shortest Path in Binary Matrix executing step by step" />
 
 > Not a loop of pictures. The algorithm is really run at build time and every
 > comparison, pointer move and window slide it makes becomes a frame. Today it is
-> **[#643 Maximum Average Subarray I](https://leetcode.com/problems/maximum-average-subarray-i/)** — Sliding Window, O(n).
+> **[#1091 Shortest Path in Binary Matrix](https://leetcode.com/problems/shortest-path-in-binary-matrix/)** — Graphs & Search, O(rows · cols).
 > Tomorrow it will be a different one.
 
 <br/>
@@ -66,10 +66,10 @@
 
 | Badge | Title | Requirement | Status |
 |:---:|:---|:---|:---:|
-| 🛡️ | **Centurion** | Solve 100+ LeetCode problems | **UNLOCKED** ✅ (281/100) |
-| ⚔️ | **Double Centurion** | Solve 200+ LeetCode problems | **UNLOCKED** ✅ (281/200) |
-| 👑 | **Triple Centurion** | Solve 300+ LeetCode problems | 🟡 In Progress (281/300 · 94%) |
-| 🔒 | **Five Hundred Club** | Solve 500+ LeetCode problems | 🟡 In Progress (281/500 · 56%) |
+| 🛡️ | **Centurion** | Solve 100+ LeetCode problems | **UNLOCKED** ✅ (282/100) |
+| ⚔️ | **Double Centurion** | Solve 200+ LeetCode problems | **UNLOCKED** ✅ (282/200) |
+| 👑 | **Triple Centurion** | Solve 300+ LeetCode problems | 🟡 In Progress (282/300 · 94%) |
+| 🔒 | **Five Hundred Club** | Solve 500+ LeetCode problems | 🟡 In Progress (282/500 · 56%) |
 | 🔥 | **Habit Locked** | Maintain a 30-Day continuous streak | **UNLOCKED** ✅ (74/30) |
 | ⚡ | **Pyromancer** | Maintain a 50-Day continuous streak | **UNLOCKED** ✅ (74/50) |
 | 🌟 | **Century Flame** | Maintain a 100-Day continuous streak | 🟡 In Progress (74/100 · 74%) |
@@ -87,7 +87,7 @@
 ### 🎯 Active Quests & Milestones
 * 🗡️ **Daily Quest — Forge the Strike**: Solve at least 1 problem and push your code today. *(Reward: +25 EXP · Streak Shield)*
 * 👹 **Weekly Boss — Contest Titan**: Compete in the official LeetCode Weekly / Biweekly Contest. *(Reward: +100 EXP · Rating Boost)*
-* 🏆 **Epic Milestone — Triple Centurion**: Reach 300 problems solved (currently 281/300 · only 19 remaining!). *(Reward: +250 EXP · Title: Algorithm Warlord)*
+* 🏆 **Epic Milestone — Triple Centurion**: Reach 300 problems solved (currently 282/300 · only 18 remaining!). *(Reward: +250 EXP · Title: Algorithm Warlord)*
 
 <br/>
 
@@ -97,7 +97,7 @@
 
 ## 🔥 Streak & 2026 Calendar
 
-<img src="assets/streak.svg" width="100%" alt="Practice calendar — 74 day current streak, 74 day longest streak, 234 practice days" />
+<img src="assets/streak.svg" width="100%" alt="Practice calendar — 74 day current streak, 74 day longest streak, 233 practice days" />
 
 > 💡 **Streak Rule:** A day counts if at least one solution or algorithm lesson was written. Streaks and dates are synced in Indian Standard Time (IST).
 
@@ -107,8 +107,8 @@ All solutions are filed chronologically under `YYYY/MM-Month/DD-MM-YY/`. ↺ mar
 
 ```text
 📅 dates/
-├── 2026/  ·  257 solutions · 82 practice days
-│   ├── Sep  ███████               25 solutions · 11 days
+├── 2026/  ·  258 solutions · 83 practice days
+│   ├── Sep  ███████               26 solutions · 12 days
 │   ├── Aug  ███                   12 solutions · 4 days
 │   ├── Jul  ████                  15 solutions · 7 days
 │   ├── Jun  ██████████████████    68 solutions · 3 days
@@ -123,10 +123,11 @@ All solutions are filed chronologically under `YYYY/MM-Month/DD-MM-YY/`. ↺ mar
 ```
 
 <details open>
-<summary><b>September 2026</b> — 25 solutions across 11 days</summary>
+<summary><b>September 2026</b> — 26 solutions across 12 days</summary>
 
 | Date | Problem / Lesson | Topic / Pattern | Diff | Code |
 |:--|:--|:--|:-:|:-:|
+| **24 Sep** (Thu) | 24. [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/) | Data Structures & Algorithms | 🟡 Medium | [Python](2026/09-September/24-09-26/0024-swap-nodes-in-pairs.py) |
 | **23 Sep** (Wed) | 24. [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/) | Data Structures & Algorithms | 🟡 Medium | [Python](2026/09-September/23-09-26/0024-swap-nodes-in-pairs.py) |
 |  | 50. [Pow(x, n)](https://leetcode.com/problems/powx-n/) | Data Structures & Algorithms | 🟡 Medium | [Python](2026/09-September/23-09-26/0050-powx-n.py) |
 |  | 509. [Fibonacci Number](https://leetcode.com/problems/fibonacci-number/) | Dynamic Programming | 🟢 Easy | [Python](2026/09-September/23-09-26/0509-fibonacci-number.py) |
@@ -500,7 +501,7 @@ DSA-LeetCode-Journey/
 │   ├── 06-June        (3 active days)
 │   ├── 07-July        (7 active days)
 │   ├── 08-August      (4 active days)
-│   └── 09-September   (15 active days)
+│   └── 09-September   (16 active days)
 ├── notes/                        ← SQL deep dives & conceptual revision notes
 ├── sandbox/                      ← Kafka and ML practice sandbox
 ├── assets/                       ← generated banner, streak heatmap, RPG HUD, topic cards
@@ -785,7 +786,7 @@ DSA-LeetCode-Journey/
 | # | Problem | Difficulty | Solution | Time | Solved Dates |
 |:-:|:--|:-:|:-:|:-:|:--|
 | 2 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) | 🟡 Medium | [Python](2026/08-August/14-08-26/0002-add-two-numbers.py) | O(n) | 14 Aug 2026 |
-| 24 | [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/) | 🟡 Medium | [Python](2026/09-September/23-09-26/0024-swap-nodes-in-pairs.py) | O(n) · Runtime: 8 ms (Beats 0.2%) | 23 Sep 2026 |
+| 24 | [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/) | 🟡 Medium | [Python](2026/09-September/23-09-26/0024-swap-nodes-in-pairs.py) · [Python](2026/09-September/24-09-26/0024-swap-nodes-in-pairs.py) | O(n) · Runtime: 8 ms (Beats 0.2%) | 23 Sep 2026, 24 Sep 2026 |
 | 49 | [Group Anagrams](https://leetcode.com/problems/group-anagrams/) | 🟡 Medium | [Python](2026/08-August/14-08-26/0049-group-anagrams.py) | O(n * k log k)  (approach 2) | 14 Aug 2026 |
 | 50 | [Pow(x, n)](https://leetcode.com/problems/powx-n/) | 🟡 Medium | [Python](2026/09-September/23-09-26/0050-powx-n.py) · [C++](2026/02-February/03-02-26/0050-powx-n.cpp) | O(n) · Runtime: 0 ms (Beats 100.0%) | 03 Feb 2026, 23 Sep 2026 |
 | 83 | [Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/) | 🟢 Easy | [C++](2026/06-June/26-06-26/0083-remove-duplicates-from-sorted-list.cpp) | O(n) | 26 Jun 2026 |
