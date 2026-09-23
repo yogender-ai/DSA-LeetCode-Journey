@@ -107,8 +107,8 @@ All solutions are filed chronologically under `YYYY/MM-Month/DD-MM-YY/`. ↺ mar
 
 ```text
 📅 dates/
-├── 2026/  ·  255 solutions · 82 practice days
-│   ├── Sep  ██████                23 solutions · 11 days
+├── 2026/  ·  256 solutions · 82 practice days
+│   ├── Sep  ██████                24 solutions · 11 days
 │   ├── Aug  ███                   12 solutions · 4 days
 │   ├── Jul  ████                  15 solutions · 7 days
 │   ├── Jun  ██████████████████    68 solutions · 3 days
@@ -123,11 +123,12 @@ All solutions are filed chronologically under `YYYY/MM-Month/DD-MM-YY/`. ↺ mar
 ```
 
 <details open>
-<summary><b>September 2026</b> — 23 solutions across 11 days</summary>
+<summary><b>September 2026</b> — 24 solutions across 11 days</summary>
 
 | Date | Problem / Lesson | Topic / Pattern | Diff | Code |
 |:--|:--|:--|:-:|:-:|
-| **23 Sep** (Wed) | 509. [Fibonacci Number](https://leetcode.com/problems/fibonacci-number/) | Dynamic Programming | 🟢 Easy | [Python](2026/09-September/23-09-26/0509-fibonacci-number.py) |
+| **23 Sep** (Wed) | 50. [Pow(x, n)](https://leetcode.com/problems/powx-n/) | Data Structures & Algorithms | 🟡 Medium | [Python](2026/09-September/23-09-26/0050-powx-n.py) |
+|  | 509. [Fibonacci Number](https://leetcode.com/problems/fibonacci-number/) | Dynamic Programming | 🟢 Easy | [Python](2026/09-September/23-09-26/0509-fibonacci-number.py) |
 | **22 Sep** (Tue) | 1283. [Find the Smallest Divisor Given a Threshold](https://leetcode.com/problems/find-the-smallest-divisor-given-a-threshold/) | Binary Search | 🟡 Medium | [Python](2026/09-September/22-09-26/1283-find-the-smallest-divisor-given-a-threshold.py) |
 | **21 Sep** (Mon) | 875. [Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas/) | Binary Search | 🟡 Medium | [Python](2026/09-September/21-09-26/0875-koko-eating-bananas.py) |
 |  | 1482. [Minimum Number of Days to Make m Bouquets](https://leetcode.com/problems/minimum-number-of-days-to-make-m-bouquets/) | Binary Search | 🟡 Medium | [Python](2026/09-September/21-09-26/1482-minimum-number-of-days-to-make-m-bouquets.py) |
@@ -784,7 +785,7 @@ DSA-LeetCode-Journey/
 |:-:|:--|:-:|:-:|:-:|:--|
 | 2 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) | 🟡 Medium | [Python](2026/08-August/14-08-26/0002-add-two-numbers.py) | O(n) | 14 Aug 2026 |
 | 49 | [Group Anagrams](https://leetcode.com/problems/group-anagrams/) | 🟡 Medium | [Python](2026/08-August/14-08-26/0049-group-anagrams.py) | O(n * k log k)  (approach 2) | 14 Aug 2026 |
-| 50 | [Pow(x, n)](https://leetcode.com/problems/powx-n/) | 🟡 Medium | [C++](2026/02-February/03-02-26/0050-powx-n.cpp) | O(n) | 03 Feb 2026 |
+| 50 | [Pow(x, n)](https://leetcode.com/problems/powx-n/) | 🟡 Medium | [Python](2026/09-September/23-09-26/0050-powx-n.py) · [C++](2026/02-February/03-02-26/0050-powx-n.cpp) | O(n) · Runtime: 0 ms (Beats 100.0%) | 03 Feb 2026, 23 Sep 2026 |
 | 83 | [Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/) | 🟢 Easy | [C++](2026/06-June/26-06-26/0083-remove-duplicates-from-sorted-list.cpp) | O(n) | 26 Jun 2026 |
 | 217 | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) | 🟢 Easy | [C++](2025/12-December/24-12-25/0217-contains-duplicate.cpp) · [Python](2026/08-August/14-08-26/0217-contains-duplicate.py) | O(n) | 24 Dec 2025, 14 Aug 2026 |
 | 242 | [Valid Anagram](https://leetcode.com/problems/valid-anagram/) | 🟢 Easy | [Python](2026/08-August/14-08-26/0242-valid-anagram.py) | O(n^2) (list.index + pop) | 14 Aug 2026 |

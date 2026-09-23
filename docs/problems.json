@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-23T10:21:20+05:30",
+ "generated": "2026-09-23T10:46:37+05:30",
  "user": "yashyogender",
  "repo": "yogender-ai/DSA-LeetCode-Journey",
  "stats": {
@@ -15,7 +15,7 @@
   "level": 17,
   "rank": "Grandmaster Alchemist 👑",
   "xp": 6760,
-  "repoEntries": 265
+  "repoEntries": 266
  },
  "problems": [
   {
@@ -28,6 +28,21 @@
    "url": "https://leetcode.com/problems/fibonacci-number/",
    "time": "O(n) · Runtime: 683 ms (Beats 7.4%)",
    "space": "O(1) · Memory: 12.5 MB (Beats 18.3%)",
+   "dates": [
+    "2026-09-23"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 50,
+   "title": "Pow(x, n)",
+   "difficulty": "Medium",
+   "pattern": "Data Structures & Algorithms",
+   "lang": "Python",
+   "path": "2026/09-September/23-09-26/0050-powx-n.py",
+   "url": "https://leetcode.com/problems/powx-n/",
+   "time": "O(n) · Runtime: 0 ms (Beats 100.0%)",
+   "space": "O(1) · Memory: 12.4 MB (Beats 63.2%)",
    "dates": [
     "2026-09-23"
    ],
