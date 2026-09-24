@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-24T09:20:45+05:30",
+ "generated": "2026-09-24T11:38:18+05:30",
  "user": "yashyogender",
  "repo": "yogender-ai/DSA-LeetCode-Journey",
  "stats": {
@@ -9,13 +9,13 @@
   "hard": 9,
   "streak": 74,
   "longest": 74,
-  "active": 233,
+  "active": 234,
   "rating": 1585.61,
   "topPct": 26.49,
   "level": 17,
   "rank": "Grandmaster Alchemist 👑",
-  "xp": 6780,
-  "repoEntries": 268
+  "xp": 6785,
+  "repoEntries": 269
  },
  "problems": [
   {
@@ -28,6 +28,21 @@
    "url": "https://leetcode.com/problems/swap-nodes-in-pairs/",
    "time": "O(n) · Runtime: 13 ms (Beats 0.2%)",
    "space": "O(1) · Memory: 12.5 MB (Beats 43.6%)",
+   "dates": [
+    "2026-09-24"
+   ],
+   "kind": "leetcode"
+  },
+  {
+   "num": 1,
+   "title": "Two Sum",
+   "difficulty": "Easy",
+   "pattern": "Arrays & Hashing",
+   "lang": "Python",
+   "path": "2026/09-September/24-09-26/0001-two-sum.py",
+   "url": "https://leetcode.com/problems/two-sum/",
+   "time": "O(n) · Runtime: 0 ms (Beats 100.0%)",
+   "space": "O(1) · Memory: 19.7 MB (Beats 95.4%)",
    "dates": [
     "2026-09-24"
    ],
@@ -325,7 +340,7 @@
    "difficulty": "Medium",
    "pattern": "Arrays & Hashing",
    "lang": "Python",
-   "path": "2026/09-September/12-09-26/0380-insert-delete-getrandom-o1.py",
+   "path": "2026/09-September/14-09-26/0380-insert-delete-getrandom-o1.py",
    "url": "https://leetcode.com/problems/insert-delete-getrandom-o1/",
    "time": "O(n)",
    "space": "O(1)",
@@ -340,7 +355,7 @@
    "difficulty": "Medium",
    "pattern": "Arrays & Hashing",
    "lang": "Python",
-   "path": "2026/09-September/14-09-26/0380-insert-delete-getrandom-o1.py",
+   "path": "2026/09-September/12-09-26/0380-insert-delete-getrandom-o1.py",
    "url": "https://leetcode.com/problems/insert-delete-getrandom-o1/",
    "time": "O(n)",
    "space": "O(1)",
@@ -2635,7 +2650,7 @@
    "difficulty": "Easy",
    "pattern": "Arrays & Hashing",
    "lang": "C++",
-   "path": "2026/03-March/03-03-26/0867-transpose-matrix.cpp",
+   "path": "2026/09-September/17-09-26/0867-transpose-matrix.cpp",
    "url": "https://leetcode.com/problems/transpose-matrix/",
    "time": "O(n)",
    "space": "O(1)",
@@ -2650,7 +2665,7 @@
    "difficulty": "Easy",
    "pattern": "Arrays & Hashing",
    "lang": "C++",
-   "path": "2026/09-September/17-09-26/0867-transpose-matrix.cpp",
+   "path": "2026/03-March/03-03-26/0867-transpose-matrix.cpp",
    "url": "https://leetcode.com/problems/transpose-matrix/",
    "time": "O(n)",
    "space": "O(1)",
