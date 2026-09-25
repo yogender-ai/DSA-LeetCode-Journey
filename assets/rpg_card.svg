@@ -24,7 +24,7 @@
   <g transform="translate(0, 120)">
     <text x="0" y="16" class="stat_lbl">CONTEST RATING</text>
     <text x="0" y="44" class="stat_val">1585.61</text>
-    <text x="0" y="62" class="stat_lbl" fill="#2dd4bf">Top 26.49% · 14 Contests</text>
+    <text x="0" y="62" class="stat_lbl" fill="#2dd4bf">Top 26.51% · 14 Contests</text>
 
     <text x="240" y="16" class="stat_lbl">TOTAL PROBLEMS</text>
     <text x="240" y="44" class="stat_val">282</text>

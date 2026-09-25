@@ -22,7 +22,7 @@
 <!-- Streak, Contest Rating & Active Days -->
 <img src="https://img.shields.io/badge/🔥%20streak-74%20days%20blazing-a3e635?style=flat-square&labelColor=0b0d1a" alt="current streak" />
 <img src="https://img.shields.io/badge/🏆%20longest%20streak-74%20days-fbbf24?style=flat-square&labelColor=0b0d1a" alt="longest streak" />
-<img src="https://img.shields.io/badge/⚔️%20contest%20rating-1585.61%20(top%2026.49%25)-22d3ee?style=flat-square&labelColor=0b0d1a" alt="contest rating" />
+<img src="https://img.shields.io/badge/⚔️%20contest%20rating-1585.61%20(top%2026.51%25)-22d3ee?style=flat-square&labelColor=0b0d1a" alt="contest rating" />
 <img src="https://img.shields.io/badge/📅%20practice%20days-233-f472b6?style=flat-square&labelColor=0b0d1a" alt="practice days" />
 <img src="https://img.shields.io/github/last-commit/yogender-ai/DSA-LeetCode-Journey?style=flat-square&labelColor=0b0d1a&color=8b5cf6&label=last%20commit" alt="last commit" />
 
