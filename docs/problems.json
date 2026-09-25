@@ -1,10 +1,10 @@
 {
- "generated": "2026-09-25T22:21:11+05:30",
+ "generated": "2026-09-25T22:44:31+05:30",
  "user": "yashyogender",
  "repo": "yogender-ai/DSA-LeetCode-Journey",
  "stats": {
-  "solved": 282,
-  "easy": 160,
+  "solved": 283,
+  "easy": 161,
   "medium": 113,
   "hard": 9,
   "streak": 74,
@@ -14,10 +14,25 @@
   "topPct": 26.51,
   "level": 17,
   "rank": "Grandmaster Alchemist 👑",
-  "xp": 6780,
-  "repoEntries": 269
+  "xp": 6790,
+  "repoEntries": 270
  },
  "problems": [
+  {
+   "num": 674,
+   "title": "Longest Continuous Increasing Subsequence",
+   "difficulty": "Easy",
+   "pattern": "Data Structures & Algorithms",
+   "lang": "Python",
+   "path": "2026/09-September/25-09-26/0674-longest-continuous-increasing-subsequence.py",
+   "url": "https://leetcode.com/problems/longest-continuous-increasing-subsequence/",
+   "time": "O(n) · Runtime: 4 ms (Beats 19.2%)",
+   "space": "O(1) · Memory: 20.4 MB (Beats 84.5%)",
+   "dates": [
+    "2026-09-25"
+   ],
+   "kind": "leetcode"
+  },
   {
    "num": 24,
    "title": "Swap Nodes in Pairs",

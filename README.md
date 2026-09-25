@@ -11,9 +11,9 @@
   <img src="https://img.shields.io/badge/LeetCode-yashyogender-FFA116?style=for-the-badge&logo=leetcode&logoColor=white&labelColor=0b0d1a" alt="LeetCode Profile" />
 </a>
 <a href="https://leetcode.com/u/yashyogender/">
-  <img src="https://img.shields.io/badge/solved-282-8b5cf6?style=for-the-badge&labelColor=0b0d1a" alt="solved" />
+  <img src="https://img.shields.io/badge/solved-283-8b5cf6?style=for-the-badge&labelColor=0b0d1a" alt="solved" />
 </a>
-<img src="https://img.shields.io/badge/easy-160-2dd4bf?style=for-the-badge&labelColor=0b0d1a" alt="easy" />
+<img src="https://img.shields.io/badge/easy-161-2dd4bf?style=for-the-badge&labelColor=0b0d1a" alt="easy" />
 <img src="https://img.shields.io/badge/medium-113-fbbf24?style=for-the-badge&labelColor=0b0d1a" alt="medium" />
 <img src="https://img.shields.io/badge/hard-9-f472b6?style=for-the-badge&labelColor=0b0d1a" alt="hard" />
 
@@ -66,10 +66,10 @@
 
 | Badge | Title | Requirement | Status |
 |:---:|:---|:---|:---:|
-| 🛡️ | **Centurion** | Solve 100+ LeetCode problems | **UNLOCKED** ✅ (282/100) |
-| ⚔️ | **Double Centurion** | Solve 200+ LeetCode problems | **UNLOCKED** ✅ (282/200) |
-| 👑 | **Triple Centurion** | Solve 300+ LeetCode problems | 🟡 In Progress (282/300 · 94%) |
-| 🔒 | **Five Hundred Club** | Solve 500+ LeetCode problems | 🟡 In Progress (282/500 · 56%) |
+| 🛡️ | **Centurion** | Solve 100+ LeetCode problems | **UNLOCKED** ✅ (283/100) |
+| ⚔️ | **Double Centurion** | Solve 200+ LeetCode problems | **UNLOCKED** ✅ (283/200) |
+| 👑 | **Triple Centurion** | Solve 300+ LeetCode problems | 🟡 In Progress (283/300 · 94%) |
+| 🔒 | **Five Hundred Club** | Solve 500+ LeetCode problems | 🟡 In Progress (283/500 · 57%) |
 | 🔥 | **Habit Locked** | Maintain a 30-Day continuous streak | **UNLOCKED** ✅ (74/30) |
 | ⚡ | **Pyromancer** | Maintain a 50-Day continuous streak | **UNLOCKED** ✅ (74/50) |
 | 🌟 | **Century Flame** | Maintain a 100-Day continuous streak | 🟡 In Progress (74/100 · 74%) |
@@ -87,7 +87,7 @@
 ### 🎯 Active Quests & Milestones
 * 🗡️ **Daily Quest — Forge the Strike**: Solve at least 1 problem and push your code today. *(Reward: +25 EXP · Streak Shield)*
 * 👹 **Weekly Boss — Contest Titan**: Compete in the official LeetCode Weekly / Biweekly Contest. *(Reward: +100 EXP · Rating Boost)*
-* 🏆 **Epic Milestone — Triple Centurion**: Reach 300 problems solved (currently 282/300 · only 18 remaining!). *(Reward: +250 EXP · Title: Algorithm Warlord)*
+* 🏆 **Epic Milestone — Triple Centurion**: Reach 300 problems solved (currently 283/300 · only 17 remaining!). *(Reward: +250 EXP · Title: Algorithm Warlord)*
 
 <br/>
 
@@ -107,8 +107,8 @@ All solutions are filed chronologically under `YYYY/MM-Month/DD-MM-YY/`. ↺ mar
 
 ```text
 📅 dates/
-├── 2026/  ·  259 solutions · 83 practice days
-│   ├── Sep  ███████               27 solutions · 12 days
+├── 2026/  ·  260 solutions · 84 practice days
+│   ├── Sep  ███████               28 solutions · 13 days
 │   ├── Aug  ███                   12 solutions · 4 days
 │   ├── Jul  ████                  15 solutions · 7 days
 │   ├── Jun  ██████████████████    68 solutions · 3 days
@@ -123,10 +123,11 @@ All solutions are filed chronologically under `YYYY/MM-Month/DD-MM-YY/`. ↺ mar
 ```
 
 <details open>
-<summary><b>September 2026</b> — 27 solutions across 12 days</summary>
+<summary><b>September 2026</b> — 28 solutions across 13 days</summary>
 
 | Date | Problem / Lesson | Topic / Pattern | Diff | Code |
 |:--|:--|:--|:-:|:-:|
+| **25 Sep** (Fri) | 674. [Longest Continuous Increasing Subsequence](https://leetcode.com/problems/longest-continuous-increasing-subsequence/) | Data Structures & Algorithms | 🟢 Easy | [Python](2026/09-September/25-09-26/0674-longest-continuous-increasing-subsequence.py) |
 | **24 Sep** (Thu) | 1. [Two Sum](https://leetcode.com/problems/two-sum/) | Arrays & Hashing | 🟢 Easy | [Python](2026/09-September/24-09-26/0001-two-sum.py) |
 |  | 24. [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/) | Data Structures & Algorithms | 🟡 Medium | [Python](2026/09-September/24-09-26/0024-swap-nodes-in-pairs.py) |
 | **23 Sep** (Wed) | 24. [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/) | Data Structures & Algorithms | 🟡 Medium | [Python](2026/09-September/23-09-26/0024-swap-nodes-in-pairs.py) |
@@ -502,7 +503,7 @@ DSA-LeetCode-Journey/
 │   ├── 06-June        (3 active days)
 │   ├── 07-July        (7 active days)
 │   ├── 08-August      (4 active days)
-│   └── 09-September   (16 active days)
+│   └── 09-September   (17 active days)
 ├── notes/                        ← SQL deep dives & conceptual revision notes
 ├── sandbox/                      ← Kafka and ML practice sandbox
 ├── assets/                       ← generated banner, streak heatmap, RPG HUD, topic cards
@@ -782,7 +783,7 @@ DSA-LeetCode-Journey/
 
 ### 🧩 Data Structures & Algorithms
 
-> **Signal:** Core concepts, foundations, algorithms  ·  *11 LeetCode problems · 88 concept lessons*
+> **Signal:** Core concepts, foundations, algorithms  ·  *12 LeetCode problems · 88 concept lessons*
 
 | # | Problem | Difficulty | Solution | Time | Solved Dates |
 |:-:|:--|:-:|:-:|:-:|:--|
@@ -795,6 +796,7 @@ DSA-LeetCode-Journey/
 | 242 | [Valid Anagram](https://leetcode.com/problems/valid-anagram/) | 🟢 Easy | [Python](2026/08-August/14-08-26/0242-valid-anagram.py) | O(n^2) (list.index + pop) | 14 Aug 2026 |
 | 326 | [Power of Three](https://leetcode.com/problems/power-of-three/) | 🟢 Easy | [C++](2026/02-February/03-02-26/0326-power-of-three.cpp) | O(n) | 03 Feb 2026 |
 | 387 | [First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/) | 🟢 Easy | [C++](2025/12-December/23-12-25/0387-first-unique-character-in-a-string.cpp) | O(n) | 23 Dec 2025 |
+| 674 | [Longest Continuous Increasing Subsequence](https://leetcode.com/problems/longest-continuous-increasing-subsequence/) | 🟢 Easy | [Python](2026/09-September/25-09-26/0674-longest-continuous-increasing-subsequence.py) | O(n) · Runtime: 4 ms (Beats 19.2%) | 25 Sep 2026 |
 | 1791 | [Find Center of Star Graph](https://leetcode.com/problems/find-center-of-star-graph/) | 🟢 Easy | [C++](2026/03-March/24-03-26/1791-find-center-of-star-graph.cpp) | O(n) | 24 Mar 2026 |
 | 2553 | [Separate the Digits in an Array](https://leetcode.com/problems/separate-the-digits-in-an-array/) | 🟢 Easy | [Python](2026/09-September/21-09-26/2553-separate-the-digits-in-an-array.py) | O(n) · Runtime: 3 ms (Beats 73.1%) | 21 Sep 2026 |
 
