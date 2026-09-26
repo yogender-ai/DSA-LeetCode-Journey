@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-26T16:32:15+05:30",
+ "generated": "2026-09-26T19:38:45+05:30",
  "user": "yashyogender",
  "repo": "yogender-ai/DSA-LeetCode-Journey",
  "stats": {
@@ -9,15 +9,30 @@
   "hard": 9,
   "streak": 74,
   "longest": 74,
-  "active": 233,
+  "active": 234,
   "rating": 1585.61,
   "topPct": 26.51,
   "level": 17,
   "rank": "Grandmaster Alchemist 👑",
-  "xp": 6790,
-  "repoEntries": 270
+  "xp": 6795,
+  "repoEntries": 271
  },
  "problems": [
+  {
+   "num": 3,
+   "title": "Longest Substring Without Repeating Characters",
+   "difficulty": "Medium",
+   "pattern": "Sliding Window",
+   "lang": "C++",
+   "path": "2026/09-September/26-09-26/0003-longest-substring-without-repeating-characters.cpp",
+   "url": "https://leetcode.com/problems/longest-substring-without-repeating-characters/",
+   "time": "O(n) · Runtime: 27 ms (Beats 69.5%)",
+   "space": "O(1) · Memory: 17.8 MB (Beats 93.7%)",
+   "dates": [
+    "2026-09-26"
+   ],
+   "kind": "leetcode"
+  },
   {
    "num": 674,
    "title": "Longest Continuous Increasing Subsequence",

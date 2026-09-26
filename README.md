@@ -23,7 +23,7 @@
 <img src="https://img.shields.io/badge/🔥%20streak-74%20days%20blazing-a3e635?style=flat-square&labelColor=0b0d1a" alt="current streak" />
 <img src="https://img.shields.io/badge/🏆%20longest%20streak-74%20days-fbbf24?style=flat-square&labelColor=0b0d1a" alt="longest streak" />
 <img src="https://img.shields.io/badge/⚔️%20contest%20rating-1585.61%20(top%2026.51%25)-22d3ee?style=flat-square&labelColor=0b0d1a" alt="contest rating" />
-<img src="https://img.shields.io/badge/📅%20practice%20days-233-f472b6?style=flat-square&labelColor=0b0d1a" alt="practice days" />
+<img src="https://img.shields.io/badge/📅%20practice%20days-234-f472b6?style=flat-square&labelColor=0b0d1a" alt="practice days" />
 <img src="https://img.shields.io/github/last-commit/yogender-ai/DSA-LeetCode-Journey?style=flat-square&labelColor=0b0d1a&color=8b5cf6&label=last%20commit" alt="last commit" />
 
 <br/><br/>
@@ -97,7 +97,7 @@
 
 ## 🔥 Streak & 2026 Calendar
 
-<img src="assets/streak.svg" width="100%" alt="Practice calendar — 74 day current streak, 74 day longest streak, 233 practice days" />
+<img src="assets/streak.svg" width="100%" alt="Practice calendar — 74 day current streak, 74 day longest streak, 234 practice days" />
 
 > 💡 **Streak Rule:** A day counts if at least one solution or algorithm lesson was written. Streaks and dates are synced in Indian Standard Time (IST).
 
@@ -107,8 +107,8 @@ All solutions are filed chronologically under `YYYY/MM-Month/DD-MM-YY/`. ↺ mar
 
 ```text
 📅 dates/
-├── 2026/  ·  260 solutions · 84 practice days
-│   ├── Sep  ███████               28 solutions · 13 days
+├── 2026/  ·  261 solutions · 85 practice days
+│   ├── Sep  ████████              29 solutions · 14 days
 │   ├── Aug  ███                   12 solutions · 4 days
 │   ├── Jul  ████                  15 solutions · 7 days
 │   ├── Jun  ██████████████████    68 solutions · 3 days
@@ -123,10 +123,11 @@ All solutions are filed chronologically under `YYYY/MM-Month/DD-MM-YY/`. ↺ mar
 ```
 
 <details open>
-<summary><b>September 2026</b> — 28 solutions across 13 days</summary>
+<summary><b>September 2026</b> — 29 solutions across 14 days</summary>
 
 | Date | Problem / Lesson | Topic / Pattern | Diff | Code |
 |:--|:--|:--|:-:|:-:|
+| **26 Sep** (Sat) | 3. [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | Sliding Window | 🟡 Medium | [C++](2026/09-September/26-09-26/0003-longest-substring-without-repeating-characters.cpp) |
 | **25 Sep** (Fri) | 674. [Longest Continuous Increasing Subsequence](https://leetcode.com/problems/longest-continuous-increasing-subsequence/) | Data Structures & Algorithms | 🟢 Easy | [Python](2026/09-September/25-09-26/0674-longest-continuous-increasing-subsequence.py) |
 | **24 Sep** (Thu) | 1. [Two Sum](https://leetcode.com/problems/two-sum/) | Arrays & Hashing | 🟢 Easy | [Python](2026/09-September/24-09-26/0001-two-sum.py) |
 |  | 24. [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/) | Data Structures & Algorithms | 🟡 Medium | [Python](2026/09-September/24-09-26/0024-swap-nodes-in-pairs.py) |
@@ -503,7 +504,7 @@ DSA-LeetCode-Journey/
 │   ├── 06-June        (3 active days)
 │   ├── 07-July        (7 active days)
 │   ├── 08-August      (4 active days)
-│   └── 09-September   (17 active days)
+│   └── 09-September   (18 active days)
 ├── notes/                        ← SQL deep dives & conceptual revision notes
 ├── sandbox/                      ← Kafka and ML practice sandbox
 ├── assets/                       ← generated banner, streak heatmap, RPG HUD, topic cards
@@ -614,7 +615,7 @@ DSA-LeetCode-Journey/
 
 | # | Problem | Difficulty | Solution | Time | Solved Dates |
 |:-:|:--|:-:|:-:|:-:|:--|
-| 3 | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | 🟡 Medium | [C++](2026/02-February/01-02-26/0003-longest-substring-without-repeating-characters.cpp) · [Python](2026/08-August/14-08-26/0003-longest-substring-without-repeating-characters.py) | O(N) or O(N^2) depending on find/erase implementation, Space: O(N) | 01 Feb 2026, 14 Aug 2026 |
+| 3 | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | 🟡 Medium | [C++](2026/09-September/26-09-26/0003-longest-substring-without-repeating-characters.cpp) · [C++](2026/02-February/01-02-26/0003-longest-substring-without-repeating-characters.cpp) · [Python](2026/08-August/14-08-26/0003-longest-substring-without-repeating-characters.py) | O(n) · Runtime: 27 ms (Beats 69.5%) | 01 Feb 2026, 14 Aug 2026, 26 Sep 2026 |
 | 219 | [Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii/) | 🟢 Easy | [C++](2025/12-December/28-12-25/0219-contains-duplicate-ii.cpp) | O(n) | 28 Dec 2025 |
 
 ### ➕ Prefix Sum

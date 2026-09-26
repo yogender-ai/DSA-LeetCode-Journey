@@ -13,12 +13,12 @@
 <g transform="translate(40, 36)">
   <text x="0" y="0" class="tag">// PLAYER PROFILE &amp; RPG LEVEL</text>
   <text x="0" y="34" class="card_title">Level 17 — Grandmaster Alchemist 👑</text>
-  <text x="0" y="62" class="stat_lbl">Total EXP: <tspan fill="#22d3ee">6,790 XP</tspan> · Progress to Level 18: <tspan fill="#a3e635">47.3%</tspan></text>
+  <text x="0" y="62" class="stat_lbl">Total EXP: <tspan fill="#22d3ee">6,795 XP</tspan> · Progress to Level 18: <tspan fill="#a3e635">47.9%</tspan></text>
   
   <!-- XP Bar -->
   <rect x="0" y="80" width="700" height="16" rx="8" fill="#1e1b4b"/>
-  <rect x="0" y="80" width="331.09999999999997" height="16" rx="8" fill="url(#xp_grad)"/>
-  <text x="720" y="93" class="stat_lbl">6,790 / 7,225 XP</text>
+  <rect x="0" y="80" width="335.3" height="16" rx="8" fill="url(#xp_grad)"/>
+  <text x="720" y="93" class="stat_lbl">6,795 / 7,225 XP</text>
 
   <!-- Small Stats Grid -->
   <g transform="translate(0, 120)">
@@ -28,7 +28,7 @@
 
     <text x="240" y="16" class="stat_lbl">TOTAL PROBLEMS</text>
     <text x="240" y="44" class="stat_val">283</text>
-    <text x="240" y="62" class="stat_lbl">270 files tracked</text>
+    <text x="240" y="62" class="stat_lbl">271 files tracked</text>
 
     <text x="480" y="16" class="stat_lbl">PRACTICE STREAK</text>
     <text x="480" y="44" class="stat_val" fill="#a3e635">🔥 74 Days</text>
