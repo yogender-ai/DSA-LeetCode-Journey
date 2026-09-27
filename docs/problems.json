@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-27T22:08:58+05:30",
+ "generated": "2026-09-27T23:35:14+05:30",
  "user": "yashyogender",
  "repo": "yogender-ai/DSA-LeetCode-Journey",
  "stats": {
@@ -15,9 +15,24 @@
   "level": 17,
   "rank": "Grandmaster Alchemist 👑",
   "xp": 6790,
-  "repoEntries": 271
+  "repoEntries": 272
  },
  "problems": [
+  {
+   "num": 485,
+   "title": "Max Consecutive Ones",
+   "difficulty": "Easy",
+   "pattern": "Data Structures & Algorithms",
+   "lang": "Python",
+   "path": "2026/09-September/27-09-26/0485-max-consecutive-ones.py",
+   "url": "https://leetcode.com/problems/max-consecutive-ones/",
+   "time": "O(n) · Runtime: 7 ms (Beats 96.5%)",
+   "space": "O(1) · Memory: 21.9 MB (Beats 44.6%)",
+   "dates": [
+    "2026-09-27"
+   ],
+   "kind": "leetcode"
+  },
   {
    "num": 3,
    "title": "Longest Substring Without Repeating Characters",

@@ -107,8 +107,8 @@ All solutions are filed chronologically under `YYYY/MM-Month/DD-MM-YY/`. ↺ mar
 
 ```text
 📅 dates/
-├── 2026/  ·  261 solutions · 85 practice days
-│   ├── Sep  ████████              29 solutions · 14 days
+├── 2026/  ·  262 solutions · 86 practice days
+│   ├── Sep  ████████              30 solutions · 15 days
 │   ├── Aug  ███                   12 solutions · 4 days
 │   ├── Jul  ████                  15 solutions · 7 days
 │   ├── Jun  ██████████████████    68 solutions · 3 days
@@ -123,10 +123,11 @@ All solutions are filed chronologically under `YYYY/MM-Month/DD-MM-YY/`. ↺ mar
 ```
 
 <details open>
-<summary><b>September 2026</b> — 29 solutions across 14 days</summary>
+<summary><b>September 2026</b> — 30 solutions across 15 days</summary>
 
 | Date | Problem / Lesson | Topic / Pattern | Diff | Code |
 |:--|:--|:--|:-:|:-:|
+| **27 Sep** (Sun) | 485. [Max Consecutive Ones](https://leetcode.com/problems/max-consecutive-ones/) | Data Structures & Algorithms | 🟢 Easy | [Python](2026/09-September/27-09-26/0485-max-consecutive-ones.py) |
 | **26 Sep** (Sat) | 3. [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | Sliding Window | 🟡 Medium | [C++](2026/09-September/26-09-26/0003-longest-substring-without-repeating-characters.cpp) |
 | **25 Sep** (Fri) | 674. [Longest Continuous Increasing Subsequence](https://leetcode.com/problems/longest-continuous-increasing-subsequence/) | Data Structures & Algorithms | 🟢 Easy | [Python](2026/09-September/25-09-26/0674-longest-continuous-increasing-subsequence.py) |
 | **24 Sep** (Thu) | 1. [Two Sum](https://leetcode.com/problems/two-sum/) | Arrays & Hashing | 🟢 Easy | [Python](2026/09-September/24-09-26/0001-two-sum.py) |
@@ -504,7 +505,7 @@ DSA-LeetCode-Journey/
 │   ├── 06-June        (3 active days)
 │   ├── 07-July        (7 active days)
 │   ├── 08-August      (4 active days)
-│   └── 09-September   (18 active days)
+│   └── 09-September   (19 active days)
 ├── notes/                        ← SQL deep dives & conceptual revision notes
 ├── sandbox/                      ← Kafka and ML practice sandbox
 ├── assets/                       ← generated banner, streak heatmap, RPG HUD, topic cards
@@ -784,7 +785,7 @@ DSA-LeetCode-Journey/
 
 ### 🧩 Data Structures & Algorithms
 
-> **Signal:** Core concepts, foundations, algorithms  ·  *12 LeetCode problems · 88 concept lessons*
+> **Signal:** Core concepts, foundations, algorithms  ·  *13 LeetCode problems · 88 concept lessons*
 
 | # | Problem | Difficulty | Solution | Time | Solved Dates |
 |:-:|:--|:-:|:-:|:-:|:--|
@@ -797,6 +798,7 @@ DSA-LeetCode-Journey/
 | 242 | [Valid Anagram](https://leetcode.com/problems/valid-anagram/) | 🟢 Easy | [Python](2026/08-August/14-08-26/0242-valid-anagram.py) | O(n^2) (list.index + pop) | 14 Aug 2026 |
 | 326 | [Power of Three](https://leetcode.com/problems/power-of-three/) | 🟢 Easy | [C++](2026/02-February/03-02-26/0326-power-of-three.cpp) | O(n) | 03 Feb 2026 |
 | 387 | [First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/) | 🟢 Easy | [C++](2025/12-December/23-12-25/0387-first-unique-character-in-a-string.cpp) | O(n) | 23 Dec 2025 |
+| 485 | [Max Consecutive Ones](https://leetcode.com/problems/max-consecutive-ones/) | 🟢 Easy | [Python](2026/09-September/27-09-26/0485-max-consecutive-ones.py) | O(n) · Runtime: 7 ms (Beats 96.5%) | 27 Sep 2026 |
 | 674 | [Longest Continuous Increasing Subsequence](https://leetcode.com/problems/longest-continuous-increasing-subsequence/) | 🟢 Easy | [Python](2026/09-September/25-09-26/0674-longest-continuous-increasing-subsequence.py) | O(n) · Runtime: 4 ms (Beats 19.2%) | 25 Sep 2026 |
 | 1791 | [Find Center of Star Graph](https://leetcode.com/problems/find-center-of-star-graph/) | 🟢 Easy | [C++](2026/03-March/24-03-26/1791-find-center-of-star-graph.cpp) | O(n) | 24 Mar 2026 |
 | 2553 | [Separate the Digits in an Array](https://leetcode.com/problems/separate-the-digits-in-an-array/) | 🟢 Easy | [Python](2026/09-September/21-09-26/2553-separate-the-digits-in-an-array.py) | O(n) · Runtime: 3 ms (Beats 73.1%) | 21 Sep 2026 |
