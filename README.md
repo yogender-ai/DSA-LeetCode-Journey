@@ -107,8 +107,8 @@ All solutions are filed chronologically under `YYYY/MM-Month/DD-MM-YY/`. ↺ mar
 
 ```text
 📅 dates/
-├── 2026/  ·  262 solutions · 86 practice days
-│   ├── Sep  ████████              30 solutions · 15 days
+├── 2026/  ·  263 solutions · 87 practice days
+│   ├── Sep  ████████              31 solutions · 16 days
 │   ├── Aug  ███                   12 solutions · 4 days
 │   ├── Jul  ████                  15 solutions · 7 days
 │   ├── Jun  ██████████████████    68 solutions · 3 days
@@ -123,10 +123,11 @@ All solutions are filed chronologically under `YYYY/MM-Month/DD-MM-YY/`. ↺ mar
 ```
 
 <details open>
-<summary><b>September 2026</b> — 30 solutions across 15 days</summary>
+<summary><b>September 2026</b> — 31 solutions across 16 days</summary>
 
 | Date | Problem / Lesson | Topic / Pattern | Diff | Code |
 |:--|:--|:--|:-:|:-:|
+| **28 Sep** (Mon) | 54. [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/) | Matrix / Simulation | 🟡 Medium | [Python](2026/09-September/28-09-26/0054-spiral-matrix.py) |
 | **27 Sep** (Sun) | 485. [Max Consecutive Ones](https://leetcode.com/problems/max-consecutive-ones/) | Data Structures & Algorithms | 🟢 Easy | [Python](2026/09-September/27-09-26/0485-max-consecutive-ones.py) |
 | **26 Sep** (Sat) | 3. [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | Sliding Window | 🟡 Medium | [C++](2026/09-September/26-09-26/0003-longest-substring-without-repeating-characters.cpp) |
 | **25 Sep** (Fri) | 674. [Longest Continuous Increasing Subsequence](https://leetcode.com/problems/longest-continuous-increasing-subsequence/) | Data Structures & Algorithms | 🟢 Easy | [Python](2026/09-September/25-09-26/0674-longest-continuous-increasing-subsequence.py) |
@@ -505,7 +506,7 @@ DSA-LeetCode-Journey/
 │   ├── 06-June        (3 active days)
 │   ├── 07-July        (7 active days)
 │   ├── 08-August      (4 active days)
-│   └── 09-September   (19 active days)
+│   └── 09-September   (20 active days)
 ├── notes/                        ← SQL deep dives & conceptual revision notes
 ├── sandbox/                      ← Kafka and ML practice sandbox
 ├── assets/                       ← generated banner, streak heatmap, RPG HUD, topic cards
@@ -713,7 +714,7 @@ DSA-LeetCode-Journey/
 | # | Problem | Difficulty | Solution | Time | Solved Dates |
 |:-:|:--|:-:|:-:|:-:|:--|
 | 48 | [Rotate Image](https://leetcode.com/problems/rotate-image/) | 🟡 Medium | [Python](2026/09-September/18-09-26/0048-rotate-image.py) | O(n) | 18 Sep 2026 |
-| 54 | [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/) | 🟡 Medium | [Python](2026/09-September/19-09-26/0054-spiral-matrix.py) | O(n) | 19 Sep 2026 |
+| 54 | [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/) | 🟡 Medium | [Python](2026/09-September/28-09-26/0054-spiral-matrix.py) · [Python](2026/09-September/19-09-26/0054-spiral-matrix.py) | O(n) · Runtime: 0 ms (Beats 100.0%) | 19 Sep 2026, 28 Sep 2026 |
 
 ### 🔤 Strings
 
