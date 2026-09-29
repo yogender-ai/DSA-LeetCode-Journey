@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-29T17:54:08+05:30",
+ "generated": "2026-09-30T01:28:22+05:30",
  "user": "yashyogender",
  "repo": "yogender-ai/DSA-LeetCode-Journey",
  "stats": {
@@ -15,9 +15,24 @@
   "level": 17,
   "rank": "Grandmaster Alchemist 👑",
   "xp": 6790,
-  "repoEntries": 273
+  "repoEntries": 274
  },
  "problems": [
+  {
+   "num": 40,
+   "title": "Combination Sum II",
+   "difficulty": "Medium",
+   "pattern": "Data Structures & Algorithms",
+   "lang": "C++",
+   "path": "2026/09-September/30-09-26/0040-combination-sum-ii.cpp",
+   "url": "https://leetcode.com/problems/combination-sum-ii/",
+   "time": "O(n) · Runtime: 0 ms (Beats 100.0%)",
+   "space": "O(1) · Memory: 14.2 MB (Beats 38.4%)",
+   "dates": [
+    "2026-09-30"
+   ],
+   "kind": "leetcode"
+  },
   {
    "num": 54,
    "title": "Spiral Matrix",

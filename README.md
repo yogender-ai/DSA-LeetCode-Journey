@@ -30,11 +30,11 @@
 
 ### ▶️ Algorithm Replay — a different one every day
 
-<img src="assets/algo_replay.svg" width="100%" alt="Shortest Path in Binary Matrix executing step by step" />
+<img src="assets/algo_replay.svg" width="100%" alt="Maximum Subarray executing step by step" />
 
 > Not a loop of pictures. The algorithm is really run at build time and every
 > comparison, pointer move and window slide it makes becomes a frame. Today it is
-> **[#1091 Shortest Path in Binary Matrix](https://leetcode.com/problems/shortest-path-in-binary-matrix/)** — Graphs & Search, O(rows · cols).
+> **[#53 Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)** — Dynamic Programming, O(n).
 > Tomorrow it will be a different one.
 
 <br/>
@@ -107,8 +107,8 @@ All solutions are filed chronologically under `YYYY/MM-Month/DD-MM-YY/`. ↺ mar
 
 ```text
 📅 dates/
-├── 2026/  ·  263 solutions · 87 practice days
-│   ├── Sep  ████████              31 solutions · 16 days
+├── 2026/  ·  264 solutions · 88 practice days
+│   ├── Sep  ████████              32 solutions · 17 days
 │   ├── Aug  ███                   12 solutions · 4 days
 │   ├── Jul  ████                  15 solutions · 7 days
 │   ├── Jun  ██████████████████    68 solutions · 3 days
@@ -123,10 +123,11 @@ All solutions are filed chronologically under `YYYY/MM-Month/DD-MM-YY/`. ↺ mar
 ```
 
 <details open>
-<summary><b>September 2026</b> — 31 solutions across 16 days</summary>
+<summary><b>September 2026</b> — 32 solutions across 17 days</summary>
 
 | Date | Problem / Lesson | Topic / Pattern | Diff | Code |
 |:--|:--|:--|:-:|:-:|
+| **30 Sep** (Wed) | 40. [Combination Sum II](https://leetcode.com/problems/combination-sum-ii/) | Data Structures & Algorithms | 🟡 Medium | [C++](2026/09-September/30-09-26/0040-combination-sum-ii.cpp) |
 | **28 Sep** (Mon) | 54. [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/) | Matrix / Simulation | 🟡 Medium | [Python](2026/09-September/28-09-26/0054-spiral-matrix.py) |
 | **27 Sep** (Sun) | 485. [Max Consecutive Ones](https://leetcode.com/problems/max-consecutive-ones/) | Data Structures & Algorithms | 🟢 Easy | [Python](2026/09-September/27-09-26/0485-max-consecutive-ones.py) |
 | **26 Sep** (Sat) | 3. [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | Sliding Window | 🟡 Medium | [C++](2026/09-September/26-09-26/0003-longest-substring-without-repeating-characters.cpp) |
@@ -506,7 +507,7 @@ DSA-LeetCode-Journey/
 │   ├── 06-June        (3 active days)
 │   ├── 07-July        (7 active days)
 │   ├── 08-August      (4 active days)
-│   └── 09-September   (20 active days)
+│   └── 09-September   (21 active days)
 ├── notes/                        ← SQL deep dives & conceptual revision notes
 ├── sandbox/                      ← Kafka and ML practice sandbox
 ├── assets/                       ← generated banner, streak heatmap, RPG HUD, topic cards
@@ -786,12 +787,13 @@ DSA-LeetCode-Journey/
 
 ### 🧩 Data Structures & Algorithms
 
-> **Signal:** Core concepts, foundations, algorithms  ·  *13 LeetCode problems · 88 concept lessons*
+> **Signal:** Core concepts, foundations, algorithms  ·  *14 LeetCode problems · 88 concept lessons*
 
 | # | Problem | Difficulty | Solution | Time | Solved Dates |
 |:-:|:--|:-:|:-:|:-:|:--|
 | 2 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) | 🟡 Medium | [Python](2026/08-August/14-08-26/0002-add-two-numbers.py) | O(n) | 14 Aug 2026 |
 | 24 | [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/) | 🟡 Medium | [Python](2026/09-September/23-09-26/0024-swap-nodes-in-pairs.py) · [Python](2026/09-September/24-09-26/0024-swap-nodes-in-pairs.py) | O(n) · Runtime: 8 ms (Beats 0.2%) | 23 Sep 2026, 24 Sep 2026 |
+| 40 | [Combination Sum II](https://leetcode.com/problems/combination-sum-ii/) | 🟡 Medium | [C++](2026/09-September/30-09-26/0040-combination-sum-ii.cpp) | O(n) · Runtime: 0 ms (Beats 100.0%) | 30 Sep 2026 |
 | 49 | [Group Anagrams](https://leetcode.com/problems/group-anagrams/) | 🟡 Medium | [Python](2026/08-August/14-08-26/0049-group-anagrams.py) | O(n * k log k)  (approach 2) | 14 Aug 2026 |
 | 50 | [Pow(x, n)](https://leetcode.com/problems/powx-n/) | 🟡 Medium | [Python](2026/09-September/23-09-26/0050-powx-n.py) · [C++](2026/02-February/03-02-26/0050-powx-n.cpp) | O(n) · Runtime: 0 ms (Beats 100.0%) | 03 Feb 2026, 23 Sep 2026 |
 | 83 | [Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/) | 🟢 Easy | [C++](2026/06-June/26-06-26/0083-remove-duplicates-from-sorted-list.cpp) | O(n) | 26 Jun 2026 |
