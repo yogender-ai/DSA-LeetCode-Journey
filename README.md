@@ -30,11 +30,11 @@
 
 ### ▶️ Algorithm Replay — a different one every day
 
-<img src="assets/algo_replay.svg" width="100%" alt="Maximum Subarray executing step by step" />
+<img src="assets/algo_replay.svg" width="100%" alt="Binary Search executing step by step" />
 
 > Not a loop of pictures. The algorithm is really run at build time and every
 > comparison, pointer move and window slide it makes becomes a frame. Today it is
-> **[#53 Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)** — Dynamic Programming, O(n).
+> **[#704 Binary Search](https://leetcode.com/problems/binary-search/)** — Binary Search, O(log n).
 > Tomorrow it will be a different one.
 
 <br/>
@@ -107,7 +107,8 @@ All solutions are filed chronologically under `YYYY/MM-Month/DD-MM-YY/`. ↺ mar
 
 ```text
 📅 dates/
-├── 2026/  ·  264 solutions · 88 practice days
+├── 2026/  ·  265 solutions · 89 practice days
+│   ├── Oct  █                      1 solution  · 1 day
 │   ├── Sep  ████████              32 solutions · 17 days
 │   ├── Aug  ███                   12 solutions · 4 days
 │   ├── Jul  ████                  15 solutions · 7 days
@@ -123,6 +124,15 @@ All solutions are filed chronologically under `YYYY/MM-Month/DD-MM-YY/`. ↺ mar
 ```
 
 <details open>
+<summary><b>October 2026</b> — 1 solution across 1 day</summary>
+
+| Date | Problem / Lesson | Topic / Pattern | Diff | Code |
+|:--|:--|:--|:-:|:-:|
+| **01 Oct** (Thu) | 13. [Roman to Integer](https://leetcode.com/problems/roman-to-integer/) | Arrays & Hashing | 🟢 Easy | [C++](2026/10-October/01-10-26/0013-roman-to-integer.cpp) |
+
+</details>
+
+<details>
 <summary><b>September 2026</b> — 32 solutions across 17 days</summary>
 
 | Date | Problem / Lesson | Topic / Pattern | Diff | Code |
@@ -507,7 +517,8 @@ DSA-LeetCode-Journey/
 │   ├── 06-June        (3 active days)
 │   ├── 07-July        (7 active days)
 │   ├── 08-August      (4 active days)
-│   └── 09-September   (21 active days)
+│   ├── 09-September   (21 active days)
+│   └── 10-October     (1 active days)
 ├── notes/                        ← SQL deep dives & conceptual revision notes
 ├── sandbox/                      ← Kafka and ML practice sandbox
 ├── assets/                       ← generated banner, streak heatmap, RPG HUD, topic cards
@@ -521,11 +532,12 @@ DSA-LeetCode-Journey/
 
 ### 🧮 Arrays & Hashing
 
-> **Signal:** Counting, grouping, frequency maps, set lookups  ·  *45 LeetCode problems · 2 concept lessons*
+> **Signal:** Counting, grouping, frequency maps, set lookups  ·  *46 LeetCode problems · 2 concept lessons*
 
 | # | Problem | Difficulty | Solution | Time | Solved Dates |
 |:-:|:--|:-:|:-:|:-:|:--|
 | 1 | [Two Sum](https://leetcode.com/problems/two-sum/) | 🟢 Easy | [C++](2026/06-June/26-06-26/0001-two-sum.cpp) · [Python](2026/09-September/24-09-26/0001-two-sum.py) · [Python](2026/08-August/14-08-26/0001-two-sum.py) | O(n) | 26 Jun 2026, 14 Aug 2026, 24 Sep 2026 |
+| 13 | [Roman to Integer](https://leetcode.com/problems/roman-to-integer/) | 🟢 Easy | [C++](2026/10-October/01-10-26/0013-roman-to-integer.cpp) | O(n) · Runtime: 0 ms (Beats 100.0%) | 01 Oct 2026 |
 | 17 | [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) | 🟡 Medium | [C++](2026/02-February/06-02-26/0017-letter-combinations-of-a-phone-number.cpp) | O(n) | 06 Feb 2026 |
 | 26 | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) | 🟢 Easy | [C++](2026/06-June/26-06-26/0026-remove-duplicates-from-sorted-array.cpp) | O(n) | 26 Jun 2026 |
 | 31 | [Next Permutation](https://leetcode.com/problems/next-permutation/) | 🟡 Medium | [C++](2026/07-July/29-07-26/0031-next-permutation.cpp) | O(n) | 29 Jul 2026 |
