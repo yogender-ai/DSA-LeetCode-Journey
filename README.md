@@ -22,8 +22,8 @@
 <!-- Streak, Contest Rating & Active Days -->
 <img src="https://img.shields.io/badge/🔥%20streak-74%20days%20blazing-a3e635?style=flat-square&labelColor=0b0d1a" alt="current streak" />
 <img src="https://img.shields.io/badge/🏆%20longest%20streak-74%20days-fbbf24?style=flat-square&labelColor=0b0d1a" alt="longest streak" />
-<img src="https://img.shields.io/badge/⚔️%20contest%20rating-1585.61%20(top%2026.51%25)-22d3ee?style=flat-square&labelColor=0b0d1a" alt="contest rating" />
-<img src="https://img.shields.io/badge/📅%20practice%20days-233-f472b6?style=flat-square&labelColor=0b0d1a" alt="practice days" />
+<img src="https://img.shields.io/badge/⚔️%20contest%20rating-1585.61%20(top%2026.55%25)-22d3ee?style=flat-square&labelColor=0b0d1a" alt="contest rating" />
+<img src="https://img.shields.io/badge/📅%20practice%20days-234-f472b6?style=flat-square&labelColor=0b0d1a" alt="practice days" />
 <img src="https://img.shields.io/github/last-commit/yogender-ai/DSA-LeetCode-Journey?style=flat-square&labelColor=0b0d1a&color=8b5cf6&label=last%20commit" alt="last commit" />
 
 <br/><br/>
@@ -97,7 +97,7 @@
 
 ## 🔥 Streak & 2026 Calendar
 
-<img src="assets/streak.svg" width="100%" alt="Practice calendar — 74 day current streak, 74 day longest streak, 233 practice days" />
+<img src="assets/streak.svg" width="100%" alt="Practice calendar — 74 day current streak, 74 day longest streak, 234 practice days" />
 
 > 💡 **Streak Rule:** A day counts if at least one solution or algorithm lesson was written. Streaks and dates are synced in Indian Standard Time (IST).
 
@@ -107,8 +107,8 @@ All solutions are filed chronologically under `YYYY/MM-Month/DD-MM-YY/`. ↺ mar
 
 ```text
 📅 dates/
-├── 2026/  ·  265 solutions · 89 practice days
-│   ├── Oct  █                      1 solution  · 1 day
+├── 2026/  ·  266 solutions · 89 practice days
+│   ├── Oct  █                      2 solutions · 1 day
 │   ├── Sep  ████████              32 solutions · 17 days
 │   ├── Aug  ███                   12 solutions · 4 days
 │   ├── Jul  ████                  15 solutions · 7 days
@@ -124,11 +124,12 @@ All solutions are filed chronologically under `YYYY/MM-Month/DD-MM-YY/`. ↺ mar
 ```
 
 <details open>
-<summary><b>October 2026</b> — 1 solution across 1 day</summary>
+<summary><b>October 2026</b> — 2 solutions across 1 day</summary>
 
 | Date | Problem / Lesson | Topic / Pattern | Diff | Code |
 |:--|:--|:--|:-:|:-:|
 | **01 Oct** (Thu) | 13. [Roman to Integer](https://leetcode.com/problems/roman-to-integer/) | Arrays & Hashing | 🟢 Easy | [C++](2026/10-October/01-10-26/0013-roman-to-integer.cpp) |
+|  | 20. [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | Stack | 🟢 Easy | [C++](2026/10-October/01-10-26/0020-valid-parentheses.cpp) |
 
 </details>
 
@@ -652,7 +653,7 @@ DSA-LeetCode-Journey/
 
 | # | Problem | Difficulty | Solution | Time | Solved Dates |
 |:-:|:--|:-:|:-:|:-:|:--|
-| 20 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | 🟢 Easy | [C++](2026/02-February/10-02-26/0020-valid-parentheses.cpp) | O(n) | 10 Feb 2026 |
+| 20 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | 🟢 Easy | [C++](2026/10-October/01-10-26/0020-valid-parentheses.cpp) · [C++](2026/02-February/10-02-26/0020-valid-parentheses.cpp) | O(n) · Runtime: 0 ms (Beats 100.0%) | 10 Feb 2026, 01 Oct 2026 |
 | 32 | [Longest Valid Parentheses](https://leetcode.com/problems/longest-valid-parentheses/) | 🔴 Hard | [C++](2026/02-February/11-02-26/0032-longest-valid-parentheses.cpp) | O(n) | 11 Feb 2026 |
 | 94 | [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/) | 🟢 Easy | [C++](2026/06-June/26-06-26/0094-binary-tree-inorder-traversal.cpp) | O(n) | 26 Jun 2026 |
 | 144 | [Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/) | 🟢 Easy | [C++](2026/06-June/26-06-26/0144-binary-tree-preorder-traversal.cpp) | O(n) | 26 Jun 2026 |
