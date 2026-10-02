@@ -11,10 +11,10 @@
   <img src="https://img.shields.io/badge/LeetCode-yashyogender-FFA116?style=for-the-badge&logo=leetcode&logoColor=white&labelColor=0b0d1a" alt="LeetCode Profile" />
 </a>
 <a href="https://leetcode.com/u/yashyogender/">
-  <img src="https://img.shields.io/badge/solved-283-8b5cf6?style=for-the-badge&labelColor=0b0d1a" alt="solved" />
+  <img src="https://img.shields.io/badge/solved-284-8b5cf6?style=for-the-badge&labelColor=0b0d1a" alt="solved" />
 </a>
 <img src="https://img.shields.io/badge/easy-161-2dd4bf?style=for-the-badge&labelColor=0b0d1a" alt="easy" />
-<img src="https://img.shields.io/badge/medium-113-fbbf24?style=for-the-badge&labelColor=0b0d1a" alt="medium" />
+<img src="https://img.shields.io/badge/medium-114-fbbf24?style=for-the-badge&labelColor=0b0d1a" alt="medium" />
 <img src="https://img.shields.io/badge/hard-9-f472b6?style=for-the-badge&labelColor=0b0d1a" alt="hard" />
 
 <br/>
@@ -30,11 +30,11 @@
 
 ### ▶️ Algorithm Replay — a different one every day
 
-<img src="assets/algo_replay.svg" width="100%" alt="Two Sum II - Input Array Is Sorted executing step by step" />
+<img src="assets/algo_replay.svg" width="100%" alt="Maximum Average Subarray I executing step by step" />
 
 > Not a loop of pictures. The algorithm is really run at build time and every
 > comparison, pointer move and window slide it makes becomes a frame. Today it is
-> **[#167 Two Sum II - Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)** — Two Pointers, O(n).
+> **[#643 Maximum Average Subarray I](https://leetcode.com/problems/maximum-average-subarray-i/)** — Sliding Window, O(n).
 > Tomorrow it will be a different one.
 
 <br/>
@@ -66,10 +66,10 @@
 
 | Badge | Title | Requirement | Status |
 |:---:|:---|:---|:---:|
-| 🛡️ | **Centurion** | Solve 100+ LeetCode problems | **UNLOCKED** ✅ (283/100) |
-| ⚔️ | **Double Centurion** | Solve 200+ LeetCode problems | **UNLOCKED** ✅ (283/200) |
-| 👑 | **Triple Centurion** | Solve 300+ LeetCode problems | 🟡 In Progress (283/300 · 94%) |
-| 🔒 | **Five Hundred Club** | Solve 500+ LeetCode problems | 🟡 In Progress (283/500 · 57%) |
+| 🛡️ | **Centurion** | Solve 100+ LeetCode problems | **UNLOCKED** ✅ (284/100) |
+| ⚔️ | **Double Centurion** | Solve 200+ LeetCode problems | **UNLOCKED** ✅ (284/200) |
+| 👑 | **Triple Centurion** | Solve 300+ LeetCode problems | 🟡 In Progress (284/300 · 95%) |
+| 🔒 | **Five Hundred Club** | Solve 500+ LeetCode problems | 🟡 In Progress (284/500 · 57%) |
 | 🔥 | **Habit Locked** | Maintain a 30-Day continuous streak | **UNLOCKED** ✅ (74/30) |
 | ⚡ | **Pyromancer** | Maintain a 50-Day continuous streak | **UNLOCKED** ✅ (74/50) |
 | 🌟 | **Century Flame** | Maintain a 100-Day continuous streak | 🟡 In Progress (74/100 · 74%) |
@@ -87,7 +87,7 @@
 ### 🎯 Active Quests & Milestones
 * 🗡️ **Daily Quest — Forge the Strike**: Solve at least 1 problem and push your code today. *(Reward: +25 EXP · Streak Shield)*
 * 👹 **Weekly Boss — Contest Titan**: Compete in the official LeetCode Weekly / Biweekly Contest. *(Reward: +100 EXP · Rating Boost)*
-* 🏆 **Epic Milestone — Triple Centurion**: Reach 300 problems solved (currently 283/300 · only 17 remaining!). *(Reward: +250 EXP · Title: Algorithm Warlord)*
+* 🏆 **Epic Milestone — Triple Centurion**: Reach 300 problems solved (currently 284/300 · only 16 remaining!). *(Reward: +250 EXP · Title: Algorithm Warlord)*
 
 <br/>
 
