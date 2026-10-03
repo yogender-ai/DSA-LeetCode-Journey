@@ -107,8 +107,8 @@ All solutions are filed chronologically under `YYYY/MM-Month/DD-MM-YY/`. ↺ mar
 
 ```text
 📅 dates/
-├── 2026/  ·  266 solutions · 89 practice days
-│   ├── Oct  █                      2 solutions · 1 day
+├── 2026/  ·  267 solutions · 90 practice days
+│   ├── Oct  █                      3 solutions · 2 days
 │   ├── Sep  ████████              32 solutions · 17 days
 │   ├── Aug  ███                   12 solutions · 4 days
 │   ├── Jul  ████                  15 solutions · 7 days
@@ -124,10 +124,11 @@ All solutions are filed chronologically under `YYYY/MM-Month/DD-MM-YY/`. ↺ mar
 ```
 
 <details open>
-<summary><b>October 2026</b> — 2 solutions across 1 day</summary>
+<summary><b>October 2026</b> — 3 solutions across 2 days</summary>
 
 | Date | Problem / Lesson | Topic / Pattern | Diff | Code |
 |:--|:--|:--|:-:|:-:|
+| **03 Oct** (Sat) | 169. [Majority Element](https://leetcode.com/problems/majority-element/) | Arrays & Hashing | 🟢 Easy | [C++](2026/10-October/03-10-26/0169-majority-element.cpp) |
 | **01 Oct** (Thu) | 13. [Roman to Integer](https://leetcode.com/problems/roman-to-integer/) | Arrays & Hashing | 🟢 Easy | [C++](2026/10-October/01-10-26/0013-roman-to-integer.cpp) |
 |  | 20. [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | Stack | 🟢 Easy | [C++](2026/10-October/01-10-26/0020-valid-parentheses.cpp) |
 
@@ -519,7 +520,7 @@ DSA-LeetCode-Journey/
 │   ├── 07-July        (7 active days)
 │   ├── 08-August      (4 active days)
 │   ├── 09-September   (21 active days)
-│   └── 10-October     (1 active days)
+│   └── 10-October     (2 active days)
 ├── notes/                        ← SQL deep dives & conceptual revision notes
 ├── sandbox/                      ← Kafka and ML practice sandbox
 ├── assets/                       ← generated banner, streak heatmap, RPG HUD, topic cards
@@ -533,7 +534,7 @@ DSA-LeetCode-Journey/
 
 ### 🧮 Arrays & Hashing
 
-> **Signal:** Counting, grouping, frequency maps, set lookups  ·  *46 LeetCode problems · 2 concept lessons*
+> **Signal:** Counting, grouping, frequency maps, set lookups  ·  *47 LeetCode problems · 2 concept lessons*
 
 | # | Problem | Difficulty | Solution | Time | Solved Dates |
 |:-:|:--|:-:|:-:|:-:|:--|
@@ -549,6 +550,7 @@ DSA-LeetCode-Journey/
 | 66 | [Plus One](https://leetcode.com/problems/plus-one/) | 🟢 Easy | [C++](2026/01-January/01-01-26/0066-plus-one.cpp) | O(n) | 01 Jan 2026 |
 | 73 | [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/) | 🟡 Medium | [Python](2026/09-September/18-09-26/0073-set-matrix-zeroes.py) | O(n) | 18 Sep 2026 |
 | 128 | [Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) | 🟡 Medium | [Python](2026/08-August/16-08-26/0128-longest-consecutive-sequence.py) | O(n) | 16 Aug 2026 |
+| 169 | [Majority Element](https://leetcode.com/problems/majority-element/) | 🟢 Easy | [C++](2026/10-October/03-10-26/0169-majority-element.cpp) | O(n) · Runtime: 0 ms (Beats 100.0%) | 03 Oct 2026 |
 | 200 | [Number of Islands](https://leetcode.com/problems/number-of-islands/) | 🟡 Medium | [C++](2026/04-April/09-04-26/0200-number-of-islands.cpp) | O(n) | 09 Apr 2026 |
 | 205 | [Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings/) | 🟢 Easy | [C++](2026/06-June/26-06-26/0205-isomorphic-strings.cpp) | O(n) | 26 Jun 2026 |
 | 217 | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) | 🟢 Easy | [C++](2026/06-June/26-06-26/0217-contains-duplicate.cpp) | O(n) | 26 Jun 2026 |

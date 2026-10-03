@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-03T21:26:09+05:30",
+ "generated": "2026-10-03T23:56:10+05:30",
  "user": "yashyogender",
  "repo": "yogender-ai/DSA-LeetCode-Journey",
  "stats": {
@@ -15,9 +15,24 @@
   "level": 17,
   "rank": "Grandmaster Alchemist 👑",
   "xp": 6815,
-  "repoEntries": 276
+  "repoEntries": 277
  },
  "problems": [
+  {
+   "num": 169,
+   "title": "Majority Element",
+   "difficulty": "Easy",
+   "pattern": "Arrays & Hashing",
+   "lang": "C++",
+   "path": "2026/10-October/03-10-26/0169-majority-element.cpp",
+   "url": "https://leetcode.com/problems/majority-element/",
+   "time": "O(n) · Runtime: 0 ms (Beats 100.0%)",
+   "space": "O(1) · Memory: 42.2 MB (Beats 13.2%)",
+   "dates": [
+    "2026-10-03"
+   ],
+   "kind": "leetcode"
+  },
   {
    "num": 20,
    "title": "Valid Parentheses",
