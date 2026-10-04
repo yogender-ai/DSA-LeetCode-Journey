@@ -23,7 +23,7 @@
 <img src="https://img.shields.io/badge/🔥%20streak-74%20days%20blazing-a3e635?style=flat-square&labelColor=0b0d1a" alt="current streak" />
 <img src="https://img.shields.io/badge/🏆%20longest%20streak-74%20days-fbbf24?style=flat-square&labelColor=0b0d1a" alt="longest streak" />
 <img src="https://img.shields.io/badge/⚔️%20contest%20rating-1585.61%20(top%2026.55%25)-22d3ee?style=flat-square&labelColor=0b0d1a" alt="contest rating" />
-<img src="https://img.shields.io/badge/📅%20practice%20days-233-f472b6?style=flat-square&labelColor=0b0d1a" alt="practice days" />
+<img src="https://img.shields.io/badge/📅%20practice%20days-234-f472b6?style=flat-square&labelColor=0b0d1a" alt="practice days" />
 <img src="https://img.shields.io/github/last-commit/yogender-ai/DSA-LeetCode-Journey?style=flat-square&labelColor=0b0d1a&color=8b5cf6&label=last%20commit" alt="last commit" />
 
 <br/><br/>
@@ -97,7 +97,7 @@
 
 ## 🔥 Streak & 2026 Calendar
 
-<img src="assets/streak.svg" width="100%" alt="Practice calendar — 74 day current streak, 74 day longest streak, 233 practice days" />
+<img src="assets/streak.svg" width="100%" alt="Practice calendar — 74 day current streak, 74 day longest streak, 234 practice days" />
 
 > 💡 **Streak Rule:** A day counts if at least one solution or algorithm lesson was written. Streaks and dates are synced in Indian Standard Time (IST).
 
@@ -107,8 +107,8 @@ All solutions are filed chronologically under `YYYY/MM-Month/DD-MM-YY/`. ↺ mar
 
 ```text
 📅 dates/
-├── 2026/  ·  267 solutions · 90 practice days
-│   ├── Oct  █                      3 solutions · 2 days
+├── 2026/  ·  268 solutions · 91 practice days
+│   ├── Oct  █                      4 solutions · 3 days
 │   ├── Sep  ████████              32 solutions · 17 days
 │   ├── Aug  ███                   12 solutions · 4 days
 │   ├── Jul  ████                  15 solutions · 7 days
@@ -124,10 +124,11 @@ All solutions are filed chronologically under `YYYY/MM-Month/DD-MM-YY/`. ↺ mar
 ```
 
 <details open>
-<summary><b>October 2026</b> — 3 solutions across 2 days</summary>
+<summary><b>October 2026</b> — 4 solutions across 3 days</summary>
 
 | Date | Problem / Lesson | Topic / Pattern | Diff | Code |
 |:--|:--|:--|:-:|:-:|
+| **04 Oct** (Sun) | 1. [Two Sum](https://leetcode.com/problems/two-sum/) | Arrays & Hashing | 🟢 Easy | [Python](2026/10-October/04-10-26/0001-two-sum.py) |
 | **03 Oct** (Sat) | 169. [Majority Element](https://leetcode.com/problems/majority-element/) | Arrays & Hashing | 🟢 Easy | [C++](2026/10-October/03-10-26/0169-majority-element.cpp) |
 | **01 Oct** (Thu) | 13. [Roman to Integer](https://leetcode.com/problems/roman-to-integer/) | Arrays & Hashing | 🟢 Easy | [C++](2026/10-October/01-10-26/0013-roman-to-integer.cpp) |
 |  | 20. [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | Stack | 🟢 Easy | [C++](2026/10-October/01-10-26/0020-valid-parentheses.cpp) |
@@ -520,7 +521,7 @@ DSA-LeetCode-Journey/
 │   ├── 07-July        (7 active days)
 │   ├── 08-August      (4 active days)
 │   ├── 09-September   (21 active days)
-│   └── 10-October     (2 active days)
+│   └── 10-October     (3 active days)
 ├── notes/                        ← SQL deep dives & conceptual revision notes
 ├── sandbox/                      ← Kafka and ML practice sandbox
 ├── assets/                       ← generated banner, streak heatmap, RPG HUD, topic cards
@@ -538,7 +539,7 @@ DSA-LeetCode-Journey/
 
 | # | Problem | Difficulty | Solution | Time | Solved Dates |
 |:-:|:--|:-:|:-:|:-:|:--|
-| 1 | [Two Sum](https://leetcode.com/problems/two-sum/) | 🟢 Easy | [C++](2026/06-June/26-06-26/0001-two-sum.cpp) · [Python](2026/09-September/24-09-26/0001-two-sum.py) · [Python](2026/08-August/14-08-26/0001-two-sum.py) | O(n) | 26 Jun 2026, 14 Aug 2026, 24 Sep 2026 |
+| 1 | [Two Sum](https://leetcode.com/problems/two-sum/) | 🟢 Easy | [C++](2026/06-June/26-06-26/0001-two-sum.cpp) · [Python](2026/10-October/04-10-26/0001-two-sum.py) · [Python](2026/09-September/24-09-26/0001-two-sum.py) · [Python](2026/08-August/14-08-26/0001-two-sum.py) | O(n) | 26 Jun 2026, 14 Aug 2026, 24 Sep 2026, 04 Oct 2026 |
 | 13 | [Roman to Integer](https://leetcode.com/problems/roman-to-integer/) | 🟢 Easy | [C++](2026/10-October/01-10-26/0013-roman-to-integer.cpp) | O(n) · Runtime: 0 ms (Beats 100.0%) | 01 Oct 2026 |
 | 17 | [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) | 🟡 Medium | [C++](2026/02-February/06-02-26/0017-letter-combinations-of-a-phone-number.cpp) | O(n) | 06 Feb 2026 |
 | 26 | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) | 🟢 Easy | [C++](2026/06-June/26-06-26/0026-remove-duplicates-from-sorted-array.cpp) | O(n) | 26 Jun 2026 |
