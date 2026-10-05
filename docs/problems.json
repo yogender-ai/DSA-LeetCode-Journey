@@ -1,23 +1,38 @@
 {
- "generated": "2026-10-05T10:16:04+05:30",
+ "generated": "2026-10-05T18:54:02+05:30",
  "user": "yashyogender",
  "repo": "yogender-ai/DSA-LeetCode-Journey",
  "stats": {
-  "solved": 284,
+  "solved": 285,
   "easy": 161,
-  "medium": 114,
+  "medium": 115,
   "hard": 9,
   "streak": 74,
   "longest": 74,
-  "active": 234,
+  "active": 235,
   "rating": 1585.61,
   "topPct": 26.55,
   "level": 17,
   "rank": "Grandmaster Alchemist 👑",
-  "xp": 6820,
-  "repoEntries": 278
+  "xp": 6850,
+  "repoEntries": 279
  },
  "problems": [
+  {
+   "num": 856,
+   "title": "Score of Parentheses",
+   "difficulty": "Medium",
+   "pattern": "Stack",
+   "lang": "Python",
+   "path": "2026/10-October/05-10-26/0856-score-of-parentheses.py",
+   "url": "https://leetcode.com/problems/score-of-parentheses/",
+   "time": "O(n) · Runtime: 0 ms (Beats 100.0%)",
+   "space": "O(1) · Memory: 19.4 MB (Beats 17.1%)",
+   "dates": [
+    "2026-10-05"
+   ],
+   "kind": "leetcode"
+  },
   {
    "num": 1,
    "title": "Two Sum",
