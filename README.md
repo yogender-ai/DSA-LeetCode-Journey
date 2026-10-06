@@ -11,10 +11,10 @@
   <img src="https://img.shields.io/badge/LeetCode-yashyogender-FFA116?style=for-the-badge&logo=leetcode&logoColor=white&labelColor=0b0d1a" alt="LeetCode Profile" />
 </a>
 <a href="https://leetcode.com/u/yashyogender/">
-  <img src="https://img.shields.io/badge/solved-285-8b5cf6?style=for-the-badge&labelColor=0b0d1a" alt="solved" />
+  <img src="https://img.shields.io/badge/solved-286-8b5cf6?style=for-the-badge&labelColor=0b0d1a" alt="solved" />
 </a>
 <img src="https://img.shields.io/badge/easy-161-2dd4bf?style=for-the-badge&labelColor=0b0d1a" alt="easy" />
-<img src="https://img.shields.io/badge/medium-115-fbbf24?style=for-the-badge&labelColor=0b0d1a" alt="medium" />
+<img src="https://img.shields.io/badge/medium-116-fbbf24?style=for-the-badge&labelColor=0b0d1a" alt="medium" />
 <img src="https://img.shields.io/badge/hard-9-f472b6?style=for-the-badge&labelColor=0b0d1a" alt="hard" />
 
 <br/>
@@ -66,10 +66,10 @@
 
 | Badge | Title | Requirement | Status |
 |:---:|:---|:---|:---:|
-| 🛡️ | **Centurion** | Solve 100+ LeetCode problems | **UNLOCKED** ✅ (285/100) |
-| ⚔️ | **Double Centurion** | Solve 200+ LeetCode problems | **UNLOCKED** ✅ (285/200) |
-| 👑 | **Triple Centurion** | Solve 300+ LeetCode problems | 🟡 In Progress (285/300 · 95%) |
-| 🔒 | **Five Hundred Club** | Solve 500+ LeetCode problems | 🟡 In Progress (285/500 · 57%) |
+| 🛡️ | **Centurion** | Solve 100+ LeetCode problems | **UNLOCKED** ✅ (286/100) |
+| ⚔️ | **Double Centurion** | Solve 200+ LeetCode problems | **UNLOCKED** ✅ (286/200) |
+| 👑 | **Triple Centurion** | Solve 300+ LeetCode problems | 🟡 In Progress (286/300 · 95%) |
+| 🔒 | **Five Hundred Club** | Solve 500+ LeetCode problems | 🟡 In Progress (286/500 · 57%) |
 | 🔥 | **Habit Locked** | Maintain a 30-Day continuous streak | **UNLOCKED** ✅ (74/30) |
 | ⚡ | **Pyromancer** | Maintain a 50-Day continuous streak | **UNLOCKED** ✅ (74/50) |
 | 🌟 | **Century Flame** | Maintain a 100-Day continuous streak | 🟡 In Progress (74/100 · 74%) |
@@ -87,7 +87,7 @@
 ### 🎯 Active Quests & Milestones
 * 🗡️ **Daily Quest — Forge the Strike**: Solve at least 1 problem and push your code today. *(Reward: +25 EXP · Streak Shield)*
 * 👹 **Weekly Boss — Contest Titan**: Compete in the official LeetCode Weekly / Biweekly Contest. *(Reward: +100 EXP · Rating Boost)*
-* 🏆 **Epic Milestone — Triple Centurion**: Reach 300 problems solved (currently 285/300 · only 15 remaining!). *(Reward: +250 EXP · Title: Algorithm Warlord)*
+* 🏆 **Epic Milestone — Triple Centurion**: Reach 300 problems solved (currently 286/300 · only 14 remaining!). *(Reward: +250 EXP · Title: Algorithm Warlord)*
 
 <br/>
 
@@ -107,8 +107,8 @@ All solutions are filed chronologically under `YYYY/MM-Month/DD-MM-YY/`. ↺ mar
 
 ```text
 📅 dates/
-├── 2026/  ·  269 solutions · 92 practice days
-│   ├── Oct  █                      5 solutions · 4 days
+├── 2026/  ·  270 solutions · 93 practice days
+│   ├── Oct  ██                     6 solutions · 5 days
 │   ├── Sep  ████████              32 solutions · 17 days
 │   ├── Aug  ███                   12 solutions · 4 days
 │   ├── Jul  ████                  15 solutions · 7 days
@@ -124,10 +124,11 @@ All solutions are filed chronologically under `YYYY/MM-Month/DD-MM-YY/`. ↺ mar
 ```
 
 <details open>
-<summary><b>October 2026</b> — 5 solutions across 4 days</summary>
+<summary><b>October 2026</b> — 6 solutions across 5 days</summary>
 
 | Date | Problem / Lesson | Topic / Pattern | Diff | Code |
 |:--|:--|:--|:-:|:-:|
+| **06 Oct** (Tue) | 921. [Minimum Add to Make Parentheses Valid](https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/) | Stack | 🟡 Medium | [Python](2026/10-October/06-10-26/0921-minimum-add-to-make-parentheses-valid.py) |
 | **05 Oct** (Mon) | 856. [Score of Parentheses](https://leetcode.com/problems/score-of-parentheses/) | Stack | 🟡 Medium | [Python](2026/10-October/05-10-26/0856-score-of-parentheses.py) |
 | **04 Oct** (Sun) | 1. [Two Sum](https://leetcode.com/problems/two-sum/) | Arrays & Hashing | 🟢 Easy | [Python](2026/10-October/04-10-26/0001-two-sum.py) |
 | **03 Oct** (Sat) | 169. [Majority Element](https://leetcode.com/problems/majority-element/) | Arrays & Hashing | 🟢 Easy | [C++](2026/10-October/03-10-26/0169-majority-element.cpp) |
@@ -522,7 +523,7 @@ DSA-LeetCode-Journey/
 │   ├── 07-July        (7 active days)
 │   ├── 08-August      (4 active days)
 │   ├── 09-September   (21 active days)
-│   └── 10-October     (4 active days)
+│   └── 10-October     (5 active days)
 ├── notes/                        ← SQL deep dives & conceptual revision notes
 ├── sandbox/                      ← Kafka and ML practice sandbox
 ├── assets/                       ← generated banner, streak heatmap, RPG HUD, topic cards
@@ -653,7 +654,7 @@ DSA-LeetCode-Journey/
 
 ### 📚 Stack
 
-> **Signal:** LIFO, monotonic stack, matching brackets, nearest greater  ·  *16 LeetCode problems · 0 concept lessons*
+> **Signal:** LIFO, monotonic stack, matching brackets, nearest greater  ·  *17 LeetCode problems · 0 concept lessons*
 
 | # | Problem | Difficulty | Solution | Time | Solved Dates |
 |:-:|:--|:-:|:-:|:-:|:--|
@@ -667,6 +668,7 @@ DSA-LeetCode-Journey/
 | 735 | [Asteroid Collision](https://leetcode.com/problems/asteroid-collision/) | 🟡 Medium | [C++](2026/02-February/15-02-26/0735-asteroid-collision.cpp) | O(n) | 15 Feb 2026 |
 | 739 | [Daily Temperatures](https://leetcode.com/problems/daily-temperatures/) | 🟡 Medium | [C++](2026/02-February/15-02-26/0739-daily-temperatures.cpp) | O(n) | 15 Feb 2026 |
 | 856 | [Score of Parentheses](https://leetcode.com/problems/score-of-parentheses/) | 🟡 Medium | [Python](2026/10-October/05-10-26/0856-score-of-parentheses.py) | O(n) · Runtime: 0 ms (Beats 100.0%) | 05 Oct 2026 |
+| 921 | [Minimum Add to Make Parentheses Valid](https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/) | 🟡 Medium | [Python](2026/10-October/06-10-26/0921-minimum-add-to-make-parentheses-valid.py) | O(n) · Runtime: 0 ms (Beats 100.0%) | 06 Oct 2026 |
 | 1047 | [Remove All Adjacent Duplicates In String](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/) | 🟢 Easy | [Python](2026/09-September/20-09-26/1047-remove-all-adjacent-duplicates-in-string.py) · [Python](2026/09-September/19-09-26/1047-remove-all-adjacent-duplicates-in-string.py) | O(n) | 19 Sep 2026, 20 Sep 2026 |
 | 1441 | [Build an Array With Stack Operations](https://leetcode.com/problems/build-an-array-with-stack-operations/) | 🟡 Medium | [C++](2026/02-February/17-02-26/1441-build-an-array-with-stack-operations.cpp) | O(n) | 17 Feb 2026 |
 | 1475 | [Final Prices With a Special Discount in a Shop](https://leetcode.com/problems/final-prices-with-a-special-discount-in-a-shop/) | 🟢 Easy | [C++](2026/02-February/14-02-26/1475-final-prices-with-a-special-discount-in-a-shop.cpp) | O(n) | 14 Feb 2026 |
