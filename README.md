@@ -23,7 +23,7 @@
 <img src="https://img.shields.io/badge/🔥%20streak-74%20days%20blazing-a3e635?style=flat-square&labelColor=0b0d1a" alt="current streak" />
 <img src="https://img.shields.io/badge/🏆%20longest%20streak-74%20days-fbbf24?style=flat-square&labelColor=0b0d1a" alt="longest streak" />
 <img src="https://img.shields.io/badge/⚔️%20contest%20rating-1585.61%20(top%2026.55%25)-22d3ee?style=flat-square&labelColor=0b0d1a" alt="contest rating" />
-<img src="https://img.shields.io/badge/📅%20practice%20days-235-f472b6?style=flat-square&labelColor=0b0d1a" alt="practice days" />
+<img src="https://img.shields.io/badge/📅%20practice%20days-236-f472b6?style=flat-square&labelColor=0b0d1a" alt="practice days" />
 <img src="https://img.shields.io/github/last-commit/yogender-ai/DSA-LeetCode-Journey?style=flat-square&labelColor=0b0d1a&color=8b5cf6&label=last%20commit" alt="last commit" />
 
 <br/><br/>
@@ -97,7 +97,7 @@
 
 ## 🔥 Streak & 2026 Calendar
 
-<img src="assets/streak.svg" width="100%" alt="Practice calendar — 74 day current streak, 74 day longest streak, 235 practice days" />
+<img src="assets/streak.svg" width="100%" alt="Practice calendar — 74 day current streak, 74 day longest streak, 236 practice days" />
 
 > 💡 **Streak Rule:** A day counts if at least one solution or algorithm lesson was written. Streaks and dates are synced in Indian Standard Time (IST).
 
@@ -107,8 +107,8 @@ All solutions are filed chronologically under `YYYY/MM-Month/DD-MM-YY/`. ↺ mar
 
 ```text
 📅 dates/
-├── 2026/  ·  270 solutions · 93 practice days
-│   ├── Oct  ██                     6 solutions · 5 days
+├── 2026/  ·  271 solutions · 94 practice days
+│   ├── Oct  ██                     7 solutions · 6 days
 │   ├── Sep  ████████              32 solutions · 17 days
 │   ├── Aug  ███                   12 solutions · 4 days
 │   ├── Jul  ████                  15 solutions · 7 days
@@ -124,10 +124,11 @@ All solutions are filed chronologically under `YYYY/MM-Month/DD-MM-YY/`. ↺ mar
 ```
 
 <details open>
-<summary><b>October 2026</b> — 6 solutions across 5 days</summary>
+<summary><b>October 2026</b> — 7 solutions across 6 days</summary>
 
 | Date | Problem / Lesson | Topic / Pattern | Diff | Code |
 |:--|:--|:--|:-:|:-:|
+| **07 Oct** (Wed) | 20. [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | Stack | 🟢 Easy | [Python](2026/10-October/07-10-26/0020-valid-parentheses.py) |
 | **06 Oct** (Tue) | 921. [Minimum Add to Make Parentheses Valid](https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/) | Stack | 🟡 Medium | [Python](2026/10-October/06-10-26/0921-minimum-add-to-make-parentheses-valid.py) |
 | **05 Oct** (Mon) | 856. [Score of Parentheses](https://leetcode.com/problems/score-of-parentheses/) | Stack | 🟡 Medium | [Python](2026/10-October/05-10-26/0856-score-of-parentheses.py) |
 | **04 Oct** (Sun) | 1. [Two Sum](https://leetcode.com/problems/two-sum/) | Arrays & Hashing | 🟢 Easy | [Python](2026/10-October/04-10-26/0001-two-sum.py) |
@@ -523,7 +524,7 @@ DSA-LeetCode-Journey/
 │   ├── 07-July        (7 active days)
 │   ├── 08-August      (4 active days)
 │   ├── 09-September   (21 active days)
-│   └── 10-October     (5 active days)
+│   └── 10-October     (6 active days)
 ├── notes/                        ← SQL deep dives & conceptual revision notes
 ├── sandbox/                      ← Kafka and ML practice sandbox
 ├── assets/                       ← generated banner, streak heatmap, RPG HUD, topic cards
@@ -658,7 +659,7 @@ DSA-LeetCode-Journey/
 
 | # | Problem | Difficulty | Solution | Time | Solved Dates |
 |:-:|:--|:-:|:-:|:-:|:--|
-| 20 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | 🟢 Easy | [C++](2026/10-October/01-10-26/0020-valid-parentheses.cpp) · [C++](2026/02-February/10-02-26/0020-valid-parentheses.cpp) | O(n) · Runtime: 0 ms (Beats 100.0%) | 10 Feb 2026, 01 Oct 2026 |
+| 20 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | 🟢 Easy | [Python](2026/10-October/07-10-26/0020-valid-parentheses.py) · [C++](2026/10-October/01-10-26/0020-valid-parentheses.cpp) · [C++](2026/02-February/10-02-26/0020-valid-parentheses.cpp) | O(n) · Runtime: 0 ms (Beats 100.0%) | 10 Feb 2026, 01 Oct 2026, 07 Oct 2026 |
 | 32 | [Longest Valid Parentheses](https://leetcode.com/problems/longest-valid-parentheses/) | 🔴 Hard | [C++](2026/02-February/11-02-26/0032-longest-valid-parentheses.cpp) | O(n) | 11 Feb 2026 |
 | 94 | [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/) | 🟢 Easy | [C++](2026/06-June/26-06-26/0094-binary-tree-inorder-traversal.cpp) | O(n) | 26 Jun 2026 |
 | 144 | [Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/) | 🟢 Easy | [C++](2026/06-June/26-06-26/0144-binary-tree-preorder-traversal.cpp) | O(n) | 26 Jun 2026 |

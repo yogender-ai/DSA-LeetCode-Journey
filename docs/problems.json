@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-07T10:32:38+05:30",
+ "generated": "2026-10-07T13:54:54+05:30",
  "user": "yashyogender",
  "repo": "yogender-ai/DSA-LeetCode-Journey",
  "stats": {
@@ -9,15 +9,30 @@
   "hard": 9,
   "streak": 74,
   "longest": 74,
-  "active": 235,
+  "active": 236,
   "rating": 1585.61,
   "topPct": 26.55,
   "level": 17,
   "rank": "Grandmaster Alchemist 👑",
-  "xp": 6875,
-  "repoEntries": 280
+  "xp": 6880,
+  "repoEntries": 281
  },
  "problems": [
+  {
+   "num": 20,
+   "title": "Valid Parentheses",
+   "difficulty": "Easy",
+   "pattern": "Stack",
+   "lang": "Python",
+   "path": "2026/10-October/07-10-26/0020-valid-parentheses.py",
+   "url": "https://leetcode.com/problems/valid-parentheses/",
+   "time": "O(n) · Runtime: 0 ms (Beats 100.0%)",
+   "space": "O(1) · Memory: 19.3 MB (Beats 65.0%)",
+   "dates": [
+    "2026-10-07"
+   ],
+   "kind": "leetcode"
+  },
   {
    "num": 921,
    "title": "Minimum Add to Make Parentheses Valid",
