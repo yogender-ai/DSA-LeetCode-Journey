@@ -22,7 +22,7 @@
 <!-- Streak, Contest Rating & Active Days -->
 <img src="https://img.shields.io/badge/🔥%20streak-74%20days%20blazing-a3e635?style=flat-square&labelColor=0b0d1a" alt="current streak" />
 <img src="https://img.shields.io/badge/🏆%20longest%20streak-74%20days-fbbf24?style=flat-square&labelColor=0b0d1a" alt="longest streak" />
-<img src="https://img.shields.io/badge/⚔️%20contest%20rating-1585.61%20(top%2026.55%25)-22d3ee?style=flat-square&labelColor=0b0d1a" alt="contest rating" />
+<img src="https://img.shields.io/badge/⚔️%20contest%20rating-1585.61%20(top%2026.58%25)-22d3ee?style=flat-square&labelColor=0b0d1a" alt="contest rating" />
 <img src="https://img.shields.io/badge/📅%20practice%20days-236-f472b6?style=flat-square&labelColor=0b0d1a" alt="practice days" />
 <img src="https://img.shields.io/github/last-commit/yogender-ai/DSA-LeetCode-Journey?style=flat-square&labelColor=0b0d1a&color=8b5cf6&label=last%20commit" alt="last commit" />
 
@@ -30,11 +30,11 @@
 
 ### ▶️ Algorithm Replay — a different one every day
 
-<img src="assets/algo_replay.svg" width="100%" alt="Maximum Average Subarray I executing step by step" />
+<img src="assets/algo_replay.svg" width="100%" alt="Shortest Path in Binary Matrix executing step by step" />
 
 > Not a loop of pictures. The algorithm is really run at build time and every
 > comparison, pointer move and window slide it makes becomes a frame. Today it is
-> **[#643 Maximum Average Subarray I](https://leetcode.com/problems/maximum-average-subarray-i/)** — Sliding Window, O(n).
+> **[#1091 Shortest Path in Binary Matrix](https://leetcode.com/problems/shortest-path-in-binary-matrix/)** — Graphs & Search, O(rows · cols).
 > Tomorrow it will be a different one.
 
 <br/>
