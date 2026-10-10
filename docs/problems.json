@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-10T17:37:50+05:30",
+ "generated": "2026-10-10T23:58:35+05:30",
  "user": "yashyogender",
  "repo": "yogender-ai/DSA-LeetCode-Journey",
  "stats": {
@@ -9,15 +9,30 @@
   "hard": 9,
   "streak": 74,
   "longest": 74,
-  "active": 237,
+  "active": 238,
   "rating": 1585.61,
   "topPct": 26.58,
   "level": 17,
   "rank": "Grandmaster Alchemist 👑",
-  "xp": 6885,
-  "repoEntries": 281
+  "xp": 6890,
+  "repoEntries": 282
  },
  "problems": [
+  {
+   "num": 7,
+   "title": "Reverse Integer",
+   "difficulty": "Medium",
+   "pattern": "Data Structures & Algorithms",
+   "lang": "C++",
+   "path": "2026/10-October/10-10-26/0007-reverse-integer.cpp",
+   "url": "https://leetcode.com/problems/reverse-integer/",
+   "time": "O(n) · Runtime: 0 ms (Beats 100.0%)",
+   "space": "O(1) · Memory: 8.6 MB (Beats 20.2%)",
+   "dates": [
+    "2026-10-10"
+   ],
+   "kind": "leetcode"
+  },
   {
    "num": 20,
    "title": "Valid Parentheses",

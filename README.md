@@ -23,7 +23,7 @@
 <img src="https://img.shields.io/badge/🔥%20streak-74%20days%20blazing-a3e635?style=flat-square&labelColor=0b0d1a" alt="current streak" />
 <img src="https://img.shields.io/badge/🏆%20longest%20streak-74%20days-fbbf24?style=flat-square&labelColor=0b0d1a" alt="longest streak" />
 <img src="https://img.shields.io/badge/⚔️%20contest%20rating-1585.61%20(top%2026.58%25)-22d3ee?style=flat-square&labelColor=0b0d1a" alt="contest rating" />
-<img src="https://img.shields.io/badge/📅%20practice%20days-237-f472b6?style=flat-square&labelColor=0b0d1a" alt="practice days" />
+<img src="https://img.shields.io/badge/📅%20practice%20days-238-f472b6?style=flat-square&labelColor=0b0d1a" alt="practice days" />
 <img src="https://img.shields.io/github/last-commit/yogender-ai/DSA-LeetCode-Journey?style=flat-square&labelColor=0b0d1a&color=8b5cf6&label=last%20commit" alt="last commit" />
 
 <br/><br/>
@@ -97,7 +97,7 @@
 
 ## 🔥 Streak & 2026 Calendar
 
-<img src="assets/streak.svg" width="100%" alt="Practice calendar — 74 day current streak, 74 day longest streak, 237 practice days" />
+<img src="assets/streak.svg" width="100%" alt="Practice calendar — 74 day current streak, 74 day longest streak, 238 practice days" />
 
 > 💡 **Streak Rule:** A day counts if at least one solution or algorithm lesson was written. Streaks and dates are synced in Indian Standard Time (IST).
 
@@ -107,8 +107,8 @@ All solutions are filed chronologically under `YYYY/MM-Month/DD-MM-YY/`. ↺ mar
 
 ```text
 📅 dates/
-├── 2026/  ·  271 solutions · 94 practice days
-│   ├── Oct  ██                     7 solutions · 6 days
+├── 2026/  ·  272 solutions · 95 practice days
+│   ├── Oct  ██                     8 solutions · 7 days
 │   ├── Sep  ████████              32 solutions · 17 days
 │   ├── Aug  ███                   12 solutions · 4 days
 │   ├── Jul  ████                  15 solutions · 7 days
@@ -124,10 +124,11 @@ All solutions are filed chronologically under `YYYY/MM-Month/DD-MM-YY/`. ↺ mar
 ```
 
 <details open>
-<summary><b>October 2026</b> — 7 solutions across 6 days</summary>
+<summary><b>October 2026</b> — 8 solutions across 7 days</summary>
 
 | Date | Problem / Lesson | Topic / Pattern | Diff | Code |
 |:--|:--|:--|:-:|:-:|
+| **10 Oct** (Sat) | 7. [Reverse Integer](https://leetcode.com/problems/reverse-integer/) | Data Structures & Algorithms | 🟡 Medium | [C++](2026/10-October/10-10-26/0007-reverse-integer.cpp) |
 | **07 Oct** (Wed) | 20. [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | Stack | 🟢 Easy | [Python](2026/10-October/07-10-26/0020-valid-parentheses.py) |
 | **06 Oct** (Tue) | 921. [Minimum Add to Make Parentheses Valid](https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/) | Stack | 🟡 Medium | [Python](2026/10-October/06-10-26/0921-minimum-add-to-make-parentheses-valid.py) |
 | **05 Oct** (Mon) | 856. [Score of Parentheses](https://leetcode.com/problems/score-of-parentheses/) | Stack | 🟡 Medium | [Python](2026/10-October/05-10-26/0856-score-of-parentheses.py) |
@@ -524,7 +525,7 @@ DSA-LeetCode-Journey/
 │   ├── 07-July        (7 active days)
 │   ├── 08-August      (4 active days)
 │   ├── 09-September   (21 active days)
-│   └── 10-October     (6 active days)
+│   └── 10-October     (7 active days)
 ├── notes/                        ← SQL deep dives & conceptual revision notes
 ├── sandbox/                      ← Kafka and ML practice sandbox
 ├── assets/                       ← generated banner, streak heatmap, RPG HUD, topic cards
@@ -808,11 +809,12 @@ DSA-LeetCode-Journey/
 
 ### 🧩 Data Structures & Algorithms
 
-> **Signal:** Core concepts, foundations, algorithms  ·  *14 LeetCode problems · 88 concept lessons*
+> **Signal:** Core concepts, foundations, algorithms  ·  *15 LeetCode problems · 88 concept lessons*
 
 | # | Problem | Difficulty | Solution | Time | Solved Dates |
 |:-:|:--|:-:|:-:|:-:|:--|
 | 2 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) | 🟡 Medium | [Python](2026/08-August/14-08-26/0002-add-two-numbers.py) | O(n) | 14 Aug 2026 |
+| 7 | [Reverse Integer](https://leetcode.com/problems/reverse-integer/) | 🟡 Medium | [C++](2026/10-October/10-10-26/0007-reverse-integer.cpp) | O(n) · Runtime: 0 ms (Beats 100.0%) | 10 Oct 2026 |
 | 24 | [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/) | 🟡 Medium | [Python](2026/09-September/23-09-26/0024-swap-nodes-in-pairs.py) · [Python](2026/09-September/24-09-26/0024-swap-nodes-in-pairs.py) | O(n) · Runtime: 8 ms (Beats 0.2%) | 23 Sep 2026, 24 Sep 2026 |
 | 40 | [Combination Sum II](https://leetcode.com/problems/combination-sum-ii/) | 🟡 Medium | [C++](2026/09-September/30-09-26/0040-combination-sum-ii.cpp) | O(n) · Runtime: 0 ms (Beats 100.0%) | 30 Sep 2026 |
 | 49 | [Group Anagrams](https://leetcode.com/problems/group-anagrams/) | 🟡 Medium | [Python](2026/08-August/14-08-26/0049-group-anagrams.py) | O(n * k log k)  (approach 2) | 14 Aug 2026 |
