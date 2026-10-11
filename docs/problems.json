@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-11T17:51:28+05:30",
+ "generated": "2026-10-11T22:49:44+05:30",
  "user": "yashyogender",
  "repo": "yogender-ai/DSA-LeetCode-Journey",
  "stats": {
@@ -9,15 +9,30 @@
   "hard": 9,
   "streak": 74,
   "longest": 74,
-  "active": 238,
+  "active": 239,
   "rating": 1585.61,
   "topPct": 26.58,
   "level": 17,
   "rank": "Grandmaster Alchemist 👑",
-  "xp": 6890,
-  "repoEntries": 282
+  "xp": 6895,
+  "repoEntries": 283
  },
  "problems": [
+  {
+   "num": 120,
+   "title": "Triangle",
+   "difficulty": "Medium",
+   "pattern": "Dynamic Programming",
+   "lang": "C++",
+   "path": "2026/10-October/11-10-26/0120-triangle.cpp",
+   "url": "https://leetcode.com/problems/triangle/",
+   "time": "O(n) · Runtime: 0 ms (Beats 100.0%)",
+   "space": "O(1) · Memory: 12.6 MB (Beats 91.4%)",
+   "dates": [
+    "2026-10-11"
+   ],
+   "kind": "leetcode"
+  },
   {
    "num": 7,
    "title": "Reverse Integer",
