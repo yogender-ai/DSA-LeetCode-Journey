@@ -23,18 +23,18 @@
 <img src="https://img.shields.io/badge/🔥%20streak-74%20days%20blazing-a3e635?style=flat-square&labelColor=0b0d1a" alt="current streak" />
 <img src="https://img.shields.io/badge/🏆%20longest%20streak-74%20days-fbbf24?style=flat-square&labelColor=0b0d1a" alt="longest streak" />
 <img src="https://img.shields.io/badge/⚔️%20contest%20rating-1585.61%20(top%2026.61%25)-22d3ee?style=flat-square&labelColor=0b0d1a" alt="contest rating" />
-<img src="https://img.shields.io/badge/📅%20practice%20days-241-f472b6?style=flat-square&labelColor=0b0d1a" alt="practice days" />
+<img src="https://img.shields.io/badge/📅%20practice%20days-242-f472b6?style=flat-square&labelColor=0b0d1a" alt="practice days" />
 <img src="https://img.shields.io/github/last-commit/yogender-ai/DSA-LeetCode-Journey?style=flat-square&labelColor=0b0d1a&color=8b5cf6&label=last%20commit" alt="last commit" />
 
 <br/><br/>
 
 ### ▶️ Algorithm Replay — a different one every day
 
-<img src="assets/algo_replay.svg" width="100%" alt="Maximum Subarray executing step by step" />
+<img src="assets/algo_replay.svg" width="100%" alt="Binary Search executing step by step" />
 
 > Not a loop of pictures. The algorithm is really run at build time and every
 > comparison, pointer move and window slide it makes becomes a frame. Today it is
-> **[#53 Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)** — Dynamic Programming, O(n).
+> **[#704 Binary Search](https://leetcode.com/problems/binary-search/)** — Binary Search, O(log n).
 > Tomorrow it will be a different one.
 
 <br/>
@@ -97,7 +97,7 @@
 
 ## 🔥 Streak & 2026 Calendar
 
-<img src="assets/streak.svg" width="100%" alt="Practice calendar — 74 day current streak, 74 day longest streak, 241 practice days" />
+<img src="assets/streak.svg" width="100%" alt="Practice calendar — 74 day current streak, 74 day longest streak, 242 practice days" />
 
 > 💡 **Streak Rule:** A day counts if at least one solution or algorithm lesson was written. Streaks and dates are synced in Indian Standard Time (IST).
 
@@ -107,8 +107,8 @@ All solutions are filed chronologically under `YYYY/MM-Month/DD-MM-YY/`. ↺ mar
 
 ```text
 📅 dates/
-├── 2026/  ·  274 solutions · 97 practice days
-│   ├── Oct  ███                   10 solutions · 9 days
+├── 2026/  ·  275 solutions · 98 practice days
+│   ├── Oct  ███                   11 solutions · 10 days
 │   ├── Sep  ████████              32 solutions · 17 days
 │   ├── Aug  ███                   12 solutions · 4 days
 │   ├── Jul  ████                  15 solutions · 7 days
@@ -124,10 +124,11 @@ All solutions are filed chronologically under `YYYY/MM-Month/DD-MM-YY/`. ↺ mar
 ```
 
 <details open>
-<summary><b>October 2026</b> — 10 solutions across 9 days</summary>
+<summary><b>October 2026</b> — 11 solutions across 10 days</summary>
 
 | Date | Problem / Lesson | Topic / Pattern | Diff | Code |
 |:--|:--|:--|:-:|:-:|
+| **16 Oct** (Fri) | 1. [Two Sum](https://leetcode.com/problems/two-sum/) | Arrays & Hashing | 🟢 Easy | [Python](2026/10-October/16-10-26/0001-two-sum.py) |
 | **13 Oct** (Tue) | 1. [Two Sum](https://leetcode.com/problems/two-sum/) | Arrays & Hashing | 🟢 Easy | [Python](2026/10-October/13-10-26/0001-two-sum.py) |
 | **11 Oct** (Sun) | 120. [Triangle](https://leetcode.com/problems/triangle/) | Dynamic Programming | 🟡 Medium | [C++](2026/10-October/11-10-26/0120-triangle.cpp) |
 | **10 Oct** (Sat) | 7. [Reverse Integer](https://leetcode.com/problems/reverse-integer/) | Data Structures & Algorithms | 🟡 Medium | [C++](2026/10-October/10-10-26/0007-reverse-integer.cpp) |
@@ -527,7 +528,7 @@ DSA-LeetCode-Journey/
 │   ├── 07-July        (7 active days)
 │   ├── 08-August      (4 active days)
 │   ├── 09-September   (21 active days)
-│   └── 10-October     (9 active days)
+│   └── 10-October     (10 active days)
 ├── notes/                        ← SQL deep dives & conceptual revision notes
 ├── sandbox/                      ← Kafka and ML practice sandbox
 ├── assets/                       ← generated banner, streak heatmap, RPG HUD, topic cards
@@ -545,7 +546,7 @@ DSA-LeetCode-Journey/
 
 | # | Problem | Difficulty | Solution | Time | Solved Dates |
 |:-:|:--|:-:|:-:|:-:|:--|
-| 1 | [Two Sum](https://leetcode.com/problems/two-sum/) | 🟢 Easy | [C++](2026/06-June/26-06-26/0001-two-sum.cpp) · [Python](2026/10-October/13-10-26/0001-two-sum.py) · [Python](2026/10-October/04-10-26/0001-two-sum.py) · [Python](2026/09-September/24-09-26/0001-two-sum.py) · [Python](2026/08-August/14-08-26/0001-two-sum.py) | O(n) | 26 Jun 2026, 14 Aug 2026, 24 Sep 2026, 04 Oct 2026, 13 Oct 2026 |
+| 1 | [Two Sum](https://leetcode.com/problems/two-sum/) | 🟢 Easy | [C++](2026/06-June/26-06-26/0001-two-sum.cpp) · [Python](2026/10-October/13-10-26/0001-two-sum.py) · [Python](2026/10-October/04-10-26/0001-two-sum.py) · [Python](2026/10-October/16-10-26/0001-two-sum.py) · [Python](2026/09-September/24-09-26/0001-two-sum.py) · [Python](2026/08-August/14-08-26/0001-two-sum.py) | O(n) | 26 Jun 2026, 14 Aug 2026, 24 Sep 2026, 04 Oct 2026, 13 Oct 2026, 16 Oct 2026 |
 | 13 | [Roman to Integer](https://leetcode.com/problems/roman-to-integer/) | 🟢 Easy | [C++](2026/10-October/01-10-26/0013-roman-to-integer.cpp) | O(n) · Runtime: 0 ms (Beats 100.0%) | 01 Oct 2026 |
 | 17 | [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) | 🟡 Medium | [C++](2026/02-February/06-02-26/0017-letter-combinations-of-a-phone-number.cpp) | O(n) | 06 Feb 2026 |
 | 26 | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) | 🟢 Easy | [C++](2026/06-June/26-06-26/0026-remove-duplicates-from-sorted-array.cpp) | O(n) | 26 Jun 2026 |
