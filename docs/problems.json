@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-17T20:43:37+05:30",
+ "generated": "2026-10-17T23:18:35+05:30",
  "user": "yashyogender",
  "repo": "yogender-ai/DSA-LeetCode-Journey",
  "stats": {
@@ -9,15 +9,30 @@
   "hard": 9,
   "streak": 74,
   "longest": 74,
-  "active": 242,
+  "active": 243,
   "rating": 1585.61,
   "topPct": 26.61,
   "level": 17,
   "rank": "Grandmaster Alchemist 👑",
-  "xp": 6910,
-  "repoEntries": 285
+  "xp": 6915,
+  "repoEntries": 286
  },
  "problems": [
+  {
+   "num": 1,
+   "title": "Two Sum",
+   "difficulty": "Easy",
+   "pattern": "Arrays & Hashing",
+   "lang": "Python",
+   "path": "2026/10-October/17-10-26/0001-two-sum.py",
+   "url": "https://leetcode.com/problems/two-sum/",
+   "time": "O(n) · Runtime: 3 ms (Beats 52.9%)",
+   "space": "O(1) · Memory: 19.9 MB (Beats 73.5%)",
+   "dates": [
+    "2026-10-17"
+   ],
+   "kind": "leetcode"
+  },
   {
    "num": 1,
    "title": "Two Sum",
