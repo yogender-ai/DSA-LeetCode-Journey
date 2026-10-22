@@ -30,11 +30,11 @@
 
 ### ▶️ Algorithm Replay — a different one every day
 
-<img src="assets/algo_replay.svg" width="100%" alt="Two Sum II - Input Array Is Sorted executing step by step" />
+<img src="assets/algo_replay.svg" width="100%" alt="Maximum Average Subarray I executing step by step" />
 
 > Not a loop of pictures. The algorithm is really run at build time and every
 > comparison, pointer move and window slide it makes becomes a frame. Today it is
-> **[#167 Two Sum II - Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/)** — Two Pointers, O(n).
+> **[#643 Maximum Average Subarray I](https://leetcode.com/problems/maximum-average-subarray-i/)** — Sliding Window, O(n).
 > Tomorrow it will be a different one.
 
 <br/>
@@ -175,7 +175,7 @@ All solutions are filed chronologically under `YYYY/MM-Month/DD-MM-YY/`. ↺ mar
 | **15 Sep** (Tue) | 56. [Merge Intervals](https://leetcode.com/problems/merge-intervals/) | Sorting & STL | 🟡 Medium | [Python](2026/09-September/15-09-26/0056-merge-intervals.py) |
 |  | 179. [Largest Number](https://leetcode.com/problems/largest-number/) | Sorting & STL | 🟡 Medium | [Python](2026/09-September/15-09-26/0179-largest-number.py) |
 |  | 1287. [Element Appearing More Than 25% In Sorted Array](https://leetcode.com/problems/element-appearing-more-than-25-in-sorted-array/) | Arrays & Hashing | 🟢 Easy | [Python](2026/09-September/15-09-26/1287-element-appearing-more-than-25-in-sorted-array.py) |
-| **12 Sep** (Sat) | 380. [Insert Delete GetRandom O(1)](https://leetcode.com/problems/insert-delete-getrandom-o1/) | Arrays & Hashing | 🟡 Medium | [Python](2026/09-September/12-09-26/0380-insert-delete-getrandom-o1.py) |
+| **12 Sep** (Sat) | 380. [Insert Delete GetRandom O(1)](https://leetcode.com/problems/insert-delete-getrandom-o1/) | Arrays & Hashing | 🟡 Medium | [Python](2026/09-September/14-09-26/0380-insert-delete-getrandom-o1.py) |
 |  | [Frequency Count](2026/09-September/12-09-26/frequency-count.py) | Data Structures & Algorithms | 🟡 Medium | [Python](2026/09-September/12-09-26/frequency-count.py) |
 |  | [Hashing](2026/09-September/12-09-26/hashing.py) | Arrays & Hashing | 🟡 Medium | [Python](2026/09-September/12-09-26/hashing.py) |
 | **05 Sep** (Sat) | 560. [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/) | Prefix Sum | 🟡 Medium | [Python](2026/09-September/05-09-26/0560-subarray-sum-equals-k.py) |
@@ -409,7 +409,7 @@ All solutions are filed chronologically under `YYYY/MM-Month/DD-MM-YY/`. ↺ mar
 | **14 Feb** (Sat) | 682. [Baseball Game](https://leetcode.com/problems/baseball-game/) | Stack | 🟢 Easy | [C++](2026/02-February/14-02-26/0682-baseball-game.cpp) |
 |  | 844. [Backspace String Compare](https://leetcode.com/problems/backspace-string-compare/) | Two Pointers | 🟢 Easy | [C++](2026/02-February/14-02-26/0844-backspace-string-compare.cpp) |
 |  | 1475. [Final Prices With a Special Discount in a Shop](https://leetcode.com/problems/final-prices-with-a-special-discount-in-a-shop/) | Stack | 🟢 Easy | [C++](2026/02-February/14-02-26/1475-final-prices-with-a-special-discount-in-a-shop.cpp) |
-|  | 1480. [Running Sum of 1d Array](https://leetcode.com/problems/running-sum-of-1d-array/) | Prefix Sum | 🟢 Easy | [C++](2026/09-September/04-09-26/1480-running-sum-of-1d-array.cpp) |
+|  | 1480. [Running Sum of 1d Array](https://leetcode.com/problems/running-sum-of-1d-array/) | Prefix Sum | 🟢 Easy | [C++](2026/02-February/14-02-26/1480-running-sum-of-1d-array.cpp) |
 |  | 1598. [Crawler Log Folder](https://leetcode.com/problems/crawler-log-folder/) | Stack | 🟢 Easy | [C++](2026/02-February/14-02-26/1598-crawler-log-folder.cpp) |
 |  | 1614. [Maximum Nesting Depth of the Parentheses](https://leetcode.com/problems/maximum-nesting-depth-of-the-parentheses/) | Stack | 🟢 Easy | [C++](2026/02-February/14-02-26/1614-maximum-nesting-depth-of-the-parentheses.cpp) |
 |  | 3838. [Weighted Word Mapping](https://leetcode.com/problems/weighted-word-mapping/) | Strings | 🟢 Easy | [C++](2026/02-February/14-02-26/3838-weighted-word-mapping.cpp) |
@@ -419,7 +419,7 @@ All solutions are filed chronologically under `YYYY/MM-Month/DD-MM-YY/`. ↺ mar
 |  | 1051. [Height Checker](https://leetcode.com/problems/height-checker/) | Sorting & STL | 🟢 Easy | [C++](2026/02-February/13-02-26/1051-height-checker.cpp) |
 |  | [Quicksort](2026/02-February/13-02-26/quicksort.cpp) | Data Structures & Algorithms | 🟡 Medium | [C++](2026/02-February/13-02-26/quicksort.cpp) |
 | **12 Feb** (Thu) | 905. [Sort Array By Parity](https://leetcode.com/problems/sort-array-by-parity/) | Two Pointers | 🟢 Easy | [C++](2026/02-February/12-02-26/0905-sort-array-by-parity.cpp) |
-|  | 965. [Univalued Binary Tree](https://leetcode.com/problems/univalued-binary-tree/) | Trees & BST | 🟢 Easy | [C++](2026/09-September/10-09-26/0965-univalued-binary-tree.cpp) |
+|  | 965. [Univalued Binary Tree](https://leetcode.com/problems/univalued-binary-tree/) | Trees & BST | 🟢 Easy | [C++](2026/02-February/12-02-26/0965-univalued-binary-tree.cpp) |
 |  | 977. [Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/) | Two Pointers | 🟢 Easy | [C++](2026/02-February/12-02-26/0977-squares-of-a-sorted-array.cpp) |
 |  | [Bubblesort](2026/02-February/12-02-26/bubblesort.cpp) | Data Structures & Algorithms | 🟡 Medium | [C++](2026/02-February/12-02-26/bubblesort.cpp) |
 |  | [Insertionsort](2026/02-February/12-02-26/insertionsort.cpp) | Data Structures & Algorithms | 🟡 Medium | [C++](2026/02-February/12-02-26/insertionsort.cpp) |
@@ -453,7 +453,7 @@ All solutions are filed chronologically under `YYYY/MM-Month/DD-MM-YY/`. ↺ mar
 |  | 3637. [Trionic Array I](https://leetcode.com/problems/trionic-array-i/) | Arrays & Hashing | 🟢 Easy | [C++](2026/02-February/03-02-26/3637-trionic-array-i.cpp) |
 |  | [Recursion](2026/02-February/03-02-26/recursion.cpp) | Data Structures & Algorithms | 🟡 Medium | [C++](2026/02-February/03-02-26/recursion.cpp) |
 | **02 Feb** (Mon) | 231. [Power of Two](https://leetcode.com/problems/power-of-two/) | Bit Manipulation | 🟢 Easy | [C++](2026/02-February/02-02-26/0231-power-of-two.cpp) |
-|  | 238. [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) | Prefix Sum | 🟡 Medium | [C++](2026/09-September/07-09-26/0238-product-of-array-except-self.cpp) |
+|  | 238. [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) | Prefix Sum | 🟡 Medium | [C++](2026/02-February/02-02-26/0238-product-of-array-except-self.cpp) |
 | **01 Feb** (Sun) | 3. [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | Sliding Window | 🟡 Medium | [C++](2026/02-February/01-02-26/0003-longest-substring-without-repeating-characters.cpp) |
 |  | 69. [Sqrt(x)](https://leetcode.com/problems/sqrtx/) | Binary Search | 🟢 Easy | [C++](2026/02-February/01-02-26/0069-sqrtx.cpp) |
 |  | 153. [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) | Binary Search | 🟡 Medium | [C++](2026/02-February/01-02-26/0153-find-minimum-in-rotated-sorted-array.cpp) |
@@ -548,7 +548,7 @@ DSA-LeetCode-Journey/
 
 | # | Problem | Difficulty | Solution | Time | Solved Dates |
 |:-:|:--|:-:|:-:|:-:|:--|
-| 1 | [Two Sum](https://leetcode.com/problems/two-sum/) | 🟢 Easy | [C++](2026/06-June/26-06-26/0001-two-sum.cpp) · [Python](2026/10-October/18-10-26/0001-two-sum.py) · [Python](2026/10-October/17-10-26/0001-two-sum.py) · [Python](2026/10-October/13-10-26/0001-two-sum.py) · [Python](2026/10-October/04-10-26/0001-two-sum.py) · [Python](2026/10-October/16-10-26/0001-two-sum.py) · [Python](2026/09-September/24-09-26/0001-two-sum.py) · [Python](2026/08-August/14-08-26/0001-two-sum.py) | O(n) | 26 Jun 2026, 14 Aug 2026, 24 Sep 2026, 04 Oct 2026, 13 Oct 2026, 16 Oct 2026, 17 Oct 2026, 18 Oct 2026 |
+| 1 | [Two Sum](https://leetcode.com/problems/two-sum/) | 🟢 Easy | [C++](2026/06-June/26-06-26/0001-two-sum.cpp) · [Python](2026/09-September/24-09-26/0001-two-sum.py) · [Python](2026/10-October/13-10-26/0001-two-sum.py) · [Python](2026/10-October/17-10-26/0001-two-sum.py) · [Python](2026/10-October/16-10-26/0001-two-sum.py) · [Python](2026/10-October/18-10-26/0001-two-sum.py) · [Python](2026/10-October/04-10-26/0001-two-sum.py) · [Python](2026/08-August/14-08-26/0001-two-sum.py) | O(n) | 26 Jun 2026, 14 Aug 2026, 24 Sep 2026, 04 Oct 2026, 13 Oct 2026, 16 Oct 2026, 17 Oct 2026, 18 Oct 2026 |
 | 13 | [Roman to Integer](https://leetcode.com/problems/roman-to-integer/) | 🟢 Easy | [C++](2026/10-October/01-10-26/0013-roman-to-integer.cpp) | O(n) · Runtime: 0 ms (Beats 100.0%) | 01 Oct 2026 |
 | 17 | [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) | 🟡 Medium | [C++](2026/02-February/06-02-26/0017-letter-combinations-of-a-phone-number.cpp) | O(n) | 06 Feb 2026 |
 | 26 | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) | 🟢 Easy | [C++](2026/06-June/26-06-26/0026-remove-duplicates-from-sorted-array.cpp) | O(n) | 26 Jun 2026 |
@@ -567,7 +567,7 @@ DSA-LeetCode-Journey/
 | 219 | [Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii/) | 🟢 Easy | [C++](2026/06-June/26-06-26/0219-contains-duplicate-ii.cpp) | O(n) | 26 Jun 2026 |
 | 303 | [Range Sum Query - Immutable](https://leetcode.com/problems/range-sum-query-immutable/) | 🟢 Easy | [C++](2026/06-June/26-06-26/0303-range-sum-query-immutable.cpp) | O(n) | 26 Jun 2026 |
 | 347 | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) | 🟡 Medium | [Python](2026/08-August/16-08-26/0347-top-k-frequent-elements.py) | O(n) | 16 Aug 2026 |
-| 380 | [Insert Delete GetRandom O(1)](https://leetcode.com/problems/insert-delete-getrandom-o1/) | 🟡 Medium | [Python](2026/09-September/12-09-26/0380-insert-delete-getrandom-o1.py) · [Python](2026/09-September/14-09-26/0380-insert-delete-getrandom-o1.py) | O(n) | 12 Sep 2026 |
+| 380 | [Insert Delete GetRandom O(1)](https://leetcode.com/problems/insert-delete-getrandom-o1/) | 🟡 Medium | [Python](2026/09-September/14-09-26/0380-insert-delete-getrandom-o1.py) · [Python](2026/09-September/12-09-26/0380-insert-delete-getrandom-o1.py) | O(n) | 12 Sep 2026 |
 | 383 | [Ransom Note](https://leetcode.com/problems/ransom-note/) | 🟢 Easy | [C++](2026/06-June/26-06-26/0383-ransom-note.cpp) | O(n) | 26 Jun 2026 |
 | 387 | [First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/) | 🟢 Easy | [C++](2026/06-June/26-06-26/0387-first-unique-character-in-a-string.cpp) | O(n) | 26 Jun 2026 |
 | 389 | [Find the Difference](https://leetcode.com/problems/find-the-difference/) | 🟢 Easy | [C++](2026/06-June/26-06-26/0389-find-the-difference.cpp) | O(n) | 26 Jun 2026 |
@@ -613,7 +613,7 @@ DSA-LeetCode-Journey/
 |:-:|:--|:-:|:-:|:-:|:--|
 | 1 | [Two Sum](https://leetcode.com/problems/two-sum/) | 🟢 Easy | [Python](2026/07-July/28-07-26/0001-two-sum.py) | O(n log n) | 28 Jul 2026 |
 | 11 | [Container With Most Water](https://leetcode.com/problems/container-with-most-water/) | 🟡 Medium | [Python](2026/08-August/19-08-26/0011-container-with-most-water.py) | O(n) | 19 Aug 2026 |
-| 15 | [3Sum](https://leetcode.com/problems/3sum/) | 🟡 Medium | [Python](2026/08-August/20-08-26/0015-3sum.py) · [C++](2026/05-May/20-05-26/0015-3sum.cpp) | O(n) | 20 May 2026, 20 Aug 2026 |
+| 15 | [3Sum](https://leetcode.com/problems/3sum/) | 🟡 Medium | [C++](2026/05-May/20-05-26/0015-3sum.cpp) · [Python](2026/08-August/20-08-26/0015-3sum.py) | O(n) | 20 May 2026, 20 Aug 2026 |
 | 31 | [Next Permutation](https://leetcode.com/problems/next-permutation/) | 🟡 Medium | [C++](2026/02-February/07-02-26/0031-next-permutation.cpp) | O(n) | 07 Feb 2026 |
 | 42 | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/) | 🔴 Hard | [C++](2026/02-February/09-02-26/0042-trapping-rain-water.cpp) | O(n) | 09 Feb 2026 |
 | 88 | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/) | 🟢 Easy | [C++](2026/06-June/26-06-26/0088-merge-sorted-array.cpp) | O(n) | 26 Jun 2026 |
@@ -643,7 +643,7 @@ DSA-LeetCode-Journey/
 
 | # | Problem | Difficulty | Solution | Time | Solved Dates |
 |:-:|:--|:-:|:-:|:-:|:--|
-| 3 | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | 🟡 Medium | [C++](2026/09-September/26-09-26/0003-longest-substring-without-repeating-characters.cpp) · [C++](2026/02-February/01-02-26/0003-longest-substring-without-repeating-characters.cpp) · [Python](2026/08-August/14-08-26/0003-longest-substring-without-repeating-characters.py) | O(n) · Runtime: 27 ms (Beats 69.5%) | 01 Feb 2026, 14 Aug 2026, 26 Sep 2026 |
+| 3 | [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) | 🟡 Medium | [C++](2026/02-February/01-02-26/0003-longest-substring-without-repeating-characters.cpp) · [C++](2026/09-September/26-09-26/0003-longest-substring-without-repeating-characters.cpp) · [Python](2026/08-August/14-08-26/0003-longest-substring-without-repeating-characters.py) | O(N) or O(N^2) depending on find/erase implementation, Space: O(N) | 01 Feb 2026, 14 Aug 2026, 26 Sep 2026 |
 | 219 | [Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii/) | 🟢 Easy | [C++](2025/12-December/28-12-25/0219-contains-duplicate-ii.cpp) | O(n) | 28 Dec 2025 |
 
 ### ➕ Prefix Sum
@@ -652,11 +652,11 @@ DSA-LeetCode-Journey/
 
 | # | Problem | Difficulty | Solution | Time | Solved Dates |
 |:-:|:--|:-:|:-:|:-:|:--|
-| 238 | [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) | 🟡 Medium | [C++](2026/09-September/07-09-26/0238-product-of-array-except-self.cpp) · [C++](2026/02-February/02-02-26/0238-product-of-array-except-self.cpp) | O(n), Space: O(1) | 02 Feb 2026 |
+| 238 | [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) | 🟡 Medium | [C++](2026/02-February/02-02-26/0238-product-of-array-except-self.cpp) · [C++](2026/09-September/07-09-26/0238-product-of-array-except-self.cpp) | O(n), Space: O(1) | 02 Feb 2026 |
 | 303 | [Range Sum Query - Immutable](https://leetcode.com/problems/range-sum-query-immutable/) | 🟢 Easy | [Python](2026/09-September/04-09-26/0303-range-sum-query-immutable.py) | O(n) | 04 Sep 2026 |
 | 560 | [Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/) | 🟡 Medium | [Python](2026/09-September/05-09-26/0560-subarray-sum-equals-k.py) | O(n) | 05 Sep 2026 |
 | 974 | [Subarray Sums Divisible by K](https://leetcode.com/problems/subarray-sums-divisible-by-k/) | 🟡 Medium | [Python](2026/09-September/05-09-26/0974-subarray-sums-divisible-by-k.py) | O(n) | 05 Sep 2026 |
-| 1480 | [Running Sum of 1d Array](https://leetcode.com/problems/running-sum-of-1d-array/) | 🟢 Easy | [C++](2026/09-September/04-09-26/1480-running-sum-of-1d-array.cpp) · [C++](2026/02-February/14-02-26/1480-running-sum-of-1d-array.cpp) | O(n) | 14 Feb 2026 |
+| 1480 | [Running Sum of 1d Array](https://leetcode.com/problems/running-sum-of-1d-array/) | 🟢 Easy | [C++](2026/02-February/14-02-26/1480-running-sum-of-1d-array.cpp) · [C++](2026/09-September/04-09-26/1480-running-sum-of-1d-array.cpp) | O(n) | 14 Feb 2026 |
 | 3788 | [Maximum Score of a Split](https://leetcode.com/problems/maximum-score-of-a-split/) | 🟡 Medium | [C++](2025/12-December/28-12-25/3788-maximum-score-of-a-split.cpp) | O(n) | 28 Dec 2025 |
 
 ### 📚 Stack
@@ -665,7 +665,7 @@ DSA-LeetCode-Journey/
 
 | # | Problem | Difficulty | Solution | Time | Solved Dates |
 |:-:|:--|:-:|:-:|:-:|:--|
-| 20 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | 🟢 Easy | [Python](2026/10-October/07-10-26/0020-valid-parentheses.py) · [C++](2026/10-October/01-10-26/0020-valid-parentheses.cpp) · [C++](2026/02-February/10-02-26/0020-valid-parentheses.cpp) | O(n) · Runtime: 0 ms (Beats 100.0%) | 10 Feb 2026, 01 Oct 2026, 07 Oct 2026 |
+| 20 | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) | 🟢 Easy | [C++](2026/02-February/10-02-26/0020-valid-parentheses.cpp) · [C++](2026/10-October/01-10-26/0020-valid-parentheses.cpp) · [Python](2026/10-October/07-10-26/0020-valid-parentheses.py) | O(n) | 10 Feb 2026, 01 Oct 2026, 07 Oct 2026 |
 | 32 | [Longest Valid Parentheses](https://leetcode.com/problems/longest-valid-parentheses/) | 🔴 Hard | [C++](2026/02-February/11-02-26/0032-longest-valid-parentheses.cpp) | O(n) | 11 Feb 2026 |
 | 94 | [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/) | 🟢 Easy | [C++](2026/06-June/26-06-26/0094-binary-tree-inorder-traversal.cpp) | O(n) | 26 Jun 2026 |
 | 144 | [Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/) | 🟢 Easy | [C++](2026/06-June/26-06-26/0144-binary-tree-preorder-traversal.cpp) | O(n) | 26 Jun 2026 |
@@ -711,7 +711,7 @@ DSA-LeetCode-Journey/
 | 102 | [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/) | 🟡 Medium | [C++](2026/02-February/18-02-26/0102-binary-tree-level-order-traversal.cpp) | O(n) | 18 Feb 2026 |
 | 104 | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/) | 🟢 Easy | [C++](2026/06-June/26-06-26/0104-maximum-depth-of-binary-tree.cpp) | O(n) | 26 Jun 2026 |
 | 236 | [Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/) | 🟡 Medium | [C++](2026/02-February/18-02-26/0236-lowest-common-ancestor-of-a-binary-tree.cpp) | O(n) | 18 Feb 2026 |
-| 965 | [Univalued Binary Tree](https://leetcode.com/problems/univalued-binary-tree/) | 🟢 Easy | [C++](2026/09-September/10-09-26/0965-univalued-binary-tree.cpp) · [C++](2026/02-February/12-02-26/0965-univalued-binary-tree.cpp) | O(n) | 12 Feb 2026 |
+| 965 | [Univalued Binary Tree](https://leetcode.com/problems/univalued-binary-tree/) | 🟢 Easy | [C++](2026/02-February/12-02-26/0965-univalued-binary-tree.cpp) · [C++](2026/09-September/10-09-26/0965-univalued-binary-tree.cpp) | O(n) | 12 Feb 2026 |
 
 ### 🕸️ Graphs & Search
 
@@ -733,7 +733,7 @@ DSA-LeetCode-Journey/
 | 120 | [Triangle](https://leetcode.com/problems/triangle/) | 🟡 Medium | [C++](2026/10-October/11-10-26/0120-triangle.cpp) | O(n) · Runtime: 0 ms (Beats 100.0%) | 11 Oct 2026 |
 | 121 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | 🟢 Easy | [C++](2026/06-June/26-06-26/0121-best-time-to-buy-and-sell-stock.cpp) | O(n) | 26 Jun 2026 |
 | 338 | [Counting Bits](https://leetcode.com/problems/counting-bits/) | 🟢 Easy | [C++](2026/02-February/16-02-26/0338-counting-bits.cpp) | O(n) | 16 Feb 2026 |
-| 509 | [Fibonacci Number](https://leetcode.com/problems/fibonacci-number/) | 🟢 Easy | [Python](2026/09-September/23-09-26/0509-fibonacci-number.py) · [C++](2026/02-February/03-02-26/0509-fibonacci-number.cpp) | O(n) · Runtime: 683 ms (Beats 7.4%) | 03 Feb 2026, 23 Sep 2026 |
+| 509 | [Fibonacci Number](https://leetcode.com/problems/fibonacci-number/) | 🟢 Easy | [C++](2026/02-February/03-02-26/0509-fibonacci-number.cpp) · [Python](2026/09-September/23-09-26/0509-fibonacci-number.py) | O(n) | 03 Feb 2026, 23 Sep 2026 |
 | 1411 | [Number of Ways to Paint N × 3 Grid](https://leetcode.com/problems/number-of-ways-to-paint-n-3-grid/) | 🔴 Hard | [C++](2026/01-January/03-01-26/1411-number-of-ways-to-paint-n-3-grid.cpp) | O(n) | 03 Jan 2026 |
 
 ### 🔄 Matrix / Simulation
@@ -743,7 +743,7 @@ DSA-LeetCode-Journey/
 | # | Problem | Difficulty | Solution | Time | Solved Dates |
 |:-:|:--|:-:|:-:|:-:|:--|
 | 48 | [Rotate Image](https://leetcode.com/problems/rotate-image/) | 🟡 Medium | [Python](2026/09-September/18-09-26/0048-rotate-image.py) | O(n) | 18 Sep 2026 |
-| 54 | [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/) | 🟡 Medium | [Python](2026/09-September/28-09-26/0054-spiral-matrix.py) · [Python](2026/09-September/19-09-26/0054-spiral-matrix.py) | O(n) · Runtime: 0 ms (Beats 100.0%) | 19 Sep 2026, 28 Sep 2026 |
+| 54 | [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/) | 🟡 Medium | [Python](2026/09-September/19-09-26/0054-spiral-matrix.py) · [Python](2026/09-September/28-09-26/0054-spiral-matrix.py) | O(n) | 19 Sep 2026, 28 Sep 2026 |
 
 ### 🔤 Strings
 
@@ -821,10 +821,10 @@ DSA-LeetCode-Journey/
 |:-:|:--|:-:|:-:|:-:|:--|
 | 2 | [Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) | 🟡 Medium | [Python](2026/08-August/14-08-26/0002-add-two-numbers.py) | O(n) | 14 Aug 2026 |
 | 7 | [Reverse Integer](https://leetcode.com/problems/reverse-integer/) | 🟡 Medium | [C++](2026/10-October/10-10-26/0007-reverse-integer.cpp) | O(n) · Runtime: 0 ms (Beats 100.0%) | 10 Oct 2026 |
-| 24 | [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/) | 🟡 Medium | [Python](2026/09-September/23-09-26/0024-swap-nodes-in-pairs.py) · [Python](2026/09-September/24-09-26/0024-swap-nodes-in-pairs.py) | O(n) · Runtime: 8 ms (Beats 0.2%) | 23 Sep 2026, 24 Sep 2026 |
+| 24 | [Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/) | 🟡 Medium | [Python](2026/09-September/24-09-26/0024-swap-nodes-in-pairs.py) · [Python](2026/09-September/23-09-26/0024-swap-nodes-in-pairs.py) | O(n) · Runtime: 13 ms (Beats 0.2%) | 23 Sep 2026, 24 Sep 2026 |
 | 40 | [Combination Sum II](https://leetcode.com/problems/combination-sum-ii/) | 🟡 Medium | [C++](2026/09-September/30-09-26/0040-combination-sum-ii.cpp) | O(n) · Runtime: 0 ms (Beats 100.0%) | 30 Sep 2026 |
 | 49 | [Group Anagrams](https://leetcode.com/problems/group-anagrams/) | 🟡 Medium | [Python](2026/08-August/14-08-26/0049-group-anagrams.py) | O(n * k log k)  (approach 2) | 14 Aug 2026 |
-| 50 | [Pow(x, n)](https://leetcode.com/problems/powx-n/) | 🟡 Medium | [Python](2026/09-September/23-09-26/0050-powx-n.py) · [C++](2026/02-February/03-02-26/0050-powx-n.cpp) | O(n) · Runtime: 0 ms (Beats 100.0%) | 03 Feb 2026, 23 Sep 2026 |
+| 50 | [Pow(x, n)](https://leetcode.com/problems/powx-n/) | 🟡 Medium | [C++](2026/02-February/03-02-26/0050-powx-n.cpp) · [Python](2026/09-September/23-09-26/0050-powx-n.py) | O(n) | 03 Feb 2026, 23 Sep 2026 |
 | 83 | [Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/) | 🟢 Easy | [C++](2026/06-June/26-06-26/0083-remove-duplicates-from-sorted-list.cpp) | O(n) | 26 Jun 2026 |
 | 217 | [Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) | 🟢 Easy | [C++](2025/12-December/24-12-25/0217-contains-duplicate.cpp) · [Python](2026/08-August/14-08-26/0217-contains-duplicate.py) | O(n) | 24 Dec 2025, 14 Aug 2026 |
 | 242 | [Valid Anagram](https://leetcode.com/problems/valid-anagram/) | 🟢 Easy | [Python](2026/08-August/14-08-26/0242-valid-anagram.py) | O(n^2) (list.index + pop) | 14 Aug 2026 |
@@ -846,22 +846,22 @@ DSA-LeetCode-Journey/
 | [Basic Recursion](2026/06-June/26-06-26/basic-recursion.cpp) | C++ | O(n) | 26 Jun 2026 |
 | [Basics](2026/07-July/29-07-26/basics.py) | Python | O(n) | 29 Jul 2026 |
 | [Binary Tree](2026/06-June/26-06-26/binary-tree.cpp) | C++ | O(n) | 26 Jun 2026 |
-| [Bitmanipulation](2026/02-February/16-02-26/bitmanipulation.cpp) | C++ | O(n) | 16 Feb 2026 |
 | [Bitmanipulation](2026/02-February/17-02-26/bitmanipulation.cpp) | C++ | O(n) | 17 Feb 2026 |
+| [Bitmanipulation](2026/02-February/16-02-26/bitmanipulation.cpp) | C++ | O(n) | 16 Feb 2026 |
 | [Bst Deletion](2026/06-June/26-06-26/bst-deletion.cpp) | C++ | O(n) | 26 Jun 2026 |
 | [Bst Insertion](2026/06-June/26-06-26/bst-insertion.cpp) | C++ | O(n) | 26 Jun 2026 |
 | [Bst Traversal](2026/06-June/26-06-26/bst-traversal.cpp) | C++ | O(n) | 26 Jun 2026 |
 | [Bubblesort](2026/06-June/26-06-26/bubblesort.cpp) | C++ | O(n) | 26 Jun 2026 |
 | [Bubblesort](2026/02-February/12-02-26/bubblesort.cpp) | C++ | O(n) | 12 Feb 2026 |
+| [Commands](2026/03-March/30-03-26/commands.sql) | SQL | O(n) | 30 Mar 2026 |
 | [Commands](2026/03-March/27-03-26/commands.sql) | SQL | O(n) | 27 Mar 2026 |
 | [Commands](2026/03-March/29-03-26/commands.sql) | SQL | O(n) | 29 Mar 2026 |
-| [Commands](2026/03-March/30-03-26/commands.sql) | SQL | O(n) | 30 Mar 2026 |
-| [Commands](2026/04-April/12-04-26/commands.sql) | SQL | O(n) | 12 Apr 2026 |
-| [Commands](2026/04-April/11-04-26/commands.sql) | SQL | O(n) | 11 Apr 2026 |
-| [Commands](2026/04-April/09-04-26/commands.sql) | SQL | O(n) | 09 Apr 2026 |
 | [Commands](2026/05-May/15-05-26/commands.sql) | SQL | O(n) | 15 May 2026 |
 | [Commands](2026/05-May/18-05-26/commands.sql) | SQL | O(n) | 18 May 2026 |
 | [Commands](2026/05-May/17-05-26/commands.sql) | SQL | O(n) | 17 May 2026 |
+| [Commands](2026/04-April/09-04-26/commands.sql) | SQL | O(n) | 09 Apr 2026 |
+| [Commands](2026/04-April/11-04-26/commands.sql) | SQL | O(n) | 11 Apr 2026 |
+| [Commands](2026/04-April/12-04-26/commands.sql) | SQL | O(n) | 12 Apr 2026 |
 | [Coversion Matrix To Adjacency](2026/04-April/08-04-26/coversion-matrix-to-adjacency.cpp) | C++ | O(n) | 08 Apr 2026 |
 | [Creation](2026/06-June/26-06-26/creation.cpp) | C++ | O(n) | 26 Jun 2026 |
 | [Cycle Detection](2026/03-March/26-03-26/cycle-detection.cpp) | C++ | O(n) | 26 Mar 2026 |
@@ -882,8 +882,8 @@ DSA-LeetCode-Journey/
 | [Graph Matrix](2026/04-April/06-04-26/graph-matrix.cpp) | C++ | O(n) | 06 Apr 2026 |
 | [Graphbfs](2026/03-March/23-03-26/graphbfs.cpp) | C++ | O(n) | 23 Mar 2026 |
 | [H1](2026/06-June/26-06-26/h1.cpp) | C++ | O(n) | 26 Jun 2026 |
-| [Inorder](2026/02-February/18-02-26/inorder.cpp) | C++ | O(n) | 18 Feb 2026 |
 | [Inorder](2026/02-February/22-02-26/inorder.cpp) | C++ | O(n) | 22 Feb 2026 |
+| [Inorder](2026/02-February/18-02-26/inorder.cpp) | C++ | O(n) | 18 Feb 2026 |
 | [Insertion Sorting](2026/06-June/26-06-26/insertion-sorting.cpp) | C++ | O(n) | 26 Jun 2026 |
 | [Insertionsort](2026/02-February/12-02-26/insertionsort.cpp) | C++ | O(n) | 12 Feb 2026 |
 | [Kmp Pattern Search](2026/07-July/29-07-26/kmp-pattern-search.cpp) | C++ | O(n + m) | 29 Jul 2026 |
@@ -904,11 +904,11 @@ DSA-LeetCode-Journey/
 | [Producer](2026/06-June/26-06-26/producer.py) | Python | O(n) | 26 Jun 2026 |
 | [Python Case2 Is Wrong](2026/06-June/26-06-26/python-case2-is-wrong.cpp) | C++ | O(n) | 26 Jun 2026 |
 | [Q1. Best Reachable Tower©Leetcode(17 01)](2026/06-June/26-06-26/q1-best-reachable-tower-leetcode-17-01.cpp) | C++ | O(n) | 26 Jun 2026 |
-| [Queue](2026/02-February/15-02-26/queue.cpp) | C++ | O(n) | 15 Feb 2026 |
 | [Queue](2026/05-May/09-05-26/queue.cpp) | C++ | O(n) | 09 May 2026 |
+| [Queue](2026/02-February/15-02-26/queue.cpp) | C++ | O(n) | 15 Feb 2026 |
 | [Quick Sort](2026/06-June/26-06-26/quick-sort.cpp) | C++ | O(n) | 26 Jun 2026 |
-| [Quicksort](2026/02-February/13-02-26/quicksort.cpp) | C++ | O(n) | 13 Feb 2026 |
 | [Quicksort](2026/02-February/12-02-26/quicksort.cpp) | C++ | O(n) | 12 Feb 2026 |
+| [Quicksort](2026/02-February/13-02-26/quicksort.cpp) | C++ | O(n) | 13 Feb 2026 |
 | [Recursion](2026/02-February/03-02-26/recursion.cpp) | C++ | O(n) | 03 Feb 2026 |
 | [Recursion Revision](2026/02-February/08-02-26/recursion-revision.cpp) | C++ | O(n) | 08 Feb 2026 |
 | [Secondlargest](2026/06-June/26-06-26/secondlargest.cpp) | C++ | O(n) | 26 Jun 2026 |
