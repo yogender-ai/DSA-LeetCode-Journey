@@ -30,11 +30,11 @@
 
 ### ▶️ Algorithm Replay — a different one every day
 
-<img src="assets/algo_replay.svg" width="100%" alt="Shortest Path in Binary Matrix executing step by step" />
+<img src="assets/algo_replay.svg" width="100%" alt="Maximum Subarray executing step by step" />
 
 > Not a loop of pictures. The algorithm is really run at build time and every
 > comparison, pointer move and window slide it makes becomes a frame. Today it is
-> **[#1091 Shortest Path in Binary Matrix](https://leetcode.com/problems/shortest-path-in-binary-matrix/)** — Graphs & Search, O(rows · cols).
+> **[#53 Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)** — Dynamic Programming, O(n).
 > Tomorrow it will be a different one.
 
 <br/>
