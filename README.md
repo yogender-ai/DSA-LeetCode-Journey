@@ -167,7 +167,7 @@ All solutions are filed chronologically under `YYYY/MM-Month/DD-MM-YY/`. ↺ mar
 |  | 3498. [Reverse Degree of a String](https://leetcode.com/problems/reverse-degree-of-a-string/) | Strings | 🟢 Easy | [Python](2026/09-September/20-09-26/3498-reverse-degree-of-a-string.py) |
 | **19 Sep** (Sat) | 54. [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/) | Matrix / Simulation | 🟡 Medium | [Python](2026/09-September/19-09-26/0054-spiral-matrix.py) |
 |  | 443. [String Compression](https://leetcode.com/problems/string-compression/) | Two Pointers | 🟡 Medium | [Python](2026/09-September/19-09-26/0443-string-compression.py) |
-|  | 1047. [Remove All Adjacent Duplicates In String](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/) | Stack | 🟢 Easy | [Python](2026/09-September/20-09-26/1047-remove-all-adjacent-duplicates-in-string.py) |
+|  | 1047. [Remove All Adjacent Duplicates In String](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/) | Stack | 🟢 Easy | [Python](2026/09-September/19-09-26/1047-remove-all-adjacent-duplicates-in-string.py) |
 |  | [String Building](2026/09-September/19-09-26/string-building.py) | Data Structures & Algorithms | 🟡 Medium | [Python](2026/09-September/19-09-26/string-building.py) |
 | **18 Sep** (Fri) | 48. [Rotate Image](https://leetcode.com/problems/rotate-image/) | Matrix / Simulation | 🟡 Medium | [Python](2026/09-September/18-09-26/0048-rotate-image.py) |
 |  | 73. [Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes/) | Arrays & Hashing | 🟡 Medium | [Python](2026/09-September/18-09-26/0073-set-matrix-zeroes.py) |
@@ -548,7 +548,7 @@ DSA-LeetCode-Journey/
 
 | # | Problem | Difficulty | Solution | Time | Solved Dates |
 |:-:|:--|:-:|:-:|:-:|:--|
-| 1 | [Two Sum](https://leetcode.com/problems/two-sum/) | 🟢 Easy | [Python](2026/08-August/14-08-26/0001-two-sum.py) · [Python](2026/10-October/18-10-26/0001-two-sum.py) · [Python](2026/10-October/17-10-26/0001-two-sum.py) · [Python](2026/10-October/16-10-26/0001-two-sum.py) · [Python](2026/10-October/13-10-26/0001-two-sum.py) · [Python](2026/10-October/04-10-26/0001-two-sum.py) · [C++](2026/06-June/26-06-26/0001-two-sum.cpp) · [Python](2026/09-September/24-09-26/0001-two-sum.py) | O(n) | 26 Jun 2026, 14 Aug 2026, 24 Sep 2026, 04 Oct 2026, 13 Oct 2026, 16 Oct 2026, 17 Oct 2026, 18 Oct 2026 |
+| 1 | [Two Sum](https://leetcode.com/problems/two-sum/) | 🟢 Easy | [Python](2026/10-October/18-10-26/0001-two-sum.py) · [Python](2026/10-October/17-10-26/0001-two-sum.py) · [Python](2026/10-October/13-10-26/0001-two-sum.py) · [Python](2026/10-October/04-10-26/0001-two-sum.py) · [Python](2026/10-October/16-10-26/0001-two-sum.py) · [Python](2026/08-August/14-08-26/0001-two-sum.py) · [Python](2026/09-September/24-09-26/0001-two-sum.py) · [C++](2026/06-June/26-06-26/0001-two-sum.cpp) | O(n) · Runtime: 2 ms (Beats 55.4%) | 26 Jun 2026, 14 Aug 2026, 24 Sep 2026, 04 Oct 2026, 13 Oct 2026, 16 Oct 2026, 17 Oct 2026, 18 Oct 2026 |
 | 13 | [Roman to Integer](https://leetcode.com/problems/roman-to-integer/) | 🟢 Easy | [C++](2026/10-October/01-10-26/0013-roman-to-integer.cpp) | O(n) · Runtime: 0 ms (Beats 100.0%) | 01 Oct 2026 |
 | 17 | [Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) | 🟡 Medium | [C++](2026/02-February/06-02-26/0017-letter-combinations-of-a-phone-number.cpp) | O(n) | 06 Feb 2026 |
 | 26 | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) | 🟢 Easy | [C++](2026/06-June/26-06-26/0026-remove-duplicates-from-sorted-array.cpp) | O(n) | 26 Jun 2026 |
@@ -613,13 +613,13 @@ DSA-LeetCode-Journey/
 |:-:|:--|:-:|:-:|:-:|:--|
 | 1 | [Two Sum](https://leetcode.com/problems/two-sum/) | 🟢 Easy | [Python](2026/07-July/28-07-26/0001-two-sum.py) | O(n log n) | 28 Jul 2026 |
 | 11 | [Container With Most Water](https://leetcode.com/problems/container-with-most-water/) | 🟡 Medium | [Python](2026/08-August/19-08-26/0011-container-with-most-water.py) | O(n) | 19 Aug 2026 |
-| 15 | [3Sum](https://leetcode.com/problems/3sum/) | 🟡 Medium | [C++](2026/05-May/20-05-26/0015-3sum.cpp) · [Python](2026/08-August/20-08-26/0015-3sum.py) | O(n) | 20 May 2026, 20 Aug 2026 |
+| 15 | [3Sum](https://leetcode.com/problems/3sum/) | 🟡 Medium | [Python](2026/08-August/20-08-26/0015-3sum.py) · [C++](2026/05-May/20-05-26/0015-3sum.cpp) | O(n) | 20 May 2026, 20 Aug 2026 |
 | 31 | [Next Permutation](https://leetcode.com/problems/next-permutation/) | 🟡 Medium | [C++](2026/02-February/07-02-26/0031-next-permutation.cpp) | O(n) | 07 Feb 2026 |
 | 42 | [Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/) | 🔴 Hard | [C++](2026/02-February/09-02-26/0042-trapping-rain-water.cpp) | O(n) | 09 Feb 2026 |
 | 88 | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/) | 🟢 Easy | [C++](2026/06-June/26-06-26/0088-merge-sorted-array.cpp) | O(n) | 26 Jun 2026 |
 | 125 | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/) | 🟢 Easy | [C++](2025/08-August/04-08-25/0125-valid-palindrome.cpp) | O(n) | 04 Aug 2025 |
 | 167 | [Two Sum II - Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) | 🟡 Medium | [C++](2026/05-May/20-05-26/0167-two-sum-ii-input-array-is-sorted.cpp) | O(n) | 20 May 2026 |
-| 283 | [Move Zeroes](https://leetcode.com/problems/move-zeroes/) | 🟢 Easy | [C++](2026/06-June/26-06-26/0283-move-zeroes.cpp) · [C++](2026/02-February/01-02-26/0283-move-zeroes.cpp) | O(n) | 01 Feb 2026, 26 Jun 2026 |
+| 283 | [Move Zeroes](https://leetcode.com/problems/move-zeroes/) | 🟢 Easy | [C++](2026/02-February/01-02-26/0283-move-zeroes.cpp) · [C++](2026/06-June/26-06-26/0283-move-zeroes.cpp) | O(n), Space: O(n) | 01 Feb 2026, 26 Jun 2026 |
 | 344 | [Reverse String](https://leetcode.com/problems/reverse-string/) | 🟢 Easy | [C++](2026/02-February/03-02-26/0344-reverse-string.cpp) | O(n) | 03 Feb 2026 |
 | 349 | [Intersection of Two Arrays](https://leetcode.com/problems/intersection-of-two-arrays/) | 🟢 Easy | [C++](2026/06-June/26-06-26/0349-intersection-of-two-arrays.cpp) | O(n) | 26 Jun 2026 |
 | 443 | [String Compression](https://leetcode.com/problems/string-compression/) | 🟡 Medium | [Python](2026/09-September/19-09-26/0443-string-compression.py) | O(n) | 19 Sep 2026 |
@@ -676,7 +676,7 @@ DSA-LeetCode-Journey/
 | 739 | [Daily Temperatures](https://leetcode.com/problems/daily-temperatures/) | 🟡 Medium | [C++](2026/02-February/15-02-26/0739-daily-temperatures.cpp) | O(n) | 15 Feb 2026 |
 | 856 | [Score of Parentheses](https://leetcode.com/problems/score-of-parentheses/) | 🟡 Medium | [Python](2026/10-October/05-10-26/0856-score-of-parentheses.py) | O(n) · Runtime: 0 ms (Beats 100.0%) | 05 Oct 2026 |
 | 921 | [Minimum Add to Make Parentheses Valid](https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/) | 🟡 Medium | [Python](2026/10-October/06-10-26/0921-minimum-add-to-make-parentheses-valid.py) | O(n) · Runtime: 0 ms (Beats 100.0%) | 06 Oct 2026 |
-| 1047 | [Remove All Adjacent Duplicates In String](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/) | 🟢 Easy | [Python](2026/09-September/20-09-26/1047-remove-all-adjacent-duplicates-in-string.py) · [Python](2026/09-September/19-09-26/1047-remove-all-adjacent-duplicates-in-string.py) | O(n) | 19 Sep 2026, 20 Sep 2026 |
+| 1047 | [Remove All Adjacent Duplicates In String](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/) | 🟢 Easy | [Python](2026/09-September/19-09-26/1047-remove-all-adjacent-duplicates-in-string.py) · [Python](2026/09-September/20-09-26/1047-remove-all-adjacent-duplicates-in-string.py) | O(n) | 19 Sep 2026, 20 Sep 2026 |
 | 1441 | [Build an Array With Stack Operations](https://leetcode.com/problems/build-an-array-with-stack-operations/) | 🟡 Medium | [C++](2026/02-February/17-02-26/1441-build-an-array-with-stack-operations.cpp) | O(n) | 17 Feb 2026 |
 | 1475 | [Final Prices With a Special Discount in a Shop](https://leetcode.com/problems/final-prices-with-a-special-discount-in-a-shop/) | 🟢 Easy | [C++](2026/02-February/14-02-26/1475-final-prices-with-a-special-discount-in-a-shop.cpp) | O(n) | 14 Feb 2026 |
 | 1598 | [Crawler Log Folder](https://leetcode.com/problems/crawler-log-folder/) | 🟢 Easy | [C++](2026/02-February/14-02-26/1598-crawler-log-folder.cpp) | O(n) | 14 Feb 2026 |
@@ -690,7 +690,7 @@ DSA-LeetCode-Journey/
 | # | Problem | Difficulty | Solution | Time | Solved Dates |
 |:-:|:--|:-:|:-:|:-:|:--|
 | 4 | [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/) | 🔴 Hard | [Python](2026/08-August/14-08-26/0004-median-of-two-sorted-arrays.py) | O(n) | 14 Aug 2026 |
-| 69 | [Sqrt(x)](https://leetcode.com/problems/sqrtx/) | 🟢 Easy | [C++](2026/06-June/26-06-26/0069-sqrtx.cpp) · [C++](2026/02-February/01-02-26/0069-sqrtx.cpp) | O(n) | 01 Feb 2026, 26 Jun 2026 |
+| 69 | [Sqrt(x)](https://leetcode.com/problems/sqrtx/) | 🟢 Easy | [C++](2026/02-February/01-02-26/0069-sqrtx.cpp) · [C++](2026/06-June/26-06-26/0069-sqrtx.cpp) | O(log x), Space: O(1) | 01 Feb 2026, 26 Jun 2026 |
 | 153 | [Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) | 🟡 Medium | [C++](2026/02-February/01-02-26/0153-find-minimum-in-rotated-sorted-array.cpp) | O(log n), Space: O(1) | 01 Feb 2026 |
 | 162 | [Find Peak Element](https://leetcode.com/problems/find-peak-element/) | 🟡 Medium | [C++](2026/02-February/01-02-26/0162-find-peak-element.cpp) | O(n), Space: O(1) | 01 Feb 2026 |
 | 222 | [Count Complete Tree Nodes](https://leetcode.com/problems/count-complete-tree-nodes/) | 🟡 Medium | [C++](2026/02-February/16-02-26/0222-count-complete-tree-nodes.cpp) | O(n) | 16 Feb 2026 |
@@ -743,7 +743,7 @@ DSA-LeetCode-Journey/
 | # | Problem | Difficulty | Solution | Time | Solved Dates |
 |:-:|:--|:-:|:-:|:-:|:--|
 | 48 | [Rotate Image](https://leetcode.com/problems/rotate-image/) | 🟡 Medium | [Python](2026/09-September/18-09-26/0048-rotate-image.py) | O(n) | 18 Sep 2026 |
-| 54 | [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/) | 🟡 Medium | [Python](2026/09-September/28-09-26/0054-spiral-matrix.py) · [Python](2026/09-September/19-09-26/0054-spiral-matrix.py) | O(n) · Runtime: 0 ms (Beats 100.0%) | 19 Sep 2026, 28 Sep 2026 |
+| 54 | [Spiral Matrix](https://leetcode.com/problems/spiral-matrix/) | 🟡 Medium | [Python](2026/09-September/19-09-26/0054-spiral-matrix.py) · [Python](2026/09-September/28-09-26/0054-spiral-matrix.py) | O(n) | 19 Sep 2026, 28 Sep 2026 |
 
 ### 🔤 Strings
 
@@ -851,33 +851,33 @@ DSA-LeetCode-Journey/
 | [Bst Deletion](2026/06-June/26-06-26/bst-deletion.cpp) | C++ | O(n) | 26 Jun 2026 |
 | [Bst Insertion](2026/06-June/26-06-26/bst-insertion.cpp) | C++ | O(n) | 26 Jun 2026 |
 | [Bst Traversal](2026/06-June/26-06-26/bst-traversal.cpp) | C++ | O(n) | 26 Jun 2026 |
-| [Bubblesort](2026/06-June/26-06-26/bubblesort.cpp) | C++ | O(n) | 26 Jun 2026 |
 | [Bubblesort](2026/02-February/12-02-26/bubblesort.cpp) | C++ | O(n) | 12 Feb 2026 |
-| [Commands](2026/05-May/18-05-26/commands.sql) | SQL | O(n) | 18 May 2026 |
-| [Commands](2026/05-May/15-05-26/commands.sql) | SQL | O(n) | 15 May 2026 |
-| [Commands](2026/05-May/17-05-26/commands.sql) | SQL | O(n) | 17 May 2026 |
-| [Commands](2026/03-March/30-03-26/commands.sql) | SQL | O(n) | 30 Mar 2026 |
-| [Commands](2026/03-March/29-03-26/commands.sql) | SQL | O(n) | 29 Mar 2026 |
-| [Commands](2026/03-March/27-03-26/commands.sql) | SQL | O(n) | 27 Mar 2026 |
+| [Bubblesort](2026/06-June/26-06-26/bubblesort.cpp) | C++ | O(n) | 26 Jun 2026 |
 | [Commands](2026/04-April/09-04-26/commands.sql) | SQL | O(n) | 09 Apr 2026 |
 | [Commands](2026/04-April/11-04-26/commands.sql) | SQL | O(n) | 11 Apr 2026 |
 | [Commands](2026/04-April/12-04-26/commands.sql) | SQL | O(n) | 12 Apr 2026 |
+| [Commands](2026/03-March/27-03-26/commands.sql) | SQL | O(n) | 27 Mar 2026 |
+| [Commands](2026/03-March/29-03-26/commands.sql) | SQL | O(n) | 29 Mar 2026 |
+| [Commands](2026/03-March/30-03-26/commands.sql) | SQL | O(n) | 30 Mar 2026 |
+| [Commands](2026/05-May/15-05-26/commands.sql) | SQL | O(n) | 15 May 2026 |
+| [Commands](2026/05-May/18-05-26/commands.sql) | SQL | O(n) | 18 May 2026 |
+| [Commands](2026/05-May/17-05-26/commands.sql) | SQL | O(n) | 17 May 2026 |
 | [Coversion Matrix To Adjacency](2026/04-April/08-04-26/coversion-matrix-to-adjacency.cpp) | C++ | O(n) | 08 Apr 2026 |
 | [Creation](2026/06-June/26-06-26/creation.cpp) | C++ | O(n) | 26 Jun 2026 |
-| [Cycle Detection](2026/03-March/26-03-26/cycle-detection.cpp) | C++ | O(n) | 26 Mar 2026 |
 | [Cycle Detection](2026/04-April/21-04-26/cycle-detection.cpp) | C++ | O(n) | 21 Apr 2026 |
+| [Cycle Detection](2026/03-March/26-03-26/cycle-detection.cpp) | C++ | O(n) | 26 Mar 2026 |
 | [Cycyle Detection Directed](2026/05-May/01-05-26/cycyle-detection-directed.cpp) | C++ | O(n) | 01 May 2026 |
-| [Dfs](2026/03-March/24-03-26/dfs.cpp) | C++ | O(n) | 24 Mar 2026 |
 | [Dfs](2026/04-April/18-04-26/dfs.cpp) | C++ | O(n) | 18 Apr 2026 |
+| [Dfs](2026/03-March/24-03-26/dfs.cpp) | C++ | O(n) | 24 Mar 2026 |
 | [Dijkstra](2026/05-May/18-05-26/dijkstra.cpp) | C++ | O(n) | 18 May 2026 |
 | [Frequency Count](2026/09-September/12-09-26/frequency-count.py) | Python | O(n) | 12 Sep 2026 |
-| [Graph](2026/03-March/22-03-26/graph.cpp) | C++ | O(n) | 22 Mar 2026 |
 | [Graph](2026/03-March/08-03-26/graph.cpp) | C++ | O(n) | 08 Mar 2026 |
+| [Graph](2026/03-March/22-03-26/graph.cpp) | C++ | O(n) | 22 Mar 2026 |
 | [Graph](2026/02-February/21-02-26/graph.cpp) | C++ | O(n) | 21 Feb 2026 |
 | [Graph Bfs](2026/04-April/07-04-26/graph-bfs.cpp) | C++ | O(n) | 07 Apr 2026 |
 | [Graph Everything](2026/04-April/09-04-26/graph-everything.cpp) | C++ | O(n) | 09 Apr 2026 |
-| [Graph List](2026/03-March/05-03-26/graph-list.cpp) | C++ | O(n) | 05 Mar 2026 |
 | [Graph List](2026/04-April/07-04-26/graph-list.cpp) | C++ | O(n) | 07 Apr 2026 |
+| [Graph List](2026/03-March/05-03-26/graph-list.cpp) | C++ | O(n) | 05 Mar 2026 |
 | [Graph List Weighted](2026/04-April/07-04-26/graph-list-weighted.cpp) | C++ | O(n) | 07 Apr 2026 |
 | [Graph Matrix](2026/04-April/06-04-26/graph-matrix.cpp) | C++ | O(n) | 06 Apr 2026 |
 | [Graphbfs](2026/03-March/23-03-26/graphbfs.cpp) | C++ | O(n) | 23 Mar 2026 |
@@ -904,11 +904,11 @@ DSA-LeetCode-Journey/
 | [Producer](2026/06-June/26-06-26/producer.py) | Python | O(n) | 26 Jun 2026 |
 | [Python Case2 Is Wrong](2026/06-June/26-06-26/python-case2-is-wrong.cpp) | C++ | O(n) | 26 Jun 2026 |
 | [Q1. Best Reachable Tower©Leetcode(17 01)](2026/06-June/26-06-26/q1-best-reachable-tower-leetcode-17-01.cpp) | C++ | O(n) | 26 Jun 2026 |
-| [Queue](2026/05-May/09-05-26/queue.cpp) | C++ | O(n) | 09 May 2026 |
 | [Queue](2026/02-February/15-02-26/queue.cpp) | C++ | O(n) | 15 Feb 2026 |
+| [Queue](2026/05-May/09-05-26/queue.cpp) | C++ | O(n) | 09 May 2026 |
 | [Quick Sort](2026/06-June/26-06-26/quick-sort.cpp) | C++ | O(n) | 26 Jun 2026 |
-| [Quicksort](2026/02-February/12-02-26/quicksort.cpp) | C++ | O(n) | 12 Feb 2026 |
 | [Quicksort](2026/02-February/13-02-26/quicksort.cpp) | C++ | O(n) | 13 Feb 2026 |
+| [Quicksort](2026/02-February/12-02-26/quicksort.cpp) | C++ | O(n) | 12 Feb 2026 |
 | [Recursion](2026/02-February/03-02-26/recursion.cpp) | C++ | O(n) | 03 Feb 2026 |
 | [Recursion Revision](2026/02-February/08-02-26/recursion-revision.cpp) | C++ | O(n) | 08 Feb 2026 |
 | [Secondlargest](2026/06-June/26-06-26/secondlargest.cpp) | C++ | O(n) | 26 Jun 2026 |
@@ -916,8 +916,8 @@ DSA-LeetCode-Journey/
 | [Selectionsort](2026/02-February/12-02-26/selectionsort.cpp) | C++ | O(n) | 12 Feb 2026 |
 | [Selectionsorting](2026/06-June/26-06-26/selectionsorting.cpp) | C++ | O(n) | 26 Jun 2026 |
 | [Sort Vs Stable Sort](2026/07-July/29-07-26/sort-vs-stable-sort.cpp) | C++ | O(n log n) | 29 Jul 2026 |
-| [Stack](2026/06-June/26-06-26/stack.cpp) | C++ | O(n) | 26 Jun 2026 |
 | [Stack](2026/02-February/14-02-26/stack.cpp) | C++ | O(n) | 14 Feb 2026 |
+| [Stack](2026/06-June/26-06-26/stack.cpp) | C++ | O(n) | 26 Jun 2026 |
 | [String](2026/06-June/26-06-26/string.py) | Python | O(n) | 26 Jun 2026 |
 | [String Basics](2026/07-July/29-07-26/string-basics.cpp) | C++ | O(n) | 29 Jul 2026 |
 | [String Building](2026/09-September/19-09-26/string-building.py) | Python | O(n) | 19 Sep 2026 |
